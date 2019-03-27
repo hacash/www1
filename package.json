@@ -1,0 +1,13 @@
+{
+  "name": "hacash",
+  "version": "0.1.0",
+  "description": "",
+  "repository": "",
+  "license": "MIT",
+  "devDependencies": {},
+  "scripts": {},
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

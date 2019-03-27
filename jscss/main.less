@@ -1,0 +1,153 @@
+
+
+/* 文字颜色渐变 */
+.text-gradient{
+    background-image: -webkit-gradient(linear, 0 0, right bottom, from(rgba(125, 120, 4, 1)), to(rgba(0, 87, 0, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+#intro{
+    .container{
+        padding-top: 240px;
+        padding-bottom: 300px;
+    }
+    .pagecard{
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        width: 46%;
+        padding: 0;
+        // background: #efefef;
+    }
+    .info{
+        .text-gradient;
+        text-align: left;
+        h1{
+            font-size: 30px;
+            line-height: 30px;
+            span{
+                font-size: inherit;
+                font-weight: 900;
+            }
+        }
+        h3{
+            font-size: 14px;
+            line-height: 20px;
+            padding: 10px 0;
+        }
+        .btns{
+            padding-top: 10px;
+        }
+        .btn, i.ftico{
+            display: inline-block;
+            font-size: 14px;
+            height: 14px;
+            line-height: 14px;
+            cursor: pointer;
+            color: #fff;
+            -webkit-text-fill-color: #fff;
+        }
+        .btn{
+            padding: 8px 10px;
+            background: #3d5c5c;
+            border-radius: 4px;
+            margin-left: 20px;
+            &.l{
+                margin-left: 0;
+                background: #b5a642;
+            }
+            i.ftico{
+                font-size: 12px;
+                margin-right: 5px;
+            }
+        }
+    }
+    .icologo{
+        @ccc: #1f2f2f;
+        display: inline-block;
+        font-size: 150px;
+        font-weight: 900;
+        line-height: 220px;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        color: @ccc;
+        border-radius: 1000px;
+        border: 16px @ccc solid;
+        // background: #d98719;
+        // background: #d9d919;
+        // background: #cd7f32;
+        // background: #a67d3d;
+        // background: #b5a642;
+        background: #cfb53b;
+        
+    }
+}
+
+
+#mainnet{
+    .pagecard{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .status{
+        width: 25%;
+        text-align: right;
+    }
+    .info{
+        width: 73%;
+        text-align: left;
+        p{
+            font-size: 12px;
+            line-height: 14px;
+            margin-left: 20px;
+            color: #3d5c5c;
+        }
+    }
+    .light{
+        background: #22c335;
+        border-radius: 4px;
+        color: white;
+        font-family: monospace;
+        font-size: 13px;
+        font-weight: 700;
+        min-width: 100px;
+        padding: 8px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 512px) {
+
+
+#intro{
+    .container{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .logo{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .info{
+        text-align: center;
+    }
+
+
+}
+
+}
+
+
+
+
+
+
+
+
+
