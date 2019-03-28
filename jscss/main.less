@@ -17,19 +17,21 @@
         display: inline-block;
         vertical-align: middle;
         text-align: center;
-        width: 46%;
+        width: 48%;
         padding: 0;
         // background: #efefef;
     }
     .info{
         .text-gradient;
         text-align: left;
+        width: 48%;
         h1{
             font-size: 30px;
             line-height: 30px;
             span{
                 font-size: inherit;
                 font-weight: 900;
+                margin-right: 16px;
             }
         }
         h3{
@@ -64,9 +66,40 @@
             }
         }
     }
+    .logo{
+        text-align: center;
+        .wrap{
+            position: relative;
+            display: inline-block;
+        }
+    }
+    .bs{
+        opacity: 1;
+        position: absolute;
+        top: 0px; left: 0px;
+        margin-left: 30px;
+        margin-top: 30px;
+        display: block;
+        width: 172px;
+        height: 172px;
+        background: #22c335;
+        border-radius: 1000px;
+        &.s1{ top: -40px; left: 0; background: rgba(255,0,0,.5); }
+        &.s2{ top: -30px; left: 30px; background: rgba(255,128,0,.5); }
+        &.s3{ top: 0; left: 40px; background: rgba(255,255,0,.5); }
+        &.s4{ top: 30px; left: 30px; background: rgba(0,255,0,.5); }
+        &.s5{ top: 40px; left: 0; background: rgba(0,255,255,.5); }
+        &.s6{ top: 30px; left: -30px; background: rgba(0,0,255,.5); }
+        &.s7{ top: 0; left: -40px; background: rgba(128,0,255,.5); }
+        &.s8{ top: -30px; left: -30px; background: rgba(255,0,128,.5); }
+    }
+
     .icologo{
         @ccc: #1f2f2f;
-        display: inline-block;
+        position: relative;
+        z-index: 999;
+        display: block;
+        opacity: 1;
         font-size: 150px;
         font-weight: 900;
         line-height: 220px;
@@ -76,6 +109,7 @@
         color: @ccc;
         border-radius: 1000px;
         border: 16px @ccc solid;
+        text-shadow: 0 0 8px rgba(255,255,255,0.5);
         // background: #d98719;
         // background: #d9d919;
         // background: #cd7f32;
@@ -136,9 +170,36 @@
     }
     .info{
         text-align: center;
+        border-bottom: 1px #ddd solid;
+        padding-bottom: 20px;
+        h1{
+            margin-bottom: 10px;
+            span{
+                display: block;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+        }
+        .btns{
+            .l{
+                display: block;
+                margin: auto;
+                margin-bottom: 20px;
+                width: 174px;
+            }
+            .z{
+                margin: 0;
+            }
+        }
     }
+}
 
-
+#mainnet{
+    .status{
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
 }
 
 }
