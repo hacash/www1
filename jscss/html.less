@@ -97,10 +97,15 @@ i.ftico{
         padding-top: 20px;
         padding-bottom: 20px;
         .logo{
+            display: inline-block;
             font-size: 24px;
             line-height: 30px;
             height: 30px;
             font-weight: bold;
+            /* 文字颜色渐变 */
+            background-image: -webkit-gradient(linear, 0 0, right bottom, from(rgba(0, 87, 0, 1)), to(rgba(125, 120, 4, 1)));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
     // background: #eee;
