@@ -8,6 +8,20 @@
 }
 
 
+/* 黑暗背景 */
+.darkbg{
+    background: #1f2f2f;
+}
+
+/*  */
+.darkhr{
+    border-bottom: 1px #999 dotted;
+}
+.lighthr{
+    border-bottom: 1px #ddd dotted;
+}
+
+
 #intro{
     .container{
         padding-top: 240px;
@@ -150,6 +164,7 @@
         // background: #b5a642; // 黄铜
         // background: #a67d3d; // 青铜2
         background: #cfb53b; // 暗金
+        box-shadow: 0 0 30px 15px #cfb53b inset;
         background-image: linear-gradient(rgba(255,255,255,.1) 1px, transparent 0), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 0);
         background-size: 30px 30px, 30px 30px;
     }
@@ -170,7 +185,7 @@
         text-align: left;
         p{
             font-size: 13px;
-            line-height: 14px;
+            line-height: 17px;
             margin-left: 20px;
             color: #3d5c5c;
         }
@@ -182,13 +197,36 @@
         font-size: 12px;
         font-weight: 700;
         min-width: 100px;
-        padding: 4px 10px;
+        padding: 6px 10px;
         box-shadow: 0 0 10px #22c335, 0 0 5px #fff inset;
         border: 1px #22c335 solid;
         color: white;
         color: rgba(255,255,255,0.8);
     }
 
+}
+
+
+
+#detail{
+    margin-top: 20px;
+    padding: 10px 0;
+    *{
+        color: #fff;
+        font-size: 14px;
+    }
+    .head{
+        .darkhr;
+        padding-bottom: 20px;
+        h1{
+            font-size: 22px;
+        }
+        p{
+            margin: 0;
+            margin-top: 10px;
+        }
+
+    }
 }
 
 
@@ -207,8 +245,8 @@
         padding-bottom: 60px;
     }
     .info{
+        .lighthr;
         text-align: center;
-        border-bottom: 1px #ddd solid;
         padding-bottom: 30px;
         h1{
             margin-bottom: 10px;
