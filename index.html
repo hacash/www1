@@ -22,9 +22,19 @@
 
 <body>
 
-<div id="header" >
+<div id="header">
     <div class="container">
         <div class="logo">Hacash</div>
+
+        
+        <a class="nav menu" id="mbmenu">
+            <i class="ftico">&#xf0c9;</i>
+        </a>
+        <a class="nav m b5" href="https://github.com/hacash" target="_blank">Github</a>
+        <a class="nav m b4" href="https://github.com/hacash/paper/blob/master/draft/whitepaper.cn.md" target="_blank">白皮书</a>
+        <a class="nav m b3" href="#minernode">挖矿</a>
+        <a class="nav m b2" href="https://wallet.hacash.org" target="_blank">在线钱包</a>
+        <a class="nav m b1" href="#quickstart">快速开始</a>
     </div>
 </div>
 
@@ -48,8 +58,8 @@
             <h1><span>Hacash</span>开放金融第一公链</h1>
             <h3>Hacash 是一套立足开放金融可大规模结算的加密货币发行支付体系。旨在降低交易费用、信任成本，避免金融欺诈。货币符号为“ㄜ”，简称HCX。</h3>
             <div class="btns">
-                <a class="btn l" href="/" target="_blank"><i class="ftico">&#xf1d9;</i>快速开始使用</a>
-                <a class="btn z" href="https://github.com/hacash/paper/blob/master/whitepaper.cn.md" target="_blank"><i class="ftico">&#xf0f6;</i>技术说明</a>
+                <a class="btn l" href="#quickstart"><i class="ftico">&#xf1d9;</i>快速开始使用</a>
+                <a class="btn z" href="https://github.com/hacash/paper/blob/master/draft/whitepaper.cn.md" target="_blank"><i class="ftico">&#xf0f6;</i>技术说明</a>
                 <a class="btn" href="https://github.com/hacash" target="_blank"><i class="ftico">&#xf09b;</i>Github</a>
             </div>
         </div>
@@ -64,30 +74,200 @@
             <b class="light">当前状态：主网正在运行</b>
         </div>
         <div class="pagecard info">
-            <p>Hacash 初始区块于 2019/2/4 11:25 被挖出，相对于其宏大使命，它仍然是一个非常早期的项目。公平的货币发行算法和开放共享的运行方式，让所有人在任何时刻都能公平地参与进来。</p>
+            <p>Hacash 初始区块于 2019/2/4 11:25 被挖出，相对于其宏大使命，它仍然是一个非常早期的项目。公平的货币发行算法和真正开放共享的运行方式，让所有人在任何时刻都能公平有益地参与进来。</p>
         </div>
     </div>
 </div>
 
 
+<a name="detail"></a>
 <div id="detail" class="darkbg">
     <div class="container">
         <div class="pagecard head">
             <h1>Hacash 的特点？</h1>
-            <p></p>
+            <p>一个为现代金融交易、商业服务而充分设计、完全公平开放共享的加密货币发行支付标准体系，将在未来一百年共同推动人类经济进入开放金融时代。</p>
             <p></p>
         </div>
-
+        <div class="pagecard item">
+            <div class="ico">
+                <p>
+                    <i class="ftico">&#xe800;</i>
+                    <img src="/cssimg/index_detail_item_bg.svg" />
+                </p>
+            </div>
+            <h5>真正开放共享的运行方式</h5>
+            <p>没有一个所谓的“官方”掌握大部分利益及决策权力，真正的去中心化。项目的发展依赖于早期开发贡献者的无偿奉献和共识社区的支持，大家同时都是贡献者也是受益者。</p>
+        </div>
+        <div class="pagecard item">
+            <div class="ico">
+                <p>
+                    <i class="ftico">&#xf24e;</i>
+                    <img src="/cssimg/index_detail_item_bg.svg" />
+                </p>
+            </div>
+            <h5>最公平的货币发行算法</h5>
+            <p>没有创始人奖励，没有官方代持，没有节点分配，没有预挖矿，没有私募，没有基金会，甚至没有捐赠。一切从零开始公平挖矿。先用7年时间每区块奖励从1枚上升到13枚，再用70年时间下降到1枚，最终固定在每区块一枚货币。</p>
+        </div>
+        <div class="pagecard item right">
+            <div class="ico">
+                <p>
+                    <i class="ftico">&#xe801;</i>
+                    <img src="/cssimg/index_detail_item_bg.svg" />
+                </p>
+            </div>
+            <h5>全类别交易支付和资产变更协议</h5>
+            <p>多方签署的交易结构，结合条件检查、状态确认、聚合支付、交易事务化等丰富的标准化协议，满足现代金融、企业及个人的绝大部分支付需求。简单直观且无任何潜在漏洞。</p>
+        </div>
+        <div class="pagecard item">
+            <div class="ico">
+                <p>
+                    <i class="ftico">&#xf20e;</i>
+                    <img src="/cssimg/index_detail_item_bg.svg" />
+                </p>
+            </div>
+            <h5>可无限扩展的大规模实时结算网络</h5>
+            <p>反集中化、收付平账、快速对账、实时到账、仲裁保护、动态伸缩的去中心化通道链结算网络，能按需增加交易量，并在理论上没有上限，从而能完全应对现代商业发展的需要。</p>
+        </div>
+        <div class="pagecard item">
+            <div class="ico">
+                <p>
+                    <i class="ftico">&#xf0e8;</i>
+                    <img src="/cssimg/index_detail_item_bg.svg" />
+                </p>
+            </div>
+            <h5>股权层级控制和多重签名账户体系</h5>
+            <p>多重签名账户解决了秘钥丢失、被盗的安全问题和简单共同托管资金的需求。更有一个能满足现代企业多层次股权投资结构的账户体系（支持受益权和投票权不相同，并避免极端情况资金丢失）。</p>
+        </div>
+        <div class="pagecard item right">
+            <div class="ico">
+                <p>
+                    <i class="ftico">&#xe802;</i>
+                    <img src="/cssimg/index_detail_item_bg.svg" />
+                </p>
+            </div>
+            <h5>无损耗的按需多种隐私保护</h5>
+            <p>通常注重隐私的币种要么极大牺牲了交易效率，要么需要保持在线不安全，要么操作繁杂使用非常不便，或者兼而有之。Hacash 提供了支付混搅、前置延期兑付、加密结算网等多种隐私保护功能，在不损失支付效率和使用便捷性的同时按需定制。</p>
+        </div>
+        <div class="pagecard item">
+            <div class="ico">
+                <p>
+                    <i class="ftico">&#xf219;</i>
+                    <img src="/cssimg/index_detail_item_bg.svg" />
+                </p>
+            </div>
+            <h5>区块钻石和通道利息</h5>
+            <p>区块钻石是一种异质货币，可按经济热度动态调节供应量。总量上限1800万颗，不可分割，每一枚都有唯一的六位字母字面标识，具备极高的收藏价值。支付通道除了手续费收益，还有锁定利息，以激励促成结算网络的普及。</p>
+        </div>
+        <div class="pagecard item">
+            <div class="ico">
+                <p>
+                    <i class="ftico">&#xf132;</i>
+                    <img src="/cssimg/index_detail_item_bg.svg" />
+                </p>
+            </div>
+            <h5>历史见证防51%攻击</h5>
+            <p>51%攻击是阻碍加密货币大规模使用的最大风险之一。Hacash 发明了历史见证算法，让算力竞争决定未来的区块，让货币抵押决定历史的区块，从而在事实上避免51%攻击的可能（需要同时掌握51%的算力和51%的代币才能发起攻击）。</p>
+        </div>
+        <div class="pagecard item right end">
+            <div class="ico">
+                <p>
+                    <i class="ftico">&#xf1b3;</i>
+                    <img src="/cssimg/index_detail_item_bg.svg" />
+                </p>
+            </div>
+            <h5>手续费冲抵、交易托管等第三方服务</h5>
+            <p>Hacash 在底层协议的设计上充分考虑了成熟商业运行的需要，支持交易方、收款方、托管方、见证者、撮合方、数据服务、安全服务、审计服务等多角色参与及交易定制化的可能性，最大程度满足现代商业支付服务的需要。</p>
+        </div>
     </div>
 </div>
 
 
+<a name="quickstart"></a>
+<div id="quickstart">
+    <div class="container">
+        <div class="pagecard">
+            <h1 class="pgtt">快速开始使用</h1>
+            <p class="p">主网第一阶段已经稳定运行，目前支持记账挖矿和转账交易。部分开发者已使用桌面电脑和云主机运行Hacash节点，相关的工具和服务正在开发当中。</p>
+            <p class="p">你可以使用在线钱包或者命令行工具，完成账户创建、查询余额、转账、发送交易，查询交易状态等基本操作。</p>
+            <p class="p">
+                <a class="button olwlt" href="https://wallet.hacash.org" target="_blank">
+                    <i class="ftico">&#xe805;</i>
+                    在线钱包
+                </a>
+                <a class="button cmdtl" href="https://github.com/hacash/blockmint#%E8%BF%9B%E8%A1%8C%E8%BD%AC%E8%B4%A6" target="_blank">
+                    <i class="ftico">&#xe806;</i>
+                    命令行工具
+                </a>
+            </p>
+            <p class="p">上面的“命令行工具”需要在 Linux 环境下编译后运行。如果你是 Windows 系统，且不熟悉程序编译技术，我们已经为你编译好了一个最新版的工具程序（.exe 可执行程序文件），支持 Windows 7 至 Windows 10 系统，双击点开即可使用。使用方法与Linux版本相同，请参考上面的按钮连接。</p>
+            <p class="p">
+                <a class="dld" href="http://download.hacash.org:8080/tool_shell_hacash.zip" target="_blank">下载命令行工具（Windows版本）hacash_shell_tool.exe</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<a name="minernode"></a>
+<div id="minernode">
+    <div class="container">
+        <div class="pagecard">
+            <h1 class="pgtt">开始挖矿</h1>
+            <p class="p">Hacash 发明的 x16rs 挖矿算法随机使用 16 种 sha3 系列的 hash 算法，可抵抗 ASIC 矿机的出现。目前最好的方案是使用电脑 CPU 进行记账挖矿，在初期将奖励的货币更广泛的分散在个人的手中，减少或规避了大量货币集中在少部分人手里，从而尽量避免价格操纵、恶意炒作等问题。</p>
+            <p class="p">欢迎大家使用闲置的桌面 PC 电脑或笔记本电脑进行记账挖矿，换取货币奖励。也可以购买的云服务商提供的主机成为稳定的矿工节点，以便打包交易并收取服务费，为整个网络的普及应用做出贡献。</p>
+            <p class="p">
+                <a class="button olwlt" href="https://github.com/hacash/blockmint#%E8%BF%90%E8%A1%8C%E6%8C%96%E7%9F%BF%E8%8A%82%E7%82%B9" target="_blank">
+                    Linux下编译部署矿工节点
+                </a>
+            </p>
+            <p class="p">如果你的个人电脑是 Windows 系统，那么成为矿工将更加简单。首先点击下面的连接，下载最新版本的矿工程序压缩包（包含.exe可执行文件和一个.yml配置文件），支持 Windows 7 至 Windows 10 操作系统：</p>
+            <p class="p">
+                <a class="dld" href="http://download.hacash.org:8080/miner_node_hacash.zip" target="_blank">下载挖矿节点软件（Windows版本）miner_node_hacash.zip</a>
+            </p>
+            <p class="p">解压.zip压缩包文件至任意目录，可看到如下内容：</p>
+            <p class="p">
+                <img class="cutwrap" src="/image/tobeminer/zipcon.png" />
+            </p>
+            <p class="p">压缩包内的 hacash.config.yml 文件是矿工程序必备的配置文件，你可以用记事本程序打开此文件并修改它。右键单击 hacash.config.yml 文件选择以记事本打开，可看到内部内容为：</p>
+            <p class="p">
+                <img class="cutwrap" src="/image/tobeminer/config_yml.png" />
+            </p>
+            <p class="p">最简单的情况下，你只需要修改配置文件中的两个参数：</p>
+            <p class="p">
+                <img class="cutwrap" src="/image/tobeminer/config_yml_change.png" />
+            </p>
+            <p class="p">其中<span class="val">supervene</span>参数表示同时启用多少个线程挖矿，一般来说与你的电脑的 CPU 核心数量一致，能发挥最大的计算能力。比如你的电脑 CPU 核心数量为 2 核， 则将<span class="val">supervene: 8</span>改为<span class="val">supervene: 2</span>，如果为 4 核心则改为<span class="val">supervene: 4</span>，以此类推。这时电脑 CPU 的利用率为 100%，为避免电脑卡死，一般建议留出一个核心用于其它计算：4核心则设置为3，8核心则设置为7。也可以根据你的情况自由设置，数值越小，CPU 利用率越低。此值不支持小数，最小为1，也不建议设置成比电脑 CPU 核心数量更大的值。</p>
+            <p class="p"><span class="val">rewards</span>参数下面的 8 个字符串，是 Hacash 的账户地址，这里用来收取挖矿产生的货币奖励。此地址必须通过密码生成，有特定的格式，自己手动修改拼凑的地址无效！你可以使用 <a class="button olwlt" href="https://wallet.hacash.org" target="_blank">在线钱包</a>，通过只有你自己知晓并严格保密和做好备份的密码生成账户地址。</p>
+            <p class="p">一般建议生成 1 到 4 个地址，替换<span class="val">rewards</span>参数下面默认的地址。可删除多余的地址行。</p>
+            <p class="p notice">【请注意！】如果你不了解<span class="val">.yml</span>配置文件的格式要求，请不要任意更改配置文件中的字段格式、缩进、换行、空格等，格式错误将导致程序无法读取正确的配置信息，从而造成运行失败。</p>
+            <p class="p">修改完成后，保存文件并关闭记事本程序。请检查你的电脑正确的连接了互联网（矿工程序需要下载区块数据和实时同步新区快和交易数据）。此时即可双击运行 miner_node_hacash_2019_××_××.exe 可执行程序，不出错的情况下，将开到挖矿程序成功连接网络并开始同步下载数据：</p>
+            <p class="p">
+                <img class="cutwrap" src="/image/tobeminer/sync_data.png" />
+            </p>
+            <p class="p">这是在同步下载所有的区块交易数据，是挖矿必备的数据。请耐心等待数据同步完成。区块下载结束后，看到一个<span class="val">sync finish</span>类似的完成提示：</p>
+            <p class="p">
+                <img class="cutwrap" src="/image/tobeminer/sync_finish.png" />
+            </p>
+            <p class="p">这时程序已经自动开始挖矿了，可打开任务管理器查看 CPU 的利用率。</p>
+            <p class="p">整个 Hacash 矿工网络会大约 288 个区块约一天时间调整一次算力难度值，以保证每 5 分钟挖出一个区块。耐心等待 5 到 10 分钟，即可在程序窗口内看到打印信息：</p>
+            <p class="p">
+                <img class="cutwrap" src="/image/tobeminer/new_block.png" />
+            </p>
+            <p class="p">... ... discovery new block insert success ... 打印信息表示从网络中发现了一个新的区块（别的矿工挖出来的区块），自己重新开始下一轮的挖矿。</p>
+            <p class="p">⬤  ㄜ1:248, bh: 20735, tx: 0, hx: 00000003593c ... ... 打印信息表示自己抢先挖出了一个区块并成功获取了 1 枚 HCX 货币的奖励！</p>
+            <p class="p">【注意】如果中间过程中出现了错误，或者点击执行矿工程序没有反应，请确保你的网络保持在线。挖矿过程中也不能断网，否则挖矿程序无法实时同步区块信息，将导致挖矿无效！</p>
+        </div>
+    </div>
+</div>
 
 
 
 <div id="footer">
     <div class="container">
-
+        <div class="logo">
+            <p><b class="icologo">ㄜ</b></p>
+            <p><br><span>2019 ~ 2020 © Hacash.org</span></p>
+        </div>
     </div>
 </div>
 

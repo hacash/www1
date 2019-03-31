@@ -18,7 +18,7 @@
     border-bottom: 1px #999 dotted;
 }
 .lighthr{
-    border-bottom: 1px #ddd dotted;
+    border-bottom: 1px #d0d0d0 dotted;
 }
 
 
@@ -198,15 +198,13 @@
         font-weight: 700;
         min-width: 100px;
         padding: 6px 10px;
-        box-shadow: 0 0 10px #22c335, 0 0 5px #fff inset;
+        box-shadow: 0 0 20px #22c335, 0 0 10px #fff inset;
         border: 1px #22c335 solid;
         color: white;
         color: rgba(255,255,255,0.8);
     }
 
 }
-
-
 
 #detail{
     margin-top: 20px;
@@ -225,11 +223,101 @@
             margin: 0;
             margin-top: 10px;
         }
+    }
+    .item{
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+        margin-right: 4.5%;
+        margin-top: 3%;
+        .ico{
+            position: relative;
+            p{
+                position: relative;
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+            }
+            img{
+                position: absolute;
+                top: 0; left: 0;
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .ftico{
+            position: relative;
+            z-index: 99;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            font-size: 44px;
+            color: #1f2f2f;
+        }
+        h5{
+            font-size: 14px;
+            padding: 10px 0;
+        }
+        p{
+            font-size: 12px;
+            color: rgba(255,255,255,0.5);
+        }
 
+    }
+    .right{
+        margin-right: 0;
     }
 }
 
 
+a.dld{
+    font-size: 14px;
+    color: dodgerblue;
+    text-decoration: underline;
+}
+p.p{
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+#quickstart{
+    .pagecard{
+        .lighthr;
+        padding: 24px 0;
+    }
+    a.olwlt{
+        background: orangered;
+    }
+    a.cmdtl{
+        margin-left: 20px;
+        background: darkcyan;
+    }
+}
+
+
+#minernode{
+    .pagecard{
+        .lighthr;
+        padding-bottom: 24px;
+    }
+    img.cutwrap{
+        margin: 30px 0;
+        border: 4px #999 solid;
+        padding: 10px;
+        box-shadow: 4px 4px 30px #999;
+        max-width: 90%;
+    }
+    span.val{
+        background: #ccc;
+        font-size: 14px;
+        padding: 2px 6px;
+        border-radius: 4px;
+    }
+    p.notice{
+        color: orangered;
+    }
+}
 
 
 @media screen and (max-width: 512px) {
@@ -275,6 +363,18 @@
         display: block;
         padding: 20px;
         text-align: center;
+    }
+}
+
+#detail{
+    .item{border-bottom: #2e4646 1px dotted;
+        text-align: center;
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+    .item.end{
+        border: none;
+        padding-bottom: 10px;
     }
 }
 

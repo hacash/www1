@@ -1,4 +1,19 @@
 
+.icon-users:before { content: '\e800'; } /* '' */
+.icon-ok:before { content: '\e801'; } /* '' */
+.icon-umbrella:before { content: '\e802'; } /* '' */
+.icon-eye-off:before { content: '\e803'; } /* '' */
+.icon-thumbs-up:before { content: '\e804'; } /* '' */
+.icon-wallet:before { content: '\e805'; } /* '' */
+.icon-tools:before { content: '\e806'; } /* '' */
 .icon-github-circled:before { content: '\f09b'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-sitemap:before { content: '\f0e8'; } /* '' */
 .icon-doc-text:before { content: '\f0f6'; } /* '' */
+.icon-shield:before { content: '\f132'; } /* '' */
+.icon-bank:before { content: '\f19c'; } /* '' */
+.icon-cubes:before { content: '\f1b3'; } /* '' */
 .icon-paper-plane-empty:before { content: '\f1d9'; } /* '' */
+.icon-connectdevelop:before { content: '\f20e'; } /* '' */
+.icon-diamond:before { content: '\f219'; } /* '' */
+.icon-balance-scale:before { content: '\f24e'; } /* '' */
