@@ -281,9 +281,50 @@ p.p{
     font-size: 14px;
 }
 
+
+#joinus{
+    .lighthr;
+    .qrcode{
+        padding: 20px;
+        h5{
+            z-index: 9;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            background: #ddd;
+        }
+        .wx, .wb {
+            margin-top: 20px;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            border: #ddd 1px solid;
+            width: 200px; height: 296px;
+            img{
+                position: absolute;
+                display: block;
+                width: 200px;
+            }
+        }
+        .wx{
+            margin-right: 60px;
+        }
+        .wx img{
+            width: 240px;
+            top: -80px; left: -20px;
+        }
+        .wb img{
+            width: 540px;
+            top: -60px; left: -170px;
+        }
+    }
+}
+
 #quickstart{
+    .lighthr;
     .pagecard{
-        .lighthr;
         padding: 24px 0;
     }
     a.olwlt{
@@ -363,6 +404,18 @@ p.p{
         display: block;
         padding: 20px;
         text-align: center;
+    }
+}
+
+#joinus{
+    .lighthr;
+    .qrcode{
+        text-align: center;
+        &>div{
+            display: inline-block;
+            margin: 0 !important;
+            margin-top: 20px !important;
+        }
     }
 }
 
