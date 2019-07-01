@@ -250,7 +250,10 @@
 <div id="minernode">
     <div class="container">
         <div class="pagecard">
-            <h1 class="pgtt">开始挖矿</h1>
+            <p class="miner_nav">点击跳转到挖矿的两种方式：<a href="#minernode">1.全节点挖矿</a>， <a href="#poolworker">2.加入矿池挖矿</a></p>
+
+            <br><br>
+            <h1 class="pgtt">一、全节点挖矿</h1>
             <p class="p">Hacash 发明的 x16rs 挖矿算法随机使用 16 种 sha3 系列的 hash 算法，可抵抗 ASIC 矿机的出现。目前最好的方案是使用电脑 CPU 进行记账挖矿，在初期将奖励的货币更广泛的分散在个人的手中，减少或规避了大量货币集中在少部分人手里，从而尽量避免价格操纵、恶意炒作等问题。</p>
             <p class="p">欢迎大家使用闲置的桌面 PC 电脑或笔记本电脑进行记账挖矿，换取货币奖励。也可以购买的云服务商提供的主机成为稳定的矿工节点，以便打包交易并收取交易手续费，为整个网络的普及应用做出贡献。</p>
             <p class="p">
@@ -298,6 +301,43 @@
             <p class="p">【注意】如果中间过程中出现了错误，或者点击执行矿工程序没有反应，请确保你的网络保持在线。挖矿过程中也不能断网，否则挖矿程序无法实时同步区块信息，将导致挖矿无效！ 如果出现任何长时间无响应的问题，请关闭后重启挖矿客户端。</p>
         </div>
     </div>
+
+
+    <a name="poolworker"></a>
+    <div class="container">
+        <div class="pagecard">
+            <h1 class="pgtt">二、加入矿池挖矿</h1>
+            <p class="p">上面说的全节点挖矿需要同步所有区块数据，并且对网络环境的稳定性有相当高的要求（不然容易断网分叉），如果不具备较专业的硬件和网络运维知识、或者没有强大的CPU性能的计算机器，采用全节点挖矿方式将遇到一些不必要的麻烦，或者难以得到挖矿产出。</p>
+            <p class="p">我们建议小规模的挖矿参与者加入到矿池中，从而可以避免很多数据和网路运维的麻烦，并且也通过平均的算力统计方法，让大家能更加确定和均匀地分配到挖矿成果，抹平算力波动和运气成分。</p>
+            <p class="p">通过点击以下链接，下载矿池型挖矿程序：</p>
+            <p class="p">
+                <a class="button down windows" href="http://download.hacash.org:8080/miner_pool_worker_hacash_windows64.zip" target="_blank">⇩ 下载矿池挖矿软件（Windows版64位）miner_pool_worker_hacash_windows64.zip</a>
+                <br/><br/>
+                <a class="button down ubuntu" href="http://download.hacash.org:8080/miner_pool_worker_hacash_ubuntu64.zip" target="_blank">⇩ 下载矿池挖矿软件（Ubuntu版64位）miner_pool_worker_hacash_ubuntu64.zip</a>
+            </p>
+            <p class="p">解压下载的 .zip 压缩包文件至任意目录，可看到如下内容：</p>
+            <p class="p">
+                <img class="cutwrap" src="/image/tobeminer/zipcon_pool.png" />
+            </p>
+            <p class="p">压缩包内的 poolworker.config.yml 文件是矿工程序必备的配置文件，你可以用记事本程序打开此文件并修改它。右键单击 poolworker.config.yml 文件选择以记事本打开，可看到内部内容为：</p>
+            <p class="p">
+                <img class="cutwrap" src="/image/tobeminer/poolworker_config_yml.png" />
+            </p>
+            <p class="p"><span class="val">pool</span>参数是矿池的地址，表示要连接的服务器的IP和端口。请联系你的矿池服务商获取有效的地址。不同的矿池服务商的抽成比例不一样，但是一些恶劣的人搭建的矿池将会有卷款潜逃的可能，请一定注意选择你信任的矿池方（不要轻易相信过低的抽成比例甚至倒贴补贴），否则将被欺骗而白白浪费算力。</p>
+            <p class="p"><span class="val">rewards</span>参数的字符串，是 Hacash 的账户地址，这里用来收取挖矿产生的货币奖励。此地址必须通过密码生成，有特定的格式，自己手动修改拼凑的地址无效！你可以使用 <a class="button olwlt" href="https://wallet.hacash.org" target="_blank">在线钱包</a>，通过只有你自己知晓并严格保密和做好备份的密码生成账户地址。此地址仅限一个。</p>
+            <p class="p">其中<span class="val">supervene</span>参数表示同时启用多少个线程挖矿，一般来说与你的电脑的 CPU 核心数量一致，能发挥最大的计算能力。比如你的电脑 CPU 核心数量为 2 核， 则将<span class="val">supervene: 8</span>改为<span class="val">supervene: 2</span>，如果为 4 核心则改为<span class="val">supervene: 4</span>，以此类推。这时电脑 CPU 的利用率为 100%，为避免电脑卡死，一般建议留出一个核心用于其它计算：4核心则设置为3，8核心则设置为7。也可以根据你的情况自由设置，数值越小，CPU 利用率越低。此值不支持小数，最小为1，也不建议设置成比电脑 CPU 核心数量更大的值。</p>
+            <p class="p">修改完成后，保存文件并关闭记事本程序。请检查你的电脑正确的连接了互联网。此时即可双击运行 miner_pool_worker_hacash_2019_××_××.exe 可执行程序，不出错的情况下，将看到以下界面：</p>
+            <p class="p">
+                <img class="cutwrap" src="/image/tobeminer/pool_worker_start.png" />
+            </p>
+            <p class="p">这时程序已经自动开始挖矿了，可打开任务管理器查看 CPU 的利用率。请联系你的矿池服务商查看实时的算力统计，和你应得的挖矿成果的数额</p>
+            <p class="p">
+                <img class="cutwrap" src="/image/tobeminer/pool_worker_run.png" />
+            </p>
+            <p class="p">⬤  h: 49981, mining successfully and got rewords! 打印信息表示自己挖出了一个区块。</p>
+        </div>
+    </div>
+
 </div>
 
 
