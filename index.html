@@ -325,7 +325,7 @@
             </p>
             <p class="p"><span class="val">pool</span>参数是矿池的地址，表示要连接的服务器的IP和端口。请联系你的矿池服务商获取有效的地址。不同的矿池服务商的抽成比例不一样，但是一些恶劣的人搭建的矿池将会有卷款潜逃的可能，请一定注意选择你信任的矿池方（不要轻易相信过低的抽成比例甚至倒贴补贴），否则将被欺骗而白白浪费算力。</p>
             <p class="p"><span class="val">rewards</span>参数的字符串，是 Hacash 的账户地址，这里用来收取挖矿产生的货币奖励。此地址必须通过密码生成，有特定的格式，自己手动修改拼凑的地址无效！你可以使用 <a class="button olwlt" href="https://wallet.hacash.org" target="_blank">在线钱包</a>，通过只有你自己知晓并严格保密和做好备份的密码生成账户地址。此地址仅限一个。</p>
-            <p class="p">其中<span class="val">supervene</span>参数表示同时启用多少个线程挖矿，一般来说与你的电脑的 CPU 核心数量一致，能发挥最大的计算能力。比如你的电脑 CPU 核心数量为 2 核， 则将<span class="val">supervene: 8</span>改为<span class="val">supervene: 2</span>，如果为 4 核心则改为<span class="val">supervene: 4</span>，以此类推。这时电脑 CPU 的利用率为 100%，为避免电脑卡死，一般建议留出一个核心用于其它计算：4核心则设置为3，8核心则设置为7。也可以根据你的情况自由设置，数值越小，CPU 利用率越低。此值不支持小数，最小为1，也不建议设置成比电脑 CPU 核心数量更大的值。</p>
+            <p class="p">其中<span class="val">supervene</span>参数表示同时启用多少个线程挖矿，一般来说与你的电脑的 CPU 核心数量一致，能发挥最大的计算能力。比如你的电脑 CPU 核心数量为 2 核， 则将<span class="val">supervene: 8</span>改为<span class="val">supervene: 2</span>，如果为 4 核心则改为<span class="val">supervene: 4</span>，以此类推。这时电脑 CPU 的利用率为 100%，为避免电脑卡死，一般建议留出一个核心用于其它计算：4核心则设置为3，8核心则设置为7。也可以根据你的情况自由设置，数值越小，CPU 利用率越低。此值不支持小数，最小为1。注意：不能设置成比电脑 CPU 核心数量更大的值，否则算力将极度降低。</p>
             <p class="p">修改完成后，保存文件并关闭记事本程序。请检查你的电脑正确的连接了互联网。此时即可双击运行 miner_pool_worker_hacash_2019_××_××.exe 可执行程序，不出错的情况下，将看到以下界面：</p>
             <p class="p">
                 <img class="cutwrap lazy" data-src="/image/tobeminer/pool_worker_start.png" />
@@ -345,15 +345,21 @@
         <div class="pagecard">
             <h1 class="pgtt">搭建矿池服务</h1>
             <p class="p">技术上来说，矿池就是一个挖矿全节点，只不过挖矿的运算被分配给很多台其他的计算机器去执行，它们之间用网络连接进行通信。也就是说，一个矿池就是一个功能被切分到不同的机器上执行的全节点。</p>
-            <p class="p">搭建矿池的也很简单，首先你需要准备一台有外网固定IP的服务器（配置视业务大小而定），然后按上面的方法<a href="#minernode">搭建一个挖矿的全节点</a>，等待所有的区块数据同步完毕。</p>
+            <p class="p">搭建矿池的也很简单，首先你需要准备一台有外网固定IP的服务器（配置视业务大小而定），然后按上面的方法<a class="dld" href="#minernode">搭建一个挖矿的全节点</a>，等待所有的区块数据同步完毕。</p>
             <p class="p">然后打开配置文件 hacash.config.yml ， 在末尾加入以下的配置行：</p>
             <p class="p">
                 <img class="cutwrap lazy" data-src="/image/tobeminer/pool_worker_config.png" />
             </p>
-            <p class="p">关闭重新启动全节点，矿池程序就开始了服务，可以打开一个统计算力数据连接，去查看加入矿池挖矿算力的统计：<a>http://182.92.163.225:3338/minerpool/statistics?dataid=24</a>，其中 182.92.163.225 是你的服务器的外网IP， dataid是统计的周期的ID，每周算一个统计周期，其值的计算方法是： block_height / (288*7) 再向下取整， 例如当前区块高度为 50025，则 dataid = 50025÷(288*7) = 24。统计内容例如：</p>
+            <p class="p">关闭重新启动全节点，矿池程序就开始了服务，可以打开一个统计算力数据连接，去查看加入矿池挖矿算力的统计：<a class="dld" target="_blank" href="http://182.92.163.225:3338/minerpool">http://182.92.163.225:3338/minerpool</a>，其中 182.92.163.225 是你的服务器的外网IP。统计内容是实时在线的挖矿客户端连接、费用比例、结算数量统计、挖矿奖励分配等等信息：</p>
             <p class="p">
                 <img class="cutwrap lazy" data-src="/image/tobeminer/poolworker_count.png" />
             </p>
+            <p class="p">点击其中的 <a class="dld" target="_blank" href="http://182.92.163.225:3338/minerpool/transactions">show transactions</a> ，可以看到矿池自动打币结算的每一笔交易，如下：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/poolworker_trs.png" />
+            </p>
+            <p class="p">目前矿池结算和自动打币的规则是： 每挖出一个区块算一个统计周期，并结算一次，以周期内所有参与的算力按比例分配挖出的币。应得奖励份额多余2枚则10个区块50分钟打入地址到账， 0.2枚100个区块8.3小时打入， 0.02枚1000区块3.5天到账。</p>
+            <p class="p">大算力特别注意：目前矿池采用出块者和其他算力分别奖励的形式，即除去矿池手续费之外，出块者单独拿50%的奖励，剩下50%由统计周期内其他算力贡献者按算力分配。所有如果某一个地址贡献算力超过矿池总算力的50%，则多余部分的奖励自动分配给其他参与者。也就是说，如果你有极高的算力，最好的做法是将其分散在多个不同的矿池，将算力去中心化。</p>
         </div>
     </div>
 
