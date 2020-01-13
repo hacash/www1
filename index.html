@@ -253,7 +253,7 @@
 <div id="minernode">
     <div class="container">
         <div class="pagecard">
-            <p class="miner_nav">快速转到：<a href="#minernode">1.全节点挖矿</a>， <a href="#poolworker">2.加入矿池挖矿</a>， <a href="#poolcreate">3.搭建矿池服务</a></p>
+            <p class="miner_nav">快速转到：<a href="#minernode">1.全节点挖矿</a>， <a href="#poolworker">2.加入矿池挖矿</a>， <a href="#poolcreate">3.搭建矿池服务</a>， <a href="#diamond">4.挖掘区块钻石</a></p>
 
             <br><br>
             <h1 class="pgtt">一、全节点挖矿</h1>
@@ -367,6 +367,28 @@
         </div>
     </div>
 
+
+
+    <a name="diamond"></a>
+    <div class="container">
+        <div class="pagecard">
+            <h1 class="pgtt">挖掘区块钻石</h1>
+            <p class="p">区块钻石是 Hacash 网络上另一种异质 、不可分割的货币。其详细介绍可参看：<a class="dld" target="_blank" href="https://github.com/hacash/paper/blob/master/draft/whitepaper.cn.md#5-%E5%8C%BA%E5%9D%97%E9%92%BB%E7%9F%B3">什么是区块钻石</a>和<a class="dld" target="_blank" href="https://github.com/hacash/paper/blob/master/draft/whitepaper.cn.md#3-%E9%92%BB%E7%9F%B3%E9%87%87%E6%8E%98">钻石采掘算法</a>。</p>
+            <p class="p">区块钻石的采掘目前只能通过全节点 SOLO 挖矿的形式产生，通过部署 <a href="#minernode">全节点挖矿</a> 并同步完所有区块数据之后，将配置文件修改至如下：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/diamond_miner_config_ini.png" />
+            </p>
+            <p class="p">其中<span class="val">supervene</span>是多线程并行挖矿的并发线程数量，与挖HAC币的supervene参数意义相同；<span class="val">fee_amount</span>参数是为挖掘出的钻石设置的默认手续费竞价的数量，如果一个区块内同时挖出多枚钻石，则手续费报价最高的钻石将被打包进区块被全网确认生效，同时期的其他钻石将被视为无效并丢弃，大家重新再次从头开始挖掘下一枚钻石；<span class="val">fee_password</span>是付出手续费竞价的账户地址的密码或私钥（必须确保账户内拥有fee_amount设置的余额，挖掘出的钻石才能被打包生效）；<span class="val">rewards</span>参数设置的地址为挖出钻石后的奖励地址，也就是新挖出钻石的归属地址。</p>
+            <p class="p">启动挖掘钻石的程序后，显示应如下：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/diamond_mining_status.png" />
+            </p>
+
+
+
+        </div>
+    </div>
+
 </div>
 
 
@@ -385,4 +407,4 @@
 
 
 </body>
-</html>
+</htzhi
