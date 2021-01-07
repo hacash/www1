@@ -8,6 +8,7 @@
   "scripts": {},
   "main": "server.js",
   "dependencies": {
+    "cookie-parser": "^1.4.5",
     "express": "^4.16.4"
   }
 }

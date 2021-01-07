@@ -17,7 +17,12 @@ config.use.js
 
 *(复件)/
 
+oldpages/
 
+static/font/css/*
+static/font/*.json
+static/font/*.html
+static/font/*.txt
 
 
 
