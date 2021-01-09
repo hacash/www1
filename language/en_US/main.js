@@ -1,7 +1,7 @@
 module.exports = {
 
     intro: {
-        info: `Hacash is an open source cryptocurrency for large-scale payment and real-time settlement with high "Monetary Nature" design.`,
+        info: `Hacash is an open source cryptocurrency for large-scale payment and real-time settlement with high "Monetary Nature".`,
         b1: "Quickstart",
         b2: "Whitepaper",
     },
