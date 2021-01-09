@@ -1,34 +1,8 @@
 
 
-@font-face {
-    font-family: 'fontello';
-    src: url('/font/font/fontello.eot?1166976');
-    src: url('/font/font/fontello.eot?1166976#iefix') format('embedded-opentype'),
-        url('/font/font/fontello.woff?1166976') format('woff'),
-        url('/font/font/fontello.ttf?1166976') format('truetype'),
-        url('/font/font/fontello.svg?1166976#fontello') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-i.ftico{
-    font-family: "fontello";
-    font-style: normal;
-    font-weight: normal;
-    speak: none;
-    display: inline-block;
-    vertical-align: middle;
-    text-decoration: inherit;
-    width: 1em;
-    margin-right: .2em;
-    text-align: center;
-} 
-
-
 /* 文字颜色渐变 */
 .text-gradient{
     background-image: -webkit-gradient(linear, 0 0, right bottom, from(rgba(125, 120, 4, 1)), to(rgba(0, 87, 0, 1)));
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -61,17 +35,18 @@ i.ftico{
         padding: 0;
         // background: #efefef;
     }
-    .logo {
-        width: 48%;
-    }
     .info{
         .text-gradient;
         text-align: left;
         width: 48%;
         h1{
-            font-size: 28px;
-            line-height: 42px;
-            font-weight: bold;
+            font-size: 30px;
+            line-height: 30px;
+            span{
+                font-size: inherit;
+                font-weight: 900;
+                margin-right: 16px;
+            }
         }
         h3{
             font-size: 14px;
@@ -197,7 +172,6 @@ i.ftico{
 
 
 #mainnet{
-    padding-bottom: 20px;
     .pagecard{
         display: inline-block;
         vertical-align: middle;
@@ -234,7 +208,7 @@ i.ftico{
 
 #detail{
     margin-top: 20px;
-    padding: 30px 0;
+    padding: 10px 0;
     *{
         color: #fff;
         font-size: 14px;
@@ -260,7 +234,7 @@ i.ftico{
             position: relative;
             p{
                 position: relative;
-                display: block;
+                display: inline-block;
                 width: 80px;
                 height: 80px;
             }
@@ -296,112 +270,22 @@ i.ftico{
     }
 }
 
-#traits {
-    padding: 50px 0;
-    text-align: center;
-    h1 {
-        padding: 20px 0;
-        font-size: 28px;
-        font-weight: bold;
-    }
-    p {
-        margin-top: 20px;
-        text-align: center;
-    }
-    .note {
-        padding: 0 50px;
-        font-style: italic;
-        color: #888;
-        b{
-            color: #555;
-            font-weight: bold;
-            font-style: italic;
-        }
-    }
+
+a.dld{
+    font-size: 14px;
+    color: dodgerblue;
+    text-decoration: underline;
 }
 
-#news {
-    padding: 40px 0 60px 0;
-    background-color: #ecefd2;
-
-    background-image:
-        radial-gradient(closest-side, transparent 98%,rgba(0,0,0,0.02) 99%),
-        radial-gradient(closest-side,transparent 98%,rgba(0,0,0,0.02) 99%);
-    /*上下两个圆错开相交*/
-    background-position: 0 0px,40px 40px;
-    background-size: 80px 80px;
-
-    .ttl {
-        font-style: italic;
-        height: 30px;
-        font-size: 24px;
-        color: #888;
-    }
-    .item {
-        display: block;
-        margin-top: 30px;
-        border-radius: 6px;
-        border: #fff 1px solid;
-        padding: 12px 16px;
-        background-color: rgba(255,255,255,0.4);
-        cursor: pointer;
-        p.t {
-            color: #444;
-            font-size: 17px;
-            text-decoration: underline;
-        }
-        p.meta {
-            margin-top: 12px;
-            color: #999;
-            .time {
-                color: #669;
-            }
-        }
-    }
-
-    .item:hover {
-        background-color: rgba(255,255,255,0.8);
-    }
-
+p.p{
+    margin: 12px 4px;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 
-#start {
-    padding: 120px 0;
-    .btn {
-        display: block;
-        margin: 10px auto;
-        width: 420px;
-        padding: 20px 0;
-        color: #fff;
-        font-size: 18px;
-        font-weight: bold;
-        background: #b5a642;
-        text-align: center;
-    }
-    .btn:hover {
-        background: #cebc4a;
-    }
-    p.tip {
-        font-size: 16px;
-        text-align: center;
-        margin: 0px auto;
-        padding: 20px 0;
-        color: #b5a642;
-    }
-}
-
-
-#join{
-    padding: 50px 0;
-    background-color: #f6f6f6;
-    .ttl {
-        font-style: italic;
-        height: 30px;
-        font-size: 24px;
-        color: #888;
-
-    }
+#joinus{
+    .lighthr;
     .link{
         h5{
             font-size: 14px;
@@ -418,7 +302,7 @@ i.ftico{
             vertical-align: middle;
             img{
                 display: inline-block;
-                height: 40px;
+                width: 40px; height: 40px;
                 vertical-align: middle;
             }
             span{
@@ -432,4 +316,186 @@ i.ftico{
             background: #eed;
         }
     }
+    .qrcode{
+        padding: 20px;
+        h5{
+            z-index: 9;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            background: #ddd;
+        }
+        .qq, .wx, .wb {
+            margin-top: 20px;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            border: #ddd 1px solid;
+            width: 135px; height: 202px;
+            img{
+                position: absolute;
+                display: block;
+                width: 135px;
+            }
+        }
+        .qq, .wx{
+            margin-right: 60px;
+        }
+        .wx img{
+            width: 160px;
+            top: -54px; left: -12px;
+        }
+        .qq img{
+            // width: 240px;
+            // top: -80px; left: -20px;
+        }
+        .wb img{
+            width: 440px;
+            top: -60px; left: -152px;
+        }
+    }
 }
+
+#quickstart{
+    .lighthr;
+    .pagecard{
+        padding: 24px 0;
+    }
+    a.olwlt{
+        background: darkorange;
+    }
+    a.cmdtl{
+        margin-left: 20px;
+        background: darkcyan;
+    }
+}
+
+
+#minernode{
+    .pagecard{
+        .lighthr;
+        padding-bottom: 24px;
+    }
+    .miner_nav {
+        margin-top: 50px;
+        font-size: 14px;
+        color: #888;
+        padding: 5px 10px;
+        border: #ddd dotted 1px;
+        a{
+            font-size: 14px;
+            color: dodgerblue;
+            text-decoration: underline;
+        }
+    }
+
+    img.cutwrap{
+        margin: 30px 0;
+        border: 4px #999 solid;
+        padding: 10px;
+        box-shadow: 4px 4px 30px #999;
+        max-width: 90%;
+    }
+    span.val{
+        background: #ddd;
+        font-size: 14px;
+        padding: 0 4px;
+        border-radius: 4px;
+    }
+    p.notice{
+        color: orangered;
+    }
+    .down.windows{
+        background: dodgerblue;
+        border-radius: 100px;
+    }
+    .down.ubuntu{
+        background: coral;
+        border-radius: 100px;
+    }
+}
+
+
+@media screen and (max-width: 512px) {
+
+
+#intro{
+    .container{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .logo{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .info{
+        .lighthr;
+        text-align: center;
+        padding-bottom: 30px;
+        h1{
+            margin-bottom: 10px;
+            span{
+                display: block;
+                margin: 0;
+                margin-bottom: 10px;
+            }
+        }
+        .btns{
+            .l{
+                display: block;
+                margin: auto;
+                margin-bottom: 20px;
+                width: 174px;
+            }
+            .z{
+                margin: 0;
+            }
+        }
+    }
+}
+
+#mainnet{
+    .status{
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+#joinus{
+    .lighthr;
+    .qrcode{
+        text-align: center;
+        &>div{
+            display: inline-block;
+            margin: 0 !important;
+            margin-top: 20px !important;
+        }
+    }
+}
+
+#detail{
+    .item{
+        border-bottom: #2e4646 1px dotted;
+        text-align: center;
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+    .item.end{
+        border: none;
+        padding-bottom: 10px;
+    }
+}
+
+}
+
+
+
+
+
+
+
+
+
