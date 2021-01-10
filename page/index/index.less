@@ -224,7 +224,7 @@ i.ftico{
         font-weight: 700;
         min-width: 100px;
         padding: 6px 10px;
-        box-shadow: 0 0 20px #22c335, 0 0 10px #fff inset;
+        box-shadow: 0 0 12px #22c335, 0 0 8px #fff inset;
         border: 1px #22c335 solid;
         color: white;
         color: rgba(255,255,255,0.8);
@@ -432,4 +432,164 @@ i.ftico{
             background: #eed;
         }
     }
+}
+
+
+
+
+
+//////////////////////////////////
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+
+    #intro{
+        .container{
+            padding: 60px 5px;
+        }
+        .pagecard{
+            display: block;
+            text-align: center;
+            width: auto;
+            padding: 0;
+            // background: #efefef;
+        }
+        .logo {
+            width: auto;
+        }
+        .info{
+            padding-top: 40px;
+            width: auto;
+            h1 {
+                font-size: 22px;
+                line-height: 28px;
+                padding: 0 30px;
+            }
+            .btn {
+                margin-left: 10px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    #mainnet{
+        padding-bottom: 20px;
+        .pagecard{
+            display: block;
+        }
+        .status{
+            width: auto;
+            text-align: center;
+            a {
+                display: inline-block;
+            }
+        }
+        .light {
+            box-shadow: 0 0 6px #22c335, 0 0 6px #fff inset;
+        }
+        .info{
+            padding-top: 20px;
+            width: auto;
+            text-align: center;
+            p{
+                margin: 0px 20px;
+            }
+        }
+    }
+        
+    #detail{
+        margin-top: 20px;
+        padding: 20px 0;
+        .head{
+            text-align: center;
+        }
+        .item{
+            display: block;
+            width: auto;
+            margin: 10px;
+            text-align: center;
+            p.pb {
+                display: inline-block;
+            }
+        }
+    }
+
+    #traits {
+        padding: 30px 0;
+        text-align: center;
+        h1 {
+            padding: 0 20px;
+            font-size: 22px;
+            line-height: 28px;
+        }
+        img {
+            width: 100%;
+        }
+        .note {
+            padding: 0;
+        }
+
+    }
+
+    #news {
+        padding: 40px 0 50px 0;
+        .ttl {
+            text-align: center;
+            font-style: normal;
+            font-size: 16px;
+            height: 20px;
+            line-height: 20px;
+        }
+        .item {
+            margin: 15px 0 0 0;
+            padding: 10px;
+            p.t {
+                font-size: 15px;
+            }
+            p.meta {
+                margin-top: 5px;
+                &, i {
+                font-size: 12px;
+                }
+            }
+        }
+    }
+
+    #start {
+        padding: 80px 0;
+        p.tip {
+            padding: 0;
+            font-size: 15px;
+        }
+        .btn {
+            width: auto;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 6px;
+        }
+    }
+
+    #join {
+        padding: 30px 0;
+        .ttl {
+            text-align: center;
+            font-style: normal;
+            font-size: 20px;
+            height: 24px;
+            line-height: 24px;
+            padding: 0 0 20px 0;
+        }
+        .link {
+            text-align: center;
+            .item {
+                margin: 5px;
+            }
+        }
+    }
+
+
 }

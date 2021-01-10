@@ -18,8 +18,15 @@
         width: 600px;
         padding: 30px 0;
         border-radius: 10px;
-        border: 1px solid #d2c363;
+        border: 1px solid #e9db81;
+        background-color: rgba(255,255,255,0.2);
         text-align: center;
+        p{
+            margin-top: 20px;
+        }
+        p.f {
+            margin-top: 0;
+        }
     }
     a.btn {
         display: block;
@@ -42,20 +49,6 @@
     .container {
         position: relative;
     }
-    .logo {
-        b {
-            padding-top: 14px;
-            display: inline-block;
-            font-size: 24px;
-            line-height: 30px;
-            height: 30px;
-            font-weight: bold;
-            background-image: -webkit-gradient(linear, 0 0, right bottom, from(#005700), to(#7d7804));
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    }
     .vl {
         // background-color: thistle;
         display: block;
@@ -70,6 +63,20 @@
         }
         &.lang {
             right: 0;
+        }
+    }
+    .logo {
+        b {
+            padding-top: 14px;
+            display: inline-block;
+            font-size: 24px;
+            line-height: 30px;
+            height: 30px;
+            font-weight: bold;
+            background-image: -webkit-gradient(linear, 0 0, right bottom, from(#005700), to(#7d7804));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
     }
     .navs {
@@ -129,4 +136,66 @@
             }
         }
     }
+}
+
+
+
+
+////////////////////////////////////////////////////
+
+
+
+@media screen and (max-width: 640px) {
+
+    #topdonate {
+        .help {
+            // display: block;
+            margin: 5px 0 0 0;
+            width: auto;
+            padding: 10px;
+            p{
+                margin: 0;
+                font-size: 12px;
+            }
+        }
+        a.btn {
+            font-size: 12px;
+            padding: 10px 0;
+        }
+
+    }
+
+    #topnav {
+        border-bottom: 1px solid #e6e6e6;
+        .container {
+            padding-top: 40px;
+        }
+        .vl {
+            height: 30px;
+            line-height: 30px;
+        }
+        .vl.logo {
+            left: 10px;
+            b {
+                padding: 4px;
+            }
+        }
+        .vl.lang {
+            b {
+                padding: 10px;
+                color: #999;
+            }
+            .swt{
+                right: 5px;
+            }
+        }
+        .navs {
+            a {
+                margin: 0;
+                padding: 0px 4px;
+                font-size: 14px;
+            }
+        }
+    }
+
 }
