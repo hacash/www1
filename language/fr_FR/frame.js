@@ -26,7 +26,8 @@ module.exports = {
     pagelink: {
         whitepaper: "/file/hacash_white_paper_en.pdf",
         mining: "/page/start_en.html",
-        rpcdoc: "https://github.com/hacash/service/blob/master/rpc_api_doc.en.md",
+        onlinewallet: "https://wallet.hacash.org",
+        rpcdoc: "https://github.com/hacash/service/blob/master/doc/rpc_api_doc.en.md",
     }
 
 
