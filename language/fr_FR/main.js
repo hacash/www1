@@ -47,9 +47,14 @@ module.exports = {
         note2: `Comme le dit la première phrase du papier blanc de Hacash, "<b> Nous sommes arrivés au seuil de l'ère de la réforme du système monétaire </b>". L'émergence du bitcoin nous montre la direction du changement, et sa grande valeur ne fait aucun doute, mais cela ne signifie pas que nous pouvons obtenir la meilleure et la solution finale dès la première fois. Après tout, les êtres humains ont toujours besoin d'avancer plutôt que de s'arrêter. Le but du Hacash est de prouver que le seul moyen de surpasser le bitcoin et de parvenir à l'utilisation à grande échelle de la crypto-monnaie dans les affaires réelles et la vie quotidienne est plus en accord avec la "Nature de la Monnaie", plutôt que toute autre, plus haute de gamme et complexe " technologie blockchain ".`,
         imgsrc: "/image/hacash_as_money_en.png",
     }, 
+    
+    link: {
+        ttl: "Échange et soutien",
+        coingecko: "https://www.coingecko.com/fr/pi%C3%A8ces/hacash",
+    },
 
     news: {
-        ttl: "Quelques contenus pour comprendre Hacash:",
+        ttl: "Quelques contenus pour comprendre Hacash",
     },
 
     start: {
@@ -58,7 +63,7 @@ module.exports = {
     },
 
     join: {
-        ttl: "Nous rejoindre:",
+        ttl: "Nous rejoindre",
     },
 
 

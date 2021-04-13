@@ -48,9 +48,14 @@ module.exports = {
         note2: "就如同 Hacash 白皮书第一句所说：「<b>我们走到了货币体系变革的时代关口</b>」。比特币的出现为我们指明了变革的方向，其巨大的价值毋庸置疑，但这却并不意味着我们第一次就能得到最好和最终的解决方案，毕竟人类始终需要向前发展而非止步不前。 Hacash 的出现，目的只想证明：超越比特币达成加密货币在真实商业和日常大规模运用的唯一途径只能是更好的「货币性」，而不可能是其它什么更高端复杂的「区块链技术」。",
         imgsrc: "/image/hacash_as_money_zh.png",
     }, 
+    
+    link: {
+        ttl: "交易所或信息收录",
+        coingecko: "https://www.coingecko.com/zh/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81/hacash",
+    },
 
     news: {
-        ttl: "帮助你了解 Hacash 的内容：",
+        ttl: "帮助你了解 Hacash 的内容",
     },
 
     start: {
@@ -59,6 +64,6 @@ module.exports = {
     },
 
     join: {
-        ttl: "加入我们：",
+        ttl: "加入我们",
     },
 }

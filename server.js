@@ -63,7 +63,7 @@ main()
 
 const langsets = {
     "en_US": "English",
-     "fr_FR": "French",
+    "fr_FR": "Français",
     "zh_CN": "简体中文",
 }
 

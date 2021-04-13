@@ -47,9 +47,14 @@ module.exports = {
         note2: `As the first sentence of hacash white paper says, "<b>We have come to the threshold of the era of monetary system reform</b>.". The emergence of bitcoin shows us the direction of change, and its great value is beyond doubt, but it does not mean that we can get the best and final solution for the first time. After all, human beings always need to move forward rather than stop. The purpose of the emergence of hacash is to prove that the only way to surpass bitcoin and achieve the large-scale use of cryptocurrency in real business and daily life is better "Monetary Nature", rather than any other more high-end and complex "blockchain technology".`,
         imgsrc: "/image/hacash_as_money_en.png",
     }, 
+    
+    link: {
+        ttl: "Exchange & Support",
+        coingecko: "https://www.coingecko.com/en/coins/hacash",
+    },
 
     news: {
-        ttl: "Some contents for understand hacash:",
+        ttl: "Some contents for understand hacash",
     },
 
     start: {
@@ -58,7 +63,7 @@ module.exports = {
     },
 
     join: {
-        ttl: "Join us:",
+        ttl: "Join us",
     },
 
 

@@ -321,10 +321,93 @@ i.ftico{
     }
 }
 
+#link {
+    background-color: #7c8c8c;
+    padding: 80px 0;
+    .ttl {
+        font-size: 30px;
+        color: #415252;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .item {
+        * {
+            color: #fff;
+        }
+        display: inline-block;
+        width: 20%;
+        margin: 20px 2%;
+        // background-color: #ffffff20;
+        .box {
+            display: block;
+            padding: 20px;
+            border: #ffffff60 solid 1px;
+            background-color: #1f2f2f;
+            border-radius: 5px;
+            img {
+                width: 200px;
+                height: 60px;
+                border-radius: 6px;
+            }
+        }
+        h1.t {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    }
+    .item .box:hover {
+        background-color: #2c4242;
+    }
+    
+    .i1 {
+        h1.t {
+            color: #6d87ff;
+        }
+        p.l {
+            color: #b15ee6;
+        }
+        .box {
+            border-color: #6d87ff;
+        }
+    }
+    .i2 {
+        h1.t {
+            color: #8dc647;
+        }
+        p.l {
+            color: #f7d15f;
+        }
+        .box {
+            border-color: #8dc647;
+        }
+    }
+    .i3 {
+        h1.t {
+            color: #3579f6;
+        }
+        p.l {
+            color: #a9c8fd;
+        }
+        .box {
+            border-color: #3579f6;
+        }
+    }
+    .i4 {
+        h1.t {
+            color: #3c8dbc;
+        }
+        p.l {
+            color: #6ddfa9;
+        }
+        .box {
+            border-color: #3c8dbc;
+        }
+    }
+}
+
 #news {
     padding: 40px 0 60px 0;
     background-color: #ecefd2;
-
     background-image:
         radial-gradient(closest-side, transparent 98%,rgba(0,0,0,0.02) 99%),
         radial-gradient(closest-side,transparent 98%,rgba(0,0,0,0.02) 99%);
@@ -333,14 +416,16 @@ i.ftico{
     background-size: 80px 80px;
 
     .ttl {
-        font-style: italic;
         height: 30px;
         font-size: 24px;
         color: #888;
+        text-align: center;
     }
     .item {
-        display: block;
+        display: inline-block;
         margin-top: 30px;
+        margin-right: 4%;
+        width: 43%;
         border-radius: 6px;
         border: #fff 1px solid;
         padding: 12px 16px;
@@ -348,7 +433,11 @@ i.ftico{
         cursor: pointer;
         p.t {
             color: #444;
-            font-size: 17px;
+            font-size: 16px;
+            line-height: 20px;
+            min-height: 40px;
+        }
+        p.t:hover {
             text-decoration: underline;
         }
         p.meta {
@@ -398,11 +487,10 @@ i.ftico{
     padding: 50px 0;
     background-color: #f6f6f6;
     .ttl {
-        font-style: italic;
         height: 30px;
         font-size: 24px;
         color: #888;
-
+        text-align: center;
     }
     .link{
         h5{
@@ -547,6 +635,8 @@ i.ftico{
             line-height: 20px;
         }
         .item {
+            display: block;
+            width: auto;
             margin: 15px 0 0 0;
             padding: 10px;
             p.t {
