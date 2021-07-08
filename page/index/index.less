@@ -25,6 +25,21 @@ i.ftico{
 } 
 
 
+@font-face {
+    font-family: 'hacash';
+    src: url('/font/hacash.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.fthac{
+    font-family: "hacash";
+    text-align: center;
+}
+
+
+
 /* 文字颜色渐变 */
 .text-gradient{
     background-image: -webkit-gradient(linear, 0 0, right bottom, from(rgba(125, 120, 4, 1)), to(rgba(0, 87, 0, 1)));
@@ -48,6 +63,134 @@ i.ftico{
 }
 
 
+
+/* biglogo */
+
+.biglogo {
+
+    text-align: center;
+    .wrap{
+        position: relative;
+        display: inline-block;
+    }
+
+
+    @keyframes float1 {
+        0% { transform: translate(0px, -3px); }
+        50% { transform: translate(0px, 3px); }
+        100% { transform: translate(0px, -3px); }
+    }
+    @keyframes float2 {
+        0% { transform: translate(-3px, 0px); }
+        50% { transform: translate(3px, 0px); }
+        100% { transform: translate(-3px, 0px); }
+    }
+    @keyframes float3 {
+        0% { transform: translate(3px, -3px); }
+        50% { transform: translate(-3px, 3px); }
+        100% { transform: translate(3px, -3px); }
+    }
+    @keyframes float4 {
+        0% { transform: translate(-3px, -3px); }
+        50% { transform: translate(3px, 3px); }
+        100% { transform: translate(-3px, -3px); }
+    }
+    .float1(@t){
+        animation: float1 @t ease-in-out infinite;
+    }
+    .float2(@t){
+        animation: float2 @t ease-in-out infinite;
+    }
+    .float3(@t){
+        animation: float3 @t ease-in-out infinite;
+    }
+    .float4(@t){
+        animation: float4 @t ease-in-out infinite;
+    }
+
+    @size: 184px;
+
+    .bs{
+        opacity: 1;
+        position: absolute;
+        top: 0px; left: 0px;
+        margin-left: 30px;
+        margin-top: 30px;
+        display: block;
+        width: @size - 30px;
+        height: @size - 30px;
+        background: #22c335;
+        border-radius: 1000px;
+        &.s1{ .float1(5s); top: -40px; left: 0; background: rgba(255,0,0,.5); }
+        &.s2{ .float3(7s); top: -29px; left: 29px; background: rgba(255,128,0,.5); }
+        &.s3{ .float2(3s); top: 0; left: 40px; background: rgba(255,255,0,.5); }
+        &.s4{ .float4(9s); top: 29px; left: 29px; background: rgba(0,255,0,.5); }
+        &.s5{ .float1(4s); top: 40px; left: 0; background: rgba(0,255,255,.5); }
+        &.s6{ .float3(6s); top: 29px; left: -29px; background: rgba(0,0,255,.5); }
+        &.s7{ .float2(8s); top: 0; left: -40px; background: rgba(128,0,255,.5); }
+        &.s8{ .float4(10s); top: -29px; left: -29px; background: rgba(255,0,128,.5); }
+    }
+
+    @ccc: #1f2f2f;
+    @cccft: #343a19;
+
+    .coin {
+
+        position: relative;
+        display: block;
+        opacity: 1;
+        background-color: @ccc;
+        border-radius: 1000px;
+        padding: 16px;
+
+
+        box-shadow: 0 0 4px 4px #333 inset;
+        background-image: linear-gradient(rgba(255,255,255,.1) 1px, transparent 0), 
+            linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 0);
+        background-size: 8px 8px, 8px 8px;
+
+    }
+
+    .ico{
+        position: relative;
+        display: block;
+        opacity: 1;
+        font-size: 132px;
+        line-height: @size;
+        width: @size;
+        height: @size;
+        text-align: center;
+        border-radius: 1000px;
+        // background: #d9d919; // 亮金
+        // background: #cd7f32; // 金色
+        // background: #d98719; // 亮铜
+        // background: #b5a642; // 黄铜
+        // background: #a67d3d; // 青铜2
+        background: #cfb53b; // 暗金
+        box-shadow: 0 0 50px 20px #cfb53b inset;
+        background-image: linear-gradient(rgba(255,255,255,.3) 1px, transparent 0), 
+            linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 0);
+        background-size: 32px 32px, 32px 32px;
+
+        .ft {
+
+            display: block;
+            font-size: 132px;
+            line-height: @size;
+            width: @size;
+            height: @size;
+            color: @cccft;
+            text-shadow: 0 0 8px rgba(255,255,255,0.75);
+        }
+
+
+    }
+}
+
+
+
+
+
 #intro{
     .container{
         padding-top: 240px;
@@ -61,7 +204,7 @@ i.ftico{
         padding: 0;
         // background: #efefef;
     }
-    .logo {
+    .biglogo {
         width: 48%;
     }
     .info{
@@ -105,94 +248,6 @@ i.ftico{
                 margin-right: 5px;
             }
         }
-    }
-    .logo{
-        text-align: center;
-        .wrap{
-            position: relative;
-            display: inline-block;
-        }
-    }
-
-    @keyframes float1 {
-        0% { transform: translate(0px, -3px); }
-        50% { transform: translate(0px, 3px); }
-        100% { transform: translate(0px, -3px); }
-    }
-    @keyframes float2 {
-        0% { transform: translate(-3px, 0px); }
-        50% { transform: translate(3px, 0px); }
-        100% { transform: translate(-3px, 0px); }
-    }
-    @keyframes float3 {
-        0% { transform: translate(3px, -3px); }
-        50% { transform: translate(-3px, 3px); }
-        100% { transform: translate(3px, -3px); }
-    }
-    @keyframes float4 {
-        0% { transform: translate(-3px, -3px); }
-        50% { transform: translate(3px, 3px); }
-        100% { transform: translate(-3px, -3px); }
-    }
-    .float1(@t){
-        animation: float1 @t ease-in-out infinite;
-    }
-    .float2(@t){
-        animation: float2 @t ease-in-out infinite;
-    }
-    .float3(@t){
-        animation: float3 @t ease-in-out infinite;
-    }
-    .float4(@t){
-        animation: float4 @t ease-in-out infinite;
-    }
-
-    .bs{
-        opacity: 1;
-        position: absolute;
-        top: 0px; left: 0px;
-        margin-left: 30px;
-        margin-top: 30px;
-        display: block;
-        width: 172px;
-        height: 172px;
-        background: #22c335;
-        border-radius: 1000px;
-        &.s1{ .float1(5s); top: -40px; left: 0; background: rgba(255,0,0,.5); }
-        &.s2{ .float3(7s); top: -29px; left: 29px; background: rgba(255,128,0,.5); }
-        &.s3{ .float2(3s); top: 0; left: 40px; background: rgba(255,255,0,.5); }
-        &.s4{ .float4(9s); top: 29px; left: 29px; background: rgba(0,255,0,.5); }
-        &.s5{ .float1(4s); top: 40px; left: 0; background: rgba(0,255,255,.5); }
-        &.s6{ .float3(6s); top: 29px; left: -29px; background: rgba(0,0,255,.5); }
-        &.s7{ .float2(8s); top: 0; left: -40px; background: rgba(128,0,255,.5); }
-        &.s8{ .float4(10s); top: -29px; left: -29px; background: rgba(255,0,128,.5); }
-    }
-
-    .icologo{
-        @ccc: #1f2f2f;
-        position: relative;
-        z-index: 999;
-        display: block;
-        opacity: 1;
-        font-size: 150px;
-        font-weight: 900;
-        line-height: 220px;
-        width: 200px;
-        height: 200px;
-        text-align: center;
-        color: @ccc;
-        border-radius: 1000px;
-        border: 16px @ccc solid;
-        text-shadow: 0 0 8px rgba(255,255,255,0.75);
-        // background: #d9d919; // 亮金
-        // background: #cd7f32; // 金色
-        // background: #d98719; // 亮铜
-        // background: #b5a642; // 黄铜
-        // background: #a67d3d; // 青铜2
-        background: #cfb53b; // 暗金
-        box-shadow: 0 0 50px 20px #cfb53b inset;
-        background-image: linear-gradient(rgba(255,255,255,.1) 1px, transparent 0), linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 0);
-        background-size: 30px 30px, 30px 30px;
     }
 }
 
