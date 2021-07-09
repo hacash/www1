@@ -7,7 +7,12 @@
 
     <title>[:=this.pagetitle||'Hacash':]</title>
     
-     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <script>
+        var languse_key = "[:=languse.key:]",
+            languse_show  = "[:=languse.show:]";
+    </script>
 
 </head>
 
@@ -31,10 +36,10 @@
                 <a class="lk" href="[:=lang.frame.pagelink.mining:]" target="_blank">[:=lang.frame.topnav.mining:]</a>
             </div>
             <div class="item">
-                <a class="lk" href="https://github.com/hacash" target="_blank">Github</a>
+                <a class="lk" href="https://github.com/hacash" target="_blank"><i class="ftico">&#xf09b;</i>Github</a>
             </div>
             <div class="item">
-                <b class="b">[:=lang.frame.topnav.docs:]</b>
+                <b class="b"><i class="ftico">&#xf0f6;</i>[:=lang.frame.topnav.docs:]</b>
                 <div class="swt">
                     <ul>
                         <li><a href="[:=lang.frame.pagelink.whitepaper:]" target="_blank">[:=lang.frame.topnav.whitepaper:]</a></li>
@@ -72,6 +77,8 @@
         
         <canvas id="canvas" class=""></canvas>
 
+        <b class="fthac bgftcvr">ㄜ</b>
+
         <div class="fdword i1 pw0">
             <h1>[:=lang.home.fwords.h1:]</h1>
             <p>[:=lang.home.fwords.p1:]</p>
@@ -106,20 +113,193 @@
             </div>
         </div>
 
+        <div class="nextd hide">
+            <p>[:=lang.home.next_tip:]</p>
+            <p><i class="ftico">&#xf103;</i></p>
+        </div>
+
     </div>
 
 </div>
+
+<a name="traits"></a>
+<div id="traits">
+    <div class="container">
+        <h1>[:=lang.main.traits.title:]</h1>
+        <p class="img"><a href="[:=lang.main.traits.imgsrc:]" target="_blank"><img src="[:=lang.main.traits.imgsrc:]" /></a></p>
+        <div>
+            <div class="unfold">
+                <div class="box">
+                    <p class="btn">[:=lang.main.traits.unfold:] <i class="ftico">&#xf103;</i></p>
+                    <div class="note">
+                        <p>[:=lang.main.traits.note1:]</p>
+                        <p>[:=lang.main.traits.note2:]</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<a name="detail"></a>
+<div id="detail">
+    <div class="container">
+        <div class="pagecard head">
+            <h1>[:=lang.main.what.intro.h1:]</h1>
+            <p>[:=lang.main.what.intro.p1:]</p>
+            <p class="fold">[:=lang.main.what.intro.p2:]</p>
+            <p class="fold">[:=lang.main.what.intro.p3:]</p>
+            <p class="fold">[:=lang.main.what.intro.p4:]</p>
+        </div>
+
+        <div>
+            <div class="unfold"><i class="ftico">&#xe80c;</i><b>[:=lang.main.what.seemore:]</b></div>
+        </div>
+
+        <table class="itwrap fold" cellspacing="0" cellpadding="0">
+            <tr>
+                <td>
+            <div class="pagecard item">
+                <div class="ico">
+                    <p class="pb">
+                        <i class="ftico">&#xe800;</i>
+                        <img src="/cssimg/index_detail_item_bg.svg" />
+                    </p>
+                </div>
+                <h5>[:=lang.main.what.items.h1:]</h5>
+                <p>[:=lang.main.what.items.p1:]</p>
+            </div>
+                </td>
+                <td>
+            <div class="pagecard item">
+                <div class="ico">
+                    <p class="pb">
+                        <i class="ftico">&#xf24e;</i>
+                        <img src="/cssimg/index_detail_item_bg.svg" />
+                    </p>
+                </div>
+                <h5>[:=lang.main.what.items.h2:]</h5>
+                <p>[:=lang.main.what.items.p2:]</p>
+            </div>
+                </td>
+                <td>
+            <div class="pagecard item right">
+                <div class="ico">
+                    <p class="pb">
+                        <i class="ftico">&#xe801;</i>
+                        <img src="/cssimg/index_detail_item_bg.svg" />
+                    </p>
+                </div>
+                <h5>[:=lang.main.what.items.h3:]</h5>
+                <p>[:=lang.main.what.items.p3:]</p>
+            </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+            <div class="pagecard item">
+                <div class="ico">
+                    <p class="pb">
+                        <i class="ftico">&#xf20e;</i>
+                        <img src="/cssimg/index_detail_item_bg.svg" />
+                    </p>
+                </div>
+                <h5>[:=lang.main.what.items.h4:]</h5>
+                <p>[:=lang.main.what.items.p4:]</p>
+            </div>
+                </td>
+                <td>
+            <div class="pagecard item">
+                <div class="ico">
+                    <p class="pb">
+                        <i class="ftico">&#xf0e8;</i>
+                        <img src="/cssimg/index_detail_item_bg.svg" />
+                    </p>
+                </div>
+                <h5>[:=lang.main.what.items.h5:]</h5>
+                <p>[:=lang.main.what.items.p5:]</p>
+            </div>
+                </td>
+                <td>
+            <div class="pagecard item right">
+                <div class="ico">
+                    <p class="pb">
+                        <i class="ftico">&#xe802;</i>
+                        <img src="/cssimg/index_detail_item_bg.svg" />
+                    </p>
+                </div>
+                <h5>[:=lang.main.what.items.h6:]</h5>
+                <p>[:=lang.main.what.items.p6:]</p>
+            </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+            <div class="pagecard item">
+                <div class="ico">
+                    <p class="pb">
+                        <i class="ftico">&#xf219;</i>
+                        <img src="/cssimg/index_detail_item_bg.svg" />
+                    </p>
+                </div>
+                <h5>[:=lang.main.what.items.h7:]</h5>
+                <p>[:=lang.main.what.items.p7:]</p>
+            </div>
+                </td>
+                <td>
+            <div class="pagecard item">
+                <div class="ico">
+                    <p class="pb">
+                        <i class="ftico">&#xf132;</i>
+                        <img src="/cssimg/index_detail_item_bg.svg" />
+                    </p>
+                </div>
+                <h5>[:=lang.main.what.items.h8:]</h5>
+                <p>[:=lang.main.what.items.p8:]</p>
+            </div>
+                </td>
+                <td>
+            <div class="pagecard item right end">
+                <div class="ico">
+                    <p class="pb">
+                        <i class="ftico">&#xf1b3;</i>
+                        <img src="/cssimg/index_detail_item_bg.svg" />
+                    </p>
+                </div>
+                <h5>[:=lang.main.what.items.h9:]</h5>
+                <p>[:=lang.main.what.items.p9:]</p>
+            </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <div id="news">
 
     <br><br><br><br>
     <br><br><br><br>
-
-
-    <h3>123</h3>
-
-
     <br><br><br><br>
     <br><br><br><br>
 

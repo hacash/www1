@@ -12,6 +12,7 @@ module.exports = {
     },
 
     what: {
+        seemore: "Learn more",
         intro: {
             h1: "What's Hacash?",
             p1: `A fully designed, completely fair, open and shared standard system for the issuance and circulation of cryptocurrency for modern financial transaction settlement, business and personal payment will jointly promote mankind to enter the era of open finance in this century, and help complete the transformation of human currency to cryptocurrency.`,
@@ -42,10 +43,11 @@ module.exports = {
     },
 
     traits: {
-        title: `Why does hacash have superior "Monetary Nature" design?`,
+        title: `Why does Hacash have superior "Monetary Nature" design?`,
         note1: `The invention of blockchain is to achieve the goal of "Peer-to-Peer Electronic Cash System". Up to now, there is no exact evidence to show that it has a particularly significant value and real use other than "Electronic Money". We believe that the whole encryption industry, or blockchain industry, has only one important direction from beginning to end: <b>To achieve a more sound and efficient global currency</b>.`,
         note2: `As the first sentence of hacash white paper says, "<b>We have come to the threshold of the era of monetary system reform</b>.". The emergence of bitcoin shows us the direction of change, and its great value is beyond doubt, but it does not mean that we can get the best and final solution for the first time. After all, human beings always need to move forward rather than stop. The purpose of the emergence of hacash is to prove that the only way to surpass bitcoin and achieve the large-scale use of cryptocurrency in real business and daily life is better "Monetary Nature", rather than any other more high-end and complex "blockchain technology".`,
         imgsrc: "/image/hacash_as_money_en.png",
+        unfold: "Learn more explanations", 
     }, 
     
     link: {

@@ -7,6 +7,10 @@ var tblGElm = document.getElementsByClassName('tblG')[0];
 var topbarElm = document.getElementById('topbar');
 var bkttElms = document.getElementsByClassName('bktt');
 var fdwordElms = document.getElementsByClassName('fdword');
+var nextdElm = document.getElementsByClassName('nextd')[0];
+var bgftcvrElm = document.getElementsByClassName('bgftcvr')[0];
+
+
 
 
 // 修改 screen 高度
@@ -15,7 +19,18 @@ screenElm.style.height = windowHeight;
 
 // 回到顶部
 bkttElms[0].onclick = function(){
-    document.body.scrollTop = document.documentElement.scrollTop = 0
+    window.scrollTo({ 
+        top: 0, 
+        behavior: "smooth" 
+    });
+}
+
+// 了解更多
+nextdElm.onclick = function (){
+    window.scrollTo({ 
+        top: windowHeight / 2, 
+        behavior: "smooth" 
+    });
 }
 
 // 显示动画
@@ -51,12 +66,12 @@ window.onload = function(){
         // 显示背景动画
         setTimeout(function(){
             canvasElm.classList.add("show")
-        }, 1800)
+        }, 1000)
 
         // 显示 topbar
         setTimeout(function(){
             topbarElm.classList.remove("hide")
-        }, 12000)
+        }, 10000)
 
         // 显示 内容
         setTimeout(function(){
@@ -81,9 +96,19 @@ window.onload = function(){
                     }, tt*1000)
                 }, tt*1000)
             }, tt*1000)
-        }, 5000)
+        }, 3000)
 
-    }, 1)
+        // 显示 next
+        setTimeout(function(){
+            nextdElm.classList.remove("hide")
+        }, 11000)
+
+        // 隐藏字符背景
+        setTimeout(function(){
+            bgftcvrElm.classList.add("hide")
+        }, 12000)
+
+    }, 100)
 }
 
 
@@ -106,6 +131,7 @@ window.onscroll = function(){
     // console.log("scale(1.25) rotate("+((top/2)%360)+"deg)")
     if(top > windowHeight - 25){
         topbarElm.classList.add("appear")
+        tblgstl += " scale(0.75)"
     }else{
         topbarElm.classList.remove("appear")
         tblgstl += " scale(1.25)"
@@ -133,10 +159,83 @@ window.onscroll = function(){
         show(3, 1)
     }
 
+    // 收起滚动提示
+    nextdElm.style.bottom = "-"+(top/blgbase*50)+"px"
+    nextdElm.style.opacity = (1-top/blgbase)
+
 
 }
 
 
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+/** traits */
+function traits(){
+
+    var traitsElm = document.getElementById('traits');
+    var unfoldElm = traitsElm.getElementsByClassName("unfold")[0];
+    unfoldElm.onclick = function(){
+        unfoldElm.classList.add("bkgr")
+        var box = traitsElm.getElementsByClassName("box")[0],
+            hei = 300
+            heiset = {
+                "zh_CN": 188,
+                "en_US": 260,
+            };
+        hei = heiset[languse_key] || 300
+        box.style.height = hei + "px"
+        setTimeout(function(){ 
+            traitsElm.getElementsByClassName("note")[0].style.display = "block"
+            unfoldElm.classList.add("fnbg")
+        }, 400)
+    }
+
+};
+traits();
+
+
+
+
+
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+/** detail */
+function detail(){
+
+    var traitsElm = document.getElementById('detail');
+    var unfoldElm = traitsElm.getElementsByClassName("unfold")[0];
+    unfoldElm.onclick = function(){
+        unfoldElm.classList.add("hide")
+        setTimeout(function(){  
+            unfoldElm.style.display = "none"
+            var fds = traitsElm.getElementsByClassName("fold")
+            for(var i in fds) {
+                var li = fds[i]
+                if(li && li.style){
+                    li.style.display = "block"
+                }
+            }
+        }, 500)
+    }
+
+};
+detail();
 
 
 

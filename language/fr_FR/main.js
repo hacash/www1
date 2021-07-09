@@ -12,6 +12,7 @@ module.exports = {
     },
 
     what: {
+        seemore: "En savoir plus",
         intro: {
             h1: "Qu'est-ce que Hacash?",
             p1: `Un système standard entièrement conçu, complètement équitable, ouvert et partagé dans le but de l'émission et la circulation de crypto-monnaie pour le règlement des transactions financières modernes, les paiements commerciaux et les paiements personnels encouragera conjointement l'humanité à entrer dans l'ère de la finance ouverte et aidera à compléter la transformation de monnaie humaine en crypto-monnaie.`,
@@ -42,10 +43,11 @@ module.exports = {
     },
 
     traits: {
-        title: `Pourquoi le hacash est-il plus de «Nature Monétaire» selon sa conception ?`,
+        title: `Pourquoi le Hacash est-il plus de «Nature Monétaire» selon sa conception ?`,
         note1: `L'invention de la blockchain est d'atteindre l'objectif du «système de paiement électronique peer-to-peer». À ce jour, il n’existe aucune preuve exacte démontrant qu’elle a une valeur et un usage réel particulièrement importants autres que la «monnaie électronique». Nous pensons que l’ensemble de l’industrie du chiffrement, ou de la blockchain, n’a qu’une seule direction importante du début à la fin: <b> Créer une monnaie mondiale plus saine et plus efficace </b>.`,
         note2: `Comme le dit la première phrase du papier blanc de Hacash, "<b> Nous sommes arrivés au seuil de l'ère de la réforme du système monétaire </b>". L'émergence du bitcoin nous montre la direction du changement, et sa grande valeur ne fait aucun doute, mais cela ne signifie pas que nous pouvons obtenir la meilleure et la solution finale dès la première fois. Après tout, les êtres humains ont toujours besoin d'avancer plutôt que de s'arrêter. Le but du Hacash est de prouver que le seul moyen de surpasser le bitcoin et de parvenir à l'utilisation à grande échelle de la crypto-monnaie dans les affaires réelles et la vie quotidienne est plus en accord avec la "Nature de la Monnaie", plutôt que toute autre, plus haute de gamme et complexe " technologie blockchain ".`,
         imgsrc: "/image/hacash_as_money_en.png",
+        unfold: "Voir plus d'explications",
     }, 
     
     link: {

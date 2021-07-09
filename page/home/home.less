@@ -104,22 +104,6 @@ i.ftico{
 }
 
 
-/* 黑暗背景 */
-.darkbg{
-    background: #1f2f2f;
-}
-
-/*  */
-.darkhr{
-    border-bottom: 1px #999 dotted;
-}
-.lighthr{
-    border-bottom: 1px #d0d0d0 dotted;
-}
-
-
-
-
 ///////////////////////////////////
 
 .fffico {
@@ -127,6 +111,7 @@ i.ftico{
     display: block;
     font-size: 1320px;
     font-weight: 900;
+    color: whitesmoke;
 }
 
 
@@ -287,6 +272,9 @@ i.ftico{
     
     // background-color: #55555533;
     width: 100%;
+
+    @itemshowcl: #ffffffdd;
+
     .box {
         transition: margin @tsft ease-out;
         margin: 20px 40px;
@@ -302,10 +290,15 @@ i.ftico{
             line-height: @tbh;
             height: @tbh;
         }
+        .hacash {
+            font-weight: bold;
+            color: @itemshowcl;
+        }
         .tblG {
             transition: all @tsft ease-out;
             transform: scale(1.25);
             margin-right: 14px;
+            color: @itemshowcl;
         }
     }
 
@@ -331,12 +324,14 @@ i.ftico{
             height: @tbh;
             font-weight: bold;
             font-size: 15px;
+            color: @itemshowcl;
         }
         .lk:hover {
             color: @actvcl;
             text-decoration: underline;
         }
         .b {
+            color: @itemshowcl;
             &::after{
                 content: "\e807";
                 margin-left: 5px;
@@ -394,7 +389,7 @@ i.ftico{
 }
 
 #topbar.appear {
-    background: #ffffffaa;
+    background: #ffffffdd;
     * {
         color: #333;
     }
@@ -402,13 +397,14 @@ i.ftico{
         margin: 10px 22px;
     }
     .tblG {
+        position: relative;
+        top: 3px;
         color: #005700;
-        transform: scale(1);
-        margin-right: 12px;
+        transform: scale(0.6);
+        margin-right: 16px;
     }
     .hacash {
         font-size: 20px;
-        font-weight: 900;
         background-image: -webkit-gradient(linear, 0 0, right bottom, from(#005700), to(#7d7804));
         background-clip: text;
         -webkit-background-clip: text;
@@ -418,6 +414,7 @@ i.ftico{
         .item {
             .lk, .b {
                 font-weight: normal;
+                color: #333;
             }
             .b {
                 &::after{
@@ -438,6 +435,8 @@ i.ftico{
         }
     }
 }
+
+
 
 //////////////////////////////////////
 
@@ -493,8 +492,6 @@ i.ftico{
         }
     }
 
-
-
     .screen_box {
         position: relative;
         z-index: 2;
@@ -527,6 +524,62 @@ i.ftico{
         border-radius: 100%;
     }
 
+    .bgftcvr {
+        opacity: 1;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 1000px;
+        height: 1000px;
+        font-size: 1000px;
+        color: #ffffff08;
+        margin-left: -524px;
+        margin-top: -600px;
+    }
+    .bgftcvr.hide {
+        transition: opacity 6s ease-out;
+        opacity: 0;
+    }
+
+    .nextd {
+        transition: all 1.2s ease-out;
+        opacity: 1;
+        padding-top: 10px;
+        width: 300px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -150px;
+        text-align: center;
+        // background-color: #ffffff0f;
+        border: #ffffff11 solid 1px;
+        border-radius: 100px;
+        cursor: pointer;
+        p{
+            color: #ffffff77;
+        }
+        i {
+            font-size: 40px;
+            color: #ffffff55;
+            font-weight: 900;
+        }
+    }
+    .nextd:hover {
+        p{
+            color: #ffffffaa;
+        }
+        i {
+            font-size: 40px;
+            color: #ffffff77;
+            font-weight: 900;
+        }
+    }
+
+    .nextd.hide {
+        bottom: -120px;
+    }
+
 
     canvas {
         z-index: 9;
@@ -554,6 +607,19 @@ i.ftico{
     }
 
     .fdword {
+
+        @keyframes flotar {
+            0% {
+                transform: translate(0px);
+            }
+            50% {
+                transform: translate(8px, 4px);
+            }
+            100% {
+                transform: translate(0px);
+            }
+        }
+
         transition: all 1.2s ease-out;
         position: absolute;
         opacity: 0;
@@ -584,15 +650,19 @@ i.ftico{
 
     .fdword.i1 {
         transition: all 1.2s ease-out;
+        animation: flotar 10s ease-in-out infinite reverse;
     }
     .fdword.i2 {
         transition: all 1s ease-out;
+        animation: flotar 13s ease-in-out infinite reverse;
     }
     .fdword.i3 {
         transition: all 0.8s ease-out;
+        animation: flotar 16s ease-in-out infinite reverse;
     }
     .fdword.i4 {
         transition: all 0.6s ease-out;
+        animation: flotar 19s ease-in-out infinite reverse;
     }
     .fdword.pw0 {
         opacity: 0;
@@ -624,4 +694,262 @@ i.ftico{
         margin-top: 100px;
     }
 
+}
+
+
+
+
+//////////////////////////////////////
+
+
+
+
+#traits {
+    padding: 80px 0;
+    text-align: center;
+    h1 {
+        padding: 20px 0;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    p.img {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .unfold {
+        position: relative;
+        margin-top: 30px;
+        padding: 30px 0;
+        .box {
+            transition: all .3s linear;
+            background-image: linear-gradient(to right, rgb(245, 162, 114) , rgb(228, 221, 125));
+            background-size: 200%;
+            display: inline-block;
+            width: 260px;
+            height: 20px;
+            padding: 10px 22px;
+            border: 1px #ccc solid;
+            border-color: rgb(196, 105, 78);
+            cursor: pointer;
+            box-shadow: 2px 3px 1px #00000033;
+            overflow: hidden;
+            .btn {
+                line-height: 20px;
+                font-size: 15px;   
+                height: 20px;
+                color: white;
+                text-shadow: 1px 1px 1px #00000000;
+            }
+        }
+        .box:hover{
+            background-position: -100% 0; 
+            border-color: rgb(199, 157, 40);
+            text-shadow: 1px 1px 1px #00000055;
+            box-shadow: 3px 4px 2px #00000044;
+        }
+        &.bkgr{
+            .btn {
+                display: none;
+            }
+            .box {
+                background: rgb(228, 221, 125);
+                width: 1100px;
+                height: 300px;
+                padding: 10px 20px;
+                transform: scale(1);
+                color: transparent;
+                text-shadow: none;
+                box-shadow: 3px 4px 2px #00000033;
+                border-color: #a99023;
+            }
+        }
+        &.fnbg {
+            .box {
+                background: #fff;
+            }
+        }
+    }
+
+
+    .note{
+        display: none;
+        padding: 10px 0;
+        p {
+            padding: 10px 10px;
+            color: #666;
+            font-size: 16px;
+            b{
+                color: #333;
+                font-weight: bold;
+                font-style: italic;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+
+
+//////////////////////////////////////
+
+
+
+
+#detail{
+
+
+    position: relative;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f5f3e3;
+    *{
+        color: #333;
+        font-size: 14px;
+    }
+    .textgradient {
+        background-image: -webkit-gradient(linear, 0 0, right bottom, from(#4e8a0a), to(#7d7804));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .fold{
+        display: none
+    }
+
+
+    .unfold {
+        @keyframes flotarakjsfh {
+            0% {
+                transform: translate(0px);
+            }
+            50% {
+                transform: translate(5px, 0px);
+            }
+            100% {
+                transform: translate(0px);
+            }
+        }
+        z-index: 1;
+        transition: all 0.4s ease-out;
+        text-align: center;
+        cursor: pointer;
+        display: inline-block;
+        border: 1px #869b3e2b solid;
+        padding: 4px;
+        border-radius: 100px;
+        padding-right: 24px;
+        background-color: #fff;
+        i {
+            transition: all 0.3s ease-out;
+            position: relative;
+            left: 0;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 46px;
+            color: #678106c7;
+        }
+        b {
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            vertical-align: middle;
+            color: #869b3e;
+            margin-left: 10px;
+            
+        }
+        &:hover {
+            background-color: #fff;
+            border-color: #fff;
+            box-shadow: 2px 2px 4px #00000033;
+            i{
+                animation: flotarakjsfh 2s ease-in-out infinite reverse;
+                left: 10px;
+            }
+        }
+
+        &.hide {
+            transform: scale(3);
+            opacity: 0;
+        }
+    }
+
+
+    .head{
+        .textgradient;
+        z-index: 2;
+        position: relative;
+        padding-bottom: 60px;
+        h1{
+            font-size: 30px;
+            padding-bottom: 30px;
+            font-weight: bold;
+        }
+        p{
+            margin: 0;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    }
+    .itwrap{
+        z-index: 2;
+        position: relative;
+        @dbcl: #85790d44;
+        text-align: center;
+        border-left: 1px solid @dbcl;
+        border-top: 1px solid @dbcl;
+        td {
+            vertical-align: top;
+            border-right: 1px solid @dbcl;
+            border-bottom: 1px solid @dbcl;
+        }
+    }
+    .item{
+        display: block;
+        padding: 40px;
+        text-align: center;
+        .ico{
+            position: relative;
+            p{
+                position: relative;
+                display: inline-block;
+                width: 80px;
+                height: 80px;
+            }
+            img{
+                position: absolute;
+                top: 0; left: 0;
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .ftico{
+            position: relative;
+            z-index: 2;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            text-align: center;
+            font-size: 34px;
+            color: #fff;
+            text-shadow: 1px 1px 1px #00000033;
+        }
+        h5{
+            font-size: 18px;
+            line-height: 20px;
+            height: 60px;
+            padding: 10px 0;
+            color: #a28c2f;
+        }
+        p{
+            color: #7b724c;
+            font-size: 15px;
+        }
+
+    }
+    .right{
+        margin-right: 0;
+    }
 }

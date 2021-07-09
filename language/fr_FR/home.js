@@ -11,4 +11,6 @@ module.exports = {
         p4: `Open source cryptocurrency for large-scale payment and real-time settlement with high "Monetary Nature"`,
     },
 
+    next_tip: "Learn more",
+
 }
