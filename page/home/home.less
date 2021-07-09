@@ -104,6 +104,11 @@ i.ftico{
 }
 
 
+.pgtitlebl {
+
+}
+
+
 ///////////////////////////////////
 
 .fffico {
@@ -255,6 +260,7 @@ i.ftico{
 
 
 #topbar {
+    user-select: none;
     @tbh: 30px;
     @tsft: 0.25s;
 
@@ -328,7 +334,9 @@ i.ftico{
         }
         .lk:hover {
             color: @actvcl;
-            text-decoration: underline;
+            i {
+                color: @actvcl;
+            }
         }
         .b {
             color: @itemshowcl;
@@ -543,6 +551,7 @@ i.ftico{
     }
 
     .nextd {
+        user-select: none;
         transition: all 1.2s ease-out;
         opacity: 1;
         padding-top: 10px;
@@ -570,9 +579,7 @@ i.ftico{
             color: #ffffffaa;
         }
         i {
-            font-size: 40px;
             color: #ffffff77;
-            font-weight: 900;
         }
     }
 
@@ -697,6 +704,73 @@ i.ftico{
 }
 
 
+/* screen 小屏幕优化 */
+@media screen and (max-width: 1500px) {
+    .biglogo {
+        transform: scale(0.75);
+    }
+    #topbar {
+        .box {
+            .logoft{
+                .tblG {
+                    font-size: 18px;
+                }
+                .hacash {
+                    font-size: 16px;
+                }
+            }
+            .item {
+                .lk, .b {
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+    #screen {
+        .fdword {
+            width: 220px;
+            height: 100px;
+            margin-left: -110px; 
+            margin-top: -50px;
+        }
+        .fdword.pw0 {
+            margin-left: -110px; 
+            margin-top: -50px;
+        }
+        .fdword.pw1, .fdword.pw2, .fdword.pw3, .fdword.pw4 {
+            width: 220px;
+            height: 100px;
+            h1 {
+                margin: 0;
+                font-size: 16px;
+                line-height: 16px;
+                color: #fff;
+            }
+            p {
+                margin-top: 14px;
+                font-size: 12px;
+                color: #ffffffbb;
+            }
+        }
+        .fdword.pw1{ margin-left: 110px; margin-top: -56px; }
+        .fdword.pw2{ margin-left: -110px; margin-top: -206px; }
+        .fdword.pw3{ margin-left: -350px; margin-top: -56px; }
+        .fdword.pw4{ margin-left: -110px; margin-top: 106px; }
+
+        .nextd {
+            padding-top: 4px;
+            p {
+                font-size: 12px;
+            }
+            i {
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
+
 
 
 //////////////////////////////////////
@@ -717,6 +791,7 @@ i.ftico{
         text-align: center;
     }
     .unfold {
+        user-select: none;
         position: relative;
         margin-top: 30px;
         padding: 30px 0;
@@ -746,6 +821,13 @@ i.ftico{
             border-color: rgb(199, 157, 40);
             text-shadow: 1px 1px 1px #00000055;
             box-shadow: 3px 4px 2px #00000044;
+            .btn {
+                line-height: 20px;
+                font-size: 15px;   
+                height: 20px;
+                color: white;
+                text-shadow: 1px 1px 1px #00000033;
+            }
         }
         &.bkgr{
             .btn {
@@ -832,6 +914,7 @@ i.ftico{
                 transform: translate(0px);
             }
         }
+        user-select: none;
         z-index: 1;
         transition: all 0.4s ease-out;
         text-align: center;

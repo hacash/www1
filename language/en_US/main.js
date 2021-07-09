@@ -47,7 +47,7 @@ module.exports = {
         note1: `The invention of blockchain is to achieve the goal of "Peer-to-Peer Electronic Cash System". Up to now, there is no exact evidence to show that it has a particularly significant value and real use other than "Electronic Money". We believe that the whole encryption industry, or blockchain industry, has only one important direction from beginning to end: <b>To achieve a more sound and efficient global currency</b>.`,
         note2: `As the first sentence of hacash white paper says, "<b>We have come to the threshold of the era of monetary system reform</b>.". The emergence of bitcoin shows us the direction of change, and its great value is beyond doubt, but it does not mean that we can get the best and final solution for the first time. After all, human beings always need to move forward rather than stop. The purpose of the emergence of hacash is to prove that the only way to surpass bitcoin and achieve the large-scale use of cryptocurrency in real business and daily life is better "Monetary Nature", rather than any other more high-end and complex "blockchain technology".`,
         imgsrc: "/image/hacash_as_money_en.png",
-        unfold: "Learn more explanations", 
+        unfold: "More explanation", 
     }, 
     
     link: {

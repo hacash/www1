@@ -15,6 +15,10 @@ app.use(cookieParser())
 
 ////////////////////////
 
+const jscssVersion = 1 // 静态文件版本号，用于清除缓存
+
+////////////////////////
+
 
 const cnf = require('./config.js');
 
@@ -121,8 +125,8 @@ function RenderTargetPage(req, res, pgname, forcereload) {
     let csslinks = ''
     for(let i in jscssnames) {
         let name = jscssnames[i]
-        jslinks  += '\n<script src="/jscss/'+name+'.js"></script>'
-        csslinks += '\n<link rel="stylesheet" href="/jscss/'+name+'.css">'
+        jslinks  += '\n<script src="/jscss/'+name+'.js?v='+jscssVersion+'"></script>'
+        csslinks += '\n<link rel="stylesheet" href="/jscss/'+name+'.css?v='+jscssVersion+'">'
     }
     realhtmcon = realhtmcon.replace('</head>', csslinks + '\n</head>')
     realhtmcon = realhtmcon.replace('</body>',  jslinks + '\n</body>')
