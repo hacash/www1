@@ -105,6 +105,28 @@ i.ftico{
 
 
 .pgtitlebl {
+    text-align: center;
+    margin-bottom: 40px;
+    h1 {
+        margin: 20px 0;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .brl{
+        position: relative;
+        display: inline-block;
+        border-top: 1px #ddd solid;
+        width: 150px;
+        b {
+            display: block;
+            position: absolute;
+            top: -2px;
+            left: 50px;
+            width: 50px;
+            height: 3px;
+            background-color: #d4d02b;
+        }
+    }
 
 }
 
@@ -646,7 +668,7 @@ i.ftico{
             margin-bottom: 6px;
             h1 {
                 display: inline-block;
-                font-size: 28px;
+                font-size: 26px;
                 line-height: 30px;
                 border-radius: 100%;
                 padding: 10px;
@@ -793,11 +815,6 @@ i.ftico{
 #traits {
     padding: 80px 0;
     text-align: center;
-    h1 {
-        padding: 20px 0;
-        font-size: 28px;
-        font-weight: bold;
-    }
     p.img {
         margin-top: 20px;
         text-align: center;
@@ -842,6 +859,7 @@ i.ftico{
             }
         }
         &.bkgr{
+            user-select: text;
             .btn {
                 display: none;
             }
@@ -855,6 +873,7 @@ i.ftico{
                 text-shadow: none;
                 box-shadow: 3px 4px 2px #00000033;
                 border-color: #a99023;
+                cursor: text;
             }
         }
         &.fnbg {
@@ -898,10 +917,7 @@ i.ftico{
     padding: 100px 0;
     text-align: center;
     background-color: #f5f3e3;
-    *{
-        color: #333;
-        font-size: 14px;
-    }
+    
     .textgradient {
         background-image: -webkit-gradient(linear, 0 0, right bottom, from(#4e8a0a), to(#7d7804));
         background-clip: text;
@@ -977,11 +993,6 @@ i.ftico{
         z-index: 2;
         position: relative;
         padding-bottom: 60px;
-        h1{
-            font-size: 30px;
-            padding-bottom: 30px;
-            font-weight: bold;
-        }
         p{
             margin: 0;
             margin-top: 20px;
