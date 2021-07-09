@@ -305,7 +305,7 @@ i.ftico{
 
     .box {
         transition: margin @tsft ease-out;
-        margin: 20px 40px;
+        margin: 20px 20px;
         height: @tbh;
         // background-color: #44444433;
     }
@@ -314,17 +314,19 @@ i.ftico{
         cursor: pointer;
         b {
             display: inline-block;
-            font-size: 30px;
             line-height: @tbh;
             height: @tbh;
         }
         .hacash {
             font-weight: bold;
+            font-size: 20px;
             color: @itemshowcl;
         }
         .tblG {
             transition: all @tsft ease-out;
-            transform: scale(1.25);
+            position: relative;
+            top: 2px;
+            font-size: 28px;
             margin-right: 14px;
             color: @itemshowcl;
         }
@@ -339,13 +341,26 @@ i.ftico{
 
     @actvcl: rgba(125, 120, 4, 1);
 
+    .itembr {
+        vertical-align: middle;
+        display: inline-block;
+        height: @tbh;
+        b{
+            display: block;
+            height: @tbh - 10px;
+            margin: 5px 10px;
+            border-left: 1px #ffffff66 solid;
+        }
+    }
+
     .item {
+        vertical-align: middle;
         display: inline-block;
         position: relative;
         height: @tbh;
         line-height: @tbh;
         padding: 0 15px;
-        margin-left: 10px;
+        margin: 0 10px;
         .lk, .b {
             display: block;
             line-height: @tbh;
@@ -376,7 +391,7 @@ i.ftico{
             position: absolute;
             right: 0;
             top: 29px;
-            min-width: 100px;
+            min-width: 128px;
             display: none;
             background: #66666688;
             border-top: 3px solid @actvcl;
@@ -419,6 +434,8 @@ i.ftico{
 }
 
 #topbar.appear {
+    @actvcl: rgba(125, 120, 4, 1);
+
     background: #ffffffdd;
     * {
         color: #333;
@@ -428,10 +445,11 @@ i.ftico{
     }
     .tblG {
         position: relative;
-        top: 3px;
+        top: 1px;
         color: #005700;
-        transform: scale(0.6);
         margin-right: 16px;
+        font-size: 24px;
+
     }
     .hacash {
         font-size: 20px;
@@ -441,6 +459,11 @@ i.ftico{
         -webkit-text-fill-color: transparent;
     }
     .navs {
+        .itembr {
+            b{
+                border-color: #ddd;
+            }
+        }
         .item {
             .lk, .b {
                 font-weight: normal;
@@ -460,6 +483,12 @@ i.ftico{
             .b {
                 &::after{
                     content: "\f106";
+                }
+            }
+            .b, .lk {
+                color: @actvcl;
+                i{
+                    color: @actvcl;
                 }
             }
         }

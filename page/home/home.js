@@ -131,10 +131,8 @@ window.onscroll = function(){
     // console.log("scale(1.25) rotate("+((top/2)%360)+"deg)")
     if(top > windowHeight - 25){
         topbarElm.classList.add("appear")
-        tblgstl += " scale(0.75)"
     }else{
         topbarElm.classList.remove("appear")
-        tblgstl += " scale(1.25)"
     }
     tblGElm.style.transform = tblgstl
 
