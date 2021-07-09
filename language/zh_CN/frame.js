@@ -11,7 +11,7 @@ module.exports = {
         mining: "挖矿",
         whitepaper: "白皮书",
         github: "Github",
-        
+        docs: "文档",
         support_word: "需要你的帮助！",
     },
 

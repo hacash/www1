@@ -12,7 +12,7 @@ module.exports = {
         mining: "Miner",
         whitepaper: "Papier blanc",
         github: "Github",
-        
+        docs: "Docs",
         support_word: " a besoin de vous!",
     },
 

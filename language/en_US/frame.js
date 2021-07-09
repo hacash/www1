@@ -11,7 +11,7 @@ module.exports = {
         mining: "Mining",
         whitepaper: "Whitepaper",
         github: "Github",
-        
+        docs: "Docs",
         support_word: "need your support!",
     },
 
