@@ -12,6 +12,7 @@ module.exports = {
         whitepaper: "Whitepaper",
         github: "Github",
         docs: "Docs",
+        releaselog: "Software download & release log",
         support_word: "need your support!",
     },
 

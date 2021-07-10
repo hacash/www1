@@ -41,8 +41,14 @@ function main() {
     }else{
         // nginx setting
     }
+    // 首页
     app.get("/",function (req, res) {
-        res.send( RenderTargetPage(req, res, 'index', isDev) )
+        // 判断是否为移动端
+        var homepgn = "home"
+        if(isMobileReq(req)){
+            homepgn = 'index' // 移动端适配
+        }
+        res.send( RenderTargetPage(req, res, homepgn, isDev) )
     })
     for(let pgn in allPageObjs){
         // all page
@@ -56,6 +62,16 @@ function main() {
     });
     
 
+}
+
+function isMobileReq(req) {
+    var deviceAgent = req.headers["user-agent"].toLowerCase();
+    var agentID = deviceAgent.match(/(iphone|ipod|ipad|android)/);
+    if(agentID){
+        return true
+    }else{
+        return false
+    }
 }
 
 // 执行

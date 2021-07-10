@@ -56,7 +56,7 @@ module.exports = {
     },
 
     news: {
-        ttl: "Quelques contenus pour comprendre Hacash",
+        ttl: "Comprendre Hacash",
     },
 
     start: {
@@ -65,7 +65,7 @@ module.exports = {
     },
 
     join: {
-        ttl: "Nous rejoindre",
+        ttl: "Communauté",
     },
 
 

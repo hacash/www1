@@ -71,42 +71,39 @@ window.onload = function(){
         // 显示 topbar
         setTimeout(function(){
             topbarElm.classList.remove("hide")
-        }, 10000)
+        }, 6000)
 
         // 显示 内容
         setTimeout(function(){
-            var tt = 2
-            function tg(a, ti) {
-                fdwordElms[a].classList.remove("pw" + (ti-1))
+
+            function tgw(a, ti) {
+                fdwordElms[a].classList.remove("pw0")
                 fdwordElms[a].classList.add("pw" + ti)
             }
-            tg(0, 1)
+
+            var tt = 1
+
+            tgw(0, 1)
             setTimeout(function(){
-                tg(0, 2)
-                tg(1, 1)
+                tgw(1, 2)
                 setTimeout(function(){
-                    tg(0, 3)
-                    tg(1, 2)
-                    tg(2, 1)
+                    tgw(2, 3)
                     setTimeout(function(){
-                        tg(0, 4)
-                        tg(1, 3)
-                        tg(2, 2)
-                        tg(3, 1)
+                        tgw(3, 4)
                     }, tt*1000)
                 }, tt*1000)
             }, tt*1000)
-        }, 3000)
+        }, 2000)
 
         // 显示 next
         setTimeout(function(){
             nextdElm.classList.remove("hide")
-        }, 11000)
+        }, 7000)
 
         // 隐藏字符背景
         setTimeout(function(){
             bgftcvrElm.classList.add("hide")
-        }, 12000)
+        }, 10000)
 
     }, 100)
 }
@@ -145,16 +142,16 @@ window.onscroll = function(){
         fdwordElms[i].classList.add("pw"+cn)
         fdwordElms[i].classList.remove("pw0")
     }
-    if(top > blgbase/2){
-        fold(0, 4)
-        fold(1, 3)
-        fold(2, 2)
-        fold(3, 1)
+    if(top > windowHeight/3){
+        fold(0, 1)
+        fold(1, 2)
+        fold(2, 3)
+        fold(3, 4)
     }else{
-        show(0, 4)
-        show(1, 3)
-        show(2, 2)
-        show(3, 1)
+        show(0, 1)
+        show(1, 2)
+        show(2, 3)
+        show(3, 4)
     }
 
     // 收起滚动提示

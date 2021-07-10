@@ -57,7 +57,7 @@ module.exports = {
     },
 
     news: {
-        ttl: "帮助你了解 Hacash 的内容",
+        ttl: "理解 Hacash",
     },
 
     start: {
@@ -66,6 +66,6 @@ module.exports = {
     },
 
     join: {
-        ttl: "加入我们",
+        ttl: "社区",
     },
 }

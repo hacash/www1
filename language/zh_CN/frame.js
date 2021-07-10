@@ -12,6 +12,7 @@ module.exports = {
         whitepaper: "白皮书",
         github: "Github",
         docs: "文档",
+        releaselog: "软件下载及版本日志",
         support_word: "需要你的帮助！",
     },
 
