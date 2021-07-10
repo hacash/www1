@@ -183,7 +183,7 @@ function traits(){
             hei = 300
             heiset = {
                 "zh_CN": 188,
-                "en_US": 260,
+                "en_US": 280,
             };
         hei = heiset[languse_key] || 300
         box.style.height = hei + "px"
