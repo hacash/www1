@@ -15,7 +15,7 @@ app.use(cookieParser())
 
 ////////////////////////
 
-const jscssVersion = 2 // 静态文件版本号，用于清除缓存
+const jscssVersion = 3 // 静态文件版本号，用于清除缓存
 
 ////////////////////////
 

@@ -226,6 +226,7 @@ function detail(){
                     li.style.display = "block"
                 }
             }
+            traitsElm.classList.add("allshow")
         }, 500)
     }
 

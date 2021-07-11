@@ -962,6 +962,10 @@ i.ftico{
     padding: 100px 0;
     text-align: center;
     background-color: #f5f3e3;
+
+    .container {
+        position: relative;
+    }
     
     .textgradient {
         background-image: -webkit-gradient(linear, 0 0, right bottom, from(#4e8a0a), to(#7d7804));
@@ -972,6 +976,23 @@ i.ftico{
 
     .fold{
         display: none
+    }
+
+    .goldbg {
+        width: 180px;
+        height: 180px;
+        // background-color: #000;
+        position: absolute;
+        left: 220px;
+        bottom: -80px;
+    }
+
+    &.allshow {
+        .goldbg {
+            width: 80px;
+            height: 80px;
+            bottom: -88px;
+        }
     }
 
 
