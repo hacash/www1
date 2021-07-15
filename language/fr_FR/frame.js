@@ -14,6 +14,7 @@ module.exports = {
         github: "Github",
         docs: "Docs",
         releaselog: "Téléchargement et publication de logiciels",
+        hipdraft: "HIP draft entrepôt",
         support_word: " a besoin de vous!",
     },
 
