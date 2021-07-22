@@ -22,6 +22,8 @@ module.exports = {
         devttl: "Development:",
         a1: "RPC API Doc",
         i1: "for exchange or payment applications",
+        a2: "Mining service Doc",
+        i2: "mining services and mining pool development",
     },
 
     pagelink: {
@@ -29,6 +31,7 @@ module.exports = {
         mining: "/page/start_en.html",
         onlinewallet: "https://wallet.hacash.org",
         rpcdoc: "https://github.com/hacash/service/blob/master/doc/rpc_api_doc.en.md",
+        miningdoc: "https://github.com/hacash/service/blob/master/doc/miner_service_api.cn.md",
     }
 
 

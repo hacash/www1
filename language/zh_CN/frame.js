@@ -22,6 +22,8 @@ module.exports = {
         devttl: "开发对接:",
         a1: "RPC API 接口文档",
         i1: "对接交易所或开发支付应用",
+        a2: "挖矿或矿池服务文档",
+        i2: "挖矿服务或商业矿池开发",
     },
 
     pagelink: {
@@ -29,6 +31,7 @@ module.exports = {
         mining: "/page/start_zh.html",
         onlinewallet: "https://wallet.hacash.org/zh",
         rpcdoc: "https://github.com/hacash/service/blob/master/doc/rpc_api_doc.cn.md",
+        miningdoc: "https://github.com/hacash/service/blob/master/doc/miner_service_api.cn.md",
     }
 
 
