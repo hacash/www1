@@ -65,7 +65,11 @@ function main() {
 }
 
 function isMobileReq(req) {
-    var deviceAgent = req.headers["user-agent"].toLowerCase();
+    var agent = req.headers["user-agent"]
+    if(!agent) {
+        return false
+    }
+    var deviceAgent = agent.toLowerCase();
     var agentID = deviceAgent.match(/(iphone|ipod|ipad|android)/);
     if(agentID){
         return true
