@@ -56,8 +56,9 @@
     <div class="container">
         <div class="pagecard">
             <p class="miner_nav">Shortcut: <a href="#minernode">1. Full node mining</a>， <a href="#poolworker">2. Join mining pool mining</a>， <a href="#poolcreate">3. Setup mining pool service</a>， <a href="#diamond">4. Mining block diamonds</a>， <a href="https://github.com/hacash/service/blob/master/rpc_api_doc.en.md" target="_blank">5. RPC doc for exchange</a></p>
-
-            <br><br>
+            <br>
+            <p class="warn">[note] when full node mining and diamond mining are used for the first time, all block data must be synchronized, and then the mining configuration must be started and the software restarted for mining. Otherwise, it will lead to mining error (no effective mining at the latest height). After downloading the full node, you can run it directly without modifying the configuration, and the software will automatically start synchronizing all blocks.</p>
+            <br>
             <h1 class="pgtt">1、Full node mining</h1>
             <p class="p">The X16RS mining algorithm invented by Hacash randomly uses 16 hash algorithms of the sha3 series, which can resist the emergence of ASIC mining machines. At present, the best solution is to use computer CPU for bookkeeping and mining. In the initial stage, the reward currency will be more widely dispersed in the hands of individuals, reducing or avoiding the concentration of a large number of currencies in the hands of a small number of people, so as to avoid price manipulation and maliciousness. Issues such as hype.</p>
             <p class="p">Everyone is welcome to use idle desktop PCs or laptops for accounting and mining in exchange for currency rewards. The hosts provided by cloud service providers can also be purchased to become stable miners and mining pool nodes to collect packaged transactions and contribute to the popularization of the entire network.</p>
