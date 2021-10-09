@@ -52,7 +52,7 @@ module.exports = {
     }, 
     
     link: {
-        ttl: "交易所或信息收录",
+        ttl: "交易所及第三方支持",
         coingecko: "https://www.coingecko.com/zh/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81/hacash",
     },
 
