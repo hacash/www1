@@ -1,0 +1,95 @@
+<html>
+    <head>
+    
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+        <title>Hacash 通道链二层钱包用户使用手册</title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+        <link rel="stylesheet" href="/page/jscss/page_common.css">
+    
+    </head>
+    <body>
+
+        <a name="manual"></a>
+        <div id="manual">
+            <div class="container">
+                <div class="pagecard">
+                    <h1 class="pgtt big">Hacash 通道链二层钱包用户使用手册</h1>
+                    <p class="p">通道链支付结算网络是 Hacash 的二层扩容网络（详细请阅读白皮书《<a class="dld" href="https://github.com/hacash/paper/blob/master/whitepaper.cn.md" target="_blank">Hacash：一种大规模支付实时结算的加密货币系统</a>》），通过通道链进行支付可以无需任何等待实时到账、没有交易处理容量瓶颈且手续费异常低廉。简要来说，就是扩容方式无等待确认时间、无TPS上限。除了计算能力和带宽大小等硬件性能，没有任何协议层面的确认时间限制和交易容量制约。通俗来说，通道链支付做到了在区块链一层安全性支持下，支付和收款就像发送电子邮件那么简单、快速、高效和安全。通道链网络同时支持 HAC 和 Hacash-BTC 两种货币的支付。</p>
+                    <h1 class="pgtt small">概念解释：支付服务商</h1>
+                    <p class="p">通道链支付结算网络从技术上来说是完全对等节点组成的点对点支付网络，任何节点并不存在与其它节点不对称的资金控制权限。无论资金规模或技术开发上是否存在差距，其网络各方的资金安全完全依赖于自身的诚实和对主网数据更新的细心检查，而不依赖其它诸如身份、地位、财富、技术能力或社会声望。Hacash主网作为一位绝对客观只看证据（也就是对账票据）的仲裁者，平等确保所有类型用户的资金都不被掠夺和窃取。</p>
+                    <p class="p">由于分工及资源优势不同，在健康的商业合作经济运行实际情况下，网络中某一部分专业节点，可以将自身的技术优势提供出来，为大家的支付需求提供更加高效和便捷的各类技术服务。例如在通道路径路由、通道资金流动优化、网络在线质量、对账票据备份以及仲裁实时监控等事务上，可以由专业节点以收取微量交易费用的形式来提供服务。值得特别注意的是，这种服务仅仅只是技术上的可任意撤销的商品，与资金委托存管的传统银行业务有着本质区别，服务商并不会掌控你的钱。简单来说，就是你的钱没有存在别人那里而是永远被私钥控制在自己手里，没有人能未经允许转移你的钱。并且，服务按次付费，可在任意时候立即撤销对方节点的服务资格，几乎零成本地自由选择更好的服务商节点。</p>
+                    <p class="p">通道网络里的支付服务商节点就像互联网的宽带接入服务商或者电子邮件服务商，后者提供信息流动的服务，而前者则提供资金流通的服务。由于服务识别区分和支付路由的需要，与 Email 电子邮件一样，每个支付服务商都有一个独一无二的标识符。例如电子邮件地址中的 <span class="val">@gmail.com</span> 后缀，以支付服务商 <a class="dld"  href="https://payinst.com/">PayInst</a> 为例，通道链账户地址示例： </p>
+                    <p class="p exp">1FHhNECzMfio999t8LuPDLR6JFV4tHYwyV_4d295889c6e0e1fc64237e01cd480fd6_PayInst</p>
+                    <p class="p">可以看到以上地址分为三段，即普通账户地址部分 <span class="val">1FHhNECzMfio999t8LuPDLR6JFV4tHYwyV</span> 、通道ID部分 <span class="val">4d295889c6e0e1fc64237e01cd480fd6</span> 和支付服务商标识符部分 <span class="val">PayInst</span> ，三个部分之间用下划线连接起来组成一个完整的通道链账户地址。在登录通道链钱包时，需要提供这种完整形式的账户地址，也即是登录/支付地址。</p>
+                    <p class="p">当用户端进行收款时，如果账户地址仅仅与服务商开启了唯一一个通道，或者同一地址开启了多个通道服务，且需要服务商自动选择合适的收款通道时，可免去地址中间的通道ID部分，即简写为：</p>
+                    <p class="p exp">1FHhNECzMfio999t8LuPDLR6JFV4tHYwyV_PayInst</p>
+                    <p class="p">通过 <a class="dld"  href="https://hacashtalk.com/t/hip-6-hacash-diamond-name-service/138">HIP-6 提案 (Hacash Diamond Name Service)</a> 即 HDNS 运用钻石名称进行账户地址 DNS 解析服务之后，收款地址可进一步简化为例如： </p>
+                    <p class="p exp">KENYUU_PayInst</p>
+                    <p class="p">此时，收款地址会自动解析为此钻石的所有者地址，并有目标服务商自动选择合适的通道。</p>
+                    <p class="p tips">请选择和联系您的 <span class="val">通道支付服务商</span> ，他们会协助您完成通道账户的开启，并将通道钱包的登录地址发送给你。注意：任何情况下，请不要泄露您的私钥。</p>
+                
+                    <h1 class="pgtt small">通道链钱包使用教程</h1>
+                    <p class="p">二层支付网络有单独的钱包，需要通过地址私钥登录且保持在线。不过仅仅在本地客户端登录，并不会在网络上传播你的私钥等安全信息。点击以下按钮下载对应系统的钱包客户端：</p>
+                    <p class="p"><a class="button down windows" href="http://download.hacash.org:8080/hacash_channelpay_client_windows64.zip" target="_blank">⇩ Hacash Channel Payment User Client ( for windows-64bit)</a></p>
+                    <p class="p"><a class="button down ubuntu" href="http://download.hacash.org:8080/hacash_channelpay_client_ubuntu64.zip" target="_blank">⇩ Hacash Channel Payment User Client ( for ubuntu-64bit)</a></p>
+                    <p class="p"><a class="dld" href="https://github.com/jcb55/jcb-hacash" target="_blank">⇩ Download Hacash All Softwares ( for MacOS) </a></p>
+                    <p class="p">下载二层钱包后打开，可以看到如下登录界面：</p>
+                    <p class="p">
+                        <img class="cutwrap lazy" data-src="/page/image/channelpay/login.png" />
+                    </p>
+                    <p class="p">登录界面有三处输入框，其中前两者是必填，第三处的“对账或支付票据”是选填。第一项“Hacash Channel Address”就是上文所说的完整的通道账户地址，例如 “1FHhNECzMfio999t8LuPDLR6JFV4tHYwyV_4d295889c6e0e1fc64237e01cd480fd6_PayInst”。第二处是账户的私钥，即就是地址 “1FHhNECzMfio999t8LuPDLR6JFV4tHYwyV” 的私钥【注意，此私钥不要泄露给包括您的支付服务商之内的任何人】。</p>
+                    <p class="p">当在新的设备上登录通道钱包时，新设备本地并没有储存您的最新对账票据。如果您已经有过支付或收款行为，则需要在登录时提供最新的“对账或支付票据”。如果是首次登录或者未有过支付或收款行为，则不需要提供。</p>
+                    <p class="p">当您使用新的设备时，可以点击登录界面的 <span class="val">Export bill</span> 选项卡，输入您的通道ID，导出旧的票据在新的设备上使用。如下所示：</p>
+                    <p class="p">
+                        <img class="cutwrap lazy" data-src="/page/image/channelpay/expbill.png" />
+                    </p>
+                    <p class="p">请注意您的设备必须联网。在不出错的情况下，登录后可看见通道链钱包的界面：</p>
+                    <p class="p">
+                        <img class="cutwrap lazy" data-src="/page/image/channelpay/wallet.png" />
+                    </p>
+                    <p class="p">钱包显示项中，<span class="val">Channel Balance</span> 是您的可用余额；<span class="val">Collection Capacity</span> 是收款容量，表示本通道您最多能收取的资金上限；<span class="val">[Reconciliation meta info]</span> 则为您的实时对账票据信息，请务必及时备份。如果丢失对账票据，则通道对方将有可能选择对自己有利的对账单据窃取您的资金。</p>
+                    <p class="p">启用 <span class="val">Collection</span> 按钮则可以自动收款，关闭时将会直接拒接任何收款。只要登录并保持连接即可自动收款，不需要任何操作。</p>
+
+                    <h1 class="pgtt small">发起支付</h1>
+                    <p class="p">在 <span class="val">Payment</span> 项下的两个输入框中分别填写收款方的通道钱包地址，和支付金额，即可发起转账。填写转账信息并检查确认无误后，点击 <span class="val">Start Transfer</span> 按钮，客户端将请求服务商查询路由并发起支付，如果没有路由解析错误，或者不存在的服务商标识符等错误，则会看到如下路由路径选择、交易费用检查等支付确认对话框：</p>
+                    <p class="p">
+                        <img class="cutwrap lazy" data-src="/page/image/channelpay/dopay.png" />
+                    </p>
+                    <p class="p">点击选择支付路径（一般只有一个可选路径）后，点击 <span class="val">Confirm payment</span> 按钮立即发起支付。</p>
+                    <p class="p tips">请注意，支付立即生效，且不可撤销。请仔细核对支付地址和金额是否正确。</p>
+                    <p class="p">假如对方收款通道不存在、不可用，或者对方未在线，则日志打印区将会给出相应的错误提示：</p>
+                    <p class="p">
+                        <img class="cutwrap lazy" data-src="/page/image/channelpay/errlog.png" />
+                    </p>
+                    <p class="p">如果收款方此时保持在线，并且支付金额没有超过限额，网络签名没有错误的情况下，支付将立即成功，并且打印相应的提示信息：</p>
+                    <p class="p">
+                        <img class="cutwrap lazy" data-src="/page/image/channelpay/successlog.png" />
+                    </p>
+                    <p class="p">以上绿色提示信息则表示支付已经成功。支付完成后，钱包界面内显示的余额、通道容量和对账票据会实时发生变化，请留意余额的变化，并及时备份对账票据：</p>
+                    <p class="p">
+                        <img class="cutwrap lazy" data-src="/page/image/channelpay/bill.png" />
+                    </p>
+                    <p class="p">上图界面显示信息中，<span class="val">[Reuse version]</span> 表示通道重用版本号，在您将来修改通道容量后此版本号会自动增加，<span class="val">[Bill serial number]</span> 为支付对账票据的自增流水号，每发起一次支付或完成一次收款，票据号码则会自动 +1。输入框中的字符串，则为最新的对账票据数据。</p>
+                    <p class="p warn">【注意】请务必及时备份通道对账票据，这是您可用余额的证明。如果丢失通道票据，或没有及时备份最新的通道票据，则您无法证明您的可用余额是有效的，作恶者即可能提供已经过期但却对他有利的票据分配证明，从而在主网上拿走你的钱。</p>
+                    <p class="p">一般情况下，只要您的设备不出现数据丢失故障，或人为删除数据目录，客户端会在软件所在的目录建立一个文件夹保存和更新每次支付和收款后的最新通道对账票据，但不会保存已经过期的票据。如果登录多个通道，每个通道的票据会分开保存，互不影响。</p>
+                    <p class="p"></p>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script src="/page/jscss/page_common.js"></script>
+
+    </body>
+</htm>
