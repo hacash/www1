@@ -13,13 +13,77 @@
     </head>
     <body>
 
+        <a name="manual"></a>
+        <div id="manual">
+            <div class="container">
+                <div class="pagecard">
+                    <h1 class="pgtt big">Hacash Channel Chain Layer-2 Wallet User Manual</h1>
+                    <p class="p">The channel chain payment and settlement network is Hacash's layer2 expansion network (for details, please read the white paper " <a class="dld" href="/file/hacash_white_paper_en.pdf" target="_blank">Hacash: An Encrypted Currency System for Large-scale Payment and Real-time Settlement</a> "). Payments through the channel chain can be made without any waiting for real-time payment & collection. The transaction processing capacity no upper limit, the fees are extremely low. In short, the expansion method has no waiting confirmation time and no TPS upper limit. In addition to hardware performance such as computing power and bandwidth, there is no confirmation time limit and transaction capacity restriction at the protocol level. In layman's terms, channel chain payments support security back with base blockchain, payment and collection are as simple, fast, efficient, safe as sending emails. The channel chain network supports payments in two currencies, HAC and Hacash-BTC.</p>
+                    <h1 class="pgtt small">Explanation: Payment Service Noder</h1>
+                    <p class="p">The channel chain payment settlement network is technically a peer-to-peer payment network composed of completely equal nodes, and any node does not have asymmetric fund control authority with other nodes. Regardless of whether there is a gap in the scale of funds or technological development, the financial security of all parties to the network depends entirely on their own honesty and careful inspection of the main network data update, and does not rely on other things such as identity, status, wealth, technical ability or social prestige . The Hacash mainnet, as an absolutely objective arbitrator who only looks at evidence (that is, reconciliation notes), equally ensures that the funds of all types of users are not looted or stolen.</p>
+                    <p class="p">Due to the different division of labor and resource advantages, in the actual situation of healthy business cooperation economic operation, a certain part of the professional node in the network can provide its own technical advantages and provide more efficient and convenient various technical services for everyone's payment needs. For example, in matters such as channel path routing, channel capital flow optimization, network online quality, reconciliation note backup, and real-time monitoring of arbitration, professional nodes can provide services in the form of charging a small amount of transaction fees. It is worth noting that this kind of service is only a technically arbitrarily revokable product, which is fundamentally different from the traditional banking business of entrusted deposit and management of funds, and the service provider does not control your money. Simply put, your money does not exist in others but is always controlled by your private key. No one can transfer your money without permission. In addition, the service is pay-per-use, and the service qualification of the servicer node can be immediately revoked at any time, and a better service provider node can be freely selected at almost zero cost.</p>
+                    <p class="p">The payment service provider nodes in the channel network are like Internet broadband access service providers or e-mail service providers. The latter provides information flow services, while the former provides fund circulation services. Due to the needs of service identification and payment routing, just like Email, each payment service provider has a unique identifier. For example, the <span class="val">@gmail.com</span> suffix in the email address , taking the payment service provider <a class="dld" href="https://payinst.com/">PayInst</a> as an example, the channel chain account address example:</p>
+                    <p class="p exp">1FHhNECzMfio999t8LuPDLR6JFV4tHYwyV_4d295889c6e0e1fc64237e01cd480fd6_PayInst</p>
+                    <p class="p">It can be seen that the above address is divided into three segments, namely the common account address part <span class="val">1FHhNECzMfio999t8LuPDLR6JFV4tHYwyV</span> , the channel ID part <span class="val">4d295889c6e0e1fc64237e01cd480fd6</span> and the payment service provider identifier part <span class="val">PayInst</span> . The three parts are connected by underscores to form a complete channel chain account address. When logging in to the channel chain wallet, you need to provide this complete form of account address, that is, the login/payment address.</p>
+                    <p class="p">When the user terminal collects money, if the account address only opens the only channel with the service provider, or the same address opens multiple channel services, and the service provider needs to automatically select the appropriate payment channel, the middle of the address can be omitted The channel ID part is abbreviated as:</p>
+                    <p class="p exp">1FHhNECzMfio999t8LuPDLR6JFV4tHYwyV_PayInst</p>
+                    <p class="p">After the <a class="dld" href="https://hacashtalk.com/t/hip-6-hacash-diamond-name-service/138">HIP-6 proposal (Hacash Diamond Name Service)</a> that HDNS uses the diamond name for account address DNS resolution services, the payment address can be further simplified to, for example:</p>
+                    <p class="p exp">KENYUU_PayInst</p>
+                    <p class="p">At this time, the receiving address will be automatically resolved to the owner's address of the diamond, and the target service provider will automatically select the appropriate channel.</p>
+                    <p class="p tips">Please select and contact your <span class="val">channel payment service provider</span> , they'll help you open an account channel, and the channel purse login address to you. Note: Please do not disclose your private key under any circumstances.</p>
+                
+                    <h1 class="pgtt small">Channel chain wallet usage tutorial</h1>
+                    <p class="p">The layer-2 payment network has a separate wallet, which needs to be logged in with the address private key and kept online. However, just logging in on the local client will not spread your private key and other security information on the network. Click the button below to download the wallet client of the corresponding system:</p>
+                    <p class="p"><a class="button down windows" href="http://download.hacash.org:8080/hacash_channelpay_client_windows64.zip" target="_blank">⇩ Hacash Channel Payment User Client ( for windows-64bit)</a></p>
+                    <p class="p"><a class="button down ubuntu" href="http://download.hacash.org:8080/hacash_channelpay_client_ubuntu64.zip" target="_blank">⇩ Hacash Channel Payment User Client ( for ubuntu-64bit)</a></p>
+                    <p class="p"><a class="dld" href="https://github.com/jcb55/jcb-hacash" target="_blank">⇩ Download Hacash All Softwares ( for MacOS) </a></p>
+                    <p class="p">After downloading the layer-2 wallet, open it, and you can see the following login interface:</p>
+                    <p class="p">
+                        <img class="cutwrap lazy" data-src="/page/image/channelpay/login.png" src="/page/image/channelpay/login.png">
+                    </p>
+                    <p class="p">There are three input boxes on the login interface, the first two of which are required, and the third "reconciliation or payment note" is optional. The first item "Hacash Channel Address" is the complete channel account address mentioned above, for example "1FHhNECzMfio999t8LuPDLR6JFV4tHYwyV_4d295889c6e0e1fc64237e01cd480fd6_PayInst". The second place is the private key of the account, which is the private key of the address "1FHhNECzMfio999t8LuPDLR6JFV4tHYwyV" [Note, this private key should not be disclosed to anyone including your payment service provider].</p>
+                    <p class="p">When logging in to the channel wallet on a new device, the new device does not store your latest reconciliation notes locally. If you have already made payments or collections, you need to provide the latest "reconciliation or payment receipt" when logging in. If it is the first time to log in or there has been no payment or collection behavior, you do not need to provide it.</p>
+                    <p class="p">When you use a new device, you can click the <span class="val">Export bill</span> tab of the login interface , enter your channel ID, and export the old bill for use on the new device. As follows:</p>
+                    <p class="p">
+                        <img class="cutwrap lazy" data-src="/page/image/channelpay/expbill.png" src="/page/image/channelpay/expbill.png">
+                    </p>
+                    <p class="p">Please note that your device must be connected to the Internet. If there is no error, you can see the interface of the channel chain wallet after logging in:</p>
+                    <p class="p">
+                        <img class="cutwrap lazy" data-src="/page/image/channelpay/wallet.png" src="/page/image/channelpay/wallet.png">
+                    </p>
+                    <p class="p">In the wallet display item, <span class="val">Channel Balance</span> is your available balance; <span class="val">Collection Capacity</span> is the collection capacity, which means the maximum amount of funds you can collect in this channel; <span class="val">[Reconciliation meta info]</span> is your real-time reconciliation bill information, please make sure to back it up in time . If you lose the reconciliation bill, the counterparty of the channel may choose the reconciliation bill that is beneficial to you to steal your funds.</p>
+                    <p class="p">Enabling the <span class="val">Collection</span> button can automatically collect payments. When it is closed, any collections will be rejected directly. As long as you log in and stay connected, you can automatically receive payments without any action.</p>
+
+                    <h1 class="pgtt small">Initiate payment</h1>
+                    <p class="p">In the <span class="val">Payment</span> under the terms of the two input boxes were filled channel purse address, and the payment amount payee, you can initiate transfers. After filling in the transfer information and checking that it is correct, click the <span class="val">Start Transfer</span> button, and the client will request the service provider to query routing and initiate payment. If there is no routing parsing error or non-existent service provider identifier and other errors, you will see the following routing path Payment confirmation dialog box for selection, transaction fee check, etc.:</p>
+                    <p class="p">
+                        <img class="cutwrap lazy" data-src="/page/image/channelpay/dopay.png" src="/page/image/channelpay/dopay.png">
+                    </p>
+                    <p class="p">After clicking to select the payment path (usually there is only one optional path), click the <span class="val">Confirm payment</span> button to initiate payment immediately.</p>
+                    <p class="p tips">Please note that the payment is effective immediately and cannot be reversed. Please check carefully whether the payment address and amount are correct.</p>
+                    <p class="p">If the other party's collection channel does not exist, is unavailable, or the other party is not online, the log print area will give a corresponding error prompt:</p>
+                    <p class="p">
+                        <img class="cutwrap lazy" data-src="/page/image/channelpay/errlog.png" src="/page/image/channelpay/errlog.png">
+                    </p>
+                    <p class="p">If the payee stays online at this time, and the payment amount does not exceed the limit, and the network signature is correct, the payment will be successful immediately and the corresponding prompt information will be printed:</p>
+                    <p class="p">
+                        <img class="cutwrap lazy" data-src="/page/image/channelpay/successlog.png" src="/page/image/channelpay/successlog.png">
+                    </p>
+                    <p class="p">The above green message indicates that the payment has been successful. After the payment is completed, the balance, channel capacity, and reconciliation notes displayed in the wallet interface will change in real time. Please pay attention to the changes in the balance and back up the reconciliation notes in time:</p>
+                    <p class="p">
+                        <img class="cutwrap lazy" data-src="/page/image/channelpay/bill.png" src="/page/image/channelpay/bill.png">
+                    </p>
+                    <p class="p">In the information displayed in the above interface, <span class="val">[Reuse version]</span> represents the channel reuse version number. This version number will automatically increase when you modify the channel capacity in the future. <span class="val">[Bill serial number]</span> is the self-increasing <span class="val">serial number</span> of the payment and reconciliation bill, every time it is initiated When you make a payment or complete a collection, the bill number will be automatically +1. The character string in the input box is the latest reconciliation bill data.</p>
+                    <p class="p warn">[Note] Please make sure to back up the channel reconciliation bill in time, which is proof of your available balance. If you lose the channel ticket or do not back up the latest channel ticket in time, you cannot prove that your available balance is valid. The perpetrator may provide a reconciliation bill of expired but beneficial for them, thus steal you money on the mainnet.</p>
+                    <p class="p">Under normal circumstances, as long as your device does not experience data loss failure, or manually delete the data directory, the client will create a folder in the directory where the software is located to save and update the latest channel reconciliation bills after each payment and collection, but The expired tickets will not be saved. If you log in to multiple channels, the bills of each channel will be stored separately and will not affect each other.</p>
+                    <p class="p"></p>
 
 
 
-
-
-
-
+                </div>
+            </div>
+        </div>
+    
         <script src="/page/jscss/page_common.js"></script>
 
     </body>

@@ -1047,10 +1047,16 @@ i.ftico {
   box-shadow: 2px 3px 2px #00000033;
   border: 1px solid #fff;
 }
+#start .btn.light {
+  background: #439bce;
+}
 #start .btn:hover {
   background: #dbc953;
   box-shadow: 4px 6px 2px #00000033;
   text-shadow: 1px 1px 1px #00000044;
+}
+#start .btn.light:hover {
+  background: #4ea8db;
 }
 #start p.tip {
   font-size: 18px;
@@ -1206,18 +1212,18 @@ i.ftico {
 }
 #news .item {
   display: inline-block;
-  margin: 2%;
+  vertical-align: top;
+  padding: 1%;
   margin-bottom: 0;
   padding-bottom: 2%;
-  width: 44%;
+  width: 30%;
   cursor: pointer;
-  border-bottom: dashed 1px #ddd;
 }
 #news .item p.t {
   color: #444;
   font-size: 16px;
   line-height: 20px;
-  min-height: 40px;
+  min-height: 60px;
 }
 #news .item p.t:hover {
   text-decoration: underline;
@@ -1225,13 +1231,16 @@ i.ftico {
 #news .item p.meta {
   margin-top: 12px;
   color: #669;
+  font-size: 15px;
+  line-height: 15px;
+  height: 30px;
 }
 #news .item p.meta .time {
   margin-left: 20px;
   color: #999;
 }
 #news .item:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #f3f3f3;
 }
 #join {
   padding: 80px 0;

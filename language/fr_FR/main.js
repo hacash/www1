@@ -62,6 +62,8 @@ module.exports = {
     start: {
         tip: "Envie de télécharger le portefeuille, exécuter un noeud, miner ou développer la monnaie de demain?",
         btn: "Démarrer avec Hacash",
+        btn: "Quickly run full node or mining",
+        chpay: "Use channel chain layer-2 wallet",
     },
 
     join: {

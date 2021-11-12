@@ -92,18 +92,6 @@ a.button i.ftico {
   vertical-align: baseline;
   margin-right: 4px;
 }
-@media screen and (max-width: 512px) {
-  .container {
-    padding: 5%;
-    width: 90%;
-  }
-  .pagecard {
-    display: block !important;
-    width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-}
 /* 黑暗背景 */
 .darkbg {
   background: #1f2f2f;
@@ -124,13 +112,13 @@ p.p {
   margin: 12px 4px;
   font-size: 14px;
   line-height: 24px;
-  word-break: break-all;
 }
 p.exp {
   padding: 10px;
   font-size: 14px;
   background-color: #f3f3f3;
   color: #678;
+  word-break: break-all;
 }
 p.tips {
   font-size: 13px;
@@ -193,4 +181,16 @@ p.notice {
 .down.ubuntu {
   background: coral;
   border-radius: 100px;
+}
+@media screen and (max-width: 512px) {
+  .container {
+    padding: 5%;
+    width: 90%;
+  }
+  .pagecard {
+    display: block !important;
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 }
