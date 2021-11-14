@@ -25,6 +25,8 @@ module.exports = {
         i1: "pour les applications d'échange & paiements",
         a2: "Mining service Doc",
         i2: "Services miniers et aménagement de bassins miniers",
+        a3: "X16RS mining algorithm description",
+        i3: "design details and explanation of GPU mining",
     },
 
     pagelink: {
@@ -34,6 +36,7 @@ module.exports = {
         onlinewallet: "https://wallet.hacash.org",
         rpcdoc: "https://github.com/hacash/service/blob/master/doc/rpc_api_doc.en.md",
         miningdoc: "https://github.com/hacash/service/blob/master/doc/miner_service_api.en.md",
+        x16rsdoc: "https://github.com/hacash/x16rs/blob/master/doc/x16rs_algorithm_description.en.md",
     }
 
 

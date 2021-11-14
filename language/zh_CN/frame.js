@@ -24,6 +24,8 @@ module.exports = {
         i1: "对接交易所或开发支付应用",
         a2: "挖矿或矿池服务文档",
         i2: "挖矿服务或商业矿池开发",
+        a3: "X16RS 挖矿算法说明",
+        i3: "算法特征及GPU挖矿详解",
     },
 
     pagelink: {
@@ -33,6 +35,7 @@ module.exports = {
         onlinewallet: "https://wallet.hacash.org/zh",
         rpcdoc: "https://github.com/hacash/service/blob/master/doc/rpc_api_doc.cn.md",
         miningdoc: "https://github.com/hacash/service/blob/master/doc/miner_service_api.cn.md",
+        x16rsdoc: "https://github.com/hacash/x16rs/blob/master/doc/x16rs_algorithm_description.cn.md",
     }
 
 
