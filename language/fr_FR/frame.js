@@ -23,9 +23,9 @@ module.exports = {
         devttl: "Développement :",
         a1: "Documentation API RPC",
         i1: "pour les applications d'échange & paiements",
-        a2: "Mining service Doc",
+        a2: "Mining service doc",
         i2: "Services miniers et aménagement de bassins miniers",
-        a3: "X16RS mining algorithm description",
+        a3: "X16RS mining algorithm doc",
         i3: "design details and explanation of GPU mining",
     },
 

@@ -20,11 +20,11 @@ module.exports = {
     footer: {
         donate_word: "Donate HAC to support Hacash.org:", 
         devttl: "Development:",
-        a1: "RPC API Doc",
+        a1: "RPC API doc",
         i1: "for exchange or payment applications",
-        a2: "Mining service Doc",
+        a2: "Mining service doc",
         i2: "mining services and mining pool development",
-        a3: "X16RS mining algorithm description",
+        a3: "X16RS mining algorithm doc",
         i3: "design details and explanation of GPU mining",
     },
 
