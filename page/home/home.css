@@ -1207,6 +1207,24 @@ i.ftico {
 #link .i11 .box {
   border-color: #0e1821;
 }
+#link .i12 h1.t {
+  color: #2d995e;
+}
+#link .i12 p.l {
+  color: #2d995e;
+}
+#link .i12 .box {
+  border-color: #2d995e;
+}
+#link .i13 h1.t {
+  color: #866cc2;
+}
+#link .i13 p.l {
+  color: #866cc2;
+}
+#link .i13 .box {
+  border-color: #866cc2;
+}
 #news {
   padding: 80px 0 100px 0;
 }
