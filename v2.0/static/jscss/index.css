@@ -612,6 +612,7 @@ i.ftico {
   font-size: 20px;
   color: #161616;
   line-height: 20px;
+  padding: 0 10px;
 }
 #news .item p i {
   font-size: inherit;
@@ -629,17 +630,91 @@ i.ftico {
   font-size: 16px;
 }
 #news .item:hover {
-  background-color: #eee;
+  background-color: #282828;
+}
+#news .item:hover p {
+  color: whitesmoke;
 }
 #news .item:hover p.t {
   text-decoration: underline;
 }
+#link {
+  padding: 50px 0 0 0;
+}
+#link .item {
+  display: inline-block;
+  width: 21%;
+  padding: 30px 1.5%;
+  text-align: center;
+  cursor: pointer;
+}
+#link .item * {
+  color: #555;
+}
+#link .item h1 {
+  font-size: 28px;
+}
+#link .item p {
+  font-size: 18px;
+  color: #555;
+}
+#link .item:hover {
+  background-color: #282828;
+}
+#link .item:hover * {
+  color: whitesmoke;
+}
+#link .item.trade h1,
+#link .item.trade p {
+  color: cadetblue;
+}
+#join {
+  padding: 50px 0 0 0;
+  text-align: center;
+}
+#join .area {
+  display: inline-block;
+  vertical-align: top;
+  width: 31%;
+  margin: 20px 0 40px 0;
+}
+#join .area .icon img {
+  height: 32px;
+}
+#join .area .list {
+  padding-top: 10px;
+}
+#join .area .li {
+  display: block;
+}
+#join .area .li a {
+  display: inline-block;
+  padding: 5px;
+  color: #222;
+  font-size: 18px;
+  font-style: normal;
+}
+#join .area .li a::before {
+  content: "➝";
+}
+#join .area .li a:hover {
+  background-color: #222;
+  color: #fff;
+  text-decoration: underline;
+}
 @media screen and (max-width: 640px) {
+  #link {
+    padding: 0px 0 0 0;
+  }
+  #link .item {
+    width: 49%;
+    padding: 20px 0;
+  }
   #news {
     padding: 0px 0 0 0;
   }
   #news .item {
-    padding: 10px;
+    padding: 10px 0;
   }
   #news .item p {
     display: block !important;
@@ -828,7 +903,7 @@ i.ftico {
 #footer .left a {
   font-size: 15px;
   text-decoration: underline;
-  color: #3490E6;
+  color: #fff;
 }
 #footer .right .ttl {
   font-style: italic;
@@ -838,7 +913,7 @@ i.ftico {
 }
 #footer .right p a {
   text-decoration: underline;
-  color: #3490E6;
+  color: #fff;
 }
 #footer .right p i {
   font-size: 14px;

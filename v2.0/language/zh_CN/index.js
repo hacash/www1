@@ -49,6 +49,19 @@ module.exports = {
         ttl: "理解 Hacash",
     },
 
+    start: {
+        tip: "想要下载钱包、搭建一个全节点、开始挖矿或者接入开发？",
+        btn: "快速开始搭建全节点或挖矿",
+        chpay: "使用通道链二层钱包",
+    },
     
+    link: {
+        ttl: "交易所及第三方支持",
+        coingecko: "https://www.coingecko.com/zh/%E6%95%B0%E5%AD%97%E8%B4%A7%E5%B8%81/hacash",
+    },
+
+    join: {
+        ttl: "社区",
+    },
 }
     

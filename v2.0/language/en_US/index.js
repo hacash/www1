@@ -48,7 +48,24 @@ module.exports = {
     news: {
         ttl: "Understand Hacash",
     },
+
     
+    start: {
+        tip: "Want to download wallet, build full node, start mining or develop?",
+        btn: "Get started with Hacash",
+        chpay: "Use channel chain layer-2 wallet",
+    },
+    
+
+    link: {
+        ttl: "Exchange & Support",
+        coingecko: "https://www.coingecko.com/en/coins/hacash",
+    },
+
+
+    join: {
+        ttl: "Community",
+    },
 
 }
     

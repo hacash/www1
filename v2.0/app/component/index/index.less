@@ -345,6 +345,7 @@
             font-size: 20px;
             color: #161616;
             line-height: 20px;
+            padding: 0 10px;
             i {
                 font-size: inherit;
                 color: inherit;
@@ -363,22 +364,114 @@
         }
     }
     .item:hover {
-        background-color: #eee;
+        background-color: #282828;
+        p {
+            color: whitesmoke;
+        }
         p.t {
             text-decoration: underline;
         }
     }
 }
 
+#link {
+    padding: 50px 0 0 0;
+
+    .item {
+        display: inline-block;
+        width: 21%;
+        padding: 30px 1.5%;
+        text-align: center;
+        cursor: pointer;
+        * {
+            color: #555;
+        }
+        h1 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 18px;
+            color: #555;
+        }
+    }
+    .item:hover {
+        background-color: #282828;
+        * {
+            color: whitesmoke;
+        }
+    }
+    .item.trade {
+        h1, p {
+            color: cadetblue;
+        }
+    }
+}
+
+
+#join {
+
+    padding: 50px 0 0 0;
+
+    text-align: center;
+
+    .area {
+        display: inline-block;
+        vertical-align: top;
+        width: 31%;
+        margin: 20px 0 40px 0;
+        // border: 1px solid #eee;
+        .icon {
+            img {
+                height: 32px;
+            }
+        }
+        .list {
+            padding-top: 10px;
+        }
+        .li {
+            // text-align: left;
+            display: block;
+            a {
+                display: inline-block;
+                padding: 5px;
+                color: #222;
+                font-size: 18px;
+                font-style: normal;
+                &::before {
+                    content: "➝";
+                }
+            }
+            a:hover {
+                background-color: #222;
+                color: #fff;
+                text-decoration: underline;
+            }
+
+        }
+    }
+
+}
+
+
+
 
 @media screen and (max-width: 640px) {
 
+#link {
+    padding: 0px 0 0 0;
+
+    .item {
+        width: 49%;
+        padding: 20px 0;
+
+    }
+}
 
 
 #news {
     padding: 0px 0 0 0;
     .item {
-        padding: 10px;
+        padding: 10px 0;
         p {
             display: block !important;
             float: none !important;
