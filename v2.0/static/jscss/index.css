@@ -703,6 +703,13 @@ i.ftico {
   text-decoration: underline;
 }
 @media screen and (max-width: 640px) {
+  #join {
+    padding: 0px 0 0 0;
+  }
+  #join .area {
+    width: 49%;
+    margin: 10px 0;
+  }
   #link {
     padding: 0px 0 0 0;
   }
@@ -963,6 +970,13 @@ i.ftico {
     width: auto;
     padding: 10px;
     margin: 0;
+  }
+  #footer .left a,
+  #footer .right a {
+    color: cadetblue !important;
+  }
+  #footer p.addr {
+    padding: 5px 0 !important;
   }
   #footer .bgcvr {
     background: none !important;
