@@ -15,6 +15,9 @@ static/jscss/*.css
 config.use.js
 
 
+v2.0/app/component/*/*.css
+
+
 *(复件)/
 
 oldpages/

@@ -1,0 +1,211 @@
+
+
+
+#footer {
+    
+    @bgclr: #0f0f0f;
+    position: relative;
+    margin-top: 100px;
+    background-color: @bgclr;
+    * {
+        color: #fff;
+    }
+
+    .bgcvr {
+        padding-top: 100px;
+
+    }
+
+    .btlogo {
+        @bx: 68px;
+        @ftx: @bx * 0.75;
+        @br: 7.5px;
+        @wbx: @bx + @br*2;
+        @wbx2: @wbx * 0.5;
+        @bcclr: #f7f7f7;
+
+        display: block;
+        position: absolute;
+        top: -@wbx2;
+        left: 50%;
+        margin-left: -@wbx2;
+        width: @wbx;
+        height: @wbx;
+        .wrap {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: @wbx;
+            height: @wbx2;
+            overflow: hidden;
+        }
+        .box {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: @bgclr;
+            padding: @br;
+            border-radius: 100%;
+            width: @bx;
+            height: @bx;
+        }
+        .wrap.b {
+            top: @wbx2;
+            .box {
+                top: auto;
+                bottom: 0;
+            }
+        }
+        b{
+            display: block;
+            width: @bx;
+            height: @bx;
+            background: @bcclr;
+            text-align: center;
+            border-radius: 100%;
+        }
+        i {
+            color: @bgclr;
+            font-size: @ftx;
+            line-height: @bx;
+            font-style: normal;
+        }
+
+
+        .wrap.b {
+            .box {
+                background-color: @bcclr;
+            }
+            b{
+                background-color: @bgclr;
+            }
+            i {
+                color: @bcclr;
+            }
+        }
+
+
+
+    }
+
+
+    .left, .right {
+        display: inline-block;
+        vertical-align: top;
+        width: 49%;
+        padding: 20px 0;
+    }
+    .left {
+        .addr {
+            padding-top: 20px;
+        }
+        a {
+            font-size: 15px;
+            text-decoration: underline;
+            color: #3490E6;
+        }
+
+    }
+    .right {
+        .ttl {
+            font-style: italic;
+            font-size: 16px;
+            color: #888;
+            margin-bottom: 14px;
+        }
+        p {
+            a {
+                text-decoration: underline;
+                color: #3490E6
+            }  
+            i {
+                font-size: 14px;
+                color: #888;
+                font-style: italic;
+                padding-left: 20px;
+            }
+        }
+    }
+    .bottom {
+        margin-top: 50px;
+        padding: 14px 0;
+        background-color: #000;
+        line-height: 24px;
+        height: 24px;
+
+        * {
+            color: #888;
+            line-height: 24px;
+            height: 24px;
+        }
+        .cprt {
+            float: left;
+        }
+        .status {
+            display: block;
+            float: right;
+            cursor: pointer;
+            .ltb {
+                FONT-SIZE: 12PX;
+                display: inline-block;
+                background: seagreen;
+                border-radius: 4px;
+                padding: 0 10px;
+                margin-left: 10px;
+                color: #fff;
+            }
+        }
+        .status:hover {
+            color: #fff;
+            .ltb {
+                background: rgb(47, 170, 101);
+                
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+
+
+#footer {
+
+    .left, .right {
+        display: block;
+        width: auto;
+        padding: 10px;
+        margin: 0;
+    }
+    .bgcvr {
+        background: none !important;
+        padding-top: 100px !important;
+        // width: 100%;
+    }
+    .bottom {
+        height: auto;
+        text-align: center;
+        p, a {
+            display: block !important;
+            float: none !important;
+            height: auto !important;
+        }
+    }
+    .container {
+        height: auto;
+
+    }
+
+
+}
+    
+
+
+
+}
+

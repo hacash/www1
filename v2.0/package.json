@@ -1,0 +1,15 @@
+{
+  "name": "hacash.org",
+  "version": "0.2.0",
+  "description": "",
+  "repository": "",
+  "license": "MIT",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "koappx": "^1.0.0"
+  }
+}

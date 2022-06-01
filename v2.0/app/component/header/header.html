@@ -1,0 +1,58 @@
+
+
+<div id="topbar" class="hide"><div class="container">
+
+    <div class="box">
+        <div class="logoft bktt" title="Back to top">
+            <b class="fthac tblG">ㄜ</b><b class="hacash">Hacash</b>
+        </div>
+        <div class="navs">
+            <div class="item">
+                <a class="lk" href="[:=lang.frame.pagelink.onlinewallet:]" target="_blank">[:=lang.frame.topnav.wallet:]</a>
+            </div>
+            <div class="item">
+                <a class="lk" href="https://explorer.hacash.org" target="_blank">[:=lang.frame.topnav.explorer:]</a>
+            </div>
+            <div class="item">
+                <a class="lk" href="[:=lang.frame.pagelink.mining:]" target="_blank">[:=lang.frame.topnav.mining:]</a>
+            </div>
+            <div class="item">
+                <a class="lk" href="https://github.com/hacash" target="_blank"><i class="ftico">&#xf09b;</i>Github</a>
+            </div>
+            <div class="item">
+                <b class="b">[:=lang.frame.topnav.docs:]</b>
+                <div class="swt">
+                    <ul>
+                        <li><a href="[:=lang.frame.pagelink.whitepaper:]" target="_blank">[:=lang.frame.topnav.whitepaper:]</a></li>
+                        <li><a href="[:=lang.frame.pagelink.rpcdoc:]" target="_blank">[:=lang.frame.footer.a1:]</a></li>
+                        <li><a href="[:=lang.frame.pagelink.miningdoc:]" target="_blank">[:=lang.frame.footer.a2:]</a></li>
+                        <li><a href="[:=lang.frame.pagelink.channelwalletmanual:]" target="_blank">[:=lang.main.start.chpay:]</a></li>
+                        <li><a href="https://github.com/hacash/miner/blob/master/doc/software_release_log.md" target="_blank">[:=lang.frame.topnav.releaselog:]</a></li>
+                        <li><a href="https://github.com/hacash/paper/tree/master/HIP" target="_blank">[:=lang.frame.topnav.hipdraft:]</a></li>
+                        <li><a href="[:=lang.frame.pagelink.x16rsdoc:]" target="_blank">[:=lang.frame.footer.a3:]</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="itembr"><b></b></div> -->
+            <div class="item">
+                <!-- 
+                    'fr_FR': 'Français',
+                -->
+                [: var langlist = {
+                    'en_US': 'English',
+                    'zh_CN': '简体中文',
+                }; :]
+                <!-- <b class="b"><i class="ftico">&#xf1ab;</i>[:=langlist[lang.useset]:]</b> -->
+                <b class="b nt"><i class="ftico">&#xf1ab;</i></b>
+                <div class="swt">
+                    <ul>
+                        [: for(var i in langlist) { :]
+                            <li><a href="?lang=[:=i:]">[:=langlist[i]:]</a></li>
+                        [: } :]
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div></div>

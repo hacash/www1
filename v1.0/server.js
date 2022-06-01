@@ -44,7 +44,7 @@ function main() {
     // 首页
     app.get("/",function (req, res) {
         // 判断是否为移动端
-        var homepgn = "home"
+        var homepgn = "entra"
         if(isMobileReq(req)){
             homepgn = 'index' // 移动端适配
         }
