@@ -638,6 +638,32 @@ i.ftico {
 #news .item:hover p.t {
   text-decoration: underline;
 }
+#start {
+  margin: 80px 0 0 0;
+  padding: 80px 0;
+  background-color: #161616;
+  text-align: center;
+}
+#start * {
+  color: whitesmoke;
+}
+#start .tip {
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+#start a.btn {
+  display: inline-block;
+  padding: 20px 20px;
+  font-size: 18px;
+  border: 1px solid whitesmoke;
+  color: #161616;
+  background-color: whitesmoke;
+}
+#start a.light {
+  margin-left: 30px;
+  background-color: #161616;
+  color: whitesmoke;
+}
 #link {
   padding: 50px 0 0 0;
 }
@@ -716,6 +742,14 @@ i.ftico {
   #link .item {
     width: 49%;
     padding: 20px 0;
+  }
+  #start {
+    margin: 40px 0 0 0;
+    padding: 40px 0;
+  }
+  #start a.btn {
+    margin: 20px;
+    display: block;
   }
   #news {
     padding: 0px 0 0 0;

@@ -1,0 +1,401 @@
+
+<div><br><br><br><br></div>
+
+[: if(lang.useset == 'zh_CN'){ :]
+
+<div id="quickstart">
+    <div class="container">
+        <div class="pagecard">
+            <h1 class="pgtt big">Hacash 全节点运行、HAC及钻石挖矿、矿池搭建等使用手册</h1>
+            <p class="p">主网第一阶段已经稳定运行，目前支持记账挖矿、钻石采掘和钻石、货币的转账交易。可以使用桌面电脑、双路服务器或者云主机运行Hacash节点，相关的工具和服务正在开发当中。</p>
+            <p class="p">你可以使用在线钱包或者命令行钱包，完成账户创建、查询余额、转账、发送交易、转移钻石、查询交易状态等操作。</p>
+            <p class="p">
+                <a class="button olwlt" href="https://wallet.hacash.org" target="_blank">
+                    ❖ 在线钱包
+                </a>
+                <a class="button cmdtl" href="https://github.com/hacash/cmdwallet" target="_blank">
+                    ❖ 命令行工具
+                </a>
+            </p>
+            <p class="p">上面的“命令行工具”需要编译后运行。如果不熟悉程序编译技术，我们已经为你编译好了一个最新版的工具程序（.exe 可执行程序文件），支持 Ubuntu 和 Windows 7 至 Windows 10 系统，双击点开即可使用。</p>
+            <p class="p">
+                <a class="dld" href="https://download.hacash.org/hacash_cmdwallet_windows64.zip" target="_blank">⇩ 下载命令行工具（Windows版本）</a>
+                <a style="margin-left: 40px;" class="dld" href="https://download.hacash.org/hacash_cmdwallet_ubuntu64.zip" target="_blank">⇩ 下载命令行工具（Ubuntu版本）</a>
+                <a style="margin-left: 40px;" class="dld" href="https://download.hacash.org/hacash_cmdwallet_macos64.zip" target="_blank">⇩ 下载命令行工具（MacOS版本）</a>
+            </p>
+
+
+            <div class="card" style="background-color: #efe;">
+                <div class="container">
+                    <h1 class="title" style="color: mediumseagreen;">下载离线安全桌面钱包：</h1>
+                    <p class="p">
+                        <a class="dld" href="https://download.hacash.org/hacash_desktop_wallet_windows64.zip" target="_blank">⇩ 下载离线桌面安全钱包（Windows 64-bit 版本）</a>
+                        <a class="dld d2" style="margin-left: 40px;"  href="https://download.hacash.org/hacash_desktop_wallet_ubuntu64.zip" target="_blank">⇩ 下载离线桌面安全钱包（Ubuntu 64-bit 版本）</a>
+                        <a class="dld d2" style="margin-left: 40px;"  href="https://download.hacash.org/hacash_desktop_wallet_macos64.zip" target="_blank">⇩ 下载离线桌面安全钱包（MacOS 64-bit 版本）</a>
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+<a name="minernode"></a>
+<div id="minernode">
+    <div class="container">
+        <div class="pagecard">
+            <p class="miner_nav">快速转到：<a href="#minernode">1.全节点挖矿</a>， <a href="#poolworker">2.加入矿池挖矿</a>， <a href="#poolcreate">3.搭建矿池服务</a>， <a href="#diamond">4.挖掘区块钻石</a>， <a href="https://github.com/hacash/service/blob/master/doc/rpc_api_doc.cn.md" target="_blank">5.接入交易所</a></p>
+            <br>
+            <p class="warn">[注意] 在首次使用全节点挖矿和钻石挖矿时，必须首先将所有区块数据同步完成，然后再修改配置开启挖矿并重启软件进行挖矿。否则将导致挖矿错误（未在最新的高度进行有效挖矿）。下载全节点后不用修改配置直接运行即可，软件会自动开始同步所有区块。</p>
+            <br>
+            <h1 class="pgtt">一、全节点挖矿</h1>
+            <p class="p">Hacash 发明的 X16RS 挖矿算法随机使用 16 种 sha3 系列的 hash 算法，可抵抗 ASIC 矿机的出现。目前最好的方案是使用电脑 CPU 进行记账挖矿，在初期将奖励的货币更广泛的分散在个人的手中，减少或规避了大量货币集中在少部分人手里，从而尽量避免价格操纵、恶意炒作等问题。</p>
+            <p class="p">欢迎大家使用闲置的桌面 PC 电脑或笔记本电脑进行记账挖矿，换取货币奖励。也可以购买的云服务商提供的主机成为稳定的矿工、矿池节点，以便收集打包交易，为整个网络的普及应用做出贡献。</p>
+            <p class="p">
+                <a class="dld" href="https://github.com/hacash/miner" target="_blank">
+                    编译部署矿工节点
+                </a>
+            </p>
+            <p class="p">如果你的个人电脑是 Windows 系统或者 Ubuntu 系统，那么成为矿工将更加简单。首先点击下面的连接，下载最新版本的矿工程序压缩包（包含可执行文件和一个 .ini 配置文件），支持 Windows 7 至 Windows 10 以及 Ubuntu 16 以上操作系统：</p>
+            <p class="p">
+                <a class="button down windows" href="https://download.hacash.org/miner_node_hacash_windows64.zip" target="_blank">⇩ 下载挖矿节点软件（Windows版64位）miner_node_hacash_windows64.zip</a>
+                <br/><br/>
+                <a class="button down ubuntu" href="https://download.hacash.org/miner_node_hacash_ubuntu64.zip" target="_blank">⇩ 下载挖矿节点软件（Ubuntu版64位）miner_node_hacash_ubuntu64.zip</a>
+                <br/><br/>
+                <a class="button down ubuntu" href="https://download.hacash.org/miner_node_hacash_macos64.zip" target="_blank">⇩ 下载挖矿节点软件（MacOS 版64位）miner_node_hacash_macos64.zip</a>
+            </p>
+            <p class="p">解压.zip压缩包文件至任意目录，可看到如下内容：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/zipcon.png" />
+            </p>
+            <p class="p">压缩包内的 hacash.config.ini 文件是Hacash全节点程序必备的配置文件，你可以用记事本程序打开此文件并修改它。右键单击 hacash.config.ini 文件选择以记事本打开，可看到内部内容为：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/config_ini.png" />
+            </p>
+            <p class="p notice">在开始挖矿之前，首先必须下载同步所有区块数据。</p>
+            <p class="p">请检查你的电脑正确的连接了互联网（矿工程序需要下载区块数据和实时同步新区快和交易数据）。此时即可双击运行 miner_node_hacash_2020_××_××.exe 可执行程序，不出错的情况下，将看到到挖矿程序成功连接网络并开始同步下载数据：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/sync_data.png" />
+            </p>
+            <p class="p">这是在同步下载所有的区块交易数据，是挖矿必备的数据。请耐心等待数据同步完成。区块下载结束后，看到一个<span class="val">sync finish</span>类似的完成提示：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/sync_finish.png" />
+            </p>
+            <p class="p">耐心等待区块下载完成后，可以开始挖矿。最简单的情况下，使用全节点挖矿，你只需要修改配置文件中<span class="val">[miner]</span>项下的三个参数：<span class="val">enable</span>、<span class="val">supervene</span>和<span class="val">rewards</span>：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/config_ini_change.png" />
+            </p>
+            <p class="p">其中，删除<span class="val">enable</span>前面的分号`;`表示开启挖矿（分号`;`表示注释这一项，使其不生效，其他项配置比如钻石挖矿配置同理），<span class="val">supervene</span>参数表示同时启用多少个线程挖矿，一般来说与你的电脑的 CPU 核心数量一致，能发挥最大的计算能力。比如你的电脑 CPU 核心数量为 2 核， 则将<span class="val">supervene: 8</span>改为<span class="val">supervene: 2</span>，如果为 4 核心则改为<span class="val">supervene: 4</span>，以此类推。这时电脑 CPU 的利用率为 100%，为避免电脑卡死，一般建议留出一个核心用于其它计算：4核心则设置为3，8核心则设置为7。也可以根据你的情况自由设置，数值越小，CPU 利用率越低。此值不支持小数，最小为1，也不建议设置成比电脑 CPU 核心数量更大的值。</p>
+            <p class="p"><span class="val">rewards</span>参数的字符串值，是 Hacash 的账户地址，这里用来收取挖矿产生的货币奖励。此地址必须通过密码生成，有特定的格式，自己手动修改拼凑的地址无效！你可以使用 <a class="button olwlt" href="https://wallet.hacash.org" target="_blank">在线钱包</a>，通过只有你自己知晓并严格保密和做好备份的密码，或者随机创建的私钥，生成账户地址。</p>
+            <p class="p notice">【请注意！】如果你不了解<span class="val">.ini</span>配置文件的格式要求，请不要任意更改配置文件中的字段格式、缩进、换行、空格等，格式错误将导致程序无法读取正确的配置信息，从而造成运行失败。</p>
+            <p class="p">修改完配置并核对无误后，关闭软件并重新打开（重启软件才能重新读取配置并生效），这时程序已经自动开始挖矿了，可打开任务管理器查看 CPU 的利用率。</p>
+            <p class="p">整个 Hacash 矿工网络会大约 288 个区块约一天时间调整一次算力难度值，以保证平均每 5 分钟挖出一个区块。耐心等待 5 到 10 分钟，即可在程序窗口内看到打印信息：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/new_block.png" />
+            </p>
+            <p class="p">... ... discovery new block insert success ... 打印信息表示从网络中发现了一个新的区块（别的矿工挖出来的区块），自己重新开始下一轮的挖矿。</p>
+            <p class="p">⬤  ㄜ1:248, bh: 20735, tx: 0, hx: 00000003593c ... ... 打印信息表示自己抢先挖出了一个区块并成功获取了 1 枚 HAC 货币的奖励！</p>
+            <p class="p">【注意】如果中间过程中出现了错误，或者点击执行矿工程序没有反应，请确保你的网络环境良好并始终保持在线。挖矿过程中也不能断网，否则挖矿程序无法实时同步区块信息，将导致挖矿分叉无效！ 如果出现任何长时间无响应的问题，请关闭后重启挖矿客户端。</p>
+        </div>
+    </div>
+
+
+    <a name="poolworker"></a>
+    <div class="container">
+        <div class="pagecard">
+            <h1 class="pgtt">二、加入矿池挖矿</h1>
+            <p class="p">上面说的全节点挖矿需要同步所有区块数据，并且对网络环境的稳定性有相当高的要求（不然容易断网分叉），如果不具备较专业的硬件环境和网络运维知识、或者没有强大的CPU性能的计算机器，采用全节点挖矿方式将遇到一些不必要的麻烦，或者难以得到挖矿产出。</p>
+            <p class="p">我们建议小规模的挖矿参与者加入到矿池中，从而可以避免很多数据和网路运维的麻烦，并且也通过平均的算力统计方法，让大家能更加确定和均匀地分配到挖矿成果，抹平算力波动和运气成分。</p>
+            <p class="p">通过点击以下链接，下载矿池型挖矿程序：</p>
+            <p class="p">
+                <a class="button down windows" href="https://download.hacash.org/miner_pool_worker_hacash_windows64.zip" target="_blank">⇩ 下载矿池挖矿软件（Windows版64位）miner_pool_worker_hacash_windows64.zip</a>
+                <br/><br/>
+                <a class="button down ubuntu" href="https://download.hacash.org/miner_pool_worker_hacash_ubuntu64.zip" target="_blank">⇩ 下载矿池挖矿软件（Ubuntu版64位）miner_pool_worker_hacash_ubuntu64.zip</a>
+                <br/><br/>
+                <a class="button down ubuntu" href="https://download.hacash.org/miner_pool_worker_hacash_macos64.zip" target="_blank">⇩ 下载矿池挖矿软件（MacOS版64位）miner_pool_worker_hacash_macos64.zip</a>
+            </p>
+            <p class="p">解压下载的 .zip 压缩包文件至任意目录，可看到如下内容：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/zipcon_pool.png" />
+            </p>
+            <p class="p">压缩包内的 poolworker.config.ini 文件是矿工程序必备的配置文件，你可以用记事本程序打开此文件并修改它。右键单击 poolworker.config.ini 文件选择以记事本打开，可看到内部内容为：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/poolworker_config_ini.png" />
+            </p>
+            <p class="p"><span class="val">pool</span>参数是矿池的地址，表示要连接的服务器的IP和端口。配置文件中的默认IP地址<span class="val">182.92.163.225:3339</span>是一个长期运行且有效的矿池地址，可以直接使用，由 hacash.org 运营。请联系你的矿池服务商获取有效的地址。不同的矿池服务商的抽成比例不一样，但是一些不诚实的人搭建的矿池将会有卷款潜逃的可能，请一定注意选择你信任的矿池方（不要轻易相信过低的抽成比例甚至补贴），否则将被欺骗而白白浪费算力。</p>
+            <p class="p"><span class="val">rewards</span>参数的字符串，是 Hacash 的账户地址，这里用来收取挖矿产生的货币奖励。此地址必须通过密码生成，有特定的格式，自己手动修改拼凑的地址无效！你可以使用 <a class="button olwlt" href="https://wallet.hacash.org" target="_blank">在线钱包</a>，通过只有你自己知晓并严格保密和做好备份的密码，或者随机创建的私钥，生成账户地址。此地址仅限一个。</p>
+            <p class="p">其中<span class="val">supervene</span>参数表示同时启用多少个线程挖矿，一般来说与你的电脑的 CPU 核心数量一致，能发挥最大的计算能力。比如你的电脑 CPU 核心数量为 2 核， 则将<span class="val">supervene: 8</span>改为<span class="val">supervene: 2</span>，如果为 4 核心则改为<span class="val">supervene: 4</span>，以此类推。这时电脑 CPU 的利用率为 100%，为避免电脑卡死，一般建议留出一个核心用于其它计算：4核心则设置为3，8核心则设置为7。也可以根据你的情况自由设置，数值越小，CPU 利用率越低。此值不支持小数，最小为1。注意：不能设置成比电脑 CPU 核心数量更大的值，否则算力将极度降低。</p>
+            <p class="p">修改完成后，保存文件并关闭记事本程序。请检查你的电脑正确的连接了互联网。此时即可双击运行 miner_pool_worker_hacash_2020_××_××.exe 可执行程序，不出错的情况下，将看到以下类似打印信息：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/pool_worker_start.png" />
+            </p>
+            <p class="p">这时程序已经自动开始挖矿了，可打开任务管理器查看 CPU 的利用率。请联系你的矿池服务商查看实时的算力统计，和你应得的挖矿成果的数额</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/pool_worker_run.png" />
+            </p>
+            <p class="p">⬤  h: 49981, mining successfully and got rewords! 打印信息表示自己挖出了一个区块。</p>
+        </div>
+    </div>
+
+
+
+    <a name="poolcreate"></a>
+    <div class="container">
+        <div class="pagecard">
+            <h1 class="pgtt">三、搭建矿池服务</h1>
+            <p class="p">技术上来说，矿池就是一个挖矿全节点，只不过挖矿的运算被分配给很多台其他的计算机器去执行，它们之间用网络连接进行通信。也就是说，一个矿池就是一个功能被切分到不同的机器上执行的全节点。</p>
+            <p class="p">搭建矿池的也很简单，首先你需要准备一台有外网固定IP的服务器（配置视业务大小而定），然后按上面的方法<a class="dld" href="#minernode">搭建一个挖矿的全节点</a>，等待所有的区块数据同步完毕。</p>
+            <p class="p">然后打开配置文件 hacash.config.ini ，启用<span class="val">[minerpool]</span>项下的<span class="val">enable</span>字段（启用方法为删除enable字段前的分号;字符）：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/pool_worker_config.png" />
+            </p>
+            <p class="p">关闭重新启动全节点，矿池程序就开始了服务，可以打开一个统计算力数据连接，去查看加入矿池挖矿算力的统计：<a class="dld" target="_blank" href="http://182.92.163.225:3340">http://182.92.163.225:3340</a>，其中 182.92.163.225 是你的服务器的外网IP。统计内容是实时在线的挖矿客户端连接、费用比例、结算数量统计、挖矿奖励分配等等信息：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/poolworker_count.png" />
+            </p>
+            <!--
+            <p class="p">点击其中的 <a class="dld" target="_blank" href="http://182.92.163.225:3338/minerpool/transactions">show transactions</a> ，可以看到矿池自动打币结算的每一笔交易，如下：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/poolworker_trs.png" />
+            </p>
+            -->
+            <p class="p">目前矿池结算和自动打币的规则是： 每挖出一个区块算一个统计周期，并结算一次，以周期内所有参与的算力按比例分配挖出的币。应得奖励份额多余2枚则10个区块50分钟打入地址到账， 0.2枚100个区块8.3小时打入， 0.02枚1000区块3.5天到账。</p>
+        </div>
+    </div>
+
+
+
+    <a name="diamond"></a>
+    <div class="container">
+        <div class="pagecard">
+            <h1 class="pgtt">四、挖掘区块钻石</h1>
+            <p class="p">区块钻石是 Hacash 网络上另一种异质 、不可分割的货币。其详细介绍可参看：<a class="dld" target="_blank" href="https://github.com/hacash/paper/blob/master/draft/whitepaper.cn.md#5-%E5%8C%BA%E5%9D%97%E9%92%BB%E7%9F%B3">什么是区块钻石</a>和<a class="dld" target="_blank" href="https://github.com/hacash/paper/blob/master/draft/whitepaper.cn.md#3-%E9%92%BB%E7%9F%B3%E9%87%87%E6%8E%98">钻石采掘算法</a>。</p>
+            <p class="p">区块钻石的采掘目前只能通过全节点 SOLO 挖矿的形式产生，通过部署 <a href="#minernode">全节点挖矿</a> 并同步完所有区块数据之后，将配置文件的<span class="val">[diamondminer]</span>部分修改至如下：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/diamond_miner_config_ini.png" />
+            </p>
+            <p class="p">其中<span class="val">supervene</span>是多线程并行挖矿的并发线程数量，与挖HAC币的supervene参数意义相同；<span class="val">fee_amount</span>参数是为挖掘出的钻石设置的默认手续费竞价的数量，如果一个区块内同时挖出多枚钻石，则手续费报价最高的钻石将被打包进区块被全网确认生效，同时期的其他钻石将被视为无效并丢弃，大家重新再次从头开始挖掘下一枚钻石；<span class="val">fee_password</span>是付出手续费竞价的账户地址的密码或私钥（必须确保账户内拥有fee_amount设置的余额，挖掘出的钻石才能被打包生效）；<span class="val">rewards</span>参数设置的地址为挖出钻石后的奖励地址，也就是新挖出钻石的归属地址。 <span class="val">continued</span>表示是否在挖出一枚钻石后仍然持续挖掘钻石，这将会导致可能在一个周期内挖出多枚钻石，你可以从中选择你认为更有价值的钻石来出局更高的报价。</p>
+            <p class="p">通过<a class="dld" target="_blank" href="https://explorer.hacash.org/">区块浏览器</a>可以实时查看当前周期内挖出的所有钻石的手续费竞价排名。【注意：一个周期（5个区块）只有手续费排名的第一位的唯一一枚钻石将被打包生效，其他钻石将被直接丢弃】。如果需要将排名提升至第一位，则可在<a class="dld" target="_blank" href="https://wallet.hacash.org/">在线钱包</a>里重新设置对应钻石的手续费。（钻石挖矿的结果是一笔特殊的交易被打包进能被5整除的区块高度内，钻石挖掘后排名的手续费就是一笔交易的手续费）</p>
+            <p class="p">启动挖掘钻石的程序后，显示应如下：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/diamond_mining_status.png" />
+            </p>
+            <p class="p">通过设置<span class="val">autobid = true</span>参数可以进行挖出钻石的程序自动竞价。其中<span class="val">fee_amount = ㄜ1:247</span>表示挖出钻石的第一次报价，然后每隔十秒钟，程序自动检查一次当前最高报价的钻石出价，如果报价高于我的报价，则通过参数<span class="val">autobid_fee_margin = ㄜ2:247</span>为报价步进值，自动出具高于最高钻石报价的价格，以始终保持自己挖出的钻石报价最高。参数<span class="val">autobid_fee_max = ㄜ10:248</span>为我将为每一枚钻石出具的竞价上限，表示如果其他人竞价超过这个价格，我将停止竞价，而不会报出比这个数值更高的价格。</p>
+            <p class="p">【特别注意】自动竞价并不保证绝对能让你获得钻石，比如出现一下这些情况：1. 在周期的末尾很晚才挖出钻石，来不及第一次报价，其他当前最高报价的钻石就已经打包进区块；2. 刚好在十秒自动报价的间隙，别人的钻石被打包； 3. 网络同步卡顿导致你的程序没有获取到别人的报价。如果你想要最大可能获得钻石，请尽量优化以下内容：1. 升级到更稳定（链路更优质但不需要带宽更大）的网络；2. 尽量出具更高的首次报价和竞价步进值，以便于在很少的几次报价之后就超越别人设置的竞价最高值，从而打败别人。3. 请不要设置过于小的报价步进值（'autobid_fee_margin' 参数），过于小的手续费更改将低于系统可以识别的精度，从而不能改变你的竞价排序。</p>
+
+
+        </div>
+    </div>
+
+
+
+[: }else{ :]
+
+
+
+
+<a name="quickstart"></a>
+<div id="quickstart">
+    <div class="container">
+        <div class="pagecard">
+            <h1 class="pgtt big">Hacash quick start manual</h1>
+            <p class="p">The first stage of the main network has been running stably, and currently supports bookkeeping mining, diamond mining, and diamond and currency transfer transactions. You can use a desktop computer, a dual-socket server or a cloud host to run the Hacash node, and related tools and services are under development.</p>
+            <p class="p">You can use online wallets or command-line wallets to complete operations such as account creation, balance checking, transfer, sending transactions, transferring diamonds, and checking transaction status.</p>
+            <p class="p">
+                <a class="button olwlt" href="https://wallet.hacash.org" target="_blank">
+                    ❖ Online Wallets
+                </a>
+                <a class="button cmdtl" href="https://github.com/hacash/cmdwallet" target="_blank">
+                    ❖ Command-line Wallets
+                </a>
+            </p>
+            <p class="p">The above "command line tool" needs to be compiled and run. If you are not familiar with program compilation technology, we have compiled a new version of the tool program (.exe executable program file) for you, which supports Ubuntu and Windows 7 to Windows 10 systems. Double-click to open it.</p>
+            <p class="p">
+                <a class="dld" href="https://download.hacash.org/hacash_cmdwallet_windows64.zip" target="_blank">⇩ Download command line wallet（Windows x64）</a>
+                <a style="margin-left: 40px;" class="dld" href="https://download.hacash.org/hacash_cmdwallet_ubuntu64.zip" target="_blank">⇩ Download command line wallet（Ubuntu 64bit）</a>
+                <a style="margin-left: 40px;" class="dld" href="https://download.hacash.org/hacash_cmdwallet_macos64.zip" target="_blank">⇩ Download command line wallet（MacOS 64bit）</a>
+            </p>
+
+            <div class="card" style="background-color: #efe;">
+                <div class="container">
+                    <h1 class="title" style="color: mediumseagreen;">Download offline secure desktop Wallet:</h1>
+                    <p class="p">
+                        <a class="dld" href="https://download.hacash.org/hacash_desktop_wallet_windows64.zip" target="_blank">⇩ Download Offline Desktop Wallet for Windows 64-bit</a>
+                        <a class="dld d2" style="margin-left: 40px;" href="https://download.hacash.org/hacash_desktop_wallet_ubuntu64.zip" target="_blank">⇩ Download Offline Desktop Wallet  for Ubuntu 64-bit</a>
+                        <a class="dld d2" style="margin-left: 40px;" href="https://download.hacash.org/hacash_desktop_wallet_macos64.zip" target="_blank">⇩ Download Offline Desktop Wallet  for MacOS 64-bit</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<a name="minernode"></a>
+<div id="minernode">
+    <div class="container">
+        <div class="pagecard">
+            <p class="miner_nav">Shortcut: <a href="#minernode">1. Full node mining</a>， <a href="#poolworker">2. Join mining pool mining</a>， <a href="#poolcreate">3. Setup mining pool service</a>， <a href="#diamond">4. Mining block diamonds</a>， <a href="https://github.com/hacash/service/blob/master/doc/rpc_api_doc.en.md" target="_blank">5. RPC doc for exchange</a></p>
+            <br>
+            <p class="warn">[note] when full node mining and diamond mining are used for the first time, all block data must be synchronized, and then the mining configuration must be started and the software restarted for mining. Otherwise, it will lead to mining error (no effective mining at the latest height). After downloading the full node, you can run it directly without modifying the configuration, and the software will automatically start synchronizing all blocks.</p>
+            <br>
+            <h1 class="pgtt">1、Full node mining</h1>
+            <p class="p">The X16RS mining algorithm invented by Hacash randomly uses 16 hash algorithms of the sha3 series, which can resist the emergence of ASIC mining machines. At present, the best solution is to use computer CPU for bookkeeping and mining. In the initial stage, the reward currency will be more widely dispersed in the hands of individuals, reducing or avoiding the concentration of a large number of currencies in the hands of a small number of people, so as to avoid price manipulation and maliciousness. Issues such as hype.</p>
+            <p class="p">Everyone is welcome to use idle desktop PCs or laptops for accounting and mining in exchange for currency rewards. The hosts provided by cloud service providers can also be purchased to become stable miners and mining pool nodes to collect packaged transactions and contribute to the popularization of the entire network.</p>
+            <p class="p">
+                <a class="dld" href="https://github.com/hacash/miner" target="_blank">
+                    Compile and deploy miner nodes
+                </a>
+            </p>
+            <p class="p">If your personal computer is a Windows system or an Ubuntu system, it will be easier to become a miner. First click on the link below to download the latest version of the miner program compression package (including executable files and an .ini configuration file), which supports Windows 7 to Windows 10 and Ubuntu 16 and above operating systems:</p>
+            <p class="p">
+                <a class="button down windows" href="https://download.hacash.org/miner_node_hacash_windows64.zip" target="_blank">⇩ Download mining node software（Windows x64）miner_node_hacash_windows64.zip</a>
+                <br/><br/>
+                <a class="button down ubuntu" href="https://download.hacash.org/miner_node_hacash_ubuntu64.zip" target="_blank">⇩ Download mining node software（Ubuntu x64）miner_node_hacash_ubuntu64.zip</a>
+                <br/><br/>
+                <a class="button down ubuntu" href="https://download.hacash.org/miner_node_hacash_macos64.zip" target="_blank">⇩ Download mining node software（MacOS x64）miner_node_hacash_MacOS_64.zip</a>
+            </p>
+            <p class="p">Unzip the .zip compressed package file to any directory, you can see the following content:</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/zipcon.png" />
+            </p>
+            <p class="p">The <span class="val">hacash.config.ini</span> file in the compressed package is a necessary configuration file for the Hacash full node program. You can open this file with the Notepad program and modify it. Right-click the <span class="val">hacash.config.ini</span> file and select Open with Notepad, you can see the internal content:</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/config_ini.png" />
+            </p>
+            <p class="p notice">Before starting mining, you must first download / synchronize all block data.</p>
+            <p class="p">Please check that your computer is properly connected to the Internet (miner program needs to download block data and synchronize new fast and transaction data in real time). You can double-click to run <span class="val">miner_node_hacash_ 2020_××_××</span> If there is no error, you will see that the mining program has successfully connected to the network and started to download data synchronously.</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/sync_data.png" />
+            </p>
+            <p class="p">This is to synchronously Download all block transaction data, which is necessary data for mining. Please wait for the data synchronization to complete. After the block download is finished, you will see a <span class = "Val"> sync finish </span> prompt</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/sync_finish.png" />
+            </p>
+            <p class="p">After patiently waiting for the block synchronization to complete, you can start mining. In the simplest case, you only need to modify the 3 parameters: <span class="val">enable</span>,<span class="val">supervene</span> and <span class="val">rewards</span> under <span class="val">[miner]</span> in the configuration file:</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/config_ini_change.png" />
+            </p>
+            <p class="p">Among them, deleting the semicolon in front of <span class="val">enable</span> means to start mining (semicolon means to cancel this item so that it does not take effect. The same is true for other configurations, such as diamond mining configuration), The <span class="val">supervene</span> parameter indicates how many threads are enabled for mining at the same time. Generally, it is consistent with the number of CPU cores of your computer, which can maximize the computing power. For example, if the number of CPU cores in your computer is 2 cores, change <span class="val">supervene: 8</span> to <span class="val">supervene: 2</span>, if it is 4 cores, change to <span class="val">supervene: 4</span>, and so on. At this time, the computer CPU utilization rate is 100%. In order to avoid computer freezing, it is generally recommended to set aside a core for other calculations: 4 cores are set to 3, and 8 cores are set to 7. You can also set it freely according to your situation. The smaller the value, the lower the CPU utilization. This value does not support decimals, the minimum is 1, and it is not recommended to set it to a value larger than the number of computer CPU cores.</p>
+
+            <p class="p">The string value of the <span class="val">rewards</span> parameter is the Hacash account address, which is used to collect currency rewards generated by mining. This address must be generated by a password and has a specific format. It is invalid to modify the patched address manually! You can use an <a class="button olwlt" href="https://wallet.hacash.org" target="_blank">online wallet</a> to generate an account address using a password that only you know, strictly confidential and backed up, or a randomly created private key.</p>
+
+            <p class="p notice">Notice! If you do not understand the format requirements of the <span class="val">.ini</span> configuration file, please do not arbitrarily change the field format, indentation, newline, space, etc. in the configuration file, the program will not be able to read the correct configuration information due to the format error, which will cause the running failure.</p>
+
+            <p class="p">After modifying the configuration and checking that there is no error, close the software and reopen it (restart the software to re read the configuration and take effect), At this time, the program has automatically started mining, you can open the task manager to view the CPU utilization.</p>
+            <p class="p">There are about 288 blocks once a day in the whole network of hacash miners, and the computational difficulty value is adjusted to ensure that one block is excavated every 5 minutes on average. Wait patiently for 5 to 10 minutes to see the print information in the program window:</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/new_block.png" />
+            </p>
+            <p class="p">... ... discovery new block insert success ... The printed message indicates that a new block (another one dug by other miners) has been discovered from the network and starts the next round of mining on its own.</p>
+            <p class="p">⬤  ㄜ1:248, bh: 20735, tx: 0, hx: 00000003593c ... ... Printing information means that they first dug out a block and successfully obtained 1 HAC currency reward!</p>
+            <p class="p">[Note] if there is an error in the middle of the process, or the click to execute miner program does not respond, please make sure that your network environment is good and always online. In the process of mining, the network can not be disconnected, otherwise the mining program can not synchronize the block information in real time, which will lead to invalid mining fork! If there is any problem of no response for a long time, please shut down and restart the mining client.</p>
+        </div>
+    </div>
+
+
+    <a name="poolworker"></a>
+    <div class="container">
+        <div class="pagecard">
+            <h1 class="pgtt">2、Join mining pool mining</h1>
+            <p class="p">The above-mentioned full node mining needs to synchronize all block data, and has high requirements for the stability of the network environment (otherwise, it is easy to break the network and branch). If you do not have a more professional hardware environment and network operation and maintenance knowledge, or do not have a strong CPU performance computing machine, using the full node mining method will encounter some unnecessary trouble, or it is difficult to get the mining out.</p>
+            <p class="p">We suggest that small-scale mining participants join the mining pool, so as to avoid a lot of trouble in data and network operation and maintenance. In addition, through the average computing power statistical method, we can more definitely and evenly distribute the mining results, and smooth out the fluctuation of computing power and the element of luck.</p>
+            <p class="p">Click on the link below to download the pool mining program: </p>
+            <p class="p">
+                <a class="button down windows" href="https://download.hacash.org/miner_pool_worker_hacash_windows64.zip" target="_blank">⇩ Download pool mining software（Windows x64位）miner_pool_worker_hacash_windows64.zip</a>
+                <br/><br/>
+                <a class="button down ubuntu" href="https://download.hacash.org/miner_pool_worker_hacash_ubuntu64.zip" target="_blank">⇩ Download pool mining software（Ubuntu x64）miner_pool_worker_hacash_ubuntu64.zip</a>
+                <br/><br/>
+                <a class="button down ubuntu" href="https://download.hacash.org/miner_pool_worker_hacash_macos64.zip" target="_blank">⇩ Download pool mining software（MacOS x64）miner_pool_worker_hacash_macos64.zip</a>
+            </p>
+            <p class="p">Unzip the downloaded <span class="val">.zip</span> file to any directory, and you can see the following: </p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/zipcon_pool.png" />
+            </p>
+            <p class="p">In a compressed package <span class="val">poolworker.config.ini</span> File is a necessary configuration file for miner program. You can open this file and modify it with Notepad program. Right click <span class="val">poolworker.config.ini</span> Open the file in Notepad, and you can see the internal contents as follows:</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/poolworker_config_ini.png" />
+            </p>
+            <p class="p">The <span class="val"> pool </span> parameter is the address of the ore pool, indicating the IP and port of the server to be connected. Please contact your pool service provider for a valid address. Different mining pool service providers have different proportion. However, some dishonest people will have the possibility of absconding. Please pay attention to the one you trust (don't easily believe that the proportion is too low or even subsidy), otherwise you will be cheated and waste your computing power.</p>
+
+            <p class="p">The string of <span class="val"> rewards </span> parameter is the account address of hacash, which is used to collect monetary rewards generated by mining. This password must be manually generated, and it must be invalid by patching! You can use <aclass="button owlt" href="https://wallet.hacash.org" target="_blank"> online wallet </a>, the account address is generated through a password that is known only to you and is strictly confidential and well backed up, or a randomly created private key. This address is limited to one.</p>
+
+            <p class="p">The <span class="val"> supervisor </span> parameter indicates how many threads are enabled for mining at the same time. Generally speaking, it is consistent with the number of CPU cores in your computer, which can maximize the computing power. For example, if the number of CPU cores in your computer is 2 cores, change <span class = "val" > superene: 8 </span> to <span class="val"> superene: 2 </span>, if it is 4 cores, change it to <span class="val"> superene: 4 </span>, and so on. At this time, the CPU utilization rate of the computer is 100%. In order to avoid computer jamming, it is generally recommended to set aside a core for other calculations: 4 cores are set to 3, 8 cores are set to 7. You can also set it freely according to your situation. The smaller the value, the lower the CPU utilization. Decimal is not supported for this value. The minimum value is 1. Note: cannot be set to a value larger than the number of CPU cores in the computer, otherwise the computing power will be extremely reduced.</p>
+
+            <p class="p">After modification, save the file and close the Notepad program. Please check that your computer is properly connected to the Internet. You can double-click to run miner_pool_worker_hacash_2020_××_××.exe, without error, will see the following similar print information:</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/pool_worker_start.png" />
+            </p>
+            <p class="p">At this time, the program has automatically started mining, you can open the task manager to view the CPU utilization. Please contact your pool service provider to see the real-time power statistics and the amount of mining results you deserve.</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/pool_worker_run.png" />
+            </p>
+            <p class="p">⬤  h: 49981, mining successfully and got rewords! Printing information indicates that you have dug up a block.</p>
+        </div>
+    </div>
+
+
+
+    <a name="poolcreate"></a>
+    <div class="container">
+        <div class="pagecard">
+            <h1 class="pgtt">3、Construction of mine pool service</h1>
+            <p class="p">Technically speaking, the mining pool is a mining node, but the mining operation is assigned to many other computing machines, and they communicate with each other through network connection. In other words, a pool is a full node whose functions are divided into different machines for execution.</p>
+            <p class="p">Building a mine pool is also very simple. First of all, you need to prepare a server with an external fixed IP address (the configuration depends on the size of the business), then <a class="dld" href="#minernode">build a mining full node</a> according to the above method, and wait for all block data to be synchronized.</p>
+
+            <p class="p">Then open the configuration file <span class="val">hacash.config.ini</span> , enable the enable field under the <span class="val">[minerpool]</span> key（Enable by deleting the semicolon before the enable field）：</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/pool_worker_config.png" />
+            </p>
+            <p class="p">Close and restart the full node, the mining pool program will start the service, you can open a statistical computing power data connection to view the statistics of the mining power added to the mining pool：<a class="dld" target="_blank" href="http://182.92.163.225:3340">http://182.92.163.225:3340</a>，Where <span class="val">182.92.163.225</span> is the external IP of your server. The statistical content is real-time online mining client connection, fee ratio, settlement number statistics, mining reward distribution, etc.</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/poolworker_count.png" />
+            </p>
+            <p class="p">The current rules for mining pool settlement and automatic coin mining are: every block mined is counted as a statistical cycle and settled once, and the mined coins are distributed in proportion to all participating computing power in the cycle. If the due reward share exceeds 2 pieces, 10 blocks will be credited to the address within 50 minutes, 0.2 pieces of 100 blocks will be credited in 8.3 hours, and 0.02 pieces of 1000 blocks will be credited within 3.5 days.</p>
+        </div>
+    </div>
+
+
+
+    <a name="diamond"></a>
+    <div class="container">
+        <div class="pagecard">
+            <h1 class="pgtt">4、Mining block diamonds</h1>
+            <p class="p">Block diamonds are another heterogeneous and indivisible currency on the Hacash network. For details, please refer to: <a class="dld" target="_blank" href="https://github.com/hacash/paper/blob/master/draft/whitepaper.cn.md#5-%E5%8C%BA%E5%9D%97%E9%92%BB%E7%9F%B3">What's block diamonds</a> and <a class="dld" target="_blank" href="https://github.com/hacash/paper/blob/master/draft/whitepaper.cn.md#3-%E9%92%BB%E7%9F%B3%E9%87%87%E6%8E%98">Diamond mining algorithm</a>.</p>
+            <p class="p">Block diamond mining can only be produced by full-node SOLO mining at present. After deploying <a href="#minernode">full-node mining</a> and synchronizing all block data, modify the configuration file To the following:</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/diamond_miner_config_ini.png" />
+            </p>
+            <p class="p">Configuration <span class="val">supervene</span> is the number of concurrent threads for multi-threaded parallel mining, which has the same meaning as the supervene parameter for HAC coin mining; <span class="val" The >fee_amount</span> parameter is the default fee bid amount set for the mined diamonds. If multiple diamonds are mined in a block at the same time, the diamond with the highest fee price will be packaged into the block and the whole network If the confirmation is valid, other diamonds in the same period will be considered invalid and discarded. Everyone starts to mine the next diamond from the beginning; <span class="val">fee_password</span> is the password of the account address that paid the fee for bidding Or private key (must ensure that the account has the balance set by fee_amount, so that the mined diamonds can be packaged into effect); the address set by the <span class="val">rewards</span> parameter is the reward address after the diamond is mined. That is, the attribution address of the newly mined diamond. <span class="val">continued</span> means whether to mined a diamond after mined out a diamond. This will lead to the possibility of mined out more than one diamond in a cycle. You can choose the diamond you think is more valuable to make a higher bid.</p>
+
+            <p class="p">Through the <a class="dld" target="_blank" href="https://explorer.hacash.org/">block explorer</a> you can view the current cycle in real time The bidding ranking of all the diamonds unearthed. [Note: In a period (5 blocks), only the only diamond ranked first in the handling fee will be packaged, and other diamonds will be directly discarded]. If you need to increase the ranking to the first place, you can reset the corresponding in <a class="dld" target="_blank" href="https://wallet.hacash.org/">online wallet</a> Diamond handling fee. (The result of diamond mining is that a special transaction is packed into a block height that can be divisible by 5. The transaction fee for ranking after diamond mining is the transaction fee)</p>
+
+            <p class="p">After starting the process of mining diamonds, the prints should be as follows:</p>
+            <p class="p">
+                <img class="cutwrap lazy" data-src="/image/tobeminer/diamond_mining_status.png" />
+            </p>
+
+            <p class="p">By setting the parameter of <span class="val">autobid = true</span>, the program of digging out diamonds can be bid automatically. Among them, <span class="val">fee_ amount = ㄜ1:247</span> means the first bid for digging out diamonds. Then, every 10 seconds, the program automatically checks the diamond bid of the current highest bid. If the bid is higher than my bid, the parameter autobid will be used <span class="val">autobid_fee_margin = ㄜ 2:247</span> is the step value of bid, and the price higher than the highest diamond bid will be automatically issued, so as to keep the highest bid of diamond excavated by oneself. Parameter <span class="val">autobid_fee_max = ㄜ 10:248</span> is the upper limit that I will issue for each diamond, which means that if other people bid more than this price, I will stop bidding and will not quote a higher price.</p>
+
+            <p class="p">[special attention] automatic bidding does not guarantee that you will get diamonds. For example, the following situations occur: 1. Diamonds are mined out late at the end of the cycle, and other diamonds with the highest current price have already been packed into the block before the first bid; 2. The diamonds of others are packed just in the interval of 10 seconds' automatic bid; 3 Network synchronization is stuck and your program doesn't get other people's bid. If you want to get the diamond as much as possible, please try to optimize the following contents: 1. Upgrade to a more stable network (with better links but not more bandwidth); 2. Issue higher initial bid and bidding step value as much as possible, so as to surpass the highest bidding value set by others after a few automatic bidding, so as to defeat others. 3.Please do not set too small step value of bid (autobid_fee_margin), If the bid change is too small, it will be lower than the accuracy that can be recognized by the system, so you can't change your bidding order.</p>
+
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+[: } :]
+
+
+</div></div>
