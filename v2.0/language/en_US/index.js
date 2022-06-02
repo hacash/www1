@@ -5,6 +5,7 @@ module.exports = {
         info: 'Open cryptocurrency for large-scale payment and real-time settlement with high "Monetary Quality"',
         learn: 'Learn Hacash',
         setwlt: 'Set up wallet',
+        trshac: 'Tranfer',
     },
 
     traits: {
