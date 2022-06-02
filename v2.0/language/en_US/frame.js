@@ -10,6 +10,7 @@ module.exports = {
         explorer: "Explorer",
         mining: "Mining",
         whitepaper: "Whitepaper",
+        download: 'Download',
         github: "Github",
         docs: "Docs",
         releaselog: "Software download & release log",

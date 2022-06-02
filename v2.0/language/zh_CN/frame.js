@@ -10,6 +10,7 @@ module.exports = {
         explorer: "区块浏览器",
         mining: "挖矿",
         whitepaper: "白皮书",
+        download: '下载',
         github: "Github",
         docs: "文档",
         releaselog: "软件下载及版本日志",
