@@ -4,6 +4,7 @@ module.exports = {
         name: 'HACASH',
         info: 'Open cryptocurrency for large-scale payment and real-time settlement with high "Monetary Quality"',
         learn: 'Learn Hacash',
+        learnhacd: "HACD Explain",
         setwlt: 'Set up wallet',
         trshac: 'Tranfer',
     },
