@@ -4,6 +4,7 @@ module.exports = {
         name: 'HACASH',
         info: '一种大规模支付结算的开放性加密货币，非常优越的「货币性」设计',
         learn: '了解 Hacash',
+        what: 'Hacash 简介',
         learnhacd: "了解 HACD",
         setwlt: '钱包创建地址',
         trshac: '学习转账',
