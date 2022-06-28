@@ -31,7 +31,7 @@ module.exports = {
 
     pagelink: {
         whitepaper: "https://github.com/hacash/paper/blob/master/whitepaper.cn.md",
-        onlinewallet: "https://wallet.hacash.org/zh",
+        onlinewallet: "https://wallet.hacash.org/?lang=zh_CN",
         rpcdoc: "https://github.com/hacash/service/blob/master/doc/rpc_api_doc.cn.md",
         miningdoc: "https://github.com/hacash/service/blob/master/doc/miner_service_api.cn.md",
         x16rsdoc: "https://github.com/hacash/x16rs/blob/master/doc/x16rs_algorithm_description.cn.md",
