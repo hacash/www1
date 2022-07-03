@@ -13,6 +13,8 @@
     padding: 20px;
     margin: 20px 0;
     text-align: center;
+    background: #efefef;
+    border: 1px solid #999;
     h1 {
         font-size: 33px;
         line-height: 40px;
@@ -47,12 +49,12 @@
         opacity: 0;
         // display: none;
         margin: auto;
-        width: 600px;
+        width: 660px;
         height: 340px;
         background: #fff;
         position: absolute;
         top: 0;
-        left: 30px;
+        left: 100px;
         // top: -100px;
         // margin: 40px auto 80px auto;
         .vcon, iframe {
@@ -83,7 +85,7 @@
             50%{ opacity: 0.25; }
             100%{ opacity: 1; }
         }
-        width: 660px;
+        width: 860px;
         height: 340px;
         // padding: 20px 0;
         // border: #222 solid 1px;
@@ -92,29 +94,32 @@
         text-align: center;
         // margin-left: 200px;
         h1.slg {
+            transform: scaleY(1.5);
             z-index: 2;
             transition: all 0.4s;
             position: absolute;
             top: 120px;
             width: 100%;
             color: #fff;
-            font-size: 60px;
+            font-size: 50px;
             height: 60px;
             line-height: 60px;
         }
         .name {
+            transform: scaleY(1.5);
+            font-weight: bold;
             position: absolute;
-            top: 0;
+            top: 50px;
             left: 0;
             width: 100%;
             padding: 50px 0;
             z-index: 1;
             transition: opacity 1.2s;
             opacity: 0;
-            font-size: 300px;
-            color: #222;
-            height: 240px;
-            line-height: 240px;
+            font-size: 200px;
+            line-height: 200px;
+            height: 340px;
+            color: #22222299;
             // padding: 20px 0;
         }
         .name.ani {
@@ -122,12 +127,13 @@
             // display: none;
         }
         .info {
+            transform: scaleY(1.5);
             z-index: 2;
             transition: all 0.4s;
             position: absolute;
             width: 100%;
             bottom: 120px;
-            font-size: 20.4px;
+            font-size: 18px;
             color: darkcyan;
         }
         .learn {
@@ -247,10 +253,10 @@
     .con {
         // padding-top: 200px;
         h1.slg {
-            top: -75px;
+            top: -100px;
         }
         .info {
-            bottom: -35px;
+            bottom: -65px;
         }
         .name {
             display: none;
@@ -272,7 +278,8 @@
 #traits {
     padding: 50px 0 0 0;
 
-    .img {
+    p.img {
+        padding-top: 20px;
         a {
             display: block;
         }
@@ -287,6 +294,7 @@
         p {
             font-size: 20px;
             margin-top: 25px;
+            text-align: justify;
             b {
                 font-size: inherit;
             }
@@ -301,6 +309,7 @@
         margin-top: 20px;
         font-size: 20px;
         text-align: left;
+        text-align: justify;
     }
     table.itwrap {
         margin: 40px auto;
@@ -350,13 +359,16 @@
             line-height: 20px;
             padding: 0 10px;
             i {
+                font-style: normal;
                 font-size: inherit;
                 color: inherit;
                 line-height: inherit;
+                display: block;
             }
         }
         p.t {
             float: left;
+            width: 66%;
             &::before {
                 content: "➟ ";
             }
@@ -364,6 +376,7 @@
         p.meta {
             float: right;
             font-size: 16px;
+            text-align: right;
         }
     }
     .item:hover {
@@ -406,18 +419,19 @@
 
 #link {
     padding: 50px 0 0 0;
+    text-align: center;
 
     .item {
         display: inline-block;
-        width: 21%;
-        padding: 30px 1.5%;
+        width: 32%;
+        padding: 30px 0;
         text-align: center;
         cursor: pointer;
         * {
             color: #555;
         }
         h1 {
-            font-size: 28px;
+            font-size: 22px;
         }
         p {
             font-size: 18px;
@@ -468,7 +482,7 @@
                 font-size: 18px;
                 font-style: normal;
                 &::before {
-                    content: "➝";
+                    content: "";
                 }
             }
             a:hover {
@@ -506,6 +520,11 @@
     .item {
         width: 49%;
         padding: 20px 0;
+        .box {
+            h1.t {
+
+            }
+        }
 
     }
 }
@@ -524,13 +543,23 @@
 #news {
     padding: 0px 0 0 0;
     .item {
-        padding: 10px 0;
+        padding: 20px 0;
+        text-align: center;
         p {
             display: block !important;
             float: none !important;
+            text-align: center;
+        }
+        p.t {
+            width: auto;
         }
         p.meta {
+            display: block;
             color: #888;
+            text-align: center;
+            i {
+                display: inline;
+            }
         }
     }
 }
@@ -551,7 +580,8 @@
 #detail {
     padding: 0px 0 0 0;
     .intxt {
-        margin: 20px 10px;
+        margin: 20px 5px;
+        text-align: center;
     }
     table.itwrap {
         display: block;
@@ -589,12 +619,14 @@
         padding: 20px 0;
         height: auto;
         h1.slg {
+            transform: scaleY(1);
             position: static;
             font-size: 60px;
             line-height: 60px;
             height: auto;
         }
         .name {
+            display: none;
             position: static;
             padding: 0;
             font-size: 160px;
@@ -627,9 +659,12 @@
             }
         }
         .info {
+            transform: scaleY(1);
+            margin: 20px;
+            width: auto;
             position: static;
-            font-size: 20.4px;
-            opacity: 0;
+            font-size: 22px;
+            opacity: 1;
         }
     }
 }
@@ -644,6 +679,14 @@
         opacity: 0;
     }
 
+}
+
+div.pgtitlebl {
+    margin: 0;
+    padding: 20px 0;
+    margin-top: 80px !important;
+    background: #ddd;
+    border: none;
 }
 
 }
