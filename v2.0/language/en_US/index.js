@@ -2,7 +2,7 @@ module.exports = {
     screen: {
         slg: 'Money, Payment and Store of Value',
         name: 'HACASH',
-        info: 'Open cryptocurrency for large-scale payment and real-time settlement with high "Monetary Quality"',
+        info: 'Open cryptocurrency for large-scale payment and real-time settlement with high "Monetary Nature"',
         learn: 'Learn Hacash',
         what: 'What is Hacash',
         learnhacd: "HACD Explain",
@@ -11,9 +11,9 @@ module.exports = {
     },
 
     traits: {
-        title: `Why does Hacash have superior "Monetary Quality"?`,
+        title: `Why does Hacash have superior "Monetary Nature"?`,
         note1: `The invention of blockchain is to achieve the goal of "Peer-to-Peer Electronic Cash System". Up to now, there is no exact evidence to show that it has a particularly significant value and real use other than "Electronic Money". We believe that the whole encryption industry, or blockchain industry, has only one important direction from beginning to end: <b>To achieve a more sound and efficient global currency</b>.`,
-        note2: `As the first sentence of Hacash white paper says, "<b>We have come to the threshold of the era of monetary system reform</b>.". The emergence of bitcoin shows us the direction of change, and its great value is beyond doubt, but it does not mean that we can get the best and final solution for the first time. After all, human beings always need to move forward rather than stop. The purpose of the emergence of Hacash is to prove that the only way to surpass bitcoin and achieve the large-scale use of cryptocurrency in real business and daily life is better "Monetary Quality", rather than any other more high-end and complex "blockchain technology".`,
+        note2: `As the first sentence of Hacash white paper says, "<b>We have come to the threshold of the era of monetary system reform</b>.". The emergence of bitcoin shows us the direction of change, and its great value is beyond doubt, but it does not mean that we can get the best and final solution for the first time. After all, human beings always need to move forward rather than stop. The purpose of the emergence of Hacash is to prove that the only way to surpass bitcoin and achieve the large-scale use of cryptocurrency in real business and daily life is better "Monetary Nature", rather than any other more high-end and complex "blockchain technology".`,
         imgsrc: "/image/hacash_as_money_en.png",
     }, 
 
@@ -22,8 +22,8 @@ module.exports = {
         intro: {
             h1: "What is Hacash?",
             p1: `A fully designed, completely fair, open and shared standard system for the issuance and circulation of cryptocurrency for modern financial transaction settlement, business and personal payment will jointly promote mankind to enter the era of open finance in this century, and help complete the transformation of human currency to cryptocurrency.`,
-            p2: `Hacash believes that although Bitcoin is revolutionary, it is not perfect, especially its "Monetary Quality" aspect has a very large shortcomings. Hacash's mission is not to subvert and replace Bitcoin technically, but to learn from Bitcoin's "blockchain" and "computing power issuance currency" technology, using the "Austrian Monetary Economics Theory" as the guiding ideology, focusing on expansion , Improve and complete the system's "Monetary Quality" indicators, including BTC to form a complete currency system, and combined with the channel chain settlement network, to promote the large-scale circulation and real-time settlement of encrypted currencies in real personal and commercial payments.`,
-            p3: `Hacash's "Monetary Quality" is reflected in: 1. The most fair and market-oriented currency issuance mechanism; 2. Three different energy levels and heterogeneous commodity currencies: Diamond, BTC(transferred), HAC; 3. Channel chain settlement Real-time settlement of large-scale payments through the network; 4. Rich and risk-free conditional payment agreements and multi-party signing contracts to adapt to modern commercial payment circulation; 5. Optional features such as privacy protection, anti-calculation power attacks, and flexible third-party financial services.`,
+            p2: `Hacash believes that although Bitcoin is revolutionary, it is not perfect, especially its "Monetary Nature" aspect has a very large shortcomings. Hacash's mission is not to subvert and replace Bitcoin technically, but to learn from Bitcoin's "blockchain" and "computing power issuance currency" technology, using the "Austrian Monetary Economics Theory" as the guiding ideology, focusing on expansion , Improve and complete the system's "Monetary Nature" indicators, including BTC to form a complete currency system, and combined with the channel chain settlement network, to promote the large-scale circulation and real-time settlement of encrypted currencies in real personal and commercial payments.`,
+            p3: `Hacash's "Monetary Nature" is reflected in: 1. The most fair and market-oriented currency issuance mechanism; 2. Three different energy levels and heterogeneous commodity currencies: Diamond, BTC(transferred), HAC; 3. Channel chain settlement Real-time settlement of large-scale payments through the network; 4. Rich and risk-free conditional payment agreements and multi-party signing contracts to adapt to modern commercial payment circulation; 5. Optional features such as privacy protection, anti-calculation power attacks, and flexible third-party financial services.`,
             p4: `If Bitcoin is compared to the original and revolutionary C language in the field of programming languages, then Hacash's mission is to become C++.`,
         },
         items: {
