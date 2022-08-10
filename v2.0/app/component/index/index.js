@@ -3,6 +3,56 @@
 (function(){
 
     var sce = document.getElementById('screen')
+    , boll = sce.getElementsByClassName('boll')[0]
+    , bollpoints = [
+        [58, 17],
+
+        [80, 22],
+        [80, 210],
+        [80, 110],
+        [160, 110],
+        [160, 22],
+        [160, 210],
+        [200, 210],
+        [250, 22],
+        [296, 200],
+        [315, 210],
+        [340, 190],
+        [330, 120],
+        [340, 50],
+        [350, 190],
+        [370, 210],
+        [396, 210],
+        [434, 170],
+        [456, 210],
+        [508, 20],
+        [558, 200],
+        [572, 210],
+        [586, 150],
+        [595, 200],
+        [640, 210],
+        [660, 180],
+        [653, 140],
+        [595, 80],
+        [595, 30],
+        [625, 12],
+        [655, 30],
+        [666, 75],
+        [685, 18],
+        [709, 30],
+        [709, 210],
+        [709, 110],
+        [790, 110],
+        [790, 22],
+        [790, 200],
+
+        [800, 210],
+        [900, 210],
+        [900, 280],
+        [-40, 280],
+        [-40, 17],
+    ]
+    , bollpn = 0
     , video = sce.getElementsByClassName('video')[0]
     , vcon = video.getElementsByClassName('vcon')[0]
     , close = video.getElementsByClassName('close')[0]
@@ -11,6 +61,18 @@
     , svbtns = learn.getElementsByClassName('svbtn')
     , vidx = 0
     ;
+
+    // 轨迹球
+    function bollroll() {
+        if(bollpn >= bollpoints.length){
+            bollpn = 0
+        }
+        var px = bollpoints[bollpn];
+        boll.style.left = px[0] + 'px'
+        boll.style.top = px[1] + 'px'
+        bollpn++;
+    }
+    setInterval(bollroll, 300);
 
     // 关闭视频
     close.onclick = function(){
