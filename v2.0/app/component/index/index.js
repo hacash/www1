@@ -110,7 +110,7 @@
     function showVideo(info) {
         learn.style.display = 'none'
         sce.classList.remove('show')
-        vcon.innerHTML = '<iframe src="https://www.youtube.com/embed/'+info+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        vcon.innerHTML = '<iframe src="https://www.youtube.com/embed/'+info+'&controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         setTimeout(function(){
             sce.classList.add('video')
             setTimeout(function(){
