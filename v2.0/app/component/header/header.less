@@ -43,6 +43,7 @@ i.ftico{
 }
 
 
+@themegoldcolor: #e4b23a;
 
 
 
@@ -53,7 +54,7 @@ i.ftico{
 
     * {
         transition: all @tsft ease-out;
-        color: whitesmoke;
+        color: #fff;
     }
 
     transition: top 0.3s ease-out;
@@ -65,10 +66,10 @@ i.ftico{
     margin: 0;
     padding: 1px;
     
-    background-color: #111;
+    background-color: @themegoldcolor - #111;
     width: 100%;
 
-    @itemshowcl: #ffffff;
+    // @itemshowcl: #fff;  
     .container {
         padding: 1px;
     }
@@ -85,7 +86,7 @@ i.ftico{
             display: inline-block;
             line-height: @tbh;
             height: @tbh;
-            color: #ffffffbb;
+            // color: @itemshowcl;
         }
         .hacash {
             font-weight: bold;
@@ -107,8 +108,6 @@ i.ftico{
         height: @tbh;
         line-height: @tbh;
     }
-
-    @actvcl: cadetblue;
 
     .itembr {
         vertical-align: middle;
@@ -137,16 +136,16 @@ i.ftico{
             height: @tbh;
             font-weight: normal;
             font-size: 18px;
-            color: @itemshowcl;
+            // color: @itemshowcl;
         }
         .lk:hover {
-            color: @actvcl;
+            color: @themegoldcolor;
             i {
-                color: @actvcl;
+                color: @themegoldcolor;
             }
         }
         .b {
-            color: @itemshowcl;
+            // color: @itemshowcl;
             &::after{
                 content: "\e807";
                 margin-left: 5px;
@@ -167,7 +166,7 @@ i.ftico{
             min-width: 128px;
             display: none;
             background: #222;
-            border-top: 1px solid @actvcl;
+            border-top: 1px solid @themegoldcolor;
             li {
                 a {
                     display: block;
@@ -181,16 +180,16 @@ i.ftico{
                 }
                 a:hover {
                     background-color: #00000022;
-                    color: @actvcl;
+                    color: @themegoldcolor;
                 }
             }
         }
     }
     .item:hover {
         .b {
-            color: @actvcl;
+            color: @themegoldcolor;
             i {
-                color: @actvcl;
+                color: @themegoldcolor;
             }
             &::after{
                 content: "\e80a";
@@ -259,7 +258,7 @@ i.ftico{
         .logoft {
             b {
                 font-weight: normal !important;
-                color: darkcyan;
+                color: @themegoldcolor;
             }
         }
         .logoft, .navs {

@@ -1,5 +1,7 @@
 
 
+@themegoldcolor: #e4b23a;
+
 
 #footer {
     
@@ -106,6 +108,23 @@
             text-decoration: underline;
             color: #fff;
         }
+        a.source {
+            cursor: pointer;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px 10px 10px;
+            border: solid 1px #333;
+            line-height: 40px;
+            img {
+                height: 40px;
+                vertical-align: top;
+                margin-right: 10px;
+            }
+            &:hover {
+                background-color: #000;
+                border: solid 1px #666;
+            }
+        }
 
     }
     .right {
@@ -116,6 +135,7 @@
             margin-bottom: 14px;
         }
         p {
+            padding-bottom: 10px;
             a {
                 text-decoration: underline;
                 color: #fff
@@ -182,7 +202,7 @@
         padding: 10px;
         margin: 0;
         a {
-            color: cadetblue !important;
+            color: @themegoldcolor !important;
         }
     }
     p.addr {

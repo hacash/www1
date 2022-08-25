@@ -21,6 +21,7 @@ module.exports = {
     footer: {
         donate_word: "Donate HAC to support Hacash.org:", 
         devttl: "Development:",
+        lgdsi: "Logo design source file",
         a1: "RPC API doc",
         i1: "for exchange or payment applications",
         a2: "Mining service doc",

@@ -1,7 +1,12 @@
 /* index.less */
 
 #topbar {
-    // background: none;
+    background-color: #111;
+    .box {
+        a, b {
+            color: #ccc;
+        }
+    }
 }
 
 @modelbackcolor: #161616;
@@ -81,9 +86,9 @@
     .con {
         display: block;
         @keyframes opacityLoop {
-            0%{ opacity: 1; }
-            50%{ opacity: 0.25; }
-            100%{ opacity: 1; }
+            0%{ opacity: 0.3; }
+            50%{ opacity: 0.1; }
+            100%{ opacity: 0.3; }
         }
         width: 860px;
         height: 340px;
@@ -109,17 +114,6 @@
                 font-size: 74px;
             }
         }
-        .name .boll {
-            transition: all 0.3s;
-            z-index: 6;
-            position: absolute;
-            left: 58px;
-            top: 17px;
-            box-shadow: 0 0 8px 5px #ffffff99;
-            width: 0px;
-            height: 0px;
-            background-color: #ffffff00;
-        }
         .name {
             position: absolute;
             height: 230px;
@@ -127,29 +121,27 @@
             left: 0;
             width: 100%;
             overflow: hidden;
-            transition: opacity 1.2s;
+            transition: opacity 1s;
             z-index: 1;
             opacity: 0;
-
+            img.logo {
+                height: 210px;
+                position: absolute;
+                left: 40px;
+                top: 10px;
+            }
             p {
-                transform: scaleY(1.5);
+                transform: scaleY(1.5) scaleX(0.725);
                 font-weight: bold;
                 position: absolute;
                 top: 40px;
-                left: 0;
+                left: 86px;
                 width: 100%;
-                // padding: 50px 0;
                 font-size: 200px;
                 line-height: 200px;
                 height: 340px;
-                color: #22222299;
-
+                color: @themegoldcolor;
             }
-            // padding: 20px 0;
-        }
-        .name.ani {
-            opacity: 0;
-            // display: none;
         }
         .info {
             transform: scaleY(1.5);
@@ -159,7 +151,7 @@
             width: 100%;
             bottom: 120px;
             font-size: 18px;
-            color: darkcyan;
+            color: #fff;
             &.zh_CN {
                 transform: none;
                 font-size: 23px;
@@ -187,7 +179,7 @@
                 width: 220px;
                 border: 1px solid #333;
                 cursor: pointer;
-                background-color: #ffffff0f;
+                background-color: #ffffff11;
             }
             a.next {
                 width: 40px;
@@ -225,7 +217,7 @@
             opacity: 1;
         }
         .learn a:hover {
-            background-color: #ffffff22;
+            background-color: #ffffff33;
             border-color: #888;
             i, b {
                 color: #ddd;
@@ -267,6 +259,9 @@
             opacity: 1;
         }
         .name.ani {
+            opacity: 0.4;
+        }
+        .name.ani.run {
             animation: opacityLoop 2s infinite linear;
         }
         .info {
@@ -471,7 +466,7 @@
         }
         p {
             font-size: 18px;
-            color: #555;
+            color: #999;
         }
     }
     .item:hover {
@@ -481,8 +476,8 @@
         }
     }
     .item.trade {
-        h1, p {
-            color: cadetblue;
+        p {
+            color: @themegoldcolor;
         }
     }
 }
