@@ -28,6 +28,8 @@ module.exports = {
         i2: "mining services and mining pool development",
         a3: "X16RS mining algorithm doc",
         i3: "design details and explanation of GPU mining",
+        a4: "HAC & HACD mining fairness doc",
+        i4: "mining difficulty and bidding mechanism",
     },
 
     pagelink: {
@@ -36,6 +38,7 @@ module.exports = {
         rpcdoc: "https://github.com/hacash/service/blob/master/doc/rpc_api_doc.en.md",
         miningdoc: "https://github.com/hacash/service/blob/master/doc/miner_service_api.en.md",
         x16rsdoc: "https://github.com/hacash/x16rs/blob/master/doc/x16rs_algorithm_description.en.md",
+        fairdoc: "https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_description.en.md",
     }
 
 

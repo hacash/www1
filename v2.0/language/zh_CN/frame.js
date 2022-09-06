@@ -28,6 +28,8 @@ module.exports = {
         i2: "挖矿服务或商业矿池开发",
         a3: "X16RS 挖矿算法说明",
         i3: "算法特征及GPU挖矿详解",
+        a4: "HAC & HACD 挖矿公平性说明",
+        i4: "区块奖励、挖矿难度和竞价机制解释",
     },
 
     pagelink: {
@@ -36,6 +38,7 @@ module.exports = {
         rpcdoc: "https://github.com/hacash/service/blob/master/doc/rpc_api_doc.cn.md",
         miningdoc: "https://github.com/hacash/service/blob/master/doc/miner_service_api.cn.md",
         x16rsdoc: "https://github.com/hacash/x16rs/blob/master/doc/x16rs_algorithm_description.cn.md",
+        fairdoc: "https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_description.cn.md",
     }
 
 
