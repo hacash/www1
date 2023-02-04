@@ -10,6 +10,6 @@
   },
   "main": "index.js",
   "dependencies": {
-    "koappx": "^1.1.4"
+    "koappx": "^1.1.9"
   }
 }
