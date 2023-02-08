@@ -15,6 +15,8 @@ exports.datas = async function(cnf, ctx)
 {
     // let data_types = await ddd.getTypes()
     
+    console.log(ctx.lang)
+
     return {
         // isMobile: types.isMobile(ctx.req),
         // numToThousands: utilnumber.numToThousands,
