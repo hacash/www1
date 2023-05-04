@@ -1,0 +1,137 @@
+
+<script>
+    var hac_amount = "[:= hac_amount? hac_amount : '' :]";
+</script>
+
+<div class="tpmg"><br><br><br><br></div>
+
+<div class="fmtshow">
+
+</div>
+
+[: if(lang.useset == 'zh_CN'){ :]
+
+
+    <div id="quickstart">
+        <div class="container">
+            <div class="pagecard">
+                <h1 class="pgtt big">HAC 单位格式说明与转换</h1>
+                <p class="p">HAC是一种支持无限分割的货币资产，为实现这一点而发明了一套独特的记账格式规范（例如 1:248 ），类似科学计数法（例如1 x 10^248）。本文档将解释此单位格式的技术原理和换算方法。</p>
+                <p class="p" style="word-break: break-all;">首先，BTC在比特币链上的可分割性为一亿分之一，也即是1//100000000。而HAC的可分割性为 一亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿亿分之一，也就是说一枚HAC最多可以分成100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000份（1的后面跟248个零，为10^248），这个数量比宇宙中的原子还要大很多个数量级（已知、可观测的宇宙中，有10^78到10^82个原子）。</p>
+                <p class="p">如果在每一处都直接显示如此多数量的0，这将造成严重的可读性和输入性问题。HAC采用一种简写的方式来避免0的重复显示，即采用一种科学计数法的简写形式，将 1 x 10^248 简写为 1:248。下面是一些换算示例：</p>
+                <p class="p">
+                    <div class="tbmb f">
+                        <table>
+                            <tr><th>枚数</th><th>简记</th><th>科学计数法</th></tr>
+                            <tr><td>1 HAC</td><td>1:248</td><td>1 x 10^248</td></tr>
+                            <tr><td>10 HAC</td><td>1:249</td><td>1 x 10^249</td></tr>
+                            <tr><td>100 HAC</td><td>1:250</td><td>1 x 10^250</td></tr>
+                            <tr><td>1000 HAC</td><td>1:251</td><td>1 x 10^251</td></tr>
+                            <tr><td>10000 HAC</td><td>1:252</td><td>1 x 10^252</td></tr>
+                        </table>
+                    </div>
+                    <div class="tbmb">
+                        <table>
+                            <tr><th>枚数</th><th>简记</th><th>科学计数法</th></tr>
+                            <tr><td>0.1 HAC</td><td>1:247</td><td>1 x 10^247</td></tr>
+                            <tr><td>0.01 HAC</td><td>1:246</td><td>1 x 10^246</td></tr>
+                            <tr><td>0.001 HAC</td><td>1:245</td><td>1 x 10^245</td></tr>
+                            <tr><td>0.0001 HAC</td><td>1:244</td><td>1 x 10^244</td></tr>
+                            <tr><td>0.00001 HAC</td><td>1:243</td><td>1 x 10^243</td></tr>
+                        </table>
+                    </div>
+                    <div class="tbmb">
+                        <table>
+                            <tr><th>枚数</th><th>简记</th><th>科学计数法</th></tr>
+                            <tr><td>12 HAC</td><td>12:248</td><td>12 x 10^248</td></tr>
+                            <tr><td>6789 HAC</td><td>6789:248</td><td>6789 x 10^248</td></tr>
+                            <tr><td>1.456 HAC</td><td>1456:245</td><td>1456 x 10^245</td></tr>
+                            <tr><td>0.172 HAC</td><td>172:245</td><td>172 x 10^245</td></tr>
+                            <tr><td>35.94 HAC</td><td>3594:246</td><td>3594 x 10^246</td></tr>
+                        </table>
+                    </div>
+                </p>
+                <p class="p">如此设计和显示的单位格式，让HAC既能够实现无限分割，又能避免恼人的可读性、输入性问题，代价就是需要一定的学习理解和适应过程，才能快速读出货币的实际数量。</p>
+                <p class="p">你也可以在下方的输入框内填写HAC的数量并点击“转换”按钮，得到通常的形式：</p>
+                <p class="p">
+                    <div class="fmtbox" id="cvfmt">
+                        <input class="in" placeholder="例如：1456:245 或 ㄜ11,909,493:244" /> <button class="btn">转换单位</button>
+                        <p class="res"></p>
+                    </div>
+                </p>
+                <p class="p"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+[: }else{ :]
+
+
+    <div id="quickstart">
+        <div class="container">
+            <div class="pagecard">
+                <h1 class="pgtt big">HAC Unit Format Description and Conversion</h1>
+                <p class="p">HAC is a monetary asset that supports unlimited division. To achieve this, we have invented a set of unique accounting format specifications (such as 1:248), similar to the Scientific notation (such as 1 x 10 ^ 248). This document will explain the technical principles and conversion methods of this unit format.</p>
+                <p class="p" style="word-break: break-all;">The divisibility of BTC on the Bitcoin chain is 1/100 million, which is 1/100 million. And the separability of HAC is 1 / 10^248, That is to say, a HAC can be divided into a maximum of 100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 part (1 followed by 248 zeros, 10 ^ 248), This quantity is many orders of magnitude larger than the atoms in the universe (there are 10 ^ 78 to 10 ^ 82 atoms in the known and observable universe).</p>
+                <p class="p">If such a large number of zeros are displayed directly in each location, it will cause serious readability and input issues. HAC adopts a simplified way to avoid the repeated display of 0, that is, it adopts a simplified form of Scientific notation, which shortens 1 x 10 ^ 248 to 1:248. Here are some conversion examples:</p>
+                <p class="p">
+                    <div class="tbmb f">
+                        <table>
+                            <tr><th>HAC</th><th>Abbr</th><th>Scientific<br>notation</th></tr>
+                            <tr><td>1 HAC</td><td>1:248</td><td>1 x 10^248</td></tr>
+                            <tr><td>10 HAC</td><td>1:249</td><td>1 x 10^249</td></tr>
+                            <tr><td>100 HAC</td><td>1:250</td><td>1 x 10^250</td></tr>
+                            <tr><td>1000 HAC</td><td>1:251</td><td>1 x 10^251</td></tr>
+                            <tr><td>10000 HAC</td><td>1:252</td><td>1 x 10^252</td></tr>
+                        </table>
+                    </div>
+                    <div class="tbmb">
+                        <table>
+                            <tr><th>HAC</th><th>Abbr</th><th>Scientific<br>notation</th></tr>
+                            <tr><td>0.1 HAC</td><td>1:247</td><td>1 x 10^247</td></tr>
+                            <tr><td>0.01 HAC</td><td>1:246</td><td>1 x 10^246</td></tr>
+                            <tr><td>0.001 HAC</td><td>1:245</td><td>1 x 10^245</td></tr>
+                            <tr><td>0.0001 HAC</td><td>1:244</td><td>1 x 10^244</td></tr>
+                            <tr><td>0.00001 HAC</td><td>1:243</td><td>1 x 10^243</td></tr>
+                        </table>
+                    </div>
+                    <div class="tbmb">
+                        <table>
+                            <tr><th>HAC</th><th>Abbr</th><th>Scientific<br>notation</th></tr>
+                            <tr><td>12 HAC</td><td>12:248</td><td>12 x 10^248</td></tr>
+                            <tr><td>6789 HAC</td><td>6789:248</td><td>6789 x 10^248</td></tr>
+                            <tr><td>1.456 HAC</td><td>1456:245</td><td>1456 x 10^245</td></tr>
+                            <tr><td>0.172 HAC</td><td>172:245</td><td>172 x 10^245</td></tr>
+                            <tr><td>35.94 HAC</td><td>3594:246</td><td>3594 x 10^246</td></tr>
+                        </table>
+                    </div>
+                </p>
+                <p class="p">The unit format designed and displayed in this way allows HAC to achieve infinite segmentation while avoiding annoying readability and input issues. The cost is that it requires a certain learning, understanding, and adaptation process to quickly read the actual quantity of currency.</p>
+                <p class="p">You can also fill in the quantity of HAC in the input box below and click the "Convert" button to obtain the usual format:</p>
+                <p class="p">
+                    <div class="fmtbox" id="cvfmt">
+                        <input class="in" placeholder="Such as: 1456:245 or ㄜ11,909,493:244" /> <button class="btn">Convert</button>
+                        <p class="res"></p>
+                    </div>
+                </p>
+                <p class="p"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+[: } :]

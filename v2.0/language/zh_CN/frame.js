@@ -16,6 +16,7 @@ module.exports = {
         releaselog: "软件下载及版本日志",
         hipdraft: "HIP 草案库",
         support_word: "需要你的帮助！",
+        hacunit: 'HAC 单位格式说明',
     },
 
     footer: {

@@ -16,6 +16,7 @@ module.exports = {
         releaselog: "Software download & release log",
         hipdraft: "HIP draft library",
         support_word: "need your support!",
+        hacunit: 'HAC Unit Conversion',
     },
 
     footer: {

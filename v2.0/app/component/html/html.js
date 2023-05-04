@@ -24,6 +24,20 @@ Vue.createApp(VueAppOrders).mount('#orders');
 */
 
 
+function $id(id){
+    return document.getElementById(id)
+}
+
+function $class(elm, name){
+    if(!name){
+        name = elm
+        elm = document
+    }
+    return elm.getElementsByClassName(name)
+}
+
+
+
 function getUrlQuery(variable){
     var query = window.location.search.substring(1);
     var vars = query.split("&");

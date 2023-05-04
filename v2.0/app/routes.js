@@ -6,6 +6,8 @@ module.exports = {
     '/get_started': 'VIEW:getstarted',
     '/channel_wallet': 'VIEW:chpaywlt',
 
+    '/hac_unit': 'VIEW:hacunit',
+
     '/design': 'VIEW:logofile',
 
     // api test
