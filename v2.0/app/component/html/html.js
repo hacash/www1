@@ -1,3 +1,10 @@
+// insert font
+// var allfontelm = document.createElement('div');
+// allfontelm.innerHTML = '<link href="https://fonts.googlefonts.cn/css?family=Do+Hyeon|Quattrocento+Sans:400,400i" rel="stylesheet">';
+// document.body.appendChild(allfontelm);
+
+
+
 
 /*
 

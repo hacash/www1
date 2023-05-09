@@ -2,6 +2,7 @@ module.exports = {
 
     // page view
     '/': 'VIEW:index',
+    '/index_new': 'VIEW:index_new',
 
     '/get_started': 'VIEW:getstarted',
     '/channel_wallet': 'VIEW:chpaywlt',

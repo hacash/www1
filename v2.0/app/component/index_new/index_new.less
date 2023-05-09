@@ -1,0 +1,60 @@
+
+
+.container {
+    max-width: 1200px;
+}
+
+.randbar {
+    // background-color: @themegoldcolor;
+    // min-height: 200px;
+    .bgc {
+        // height: 200px;
+        width: 4000px;
+        // position: absolute;
+        position: relative;
+        top: 0;
+        left: 50%;
+        margin-left: -2000px;
+        // background-color: aqua;
+    }
+}
+
+
+
+#screen {
+    padding: 200px 0;
+    text-align: center;
+    .what {
+        text-align: left;
+        h1 {
+            color: #000;
+            &, *{
+                font-size: 34px;
+            }
+        }
+    }
+    .intro {
+        position: relative;
+        text-decoration: underline;
+        color: #493903;
+        @keyframes blink{
+            0%{opacity: 1;}               
+            50%{opacity: 0;}     
+            100%{opacity: 0.5;} 
+          }
+          
+        &::after{
+            animation: blink 1s linear infinite; 
+            position: absolute;
+            top: 12px;
+            right: -20px;
+            content: "";
+            height: 22px;
+            width: 8px;
+            // background-color: @themegoldcolor;
+            background-color: #000;
+        }
+    }
+}
+
+

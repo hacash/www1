@@ -66,7 +66,7 @@ i.ftico{
     margin: 0;
     padding: 1px;
     
-    background-color: @themegoldcolor - #111;
+    background-color: @themegoldcolor;
     width: 100%;
 
     // @itemshowcl: #fff;  
@@ -128,7 +128,6 @@ i.ftico{
         position: relative;
         height: @tbh;
         line-height: @tbh;
-        padding: 0 10px;
         margin: 0 5px;
         .lk, .b {
             display: block;
@@ -136,13 +135,18 @@ i.ftico{
             height: @tbh;
             font-weight: normal;
             font-size: 18px;
+            padding: 0 10px;
+            border-radius: 5px;
+            border: 1px solid transparent;
             // color: @itemshowcl;
         }
         .lk:hover {
-            color: @themegoldcolor;
+            /*color: @themegoldcolor;
             i {
                 color: @themegoldcolor;
-            }
+            }*/
+            background-color: @themegoldcolor + #111;
+            border-color: @themegoldcolor - #111;
         }
         .b {
             // color: @itemshowcl;
@@ -165,8 +169,8 @@ i.ftico{
             top: 29px;
             min-width: 128px;
             display: none;
-            background: #222;
-            border-top: 1px solid @themegoldcolor;
+            background:  @themegoldcolor;
+            border: 1px solid @themegoldcolor - #111;
             li {
                 a {
                     display: block;
@@ -177,20 +181,20 @@ i.ftico{
                     cursor: pointer;
                     white-space: nowrap;
                     font-weight: normal;
+                    font-size: 15px;
                 }
                 a:hover {
-                    background-color: #00000022;
-                    color: @themegoldcolor;
+                    background-color: @themegoldcolor + #111;
                 }
             }
         }
     }
     .item:hover {
         .b {
-            color: @themegoldcolor;
+            /*color: @themegoldcolor;
             i {
                 color: @themegoldcolor;
-            }
+            }*/
             &::after{
                 content: "\e80a";
             }
