@@ -1,5 +1,5 @@
 
-drawRandomBarBackgrand($id('tpbg'), 'down', 30, 50, '#f7af34')
+drawRandomBarBackgrand($id('tpbg'), 'down', 30, 0, '#f7af34')
 drawRandomBarBackgrand($id('btbg'), 'up', 100, 50, '#000')
 
 function drawRandomBarBackgrand(wrap, direction, height, bshd, color) {

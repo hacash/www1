@@ -74,6 +74,8 @@ i.ftico{
         padding: 1px;
     }
     .box {
+        display: flex;
+        justify-content: space-between;
         transition: margin @tsft ease-out;
         margin: 8px 5px;
         height: @tbh;
@@ -104,7 +106,6 @@ i.ftico{
 
     .navs {
         display: block;
-        float: right;
         height: @tbh;
         line-height: @tbh;
     }
@@ -150,6 +151,7 @@ i.ftico{
         }
         .b {
             // color: @itemshowcl;
+            text-shadow: 1px 1px 1px #00000044;
             &::after{
                 content: "\e807";
                 margin-left: 5px;
@@ -166,11 +168,15 @@ i.ftico{
             transition: all @tsft ease-out;
             position: absolute;
             right: 0;
-            top: 29px;
+            top: 32px;
             min-width: 128px;
             display: none;
-            background:  @themegoldcolor;
-            border: 1px solid @themegoldcolor - #111;
+            // background:  @themegoldcolor;
+            // border: 1px solid @themegoldcolor - #111;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            box-shadow: 1px 1px 4px #00000022;
             li {
                 a {
                     display: block;
@@ -182,9 +188,11 @@ i.ftico{
                     white-space: nowrap;
                     font-weight: normal;
                     font-size: 15px;
+                    color: #222;
                 }
                 a:hover {
-                    background-color: @themegoldcolor + #111;
+                    background-color: #eee;
+                    color: #000;
                 }
             }
         }
