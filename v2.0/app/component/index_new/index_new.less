@@ -1,4 +1,6 @@
-
+html, body {
+    background-color: #fff;
+}
 
 .container {
     max-width: 1200px;
@@ -15,7 +17,10 @@
 .randbar {
     // background-color: @themegoldcolor;
     // min-height: 200px;
+    overflow: hidden;
+    width: 100%;
     .bgc {
+        overflow: hidden;
         // height: 200px;
         width: 4000px;
         // position: absolute;
@@ -32,12 +37,23 @@
 #screen {
     padding: 100px 0;
     text-align: center;
+
+    .box {
+        display: flex;
+        // justify-content: left;
+        align-items: center;
+        &>.empty {
+            flex: 1;
+        }
+    }
+
     .what {
+        padding-left: 20px;
         text-align: left;
         h1 {
             color: #000;
             &, *{
-                font-size: 42px;
+                font-size: 36px;
             }
         }
     }
@@ -64,8 +80,39 @@
         }
     }
     .desc {
-        margin-top: 30px;
-        font-size: 20px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .logo {
+        img {
+            display: block;
+            height: 120px;
+            transform: rotate(17deg);
+        }
+    }
+    .cvimgs {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        // background-color: #eee;
+        // border: 1px solid #f7af34;
+        img {
+            position: absolute;
+            top: 10px;
+            left: -20px;
+            background-color: #00000011;
+            padding: 6px;
+            border: 1px solid @themegoldcolor;
+            height: 100px; 
+            transform: skewX(-15deg) rotate(20deg);
+        }
+        .i2 {
+            top: 90px;
+        }
+        .i3 {
+            top: 50px;
+            left: 150px;
+        }
     }
 }
 
