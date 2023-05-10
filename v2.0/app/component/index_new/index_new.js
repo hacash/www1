@@ -47,6 +47,7 @@ function drawRandomBarBackgrand(wrap, direction, height, bshd, color, linecolor,
     var screen = $id('screen')
     , intro = $class(screen, 'intro')[0]
     , cvimgs = $class(screen, 'cvimgs')[0]
+    , cvbg = $class(screen, 'cvbg')[0]
     , rlgs = $class(screen, 'rlgs')[0]
     , shadow = $class(screen, 'shadow')[0]
     , itexts = intro.getAttribute('intros').split('|')
@@ -91,6 +92,7 @@ function drawRandomBarBackgrand(wrap, direction, height, bshd, color, linecolor,
     // show
     setTimeout(function(){ 
         cvimgs.classList.toggle('clear')
+        cvbg.classList.toggle('hide')
         rlgs.classList.toggle('away')
     }, 100)
     // show
