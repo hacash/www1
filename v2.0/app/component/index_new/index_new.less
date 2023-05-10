@@ -63,31 +63,70 @@ html, body {
         color: #493903;
         @keyframes blink{
             0%{opacity: 1;}               
-            50%{opacity: 0;}     
-            100%{opacity: 0.5;} 
+            30%{opacity: 0.0;}     
+            60%{opacity: 0.5;}  
+            100%{opacity: 1;} 
           }
           
         &::after{
             animation: blink 1s linear infinite; 
-            position: absolute;
-            top: 12px;
-            right: -20px;
+            position: relative;
+            display: inline-block;
+            top: 1px;
+            right: -10px;
             content: "";
-            height: 22px;
-            width: 8px;
+            height: 20px;
+            width: 6px;
+            border-radius: 1px;
             // background-color: @themegoldcolor;
-            background-color: #000;
+            background-color: rgb(94, 64, 8);
         }
     }
     .desc {
         margin-top: 20px;
         font-size: 18px;
+        color: #444;
     }
     .logo {
+        position: relative;
         img {
             display: block;
+            width: 120px;
             height: 120px;
+        }
+        .rlgs {
+            transition: all 4s ease-out;
+            position: relative;
+            display: block;
+            height: 120px;
+            width: 120px;
             transform: rotate(17deg);
+            left: 0px;
+            top: 0;
+            opacity: 1;
+        }
+        img.away {
+            transform: rotate(-200deg);
+            left: -200px;
+            opacity: 0;
+        }
+        .shadow {
+            transition: all 2s;
+            display: block;
+            position: absolute;
+            top: 104px;
+            width: 70px;
+            margin-left: -35px;
+            left: 50%;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #000000aa;
+            filter: blur(7px);
+            opacity: 1;
+            &.none {
+                opacity: 0;
+                left: 40%;
+            }
         }
     }
     .cvimgs {
@@ -97,21 +136,46 @@ html, body {
         // background-color: #eee;
         // border: 1px solid #f7af34;
         img {
+            transition: all 6s ease-in;
             position: absolute;
-            top: 10px;
+            top: -70px;
             left: -20px;
             background-color: #00000011;
             padding: 6px;
             border: 1px solid @themegoldcolor;
             height: 100px; 
-            transform: skewX(-15deg) rotate(20deg);
+            transform: skewX(15deg) rotate(10deg) scale(0.5);
+            filter: blur(2px);
+            opacity: 0.4;
+        }
+        .i2 {
+            top: 140px;
+            transform: skewX(0deg) rotate(30deg) scale(0.7);
+            filter: blur(1px);
+            opacity: 0.7;
+        }
+        .i3 {
+            top: 70px;
+            left: 150px;
+            transform: skewX(-10deg) rotate(0deg) scale(0.9);
+            filter: blur(0.6px);
+            opacity: 0.9;
+        }
+    }
+    .cvimgs.clear {
+        img {
+            transform: skewX(-15deg) rotate(20deg) scale(1);
+            filter: blur(0px);
+            opacity: 1;
+        }   
+        .i1 {
+            top: 10px;
         }
         .i2 {
             top: 90px;
         }
         .i3 {
             top: 50px;
-            left: 150px;
         }
     }
 }
