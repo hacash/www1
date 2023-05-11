@@ -1,6 +1,13 @@
+var tpbg = $id('tpbg')
+, btbg = $id('btbg')
+;
+setTimeout(function(){
+    tpbg.classList.toggle('ok')
+    btbg.classList.toggle('ok')
+}, 50)
 
-drawRandomBarBackgrand($id('tpbg'), 'down', 30, 0, '#f7af34')
-drawRandomBarBackgrand($id('btbg'), 'up', 100, 50, '#000', '#f7af3466', 1)
+drawRandomBarBackgrand(tpbg, 'down', 30, 0, '#f7af34')
+drawRandomBarBackgrand(btbg, 'up', 100, 0, '#000', '#f7af3466', 1)
 
 function drawRandomBarBackgrand(wrap, direction, height, bshd, color, linecolor, linewidth) {
     height = parseInt(height) || 0
