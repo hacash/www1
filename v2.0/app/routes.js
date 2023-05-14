@@ -2,10 +2,14 @@ module.exports = {
 
     // page view
     '/': 'VIEW:index',
-    '/index_new': 'VIEW:index_new',
+    '/index_old': 'VIEW:index_old',
 
     '/get_started': 'VIEW:getstarted',
     '/channel_wallet': 'VIEW:chpaywlt',
+
+    '/articles': 'VIEW:articles',
+    '/get_coin': 'VIEW:getcoin',
+    '/develop': 'VIEW:develop',
 
     '/hac_unit': 'VIEW:hacunit',
 

@@ -21,6 +21,7 @@ module.exports = {
 
     footer: {
         donate_word: "捐赠 HAC 以支持 Hacash.org ：", 
+        linksttl: '链接:',
         devttl: "开发对接:",
         lgdsi: "图标设计源文件",
         a1: "RPC API 接口文档",
@@ -31,6 +32,8 @@ module.exports = {
         i3: "算法特征及GPU挖矿详解",
         a4: "HAC & HACD 挖矿公平性说明",
         i4: "区块奖励、挖矿难度和竞价机制解释",
+        a5: "HAC 单位转换",
+        i5: "1:248 单位格式说明",
     },
 
     pagelink: {

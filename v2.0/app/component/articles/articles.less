@@ -1,0 +1,54 @@
+
+#atcs {
+    margin-top: 80px;
+
+    .pgtt {
+        margin: 20px 0;
+    }
+    .item {
+        display: block;
+        padding: 10px 0;
+        clear: both;
+        border-bottom: 1px solid #ddd;
+        p {
+            font-size: 17px;
+            color: #161616;
+            line-height: 20px;
+            padding: 0 10px;
+            i {
+                font-style: normal;
+                font-size: inherit;
+                color: inherit;
+                line-height: inherit;
+                display: block;
+            }
+        }
+        p.t {
+            float: left;
+            width: 66%;
+            &::before {
+                font-size: 20px;
+                content: "✑ ";
+            }
+        }
+        p.t.video {
+            &::before {
+                content: "► ";
+            }
+        }
+        p.meta {
+            float: right;
+            font-size: 14px;
+            text-align: right;
+        }
+    }
+    .item:hover {
+        background-color: #eee;
+        p {
+            // color: whitesmoke;
+        }
+        p.t {
+            text-decoration: underline;
+        }
+    }
+}

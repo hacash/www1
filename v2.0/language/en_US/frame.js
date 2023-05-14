@@ -21,6 +21,7 @@ module.exports = {
 
     footer: {
         donate_word: "Donate HAC to support Hacash.org:", 
+        linksttl: 'Links:',
         devttl: "Development:",
         lgdsi: "Logo design source file",
         a1: "RPC API doc",
@@ -31,6 +32,9 @@ module.exports = {
         i3: "design details and explanation of GPU mining",
         a4: "HAC & HACD mining fairness doc",
         i4: "mining difficulty and bidding mechanism",
+        a4: "HAC & HACD mining fairness doc",
+        a5: "HAC Unit Conversion",
+        i5: "1:248 unit format explanation",
     },
 
     pagelink: {
