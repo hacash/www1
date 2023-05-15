@@ -22,6 +22,7 @@ module.exports = {
     footer: {
         donate_word: "捐赠 HAC 以支持 Hacash.org ：", 
         linksttl: '链接:',
+        cmnlttl: '社区:',
         devttl: "开发对接:",
         lgdsi: "图标设计源文件",
         a1: "RPC API 接口文档",

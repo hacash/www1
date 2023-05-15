@@ -453,3 +453,130 @@ html, body {
     }
 }
 
+
+#btc {
+    margin: 70px 0;
+    padding: 100px 0;
+    background-color: #000;
+    background-image: linear-gradient(to top, #000, #3d2b0c);
+    * {
+        color: whitesmoke;
+    }
+    .ttl, .dp {
+        margin-top: 14px;
+        &.f {
+            margin-top: 0;
+        }
+    }
+    .ttl {
+        // text-align: center;
+        margin-top: 40px;
+        h1 {
+            font-size: 22.5px;
+            u {
+                font-size: inherit;
+                color: @themegoldcolor;
+            }
+        }
+    }
+    .dp {
+        font-size: 17px;
+    }
+
+    .box {
+        display: flex;
+        align-items: center;
+    }
+
+    .right {
+        padding-left: 100px;
+    }
+
+    .btns {
+        .lb {
+            display: inline-block;
+            margin-right: 20px;
+        }
+        button {
+            margin-left: 20px;
+            border: 1px solid @themegoldcolor;
+            background: none;
+            border-radius: 3px;
+            color: @themegoldcolor;
+            &.f {
+                margin-left: 0;
+            }
+            &:hover {
+                box-shadow: 0 0 12px 0 #ffffff88;
+            }
+        }
+        button.bold {
+            color: #fff;
+            background-color: @themegoldcolor;
+        }
+    }
+
+}
+
+
+
+#news {
+    padding: 10px 0;
+    .box {
+        display: flex;
+        justify-content: space-evenly;
+        &>div {
+            width: 26%;
+        }
+    }
+    .item {
+        display: block;
+        padding: 10px;
+        border: 1px solid #ddd;
+        * {
+            color: #333;
+        }
+        .cv {
+            width: 100%;
+            height: 160px;
+            background-color: #eee;
+            background-size: cover;
+            background-position: center;
+        }
+        .ttl {
+            padding: 12px 0;
+            h1 {
+                color: #000;
+            }
+        }
+        .desc {
+            p{
+                font-size: 4px;
+                color: #666;
+            }
+        }
+    }
+    .item:hover {
+        cursor: pointer;
+        background-color: #f6f6f6;
+        border-color: @themegoldcolor;
+        box-shadow: 1px 1px 6px #00000044;
+
+    }
+    .btns {
+        margin-top: 50px;
+        text-align: center;
+        button {
+            min-width: 240px;
+            margin: 0 20px;
+            border: 1px solid @themegoldcolor;
+            background: none;
+            color: @themegoldcolor;
+        }
+        button.bold {
+            color: #fff;
+            background-color: @themegoldcolor;
+        }
+    }
+
+}

@@ -72,10 +72,14 @@
                 -->
                 [: var langlist = {
                     'en_US': 'English',
-                    'zh_CN': '简体中文',
+                    'zh_CN': '中文简体',
                 }; :]
-                <!-- <b class="b"><i class="ftico">&#xf1ab;</i>[:=langlist[lang.useset]:]</b> -->
-                <b class="b nt ftic">&#xe693;</b>
+                [: var lgsts = {
+                    'en_US': 'En',
+                    'zh_CN': '中',
+                }; :]
+                <b class="b nt"><span>[:=lgsts[lang.useset]:]</span><i class="ftic">&#xe693;</i></b>
+                <!-- <b class="b nt ftic">&#xe693;</b> -->
                 <div class="swt">
                     <ul>
                         [: for(var i in langlist) { :]
