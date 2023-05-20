@@ -6,9 +6,26 @@ module.exports = {
     },
 
     topnav: {
+        ttl1: "Start",
+        ttl2: "Learn",
+        ttl3: "Resources",
+        l2pay: "L2 Pay",
+        gethac: "Get HAC",
+        gethacd: "Get HACD",
+        wishacash: "What is Hacash?",
+        wishacd: "What is HACD?",
+        msthcx: "Master Hacash",
+        powart: "PoW Art",
+        articles: "Articles",
+        community: "Community",
+        devguide: "Development Guide",
+        hiptable: "HIP Table",
+        
         wallet: "Wallet",
         explorer: "Explorer",
         mining: "Mining",
+        buy: "Buy",
+        develop: "Develop",
         whitepaper: "Whitepaper",
         download: 'Download',
         github: "Github",
@@ -40,6 +57,7 @@ module.exports = {
 
     pagelink: {
         whitepaper: "/file/hacash_white_paper_en.pdf",
+        attack51: "https://github.com/hacash/paper/blob/master/HIP/protocol/PoW_of_avoid_51_percent_attack.en.md",
         onlinewallet: "https://wallet.hacash.org/?lang=en_US",
         rpcdoc: "https://github.com/hacash/service/blob/master/doc/rpc_api_doc.en.md",
         miningdoc: "https://github.com/hacash/service/blob/master/doc/miner_service_api.en.md",

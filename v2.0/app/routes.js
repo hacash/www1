@@ -13,6 +13,7 @@ module.exports = {
 
     '/hac_unit': 'VIEW:hacunit',
 
+    '/more_about': 'VIEW:moreabout',
     '/design': 'VIEW:logofile',
 
     // api test

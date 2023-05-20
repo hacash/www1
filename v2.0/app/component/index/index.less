@@ -63,12 +63,16 @@ html, body {
     }
 
     .what {
-        padding-left: 20px;
+        position: relative;
+        // left: -10px;
+        padding: 0 0 0 10px;
         text-align: left;
         h1 {
             color: #000;
             &, *{
-                font-size: 36px;
+                line-height: 40px;
+                min-height: 40px;
+                font-size: 34px;
             }
         }
     }
@@ -98,9 +102,12 @@ html, body {
         }
     }
     .desc {
-        margin: 15px 0;
-        font-size: 18px;
+        margin: 18px 0;
+        font-size: 20px;
         color: #444;
+        letter-spacing: -1px;
+        transform: scaleX(0.96);
+        transform-origin: 0%;
     }
     .btns {
         .play {
@@ -133,6 +140,8 @@ html, body {
     }
     .logo {
         position: relative;
+        left: -15px;
+        top: -6px;
         img {
             display: block;
             width: 140px;
@@ -367,91 +376,8 @@ html, body {
             color: #60a5a5;
         }
     }
-    .more {
-        .btn {
-            text-align: center;
-            button {
-                transition: all 0.5s;
-                background-color: #000;
-                color: #fff;
-                width: 320px;
-                text-align: center;
-                line-height: 54px;
-                height: 54px;
-                padding: 0;
-                font-size: 18px;
-                font-weight: normal;
-                opacity: 0.84;
-                &:hover {
-                    opacity: 1;
-                }
-            }
-        }
-    }
 }
 
-
-#detail {
-    display: none;
-    padding: 20px 0;
-    .pgtitlebl {
-        text-align: center;
-        h1 {
-            font-size: 34px;
-
-        }
-    }
-    .intxt {
-        margin-top: 22px;
-        font-size: 20px
-    }
-    .itwrap {
-        margin-top: 26px;
-        border-collapse: collapse;
-        td {
-            border: 1px solid #555;
-            padding: 20px;
-            vertical-align: top;
-        }
-        .item {
-            position: relative;
-            .ico {
-                position: absolute;
-                top: 0px;
-                left: 7px;
-                i {
-                    font-size: 40px;
-                    font-style: normal;
-                }
-            }
-            h5 {
-                margin-left: 70px;
-                margin-bottom: 22px;
-                font-size: 18px;
-                line-height: 20px;
-                min-height: 40px;
-
-            }
-            p {
-                clear: both;
-                float: none;
-                font-size: 16px;
-            }
-        }
-    }
-    .more {
-        padding: 40px 0;
-        text-align: center;
-        button {
-            background: #000;
-            height: 50px;
-            line-height: 50px;
-            padding: 0;
-            min-width: 400px;
-            font-size: 18px;
-        }
-    }
-}
 
 
 #btc {
@@ -472,15 +398,19 @@ html, body {
         // text-align: center;
         margin-top: 40px;
         h1 {
-            font-size: 22.5px;
+            font-size: 32px;
             u {
                 font-size: inherit;
                 color: @themegoldcolor;
             }
         }
     }
+    .ttic {
+        margin-right: 10px;
+    }
     .dp {
-        font-size: 17px;
+        margin: 22px 0;
+        font-size: 16px;
     }
 
     .box {
@@ -521,16 +451,32 @@ html, body {
 
 
 #money {
+    margin: 100px 0;
     .box {
         display: flex;
         align-items: center;
     }
+    .ttic {
+        margin-right: 10px;
+    }
     .intro {
-        margin-right: 100px;
+        margin-right: 60px;
+        h1 {
+            font-size: 32px;
+        }
+        p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        button {
+            background-color: @themegoldcolor;
+            border-radius: 3px;
+        }
     }
     .mny {
         max-width: 400px;
     }
+
 }
 
 

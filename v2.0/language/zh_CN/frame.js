@@ -6,9 +6,26 @@ module.exports = {
     },
 
     topnav: {
+        ttl1: "快速开始",
+        ttl2: "理解Hacash",
+        ttl3: "资源",
+        l2pay: "二层支付",
+        gethac: "获得 HAC",
+        gethacd: "获得 HACD",
+        wishacash: "什么是 Hacash?",
+        wishacd: "什么是 HACD?",
+        msthcx: "《掌握 Hacash》",
+        powart: "工作量证明艺术",
+        articles: "文章",
+        community: "社区",
+        devguide: "开发导航",
+        hiptable: "HIP 提案库",
+
         wallet: "钱包",
         explorer: "区块浏览器",
         mining: "挖矿",
+        buy: "购买",
+        develop: "开发",
         whitepaper: "白皮书",
         download: '下载',
         github: "Github",
@@ -39,6 +56,7 @@ module.exports = {
 
     pagelink: {
         whitepaper: "https://github.com/hacash/paper/blob/master/whitepaper.cn.md",
+        attack51: "https://github.com/hacash/paper/blob/master/HIP/protocol/PoW_of_avoid_51_percent_attack.cn.md",
         onlinewallet: "https://wallet.hacash.org/?lang=zh_CN",
         rpcdoc: "https://github.com/hacash/service/blob/master/doc/rpc_api_doc.cn.md",
         miningdoc: "https://github.com/hacash/service/blob/master/doc/miner_service_api.cn.md",
