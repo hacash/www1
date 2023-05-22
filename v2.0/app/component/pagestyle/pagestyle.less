@@ -28,15 +28,17 @@ html, body, ol, ul{
         font: 18px tahoma,arial,'Hiragino Sans GB', '微软雅黑', 'sans-serif';  
     }
     h1.pgtt{
-        font-size: 23px;
+        margin: 20px 0;
+        font-size: 22px;
         line-height: 30px;
         font-weight: bold;
     }
     h1.pgtt.big{
         font-size: 28px;
-        border-bottom: 2px #999 solid;
-        padding-bottom: 30px;
+        border-bottom: 1px @themegoldcolor solid;
+        padding-bottom: 10px;
         margin-bottom: 30px;
+        color: @themegoldcolor - #666;
     }
     h1.pgtt.small{
         font-size: 16px;
@@ -198,8 +200,9 @@ table {
 @media screen and (max-width: 512px) {
 
     .container{
-        padding: 5%;
-        width: 90%;
+        padding: 0;
+        width: auto;
+        margin: 10px;
     }
     
     .pagecard{

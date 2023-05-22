@@ -112,7 +112,7 @@ function drawRandomBarBackgrand(wrap, direction, height, bshd, color, linecolor,
 })();
 
 
-
+/*
 var intro = $id('intro')
 , morebtn = $class(intro, 'more')[0]
 , detail = $id('detail')
@@ -122,5 +122,5 @@ morebtn.onclick = function() {
     this.style.display = 'none'
     detail.style.display = 'block'
 }
-
+*/
 

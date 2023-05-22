@@ -465,7 +465,7 @@ html, body {
             font-size: 32px;
         }
         p {
-            margin: 10px 0;
+            margin: 20px 0;
             font-size: 16px;
         }
         button {
@@ -473,8 +473,29 @@ html, body {
             border-radius: 3px;
         }
     }
+    .mncv {
+        position: relative;
+        .cvg {
+            display: block;
+            position: absolute;
+            border-radius: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 30px 30px #fff inset ,0 0 20px 20px #fff inset;
+            z-index: 2;
+        }
+    }
     .mny {
+        display: block;
         max-width: 400px;
+        z-index: 1;
+        border-radius: 100%;
+        transform: scale(0.98);
+        // border-radius: 4px;
+        // border: 1px solid #666;
+        // box-shadow: 6px 6px 2px #00000022;
     }
 
 }
@@ -547,4 +568,161 @@ html, body {
 
 #footer {
     margin-top: 0 !important;
+}
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+
+    #screen {
+        padding: 40px 0;
+        .box {
+            display: block;
+        }
+        .logo {
+            width: 140px;
+            margin: auto;
+            top: 0;
+            left: 0;
+        }
+        .what {
+            padding: 40px 0 0;
+            text-align: center;
+            h1 {
+                // min-height: 80px;
+                &, span {
+                    font-size: 24px;
+                }
+            }
+            .desc {
+                font-size: 20px;    
+                margin: 20px 40px;
+                letter-spacing: 0;
+                transform: none;
+            }
+        }
+        .cvimgs {
+            display: block;
+            margin: auto;
+            margin-top: 100px;
+            &.clear {
+                img {
+                    transform: skewX(0deg) rotate(0deg) scale(1);
+                }
+                img.i1 {
+                    top: -20px
+                }
+            }
+        }
+    }
+
+
+    #quick {
+        padding: 60px 0;
+        .cvits {
+            display: block;
+            text-align: center;
+            &>div {
+                display: inline-block;
+            }
+            .item {
+                margin: 10px;
+                width: 160px;
+                background-color: #ffffff33;
+            }
+        }
+        .ktops {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            .opt {
+                margin: 10px 0;
+                display: inline-block;
+            }
+        }
+    }
+
+    #intro {
+        .box {
+            display: block;
+            padding: 30px 0;
+        }
+        .text {
+            padding: 10px;
+            text-align: center;
+        }
+        .logo {
+            img {
+                margin: 3%;
+                width: 94%;
+            }
+        }
+    }
+
+    #btc {
+        .box {
+            display: block;
+        }
+        .left, .right {
+            text-align: center;
+            margin: 10px;
+            padding: 0;
+        }
+        .left{
+            margin-bottom: 50px;
+            img {
+                width: 200px;
+            }
+        }
+        button {
+            margin: 10px !important;
+        }
+    }
+
+    #money {
+        margin: 60px 0;
+        .box {
+            display: block;
+        }
+        .left, .right {
+            text-align: center;
+            margin: 10px;
+            padding: 0px;
+        }
+        .intro {
+            margin: 0;
+        }
+        .mncv {
+            display: block;
+            width: 300px;
+            margin: auto;
+        }
+        img.mny {
+            width: 300px;
+        }
+    }
+
+    #news {
+        .box {
+            display: block;
+            &>div {
+                width: auto;
+            }
+        }
+        .item {
+            border: none;
+            margin: 20px;
+            text-align: center;
+        }
+        .btns {
+            button {
+                margin: 10px;
+            }
+        }
+    }
+
+
 }

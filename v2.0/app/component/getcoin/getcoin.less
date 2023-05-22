@@ -1,0 +1,29 @@
+
+.exlist {
+    .item {
+        display: inline-block;
+        padding: 10px;
+        border: 2px solid @themegoldcolor;
+        margin: 10px;
+        background-color: #fff;
+        cursor: pointer;
+        @cvh: 110px;
+        .cv {
+            height: @cvh;
+            line-height: @cvh;
+            vertical-align: middle;
+            img {
+                vertical-align: middle;
+                width: 180px;
+                line-height: @cvh;
+            }
+        }
+    }
+    .item:hover {
+        background-color: @themegoldcolor;
+        .name {
+            color: #fff;
+        }
+
+    }
+}

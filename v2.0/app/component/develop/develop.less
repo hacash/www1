@@ -1,5 +1,36 @@
 
+button {
+    background-color: #fff;
+    border: 1px solid @themegoldcolor;
+    color: @themegoldcolor;
+    border-radius: 3px;
+    margin-left: 20px;
+    font-size: 16px !important;
+    padding: 6px 12px;
+}
+button:hover {
+    background-color: @themegoldcolor - #111;
+    border-color: @themegoldcolor;
+    color: #fff;
+}
+button:active {
+    background-color: @themegoldcolor - #333;
+}
+button.f {
+    margin-left: 0;
+}
+
+
+a.ina {
+    color: cornflowerblue;
+    text-decoration: underline;
+    &::after {
+        content: "↗";
+    }
+}
+
+
 #dev {
     margin-top: 80px;
-
 }
+

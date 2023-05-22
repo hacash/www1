@@ -1,8 +1,125 @@
 
+
+[: if(lang.useset == 'zh_CN'){ :]
+
 <div id="dev">
     <div class="container">
         <div class="pagecard">
-            <h1 class="pgtt big">Hacash Development Guide</h1>
+            <!-- <h1 class="pgtt big">Hacash Development Guide</h1> -->
+            <h1 class="pgtt big">Hacash 开发者导引</h1>
+            <p>本页面为 Hacash 相关的各类开发者提供初步的指引说明和文档链接，并对一些与开发工作相关的重要注意事项进行解释。另外，所有代码和文档都会被提交至 <a class="ina" href="https://github.com/hacash/miner">Github</a> 上并完全开源，如果文档里没有你需要的信息，你可以在开源代码库里找到所有内容。</p>
+
+            <br/><br/>
+            <h1 class="pgtt">交易所或钱包接入</h1>
+            <p class="p">交易所或者钱包接入 HAC、 HACD 或 Hacash 链上的 BTC 资产，并且扫描交易或区块数据、创建新的转账交易，请阅读 RPC API 接口文档。</p>
+            <p class="p">
+                <a href="[:=lang.frame.pagelink.rpcdoc:]"><button class="f">[:=lang.frame.footer.a1:]</button></a>
+                <a href="[:=lang.frame.pagelink.rpcdoc:]"><button class="">全节点软件下载</button></a>
+            </p>
+
+            <br/><br/>
+            <h1 class="pgtt">挖矿及矿池</h1>
+            <p>要运行 Hacash 社区提供的开源矿池，请查看 <a class="ina" href="/get_started">[:=lang.frame.topnav.mining:]</a>。如果你需要开发矿池或者自定义的挖矿工具，或者了解挖矿产出的细节，请查看下面三个文档，分别解释了[:=lang.frame.footer.i2:], [:=lang.frame.footer.i3:], [:=lang.frame.footer.i4:] :</p>
+            <p class="p">
+                <a href="[:=lang.frame.pagelink.miningdoc:]"><button class="f">[:=lang.frame.footer.a2:]</button></a>
+                <a href="[:=lang.frame.pagelink.rpcdoc:]"><button class="">[:=lang.frame.footer.a3:]</button></a>
+                <a href="[:=lang.frame.pagelink.fairdoc:]"><button class="">[:=lang.frame.footer.a4:]</button></a>
+            </p>
+
+            <br/><br/>
+            <h1 class="pgtt">应用及工具开发</h1>
+            <p>如果你想要开发一些服务于 Hacash 的工具，通过研究 Hacash 的开源钱包和区块浏览器等已有工具将是很好的开始方式，这些既有工具开发和使用了一些接口可能并没有写入文档。以下是已有工具的代码链接，API代码链接和接口文档：</p>
+            <p class="p">
+                <a href="[:=lang.frame.pagelink.rpcdoc:]"><button class="f">[:=lang.frame.footer.a1:]</button></a>
+                <a href="https://github.com/hacash/service/blob/master/deprecated/routes.go"><button class="">临时 API</button></a>
+                <a href="https://github.com/hacash/wallet"><button class="">[:=lang.frame.topnav.wallet:]</button></a>
+                <a href="https://github.com/hacash/explorer"><button class="">[:=lang.frame.topnav.explorer:]</button></a>
+            </p>
+
+
+            <br/><br/>
+            <h1 class="pgtt">区块链核心层</h1>
+            <p class="p">要参与区块链核心层的开发，需要满足一定的条件，这些条件在 <a class="ina" href="https://github.com/hacash/paper/blob/master/HIP/development/HIP-12_Hacash_development_workflow_and_code_permission.pdf">HIP-12</a> 中有详细说明。每一项对 Hacash 主网核心层的新增和变动，都需要提起一份 HIP 文档作为评估依据。需要编译和部署 Hacash 全节点，这里也有一份简单的指引。</p>
+            <p class="p">
+                <a href="https://github.com/hacash/paper/blob/master/HIP/development/HIP-12_Hacash_development_workflow_and_code_permission.pdf"><button class="f">HIP-12</button></a>
+                <a href="https://github.com/hacash/paper/blob/master/HIP/HIP-table.md"><button class="">HIP 提案库</button></a>
+                <a href="https://github.com/hacash/miner/blob/master/doc/build_compilation_en.md"><button class="">编译和构建文档</button></a>
+            </p>
+
+
+            <br/><br/>
+            <h1 class="pgtt">开发者社区</h1>
+            <p>开发工作的前期沟通和讨论一般在 Discord 上进行，并随后在 <a class="ina" href="https://github.com/hacash">Github</a> 上形成比较正式的规范文档。点击下方链接可加入开发讨论，提起新的开发工作或者询问某些开发问题。</p>
+            <p class="p">
+                <a href="https://discord.com/channels/757976908653920299/802807729584209920"><button class="f">Discord 开发组</button></a>
+                <a href="https://github.com/hacash/miner"><button class="">Github 文档中心</button></a>
+            </p>
+
         </div>
     </div>
 </div>
+
+
+[: }else{ :]
+
+
+    <div id="dev">
+        <div class="container">
+            <div class="pagecard">
+                <!-- <h1 class="pgtt big">Hacash Development Guide</h1> -->
+                <h1 class="pgtt big">Hacash Developer Guide</h1>
+                <p>This page provides preliminary guidance and document links for various developers related to Hacash, and explains some important considerations related to development work. In addition, all code and documentation will be submitted to <a class="ina" href="https://github.com/hacash/miner">Github</a> and fully open source. If the documentation does not contain the information you need, you can find all the content in the open source code library.</p>
+    
+                <br/><br/>
+                <h1 class="pgtt">Exchange or Wallet </h1>
+                <p class="p">Exchange or Wallet access assets HAC, HACD or BTC on Hacash blockchain, scan transaction or block data to create new transfer transactions. Please read the RPC API interface documentation.</p>
+                <p class="p">
+                    <a href="[:=lang.frame.pagelink.rpcdoc:]"><button class="f">[:=lang.frame.footer.a1:]</button></a>
+                    <a href="[:=lang.frame.pagelink.rpcdoc:]"><button class="">Fullnode Download</button></a>
+                </p>
+    
+                <br/><br/>
+                <h1 class="pgtt">Mining or miner pool</h1>
+                <p>To run the open source mining pool provided by the Hacash community, please check <a class="ina" href="/get_started">[:=lang.frame.topnav.mining:]</a>. If you need to develop mining pools or custom mining tools, or understand the details of mining output, please refer to the following three documents, [:=lang.frame.footer.i2:], [:=lang.frame.footer.i3:], [:=lang.frame.footer.i4:] :</p>
+                <p class="p">
+                    <a href="[:=lang.frame.pagelink.miningdoc:]"><button class="f">[:=lang.frame.footer.a2:]</button></a>
+                    <a href="[:=lang.frame.pagelink.rpcdoc:]"><button class="">[:=lang.frame.footer.a3:]</button></a>
+                    <a href="[:=lang.frame.pagelink.fairdoc:]"><button class="">[:=lang.frame.footer.a4:]</button></a>
+                </p>
+    
+                <br/><br/>
+                <h1 class="pgtt">Applications and tools</h1>
+                <p>If you want to develop some tools that serve Hacash, studying existing tools such as Hacash's open source wallet and block browser will be a good way to start. These existing tools may not have been documented in the development and use of some interfaces. The following are the code links, API code links, and interface documents for existing tools:</p>
+                <p class="p">
+                    <a href="[:=lang.frame.pagelink.rpcdoc:]"><button class="f">[:=lang.frame.footer.a1:]</button></a>
+                    <a href="https://github.com/hacash/service/blob/master/deprecated/routes.go"><button class="">Temp API</button></a>
+                    <a href="https://github.com/hacash/wallet"><button class="">[:=lang.frame.topnav.wallet:]</button></a>
+                    <a href="https://github.com/hacash/explorer"><button class="">[:=lang.frame.topnav.explorer:]</button></a>
+                </p>
+    
+    
+                <br/><br/>
+                <h1 class="pgtt">Blockchain Core</h1>
+                <p class="p">To participate in the development of the core layer of blockchain, certain conditions need to be met, which are detailed in <a class="ina" href="https://github.com/hacash/paper/blob/master/HIP/development/HIP-12_Hacash_development_workflow_and_code_permission.pdf">HIP-12</a>. Each addition or change to the core layer of the Hacash main network requires an HIP document as the evaluation basis. We need to compile and deploy the entire Hacash node, and here is also a simple guide.</p>
+                <p class="p">
+                    <a href="https://github.com/hacash/paper/blob/master/HIP/development/HIP-12_Hacash_development_workflow_and_code_permission.pdf"><button class="f">HIP-12</button></a>
+                    <a href="https://github.com/hacash/paper/blob/master/HIP/HIP-table.md"><button class="">HIP Table</button></a>
+                    <a href="https://github.com/hacash/miner/blob/master/doc/build_compilation_en.md"><button class="">Build Doc</button></a>
+                </p>
+    
+    
+                <br/><br/>
+                <h1 class="pgtt">Developer Community</h1>
+                <p class="p">The preliminary communication and discussion of development work are usually conducted on <a class="ina" href="https://discord.gg/evtt4bDfKu">Discord</a>, and then formal specification documents are formed on <a class="ina" href="https://github.com/hacash">Github</a>. Click on the link below to join the development discussion, bring up new development work, or ask certain development questions.</p>
+                <p class="p">
+                    <a href="https://discord.com/channels/757976908653920299/802807729584209920"><button class="f">Discord Development Group</button></a>
+                    <a href="https://github.com/hacash/miner"><button class="">Github Doc Home</button></a>
+                </p>
+    
+            </div>
+        </div>
+    </div>
+    
+    
+
+[: } :]

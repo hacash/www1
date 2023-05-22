@@ -212,12 +212,18 @@
 
 #footer {
 
-    .left, .right {
+    .ftbox {
         display: block;
+        text-align: center;
+    }
+
+    .left, .right {
+        vertical-align: top;
+        display: inline-block;
         width: auto;
         padding: 10px;
         margin: 0;
-        a {
+        .ttl {
             color: @themegoldcolor !important;
         }
     }
@@ -236,6 +242,10 @@
             display: block !important;
             float: none !important;
             height: auto !important;
+        }
+        span {
+
+            font-size: 14px;
         }
     }
     .container {
