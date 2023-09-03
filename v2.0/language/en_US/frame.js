@@ -53,6 +53,8 @@ module.exports = {
         a4: "HAC & HACD mining fairness doc",
         a5: "HAC Unit Conversion",
         i5: "1:248 unit format explanation",
+        a6: "Readable DeFi contracts",
+        i6: "introduction and technical explanation",
     },
 
     pagelink: {
@@ -63,6 +65,7 @@ module.exports = {
         miningdoc: "https://github.com/hacash/service/blob/master/doc/miner_service_api.en.md",
         x16rsdoc: "https://github.com/hacash/x16rs/blob/master/doc/x16rs_algorithm_description.en.md",
         fairdoc: "https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_description.en.md",
+        readctct: "https://github.com/hacash/paper/blob/master/tech/readability_contract_introduction_en.md",
     }
 
 

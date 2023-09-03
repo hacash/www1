@@ -52,6 +52,8 @@ module.exports = {
         i4: "区块奖励、挖矿难度和竞价机制解释",
         a5: "HAC 单位转换",
         i5: "1:248 单位格式说明",
+        a6: "可读金融合约",
+        i6: "功能简介和技术说明",
     },
 
     pagelink: {
@@ -62,6 +64,7 @@ module.exports = {
         miningdoc: "https://github.com/hacash/service/blob/master/doc/miner_service_api.cn.md",
         x16rsdoc: "https://github.com/hacash/x16rs/blob/master/doc/x16rs_algorithm_description.cn.md",
         fairdoc: "https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_description.cn.md",
+        readctct: "https://github.com/hacash/paper/blob/master/tech/readability_contract_introduction_cn.md",
     }
 
 
