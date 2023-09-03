@@ -30,7 +30,7 @@ module.exports = {
         download: 'Download',
         github: "Github",
         docs: "Docs",
-        releaselog: "Software download & release log",
+        releaselog: "Software Release & Download",
         hipdraft: "HIP draft library",
         support_word: "need your support!",
         hacunit: 'HAC Unit Conversion',
@@ -38,9 +38,9 @@ module.exports = {
 
     footer: {
         donate_word: "Donate HAC to support Hacash.org:", 
-        linksttl: 'Links:',
-        cmnlttl: 'Community:',
-        devttl: "Development:",
+        linksttl: 'Links',
+        cmnlttl: 'Community',
+        devttl: "Development",
         lgdsi: "Logo Design Source",
         a1: "RPC API Doc",
         i1: "for exchange or payment applications",
