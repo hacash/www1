@@ -5,6 +5,8 @@ module.exports = {
     '/index_old': 'VIEW:index_old',
 
     '/get_started': 'VIEW:getstarted',
+    '/channel': 'VIEW:chpay',
+    '/channel_server': 'VIEW:chpayser',
     '/channel_wallet': 'VIEW:chpaywlt',
 
     '/articles': 'VIEW:articles',
