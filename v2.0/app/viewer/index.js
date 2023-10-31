@@ -20,6 +20,7 @@ exports.datas = async function(cnf, ctx)
     return {
         // isMobile: types.isMobile(ctx.req),
         // numToThousands: utilnumber.numToThousands,
+        is_index_page: true,
         title: "Hacash - A peer-to-peer of Money, Payment, Store of Value, DeFi and DApp Infrastructure."
     }
 }

@@ -18,6 +18,12 @@ module.exports = {
     '/more_about': 'VIEW:moreabout',
     '/design': 'VIEW:logofile',
 
+    // doc load
+    '/doc/:name': 'VIEW:doc',
+
+    // svg icon
+    '/svg/:name.svg': 'svgs',
+
     // api test
     '/api/data/get': 'api/data/get',
     'POST:/api/data/save': 'api/data/save',

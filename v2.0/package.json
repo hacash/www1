@@ -4,12 +4,13 @@
   "description": "",
   "repository": "",
   "license": "MIT",
-  "devDependencies": {},
   "scripts": {
     "start": "node index.js"
   },
   "main": "index.js",
   "dependencies": {
-    "koappx": "^1.1.11"
+    "koappx": "^1.1.11",
+    "markdown-it": "^13.0.2",
+    "mime-types": "^2.1.35"
   }
 }
