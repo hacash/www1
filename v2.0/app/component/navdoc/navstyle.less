@@ -1,0 +1,135 @@
+
+.container{ max-width: 1200px; }
+
+#starbg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+#pgtt.nav {
+    .bgt {
+        height: 40px;
+        background-image: linear-gradient(to top, #161928, #273b56);
+    }
+    .ct {
+        z-index: 3;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        left: 0;
+        bottom: 40px;
+        background: url(/cssimg/navdoc/citysd.png) repeat-x;
+        background-size: contain;
+        opacity: 1;
+    }
+    .box {
+        padding: 100px 0 80px;
+    }
+    .h, .p {
+        text-shadow: 1px 1px 1px #000;
+    }
+    .h {
+        font-size: 44px;
+    }
+    .p {
+        font-size: 20px;
+        color: #46bbbb;
+    }
+
+}
+
+
+#mdcon pre.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    .nit {
+        text-decoration: none;
+        margin: 1% 0;
+        width: 32%;
+        text-align: center;
+    }
+    .box {
+        position: relative;
+        box-shadow: -5px -5px 35px #f7af3416 inset;
+        height: 100%;
+        border: 1px solid #ddd;
+        background: #00000000;
+    }
+    .cor {    
+        position: absolute;
+        right: -1px;
+        bottom: -1px;
+        width: 0;
+        height: 0;
+        border: 6px solid #ddd;
+        border-right-color: #fff;
+        border-bottom-color: #fff;
+    }
+    .ftic {
+        transition: all 1s;
+        margin: 10% 0;
+        font-size: 56px;
+        color: #b38639;
+        text-shadow: 2px 2px 0px #00000033;
+    }
+    h1 {
+        transition: all 1s;
+        font-size: 20px;   
+        color: #555;
+    }
+    p {
+        transition: all 1s;
+        margin: 6% 5% 10%;
+        white-space: wrap;
+        font-size: 15px;  
+        color: #999; 
+    }
+    .box:hover {
+        border-color: #aaa;
+        background: #00000006;
+        box-shadow: 2px 2px 4px #00000022;
+        cursor: pointer;
+        h1 {
+            color: #000;
+        }
+        p {
+            color: #444;
+        }
+        .ftic {
+            color: #f7af34;
+            text-shadow: 0 0 60px #f7af34, 0 0 40px #f7af34;
+        }
+        .cor {
+            display: none;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 640px) {
+
+    #mdcon pre.nav {
+        display: block;
+        .nit {
+            display: block;
+            margin: 10px 0;
+            width: auto;
+        }
+        .box {
+        }
+
+    }
+
+
+}
+

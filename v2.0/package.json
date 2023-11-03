@@ -9,8 +9,11 @@
   },
   "main": "index.js",
   "dependencies": {
+    "csso": "^5.0.5",
     "koappx": "^1.1.11",
+    "less": "^4.2.0",
     "markdown-it": "^13.0.2",
-    "mime-types": "^2.1.35"
+    "mime-types": "^2.1.35",
+    "uglify-js": "^3.17.4"
   }
 }

@@ -1,5 +1,5 @@
 
-function drawRandomBarBackgrand(wrap, direction, height, bshd, color, linecolor, linewidth) {
+function drawRandomBarBackgrand(wrap, direction, width, height, bshd, color, linecolor, linewidth) {
     height = parseInt(height) || 0
     bshd = parseInt(bshd) || 0
     var tthd = height + bshd
@@ -19,7 +19,7 @@ function drawRandomBarBackgrand(wrap, direction, height, bshd, color, linecolor,
     }
     var linespts = []
     for(var i=0; i<step; i++){
-        var bsl = i * height
+        var bsl = i * width
         , x = bsl + rdn()
         , y = bshd + rdn()
         points.push(x + ',' + y)
@@ -37,10 +37,21 @@ function drawRandomBarBackgrand(wrap, direction, height, bshd, color, linecolor,
     wrap.innerHTML = svg + '</svg>'
 }
 
-drawRandomBarBackgrand($id('tpbg'), 'down', 30, 0, '#161928')
+var navadd = is_nav ? 15 : 0;
+drawRandomBarBackgrand($id('tpbg'), 'down', 30+navadd, 30-navadd, 0, '#161928')
+// console.log(30+navadd, 30-navadd)
+
+// 
+var mdcon = $id("mdcon")
+, allas = mdcon.getElementsByTagName('a')
+
+// a set target="_blank"
+for(var i=0; i<allas.length; i++){
+    allas[i].setAttribute('target', "_blank")
+}
 
 
-//
+// lazy load image
 
 function checkImgs(clsn) {
     const imgs = Array.from(document.querySelectorAll("."+clsn));
@@ -67,4 +78,3 @@ const io = new IntersectionObserver(ioes => {
 
 
 checkImgs("lazy");
-  

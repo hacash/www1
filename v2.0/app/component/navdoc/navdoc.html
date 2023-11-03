@@ -1,0 +1,31 @@
+
+
+<div id="pgtt" class="[:=this.ptype:]"><div class="box">
+    [:if(this.ptype=='nav'){:]
+        <canvas id="starbg" ></canvas>
+    [:}:]
+    <div class="ct"></div>
+    <div class="bgt"></div>
+    <div class="container">
+        <h1 class="h">[:=this.doctt||'-':]</h1>
+        <p class="p">[:=this.doctip||'.':]</p>
+    </div>
+</div><div id="tpbg"></div></div>
+
+<div class="container">
+<div id="mdcon" class="[:=this.ptype:]">[:=this.content||'':]</div>
+</div>
+
+
+<!-- nav page -->
+<script>
+    var is_nav = "[:=this.ptype:]" == "nav";
+</script>
+
+[:if(this.ptype=='nav'){:]
+
+<script src="/jslib/navstyle.min.js"></script>
+
+[:}:]
+
+

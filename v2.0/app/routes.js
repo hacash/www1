@@ -18,8 +18,9 @@ module.exports = {
     '/more_about': 'VIEW:moreabout',
     '/design': 'VIEW:logofile',
 
-    // doc load
-    '/doc/:name': 'VIEW:doc',
+    // nav doc load
+    '/doc/:name': 'VIEW:navdoc',
+    '/nav/:name': 'VIEW:navdoc',
 
     // svg icon
     '/svg/:name.svg': 'svgs',

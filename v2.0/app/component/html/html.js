@@ -43,6 +43,14 @@ function $class(elm, name){
     return elm.getElementsByClassName(name)
 }
 
+function $clas(elm, name){
+    return $clas(elm, name)[0]
+}
+
+function $attr(elm, name){
+    return elm.getAttribute(name)
+}
+
 
 
 function getUrlQuery(variable){
