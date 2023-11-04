@@ -112,6 +112,19 @@ function drawRandomBarBackgrand(wrap, direction, height, bshd, color, linecolor,
 })();
 
 
+// intro
+(function(){
+    var itrlg = $id('itrlg')
+    window.onscroll = function() {
+        var stp = document.documentElement.scrollTop || document.body.scrollTop
+        , deg = parseInt(stp) / 10 + 210
+        // console.log(deg)
+        itrlg.style.transform = `rotate(${deg}deg)`
+    }
+
+
+
+})();
 /*
 var intro = $id('intro')
 , morebtn = $class(intro, 'more')[0]

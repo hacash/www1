@@ -3,6 +3,8 @@ module.exports = {
 
     screen : {
         slg: "专注货币、支付、价值存储、DeFi 和 DApp 基础设施的点对点网络",
+        roles: [ "个人", "矿工", "机构", "艺术家", "开发者" ],
+        buytk: "购买代币",
         cswlt: "选择一个钱包",
         expch: "浏览区块链数据",
 

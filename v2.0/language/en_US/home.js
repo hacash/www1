@@ -2,7 +2,9 @@ module.exports = {
 
     screen : {
         slg: "A Peer-to-Peer Network for Money, Payment, Store of Value, DeFi, and DApp Infrastructure.",
-        cswlt: "Choose Your Wallet",
+        roles: [ "Individual", "Miner", "Business", "Artist", "Developer" ],
+        buytk: "Purchase Coins",
+        cswlt: "Choose Wallet",
         expch: "Explore Blockchain",
 
         threettl: "Three Coins, Three-Layer Architecture",

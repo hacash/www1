@@ -1,0 +1,10 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 200" width="400" height="200">
+	<style>
+		.s0 { fill: #f7af34 } 
+		.s1 { fill: none;stroke: #000000 } 
+	</style>
+	<g id="coin">
+		<path class="s0" d="m1 95l66-94h240.5l65.5 94-65.5 98h-240.5z"/>
+		<path class="s1" d="m1 95l66-94h240.5m0 192h-240.5l-66-98m0 0h240.5m66-94l-66 94m66-94l65.5 94-65.5 98m-66-98l66 98"/>
+	</g>
+</svg>
