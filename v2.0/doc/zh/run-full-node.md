@@ -8,9 +8,9 @@
 
 选择对应操作系统下载Hacash全节点软件：
 
-<a class="btn" href="https://download.hacash.org/miner_node_hacash_windows64.zip" target="_blank">Windows 64位</a>　
-<a class="btn orange" href="https://download.hacash.org/miner_node_hacash_ubuntu64.zip" target="_blank">Ubuntu 64位</a>　
-<a class="btn gray" href="https://download.hacash.org/miner_node_hacash_macos64.zip" target="_blank">MacOS 64位</a>
+<a class="btn" href="https://download.hacash.org/miner_node_hacash_windows64.zip" target="_blank">⇩ Windows 64位</a>　
+<a class="btn orange" href="https://download.hacash.org/miner_node_hacash_ubuntu64.zip" target="_blank">⇩ Ubuntu 64位</a>　
+<a class="btn gray" href="https://download.hacash.org/miner_node_hacash_macos64.zip" target="_blank">⇩ MacOS 64位</a>
 
 或者去 Hacash 软件发布中心下载：
 

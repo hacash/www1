@@ -94,7 +94,25 @@ function drawRandomBarBackgrand(wrap, direction, height, bshd, color, linecolor,
         editAnimation(itexts[itidx])
         itidx ++
     }
-    setInterval(showIntro, 4400)
+
+    // start or end if window is visible
+    var introEditAni
+    function startIEA(){
+        closeIEA()
+        introEditAni = setInterval(showIntro, 4400)
+    }
+    function closeIEA(){
+        clearInterval(introEditAni)
+    }
+    startIEA()
+
+    document.addEventListener('visibilitychange', function(){
+        if(document.visibilityState === 'visible'){
+            startIEA()
+        }else{
+            closeIEA()
+        }
+    })
 
     // show
     setTimeout(function(){ 
