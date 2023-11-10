@@ -13,7 +13,7 @@ module.exports = async function(cnf, ctx, next){
 
     
     let q = ctx.query
-    , navdocname = ctx.params.navdocmatch
+    , navdocname = (ctx.params.navdocmatch||'').toLowerCase()
     , render = async function(is_nav) {
         await renderNavDocViewer(cnf, ctx, next, is_nav, navdocname)
     }
