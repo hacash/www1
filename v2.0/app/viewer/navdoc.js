@@ -50,10 +50,15 @@ exports.datas = async function(cnf, ctx)
         await parseNavStyle()
     }
 
+    // console.log(ctx.params)
+
+    let is_nav = ctx.req.url.indexOf('/nav/')===0 
+        || ctx.params.is_nav==='true'
+
     let p = ctx.params
     , name = p.name
     , dist_name = name.toLowerCase()
-    , nav_or_doc = ctx.req.url.indexOf('/nav/')===0 ? 'nav' : 'doc'
+    , nav_or_doc = is_nav ? 'nav' : 'doc'
     , ldir = ctx.lang.use.split('_')[0] // en / zh
     , notfind = {
         'ptype': nav_or_doc,
@@ -102,6 +107,7 @@ exports.datas = async function(cnf, ctx)
     // set cache
     docContents[ldir][name] = result
 
+    // console.log(ctx.params)
     // ok
     return result
 }

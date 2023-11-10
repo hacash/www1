@@ -21,6 +21,7 @@ module.exports = {
     // nav doc load
     '/doc/:name': 'VIEW:navdoc',
     '/nav/:name': 'VIEW:navdoc',
+    '/:navdocmatch': 'navdocmatch',
 
     // svg icon
     '/svg/:name.svg': 'svgs',
