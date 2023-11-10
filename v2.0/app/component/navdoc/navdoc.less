@@ -80,8 +80,8 @@ html, body {
     &>h1,&>h2,&>h3,&>h4,&>h5,&>h6 {
         margin-top: 20px;
     }
-    &>h1 { font-size: 28px; color: #80571d; padding: 10px 0; }
-    &>h2 { font-size: 26px; color: #6b4d24; }
+    &>h1 { font-size: 28px; color: #80571d; margin-top: 60px; padding: 10px 0; }
+    &>h2 { font-size: 26px; color: #6b4d24; margin-top: 30px; }
     &>h3 { font-size: 24px; color: #523f25; }
     &>h4 { font-size: 22px; color: #423625; }
     &>h5 { font-size: 20px; color: #332c22; }
@@ -99,7 +99,18 @@ html, body {
         color: dodgerblue;
         text-decoration: underline;
     }
+    &>p>a::after{
+        content: "↗";
+    }
+    &>p>a:hover{
+        color: #fff;
+        background-color: dodgerblue;
+    }
+    &>p>a:active{
+        background-color: #1c67b1;
+    }
     a.btn {
+        &::after{ display: none; }
         text-decoration: none;
         color: #fff;
         display: inline-block;
@@ -216,6 +227,63 @@ html, body {
 }
 
 
+// links
+#mdcon {
+    pre.links {
+        a {
+            position: relative;
+            top: 0;
+            display: inline-block;
+            height: 38px;
+            line-height: 38px;
+            padding: 0 14px;
+            margin: 0 20px 20px 0;
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid @themegoldcolor;
+            border-bottom-width: 4px;
+            background-image: linear-gradient(to left bottom, #fff, #fff, #ffe4b0);
+        }
+        b {
+            font-weight: bold;  
+            color: @themegoldcolor;
+        }
+        i {
+            position: absolute;
+            border: 1px solid @themegoldcolor;
+            color: @themegoldcolor;
+            background-color: #fff;
+            border-radius: 100px;
+            text-align: center;
+            line-height: 16px;
+            font-size: 16px;
+            width: 16px;
+            height: 16px;
+            left: -9px;
+            top: -4px;
+        }
+        a:hover {
+            top: -2px;
+            box-shadow: 3px 3px 6px #00000066;
+            background: @themegoldcolor;
+            border-bottom-color: #00000022;
+            border-radius: 6px;
+            b {
+                color: #fff;
+                text-shadow: 0 1px 1px #00000033;
+            }
+            i {
+                display: none;
+            }
+        }
+        a:active {
+            top: 0;
+            background-color: @themegoldcolor - #222222;
+            border-bottom-color: transparent;
+        }
+    }
+
+}
 @media screen and (max-width: 640px) {
 
     #mdcon {
@@ -225,6 +293,10 @@ html, body {
             display: block;
             text-align: center;
         }
+    }
+
+    #mdcon pre.links {
+        white-space: break-spaces;
     }
 
 

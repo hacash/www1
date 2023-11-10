@@ -51,6 +51,11 @@ function $attr(elm, name){
     return elm.getAttribute(name)
 }
 
+function $each(elms, call){
+    for(var i=0; i<elms.length; i++){
+        call(elms[i], i)
+    }
+}
 
 
 function getUrlQuery(variable){

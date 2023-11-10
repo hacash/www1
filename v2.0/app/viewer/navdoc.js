@@ -7,8 +7,10 @@ const md = require('markdown-it')({
     linkify: true,
 });
 
-const cnf = global.koappx.config()
-const cnfp = global.koappx.paths()
+const kx = global.koappx
+const cnf = kx.config()
+const cnfp = kx.paths()
+const tppl = kx.util('tppl')
 
 var docContents = {
     'en': {},
@@ -84,12 +86,16 @@ exports.datas = async function(cnf, ctx)
     let lines = fcon.split("\n")
     , mdc = lines.slice(2).join('\n')
 
+    // tppl language
+    // console.log(ctx.lang.data)
+    mdc = tppl(mdc, {lang: ctx.lang.data})
+
     // result
     let result = {
         'ptype': nav_or_doc,
         'doctt': lines[0],
         'doctip': lines[1],
-        'title': `${lines[0]} - ${lines[1]} - Document`,
+        'title': `${lines[0]} - ${lines[1]} - Document - Hacash.org`,
         'content': md.render(mdc),
     }
 

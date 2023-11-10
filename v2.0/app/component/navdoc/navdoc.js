@@ -41,14 +41,48 @@ var navadd = is_nav ? 15 : 0;
 drawRandomBarBackgrand($id('tpbg'), 'down', 30+navadd, 30-navadd, 0, '#161928')
 // console.log(30+navadd, 30-navadd)
 
-// 
-var mdcon = $id("mdcon")
-, allas = mdcon.getElementsByTagName('a')
+// insert style
+function insertStyle(sty) {
+    var navstyobj = document.createElement("style")
+    navstyobj.innerHTML = sty
+    document.body.appendChild(navstyobj)
+}
+
+// parse items
+function parseNavDocItems(elm, call) {
+    var its = elm.innerText.split("\n\n")
+    , html = []
+    for(var i in its){
+        var a = its[i].split("\n")
+        html.push(call(a))
+    }
+    return html.join("\n")
+}
+
+var $mdcon = $id("mdcon")
+
+
+// pre.links
+var links = $mdcon.getElementsByClassName("links");
+$each(links, function(elm){
+    // do parse
+    elm.innerHTML = parseNavDocItems(elm, function(a){
+        return `<a class="link" href="${a[1]}"><b class="ftic">&#xe62c; ${a[0]}</b></a>`
+    })
+})
+
+
+// nowrap style
+insertStyle(`pre.links { white-space: nowrap; } `)
+
+
+// + target="_blank"
+var allas = $mdcon.getElementsByTagName('a')
 
 // a set target="_blank"
-for(var i=0; i<allas.length; i++){
-    allas[i].setAttribute('target', "_blank")
-}
+$each(allas, function(a){
+    a.setAttribute('target', "_blank")
+})
 
 
 // lazy load image

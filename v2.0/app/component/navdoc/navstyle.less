@@ -55,20 +55,17 @@
     @bdclr: #836033;
 
     .nit {
-        transition: all 0.1s linear;
-        transform: scale(1);
+        transition: all 0.25s linear;
         text-decoration: none;
         margin: 1.5% 0;
         width: 31%;
         text-align: center;
     }
-    .nit:hover {
-        transform: scale(1.03333);
-    }
     .box {
+        transform: scale(1);
         transition: all 0.1s linear;
         position: relative;
-        box-shadow: 3px 3px 1px #965b0f44;
+        box-shadow: 3px 3px 1px #965b0f33;
         height: 100%;
         border: 2px solid @bdclr;
         background: #00000000;
@@ -85,19 +82,22 @@
         border-bottom-color: #fff;
     }
     .hdwp {
+        overflow: hidden;
+    }
+    .hd {
+        transition: all 1s linear;
+        transform: scale(1);
         background-color: #fff;
         min-height: 67px;
-        opacity: 1;
         text-align: right;
-        // background-image: linear-gradient(to right bottom, #462, #968);
     }
     .ftic {
         display: inline-block;
-        // transition: all 1s;
+        transition: all 1s linear;
         // margin: 10% 0;
         font-size: 56px;
         color: #fff;
-        margin-right: 5;
+        margin-right: 5px;
         opacity: 0.5;
         // text-shadow: 2px 2px 0px #00000033;
 
@@ -128,7 +128,8 @@
     .box:hover {
         border-color: #aaa;
         background: #00000006;
-        box-shadow: 2px 2px 20px #965b0f33;
+        box-shadow: 2px 2px 20px #00000033;
+        transform: scale(1.04);
         cursor: pointer;
         .h {
             color: #000;
@@ -136,9 +137,13 @@
         .p {
             color: #444;
         }
+        .hd {
+            transform: scale(1.2);
+        }
         .ftic {
             opacity: 1;
-            text-shadow: 0 0 60px #f7af34, 0 0 40px #f7af34;
+            margin-right: 30px;
+            text-shadow: 0 0 60px #fff, 0 0 40px #fff, 0 0 20px #fff;
         }
         .cor {
             display: none;
@@ -150,11 +155,26 @@
 
 @media screen and (max-width: 640px) {
 
+
+    #starbg, #tpbg {
+        display: none;
+    }
+    #pgtt.nav {
+        .bgt {
+            display: none;        
+        }
+        .ct {
+            display: none;  
+        }
+        
+    }
+
     #mdcon pre.nav {
         display: block;
+        margin: 20px 0;
         .nit {
             display: block;
-            margin: 10px 0;
+            margin: 20px 0;
             width: auto;
         }
         .box {
