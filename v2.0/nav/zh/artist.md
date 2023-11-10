@@ -4,7 +4,6 @@ HACD为代表的PoW/能源生成艺术
 
 
 <pre class="nav">
-
 /doc/hacd-art
 如何在HACD上创作
 HACD不仅是一种新的加密资产，也是加密艺术的底层协议。你可以在HACD之上任意创作你的艺术作品。
