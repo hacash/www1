@@ -22,7 +22,7 @@ module.exports = async function(cnf, ctx, next){
 
     // cache
     if(pathcaches[navdocname] != undefined) {
-        // ctx.body = navdocname + " cache has!"
+        // console.log("cache path !!! = ", navdocname)
         await render(pathcaches[navdocname])
         return
     }
