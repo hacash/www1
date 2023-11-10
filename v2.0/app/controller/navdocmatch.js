@@ -21,7 +21,8 @@ module.exports = async function(cnf, ctx, next){
     // console.log(pathcaches[navdocname], fs.existsSync(`./nav/zh/${navdocname}.md`))
 
     // cache
-    if(pathcaches[navdocname] != undefined) {
+    if(pathcaches[navdocname] === undefined) {
+    }else{
         // console.log("cache path !!! = ", navdocname)
         await render(pathcaches[navdocname])
         return
@@ -36,9 +37,11 @@ module.exports = async function(cnf, ctx, next){
     }else if(fs.existsSync(`./doc/en/${navdocname}.md`) || fs.existsSync(`./doc/zh/${navdocname}.md`)){
         is_nav = false
     }else{
-        is_nav = null
+        // console.log("next!!!")
+        return next()
     }
     }catch(e){}
+
     pathcaches[navdocname] = is_nav
 
     // view
