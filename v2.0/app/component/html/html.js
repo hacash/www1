@@ -44,7 +44,7 @@ function $class(elm, name){
 }
 
 function $clas(elm, name){
-    return $clas(elm, name)[0]
+    return $class(elm, name)[0]
 }
 
 function $attr(elm, name){

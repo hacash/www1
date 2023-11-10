@@ -26,16 +26,17 @@ starback.generateStar(20)
 
 
 // parse nav items
-var parse_nav = function(stuff) {
+var parse_nav = function(stuff, callit) {
     var its = stuff.split("\n\n")
     , html = []
     for(var i in its){
         var a = its[i].split("\n")
         html.push(`<a class="nit" target="_blank" href="${a[0]}"><div class="box">
-    <div class="hdwp"></div>
+    <div class="hdwp"><div class="ftic">&#xe6ec;</div></div>
     <div class="text"><h1 class="h">${a[1]}</h1>
     <span class="p">${a[2]}</span></div>
 <div class="cor"></div></div></a>`)
+        callit && callit()
     }
     return html.join("\n")
 }
@@ -44,6 +45,26 @@ for(var i=0; i<navs.length; i++){
     // do parse
     var elm = navs[i]
     elm.innerHTML = parse_nav(elm.innerText)
+    setTimeout(setHeadImage, 15, elm)
+}
+
+function setHeadImage(elm) {
+    var nits = $class(elm, 'nit')
+    console.log(nits)
+    for(var i=0;i<nits.length;i++){
+        var it = nits[i] 
+        , h = $clas(it, 'h')
+        , p = $clas(it, 'p')
+        , b = $clas(it, 'box')
+        , pim = GeoPattern.generate(h.innerText)
+        , hd = $clas(it, 'hdwp')
+        , cl = pim.color
+        // console.log(cl)
+        h.style.color = cl
+        p.style.color = cl+"88"
+        b.style.borderColor = cl
+        hd.style.backgroundImage =  pim.toDataUrl()
+    }
 }
 
 
