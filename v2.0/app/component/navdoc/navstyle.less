@@ -51,57 +51,83 @@
     align-items: stretch;
     flex-wrap: wrap;
     margin: 40px 0;
+
+    @bdclr: #836033;
+
     .nit {
+        transition: all 0.1s linear;
+        transform: scale(1);
         text-decoration: none;
-        margin: 1% 0;
-        width: 32%;
+        margin: 1.5% 0;
+        width: 31%;
         text-align: center;
     }
+    .nit:hover {
+        transform: scale(1.03333);
+    }
     .box {
+        transition: all 0.1s linear;
         position: relative;
-        box-shadow: -5px -5px 35px #f7af3416 inset;
+        box-shadow: 3px 3px 1px #965b0f44;
         height: 100%;
-        border: 1px solid #ddd;
+        border: 1px solid @bdclr;
         background: #00000000;
     }
     .cor {    
+        display: none;
         position: absolute;
         right: -1px;
         bottom: -1px;
         width: 0;
         height: 0;
-        border: 6px solid #ddd;
+        border: 6px solid @bdclr;
         border-right-color: #fff;
         border-bottom-color: #fff;
     }
+    .hdwp {
+        background-color: #fff;
+        min-height: 140px;
+        // background-image: linear-gradient(to right bottom, #462, #968);
+    }
     .ftic {
         transition: all 1s;
-        margin: 10% 0;
+        // margin: 10% 0;
         font-size: 56px;
         color: #b38639;
         text-shadow: 2px 2px 0px #00000033;
     }
-    h1 {
+    .text {
+        border-top: 1px solid #ddd;
+        // background-color: #fff;
+        padding: 14px;
+        text-align: left;
+    }
+    .h {
+        display: block;
         transition: all 1s;
         font-size: 20px;   
         color: #555;
+        margin-bottom: 14px;
     }
-    p {
+    .p {
+        display: block;
         transition: all 1s;
-        margin: 6% 5% 10%;
+        // margin: 6% 5% 10%;
         white-space: wrap;
         font-size: 15px;  
         color: #999; 
+        white-space: break-spaces;
+        word-break: break-all;
     }
     .box:hover {
         border-color: #aaa;
         background: #00000006;
-        box-shadow: 2px 2px 4px #00000022;
+        box-shadow: 2px 2px 20px #965b0f33;
         cursor: pointer;
-        h1 {
+        .h {
             color: #000;
         }
-        p {
+        .p {
             color: #444;
         }
         .ftic {

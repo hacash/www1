@@ -31,10 +31,10 @@ var parse_nav = function(stuff) {
     , html = []
     for(var i in its){
         var a = its[i].split("\n")
-        html.push(`<a class="nit" target="_blank" href="${a[1]}"><div class="box">
-    <div class="ftic">&#x${a[0]};</div>
-    <h1>${a[2]}</h1>
-    <p>${a[3]}</p>
+        html.push(`<a class="nit" target="_blank" href="${a[0]}"><div class="box">
+    <div class="hdwp"></div>
+    <div class="text"><h1 class="h">${a[1]}</h1>
+    <span class="p">${a[2]}</span></div>
 <div class="cor"></div></div></a>`)
     }
     return html.join("\n")
@@ -42,7 +42,8 @@ var parse_nav = function(stuff) {
 var navs = $mdcon.getElementsByClassName("nav");
 for(var i=0; i<navs.length; i++){
     // do parse
-    navs[i].innerHTML = parse_nav(navs[i].innerText)
+    var elm = navs[i]
+    elm.innerHTML = parse_nav(elm.innerText)
 }
 
 
