@@ -18,7 +18,7 @@ Hacash 开发相关说明和各工具、接口文档链接
 https://github.com/hacash/miner/blob/master/doc/software_release_log.md
 </pre>
 
-
+<a name="mining"></a>
 ## 挖矿及矿池
 
 要运行 Hacash 社区提供的开源矿池，请查看 [搭建矿池](/doc/mining-pool)。如果你需要开发矿池或者自定义的挖矿工具，或者了解挖矿产出的细节，请查看下面三个文档，分别解释了[:=lang.frame.footer.i2:], [:=lang.frame.footer.i3:] 和 [:=lang.frame.footer.i4:]：
