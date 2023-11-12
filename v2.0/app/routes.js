@@ -2,6 +2,7 @@ module.exports = {
 
     // page view
     '/': 'VIEW:index',
+    '/zh': 'VIEW:index',
 
 
     '/hac_unit': 'VIEW:hacunit',
@@ -15,6 +16,7 @@ module.exports = {
     '/nav/:name': 'VIEW:navdoc',
     '/:navdocmatch': 'navdocmatch',
 
+    '/zh/:path': 'langmatch',
 
     // api test
     // '/api/data/get': 'api/data/get',
