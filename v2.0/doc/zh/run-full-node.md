@@ -31,8 +31,6 @@
 - [Hacash编译部署文档](https://github.com/hacash/miner/blob/master/doc/build_compilation_en.md)
 
 
-<a name="run"></a>
-
 ## 运行
 
 下载对应操作系统版本的全节点软件后，无需修改任何配置，以命令行方式运行里面的可执行文件：
