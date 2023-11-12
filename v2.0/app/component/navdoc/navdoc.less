@@ -3,14 +3,26 @@ html, body {
 }
 
 #pgtt {
+    position: relative;
     text-align: center;
     overflow: hidden;
 
     .box {
         position: relative;
-        padding: 66px 0;
+        padding: 66px 0 88px 0;
         overflow: hidden;
         background-color: #161928;
+    }
+
+    #tpbg {
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        svg {
+            display: block;
+        }
     }
 
     .bgt {
@@ -70,8 +82,9 @@ html, body {
     padding: 20px 0;
 
     &, * {
-        color: #1f1f1f;
-        font-size: 16px;
+        color: #555;
+        font-size: 18px;
+        line-height: 26px;
     }
 
     &>p, &>div, &>ul, &>.hr code {
@@ -80,12 +93,12 @@ html, body {
     &>h1,&>h2,&>h3,&>h4,&>h5,&>h6 {
         margin-top: 20px;
     }
-    &>h1 { font-size: 28px; color: #80571d; margin-top: 60px; padding: 10px 0; }
-    &>h2 { font-size: 26px; color: #6b4d24; margin-top: 30px; }
-    &>h3 { font-size: 24px; color: #523f25; }
-    &>h4 { font-size: 22px; color: #423625; }
-    &>h5 { font-size: 20px; color: #332c22; }
-    &>h6 { font-size: 18px; color: #333333; }
+    &>h1 { font-size: 30px; color: #80571d; margin-top: 60px; padding: 10px 0; }
+    &>h2 { font-size: 28px; color: #6b4d24; margin-top: 30px; }
+    &>h3 { font-size: 26px; color: #523f25; }
+    &>h4 { font-size: 24px; color: #423625; }
+    &>h5 { font-size: 22px; color: #332c22; }
+    &>h6 { font-size: 20px; color: #333333; }
 
     &>h1 {
         text-align: center;

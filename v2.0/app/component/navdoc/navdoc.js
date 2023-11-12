@@ -38,7 +38,7 @@ function drawRandomBarBackgrand(wrap, direction, width, height, bshd, color, lin
 }
 
 var navadd = is_nav ? 15 : 0;
-drawRandomBarBackgrand($id('tpbg'), 'down', 30+navadd, 30-navadd, 0, '#161928')
+drawRandomBarBackgrand($id('tpbg'), 'up', 30+navadd, 30-navadd, 0, '#ffffff')
 // console.log(30+navadd, 30-navadd)
 
 // insert style
@@ -76,13 +76,12 @@ $each(links, function(elm){
 insertStyle(`pre.links { white-space: nowrap; } `)
 
 
-// + target="_blank"
-var allas = $mdcon.getElementsByTagName('a')
-
 // a set target="_blank"
-$each(allas, function(a){
-    a.setAttribute('target', "_blank")
-})
+setTimeout(function(){
+    $each($mdcon.getElementsByTagName('a'), function(a){
+        a.setAttribute('target', "_blank")
+    })
+},777)
 
 
 // lazy load image

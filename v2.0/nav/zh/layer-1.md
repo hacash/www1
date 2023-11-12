@@ -31,5 +31,4 @@ Hacash Layer 1 遵循Hacash白皮书中的设计原则：简单、紧凑、可�
 /develop
 技术开发
 Layer 1一直需要大量开发者的加入进行创新和优化。例如用Rust重构Hacash Layer 1等。
-
 </pre>

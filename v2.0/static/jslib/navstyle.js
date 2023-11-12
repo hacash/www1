@@ -10,27 +10,31 @@ insertStyle(nav_style)
 
 var $mdcon = $id("mdcon") 
 
-// start star back canvas
-var starbg = $id("starbg");
-var starback =new Starback(starbg,{width:starbg.clientWidth,height:starbg.clientHeight,speed:3,frequency:16,slope:{x:6,y:5 },directionX:1,spread:.3,randomOpacity:true,backgroundColor:["#4ab7b711","#4ab7b755","#4a7eb466"]})
-starback.generateStar(20)
 
+var pgtt = $id('pgtt')
+, bgt = $clas(pgtt, 'bgt')
+, h = $clas(pgtt, 'h')
+, p = $clas(pgtt, 'p')
+, pim = GeoPattern.generate(h.innerHTML, {baseColor: '#000000'})
+bgt.style.backgroundImage =  pim.toDataUrl()
+setTimeout(function(){ p.classList.add('show') }, 500)
 
 // parse nav items
 var parse_nav = function(elm) {
     return parseNavDocItems(elm, function(a){
         return `<a class="nit" href="${a[0]}"><div class="box">
-        <div class="hdwp"><div class="hd"><div class="ftic">&#xe6ec;</div></div></div>
-        <div class="text"><h1 class="h">${a[1]}</h1>
-        <span class="p">${a[2]}</span></div>
-    <div class="cor"></div></div></a>`
+            <img class="bgic" src="/cssimg/navicos/wallet.svg" />
+            <div class="hdw"><img src="/cssimg/navicos/wallet.svg" /></div>
+            <div class="h"><h1>${a[1]}</h1></div>
+            <div class="p"><p>${a[2]}<p></div>
+        </div></a>`
     })
 }
 var navs = $mdcon.getElementsByClassName("nav");
 $each(navs, function(elm){
     // do parse
     elm.innerHTML = parse_nav(elm)
-    setTimeout(setHeadImage, 15, elm)
+    // setTimeout(setHeadImage, 15, elm)
 })
 
 function setHeadImage(elm) {
@@ -41,7 +45,7 @@ function setHeadImage(elm) {
         , h = $clas(it, 'h')
         , p = $clas(it, 'p')
         , b = $clas(it, 'box')
-        , pim = GeoPattern.generate(h.innerText)
+        , pim = GeoPattern.generate(h.innerText, {baseColor: '#000000'})
         , hd = $clas(it, 'hd')
         , cl = pim.color
         // console.log(cl)
