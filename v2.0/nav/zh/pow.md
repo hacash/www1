@@ -4,11 +4,11 @@
 
 
 <pre class="nav">
-/doc/hac
+/HAC
 PoW Flatcoin
 首个同时实现去中心化和货币供应调节实现购买力的加密货币。
 
-/doc/hacd
+/HACD
 PoW NFT 和 PoW 生成艺术
 首个采用比特币PoW机制的NFT和生成艺术。
 

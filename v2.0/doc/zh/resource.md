@@ -7,14 +7,14 @@
   
 <pre class="links">
 购买HAC
-/doc/buy#hac
+/buy#hac
 </pre>
 
 ## 视频
   
 <pre class="links">
 查看HAC区块奖励
-/doc/buy#hac
+/buy#hac
 </pre>
 
 ## 社交媒体内容

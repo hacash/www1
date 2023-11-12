@@ -18,7 +18,7 @@ HAC是一种和比特币一样，基于PoW的加密货币。HAC和BTC一样可�
   
 <pre class="links">
 购买HAC
-/doc/buy#hac
+/buy#hac
 </pre>
 
 ## 分发机制
@@ -38,7 +38,7 @@ HAC的分发可以分为3个阶段：
   
 <pre class="links">
 查看HAC区块奖励
-/doc/buy#hac
+/buy#hac
 </pre>
 
 ## 如何实现购买力稳定
