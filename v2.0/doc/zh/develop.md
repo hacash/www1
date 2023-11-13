@@ -5,7 +5,7 @@ Hacash 开发相关说明和各工具、接口文档链接
 
 本页面为 Hacash 相关的各类开发者提供初步的指引说明和文档链接，并对一些与开发工作相关的重要注意事项进行解释。另外，所有代码和文档都会被提交至 [Github](https://github.com/hacash/miner) 上并完全开源，如果文档里没有你需要的信息，你可以在开源代码库里找到所有内容。
 
-
+<a name="rpc"></a>
 ## 交易所或钱包接入
 
 交易所或者钱包接入 HAC、 HACD 或 Hacash 链上的 BTC 资产，并且扫描交易或区块数据、创建新的转账交易，请阅读 RPC API 接口文档。
@@ -34,7 +34,7 @@ https://github.com/hacash/miner/blob/master/doc/software_release_log.md
 [:=lang.frame.pagelink.fairdoc:]
 </pre>
 
-
+<a name="tool"></a>
 ## 应用及工具开发
 
 如果你想要开发一些服务于 Hacash 的工具，通过研究 Hacash 的开源钱包和区块浏览器等已有工具将是很好的开始方式，这些既有工具开发和使用了一些接口可能并没有写入文档。以下是已有工具的代码链接，API代码链接和接口文档：
@@ -54,7 +54,7 @@ https://github.com/hacash/wallet
 https://github.com/hacash/explorer
 </pre>
 
-
+<a name="core"></a>
 ## 区块链核心层
 
 要参与区块链核心层的开发，需要满足一定的条件，这些条件在 [HIP-12](https://github.com/hacash/paper/blob/master/HIP/development/HIP-12_Hacash_development_workflow_and_code_permission.pdf) 中有详细说明。每一项对 Hacash 主网核心层的新增和变动，都需要提起一份 HIP 文档作为评估依据。需要编译和部署 Hacash 全节点，这里也有一份简单的指引。
@@ -77,7 +77,7 @@ https://github.com/hacash/miner/blob/master/doc/build_compilation_en.md
 
 <pre class="links">
 Discord 开发组
-https://discord.com/channels/757976908653920299/802807729584209920
+https://discord.gg/wKAJHxUgb6
 
 Github 文档中心
 https://github.com/hacash/miner
