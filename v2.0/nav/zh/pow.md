@@ -1,4 +1,4 @@
-创新PoW项目
+在PoW领域的创新
 首个 PoW Flatcoin、PoW NFT 和 PoW 生成艺术
 
 
