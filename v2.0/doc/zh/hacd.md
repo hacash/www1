@@ -32,8 +32,11 @@ https://explorer.hacash.org/
 </pre>
 
 
+<a name="hip"></a>
+## HACD的艺术作品
+
 <a name="art"></a>
-## HACD的艺术创作
+## 如何在HACD创作艺术
 
 ## 为什么HACD有价值
 - 和 BTC 一样，通过 PoW 产生内生价值
