@@ -25,7 +25,7 @@ Discord是目前Hacash开发者进行讨论的主要地方。
 交易所或者钱包等接入HAC、 HACD或Hacash链上的BTC资产可查看RPC API接口。
 
 /develop#mining
-Hacash挖矿
+Hacash挖矿开发
 Hacash挖矿从CPU开始，需更多的开发力量投入来提高挖矿的效率。
   
 </pre>
