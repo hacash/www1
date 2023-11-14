@@ -3,8 +3,6 @@ Hacash生态
 
 
 
-##Hacash社交媒体
-
 <a name="hac"></a>
 ##HAC生态
 
