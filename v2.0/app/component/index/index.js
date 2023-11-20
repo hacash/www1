@@ -52,12 +52,12 @@ function drawRandomBarBackgrand(wrap, direction, height, bshd, color, linecolor,
 // screen
 (function(){
     var screen = $id('screen')
-    , intro = $class(screen, 'intro')[0]
+    , desc = $class(screen, 'desc')[0]
     , cvimgs = $class(screen, 'cvimgs')[0]
     , cvbg = $class(screen, 'cvbg')[0]
     , rlgs = $class(screen, 'rlgs')[0]
     , shadow = $class(screen, 'shadow')[0]
-    , itexts = intro.getAttribute('intros').split('|')
+    , itexts = desc.getAttribute('desc').split('/')
     , itidx = 1
     ;
     function showAni(newt) {

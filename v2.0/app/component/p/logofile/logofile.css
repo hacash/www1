@@ -1,0 +1,74 @@
+#lgfl {
+  padding: 100px 0;
+}
+#lgfl .ttl {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 22px;
+}
+#lgfl .colorbg {
+  display: inline-block;
+  width: 160px;
+  height: 60px;
+  background-color: #f7af34;
+}
+#lgfl .color {
+  color: #555;
+  font-size: 20px;
+}
+#lgfl .lgimg {
+  max-width: 200px;
+}
+#lgfl .join {
+  padding: 40px;
+}
+#lgfl .join,
+#lgfl .join * {
+  color: #444;
+  font-size: 18px;
+  line-height: 28px;
+}
+#lgfl .join a {
+  color: #0b66a3;
+}
+#lgfl .file {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  line-height: 120px;
+  background-color: #ddd;
+  font-size: 28px;
+}
+#lgfl table.form {
+  width: 100%;
+  border-collapse: collapse;
+}
+#lgfl table.form a {
+  border: 1px solid darkcyan;
+  color: darkcyan;
+  border-radius: 4px;
+  padding: 12px 8px;
+  font-size: 18px;
+}
+#lgfl table.form a:hover {
+  background-color: darkcyan;
+  text-decoration: underline;
+  color: #fff;
+}
+#lgfl table.form span {
+  display: inline-block;
+  color: #999;
+  max-width: 120px;
+}
+#lgfl table.form td,
+#lgfl table.form th {
+  padding: 10px;
+  border: solid 1px #bbb;
+  text-align: center;
+}
+#lgfl table.form th {
+  font-size: 18px;
+  color: #666;
+  background-color: #eee;
+}

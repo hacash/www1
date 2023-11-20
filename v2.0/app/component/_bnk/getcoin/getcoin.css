@@ -1,0 +1,17 @@
+.exlist .item {
+  display: inline-block;
+  padding: 10px;
+  border: 2px solid #ddd;
+  margin: 10px;
+  background-color: ;
+}
+.exlist .item .cv {
+  height: 120px;
+  line-height: 120px;
+  vertical-align: middle;
+}
+.exlist .item .cv img {
+  vertical-align: middle;
+  width: 200px;
+  line-height: 120px;
+}

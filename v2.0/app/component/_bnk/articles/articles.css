@@ -1,0 +1,47 @@
+#atcs {
+  margin-top: 80px;
+}
+#atcs .pgtt {
+  margin: 20px 0;
+}
+#atcs .item {
+  display: block;
+  padding: 10px 0;
+  clear: both;
+  border-bottom: 1px solid #ddd;
+}
+#atcs .item p {
+  font-size: 17px;
+  color: #161616;
+  line-height: 20px;
+  padding: 0 10px;
+}
+#atcs .item p i {
+  font-style: normal;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+  display: block;
+}
+#atcs .item p.t {
+  float: left;
+  width: 66%;
+}
+#atcs .item p.t::before {
+  font-size: 20px;
+  content: "✑ ";
+}
+#atcs .item p.t.video::before {
+  content: "► ";
+}
+#atcs .item p.meta {
+  float: right;
+  font-size: 14px;
+  text-align: right;
+}
+#atcs .item:hover {
+  background-color: #eee;
+}
+#atcs .item:hover p.t {
+  text-decoration: underline;
+}

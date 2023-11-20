@@ -11,15 +11,10 @@
             <img class="rlgs away" src="/svg/hac.svg" />
         </div>
         <div class="what">
-            [: if(lang.useset == 'zh_CN'){ :]
-            <h1>Hacash <span class="intro" intros="是加密健全货币|由社区驱动|遵循比特币愿景|包含3个工作量证明货币|有世界第一个 PoW NFT|将兼容比特币|支持人类可读的DeFi合约|可抵抗51%算力攻击|具备可扩展性技术">是加密健全货币</span></h1>
-            [:}else{:]
-            <h1>Hacash <span class="intro" intros="is Crypto Sound Money|is the Community Driven|follows Bitcoin's Vision|includes 3 PoW Coins|has the first PoW NFT|can absorb Bitcoin|use Human-readable DeFi Contracts|prevents 51% Attacks|supports Scalability Techniques">is Crypto Sound Money</span></h1>
-            [:}:]
-            <p class="desc">[:=lang.home.screen.slg:]</p>
+            <h1>Hacash <span class="desc" desc="[:=lang.common.desc.join('/'):]">[:=lang.common.desc[0]:]</span></h1>
+            <p class="intro">[:=lang.common.intro:]</p>
             <div class="btns">
-                <a class="play f" href="https://www.youtube.com/watch?v=zXo9E3hxDGo" target="_blank"><u class="ftic">&#xe617; [:=lang.frame.topnav.wishacash:]</u></a>
-                <a class="play" href="https://www.youtube.com/watch?v=SOwL6buMfeg" target="_blank"><u class="ftic">&#xe617; [:=lang.frame.topnav.wishacd:]</u></a>
+                <a class="play f" href="" target="_blank"><u class="ftic">&#xe617;</u></a>
             </div>
         </div>
         <div class="empty"></div>
@@ -42,49 +37,36 @@
 <div id="quick">
     <div class="container">
         <div class="cvits">
-            <div class="itw"><a class="item" href="#" target="_blank" title="Click to know more">
+            <div class="itw"><a class="item" href="/individual" target="_blank">
                 <div class="ftic">&#xe62b;</div>
-                <h3>[:=lang.home.screen.roles[0]:]</h3>
+                <h3>[:=lang.index.start.ichs[0]:]</h3>
             </a></div>
-            <div class="itw"><a class="item" href="/nav/miner" target="_blank" title="Click to know more">
+            <div class="itw"><a class="item" href="/miner" target="_blank">
                 <div class="ftic">&#xe60d;</div>
-                <h3>[:=lang.home.screen.roles[1]:]</h3>
+                <h3>[:=lang.index.start.ichs[1]:]</h3>
             </a></div>
-            <div class="itw"><a class="item" href="#" target="_blank" title="Click to know more">
+            <div class="itw"><a class="item" href="/business" target="_blank">
                 <div class="ftic">&#xe603;</div>
-                <h3>[:=lang.home.screen.roles[2]:]</h3>
+                <h3>[:=lang.index.start.ichs[2]:]</h3>
             </a></div>
-            <div class="itw"><a class="item" href="#" target="_blank" title="Click to know more">
+            <div class="itw"><a class="item" href="/artist" target="_blank">
                 <div class="ftic">&#xe633;</div>
-                <h3>[:=lang.home.screen.roles[3]:]</h3>
+                <h3>[:=lang.index.start.ichs[3]:]</h3>
             </a></div>
-            <div class="itw"><a class="item" href="#" target="_blank" title="Click to know more">
+            <div class="itw"><a class="item" href="/developer" target="_blank">
                 <div class="ftic">&#xe920;</div>
-                <h3>[:=lang.home.screen.roles[4]:]</h3>
+                <h3>[:=lang.index.start.ichs[4]:]</h3>
             </a></div>
-            <!--
-            <div><a class="item" href="/get_started" target="_blank" title="Click to know more">
-                <div class="ftic">&#xe69e;</div>
-                <h3>[:=lang.frame.topnav.mining:]</h3>
-            </a></div>
-            <div><a class="item" href="/get_coin" target="_blank" title="Click to know more">
-                <div class="ftic">&#xe6f9;</div>
-                <h3>[:=lang.frame.topnav.buy:]</h3>
-            </a></div>
-            <div><a class="item" href="/develop" target="_blank" title="Click to know more">
-                <div class="ftic">&#xe678;</div>
-                <h3>[:=lang.frame.topnav.develop:]</h3>
-            </a></div>-->
         </div>
         <div class="ktops">
             <div class="opw"><a href="/doc/buy" class="opt" target="_blank">
-                <div><span class="ftic">&#xe89d;</span>[:=lang.home.screen.buytk:]<span></span></div>
+                <div><span class="ftic">&#xe89d;</span><span>[:=lang.index.start.opts[0]:]</span></div>
             </a></div>
             <div class="opw"><a href="https://wallet.hacash.org?lang=[:=lang.useset:]" class="opt" target="_blank">
-                <div><span class="ftic">&#xe76e;</span>[:=lang.home.screen.cswlt:]<span></span></div>
+                <div><span class="ftic">&#xe76e;</span><span>[:=lang.index.start.opts[1]:]</span></div>
             </a></div>
             <div class="opw"><a href="https://explorer.hacash.org?lang=[:=lang.useset:]" class="opt" target="_blank">
-                <div><span class="ftic">&#xf2fb;</span><span>[:=lang.home.screen.expch:]</span></div>
+                <div><span class="ftic">&#xf2fb;</span><span>[:=lang.index.start.opts[2]:]</span></div>
             </a></div>
         </div>
     </div>
@@ -277,136 +259,14 @@
 <div id="intro">
     <div class="pnext"><u>⇣</u></div>
     <div class="container">
-        <!-- <div class="pttl"><h1>[:=lang.home.screen.threettl:]</h1></div> -->
         <div class="box">
             <div><div class="infra"><div class="bsp"></div><img class="c3l3" src="/cssimg/index/3layer.png" /><img class="dlb" src="/cssimg/index/dlb.png" /></div></div>
             <div><div class="logo"><img id="itrlg" src="/svg/hac-s.svg?fill=" /></div></div>
             <div><div class="text">
-                <!-- <h3 class="t1 f">[:=lang.home.screen.tptt1:]</h3> -->
-                <p>[:=lang.home.screen.tpcon1:]</p>
-                <!-- <h3 class="t2">[:=lang.home.screen.tptt2:]</h3> -->
-                <p>[:=lang.home.screen.tpcon2:]</p>
+                <p></p>
+                <p></p>
             </div></div>
         </div>
     </div>
 </div>
-
-
-<!--
-
-<a name="btc"></a>
-<div id="btc">
-    <div class="container">
-        <div class="box">
-            <div class="left">
-                <div>
-                    <img src="/cssimg/index/BTC_in_Hacash.png" />
-                </div>
-            </div>
-            <div class="right">
-                <div class="ttl f"><h1><span class="ftic inline ttic">&#xe629;</span>[:=lang.home.screen.btcttl:]</h1></div>
-                [:=lang.home.screen.btccons:]
-                <div class="dp btns">
-                    <a class="" href="https://hacash.money/BTC" target="_blank"><button class="f bold">[:=lang.home.screen.btcbtns.b1:]</button></a>
-                    <a class="" href="[:=lang.frame.pagelink.attack51:]" target="_blank"><button>[:=lang.home.screen.btcbtns.b2:]</button></a>
-                    <a class="" href="https://hacash.money" target="_blank"><button>[:=lang.home.screen.btcbtns.b3:]</button></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<a name="money"></a>
-<div id="money">
-    <div class="container">
-        <div class="box">
-            <div class="left">
-                <div class="intro">
-                    <h1><span class="ftic inline ttic">&#xe65c;</span>[:=lang.home.screen.mnyttl:]</h1>
-                    <p>[:=lang.home.screen.mnycon:]</p>
-                    <div>
-                        <a href="https://hacash.money"><button>[:=lang.home.screen.mnymore:]</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="right">
-                <div class="mncv">
-                    <img class="mny" src="/cssimg/index/money.jpg" />
-                    <div class="cvg"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<a name="news"></a>
-<div id="news">
-    <div class="container">
-        <div class="box">
-
-            [: if(lang.useset == 'zh_CN'){ :]
-
-            <div>
-                <a class="item" href="https://www.chaincatcher.com/article/2092533" target="_blank">
-                    <div class="cv" style="background-image: url(/image/news/en-3.jpg);"></div>
-                    <div class="ttl"><h3>盘点比特币生态扩容的四大方向（Hacash单向转移型）</h3></div>
-                    <div class="desc"><p>如何在保留比特币价值存储能力不变的情况下，进行扩容甚至解决比特币在未来2100万被挖掘完毕后的可持续性扩容方案将无疑是比特币的未来方向。</p></div>
-                </a>
-            </div>
-            <div>
-                <a class="item" href="https://medium.com/p/7d733169dbd0" target="_blank">
-                    <div class="cv" style="background-image: url(/image/news/zh-2.jpg);"></div>
-                    <div class="ttl"><h3>从三个不可能三角看 Hacash 的核心叙事逻辑</h3></div>
-                    <div class="desc"><p>分别为：区块链扩容的不可能三角（Vitalik提出）、稳定币的不可能三角（从蒙代尔货币政策三角衍生）和 项目发展速度的不可能三角</p></div>
-                </a>
-            </div>
-            <div>
-                <a class="item" href="https://mp.weixin.qq.com/s?__biz=Mzg4NDY3NTY5NA==&mid=2247483746&idx=1&sn=c9aa15aa04a7070a44b6851a0ee8a2fa" target="_blank">
-                    <div class="cv" style="background-image: url(/image/news/zh-1.jpg);"></div>
-                    <div class="ttl"><h3>加密货币的前世今生：从非对称加密到比特币继承者 Hacash</h3></div>
-                    <div class="desc"><p>到如今并没有确切的证据表明加密行业具有“电子货币”以外特别重大的价值和真实用途。我们认为整个行业从始至终、有且仅有唯一一个重要方向：实现更加健全高效的世界货币。</p></div>
-                </a>
-            </div>
-
-            [: }else{ :]
-
-
-            <div>
-                <a class="item" href="https://hackernoon.com/top-4-directions-of-bitcoin-ecosystem-scalability" target="_blank">
-                    <div class="cv" style="background-image: url(/image/news/en-3.jpg);"></div>
-                    <div class="ttl"><h3>Top 4 Directionsof Bitcoin Ecosystem Scalability</h3></div>
-                    <div class="desc"><p></p></div>
-                </a>
-            </div>
-            <div>
-                <a class="item" href="https://hackernoon.com/why-pow-nfts-are-the-next-blue-chip-nft-collections" target="_blank">
-                    <div class="cv" style="background-image: url(/image/news/en-2.jpg);"></div>
-                    <div class="ttl"><h3>Why PoW NFTs are the Next Blue-Chip NFT Collections</h3></div>
-                    <div class="desc"><p></p></div>
-                </a>
-            </div>
-            <div>
-                <a class="item" href="https://kenyou.medium.com/what-is-hacash-52bcd7b438ea" target="_blank">
-                    <div class="cv" style="background-image: url(/image/news/en-1.jpg);"></div>
-                    <div class="ttl"><h3>What is Hacash?</h3></div>
-                    <div class="desc"><p></p></div>
-                </a>
-            </div>
-
-
-
-            [: } :]
-
-        </div>
-        <div class="btns">
-            <a href="/articles" target="_blank"><button>[:=lang.home.screen.btbtn1:]</button></a>
-            <a href="/more_about" target="_blank"><button class="">[:=lang.home.screen.btbtn2:]</button></a>
-        </div>
-    </div>
-</div>
-
--->
 

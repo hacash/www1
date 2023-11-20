@@ -1,0 +1,88 @@
+.tbmb {
+  display: inline-block;
+  padding: 20px 0;
+  margin-left: 20px;
+}
+.tbmb.f {
+  margin: 0;
+}
+.tbmb th,
+.tbmb td {
+  font-size: 12px;
+}
+.tbmb td {
+  font-size: 15px;
+}
+.fmtshow .container {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 6px #00000044;
+  border-radius: 4px;
+}
+.fmtshow u,
+.fmtshow b {
+  font-size: 18px;
+  color: #999;
+}
+.fmtshow b {
+  color: cadetblue;
+  font-weight: bold;
+}
+.fmtbox {
+  padding: 30px;
+  background: #eee;
+}
+.fmtbox input,
+.fmtbox button {
+  margin: 0;
+  display: inline-block;
+}
+.fmtbox .res {
+  padding: 10px;
+  color: cadetblue;
+  font-size: 22px;
+  height: 32px;
+  line-height: 32px;
+  display: block;
+}
+.fmtbox .res span {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 32px;
+  height: 32px;
+  color: #999;
+}
+@media screen and (max-width: 640px) {
+  .container {
+    padding: 0;
+    margin: 10px;
+    width: auto;
+  }
+  .tpmg {
+    display: none;
+  }
+  .tbmb {
+    margin: 0;
+    padding: 10px;
+    display: block;
+  }
+  .tbmb table {
+    width: 100%;
+  }
+  .fmtbox {
+    padding: 10px;
+  }
+  .fmtbox input {
+    width: 240px;
+  }
+  .fmtshow .container {
+    margin-top: 40px;
+  }
+  .fmtshow .container u,
+  .fmtshow .container b {
+    font-size: 16px;
+  }
+}

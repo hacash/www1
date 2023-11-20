@@ -8,7 +8,7 @@ module.exports = {
     '/hac_unit': 'VIEW:hacunit',
 
     // design andsvg icon
-    '/design': 'VIEW:logofile',
+    '/design': 'VIEW:p/logofile',
     '/svg/:name.svg': 'svgs',
 
     // nav doc load

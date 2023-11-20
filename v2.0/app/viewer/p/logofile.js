@@ -4,7 +4,7 @@ exports.components = [
     'html',
     'header',
 
-    'logofile',
+    'p/logofile',
 
     'footer',
     'tail',

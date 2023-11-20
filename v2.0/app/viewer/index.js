@@ -6,7 +6,7 @@ exports.components = [
 
     'index',
 
-    'footer',
+    // 'footer',
     'tail',
 ]
 
@@ -31,7 +31,7 @@ exports.datas = async function(cnf, ctx)
         // isMobile: types.isMobile(ctx.req),
         // numToThousands: utilnumber.numToThousands,
         is_index_page: true,
-        title: "Hacash - A peer-to-peer of Money, Payment, Store of Value, DeFi and DApp Infrastructure."
+        title: null,
     }
 }
 

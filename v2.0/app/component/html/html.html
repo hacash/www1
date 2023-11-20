@@ -10,7 +10,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>[:=this.title||'Koappx v2.0':]</title>
+    <title>[:=this.title||'Hacash':] - [:=lang.common.intro:]</title>
+
+    <meta name="description" content="[:=lang.common.intro:],[:=lang.common.desc.join(','):]"/>
+    <meta name="keywords" content="Hacash,Crypto,Money,Currency,DeFi,DApp"/>
 
     <!-- twitter share link -->
     [: if(this.twitter){ :]
@@ -22,7 +25,7 @@
 
     <!-- <link href="//at.alicdn.com/t/c/font_4061012_g7y2ejmjbxs.css" rel="stylesheet">  -->
 
-    <link rel="stylesheet" href="/jscss/[:=this.page.name:].css?v=[:=this.page.version:]">
+    <link rel="stylesheet" href="/jscss/[:=this.page.key:].css?v=[:=this.page.version:]">
 
 
 </head>
