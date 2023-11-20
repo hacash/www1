@@ -19,7 +19,16 @@ module.exports = {
         learn: cf('HAC/HACD/BTC/Layer 1/Layer 2/Layer 3/白皮书'),
         feature: cf('工作量证明/购买力稳定币/比特币/开放金融基础设施/密码朋克'),
         resource: cf('资源/社区/生态/Github'),
+    },
+    
+    ftr: {
+        lgdsi: "图标设计资源",
+        tlik: '链接',
+        tcmn: '社区',
+        tres: "资源",
     }
+
+
 
 
 }

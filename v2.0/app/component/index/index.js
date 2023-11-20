@@ -68,21 +68,21 @@ function drawRandomBarBackgrand(wrap, direction, height, bshd, color, linecolor,
                 clearInterval(timer)
                 return
             }
-            intro.innerText = newt.substring(0, n)
+            desc.innerText = newt.substring(0, n)
         },1000/newt.length)
     }
     function hideAni(oldt) {
         var n = oldt.length
         var timer = setInterval(function(){
             n--
-            intro.innerText = oldt.substring(0, n)
+            desc.innerText = oldt.substring(0, n)
             if(n<=0){
                 clearInterval(timer)
             }
         },400/oldt.length)
     }
     function editAnimation(newtext) {
-        var oldtext = intro.innerText
+        var oldtext = desc.innerText
         hideAni(oldtext)
         setTimeout(showAni, 500, newtext)
     }
@@ -96,13 +96,13 @@ function drawRandomBarBackgrand(wrap, direction, height, bshd, color, linecolor,
     }
 
     // start or end if window is visible
-    var introEditAni
+    var descEditAni
     function startIEA(){
         closeIEA()
-        introEditAni = setInterval(showIntro, 4400)
+        descEditAni = setInterval(showIntro, 4400)
     }
     function closeIEA(){
-        clearInterval(introEditAni)
+        clearInterval(descEditAni)
     }
     startIEA()
 
@@ -130,7 +130,7 @@ function drawRandomBarBackgrand(wrap, direction, height, bshd, color, linecolor,
 })();
 
 
-// intro
+// zongjie
 (function(){
     var itrlg = $id('itrlg')
     window.onscroll = function() {
@@ -143,15 +143,8 @@ function drawRandomBarBackgrand(wrap, direction, height, bshd, color, linecolor,
 
 
 })();
-/*
-var intro = $id('intro')
-, morebtn = $class(intro, 'more')[0]
-, detail = $id('detail')
-;
 
-morebtn.onclick = function() {
-    this.style.display = 'none'
-    detail.style.display = 'block'
-}
-*/
+
+
+
 

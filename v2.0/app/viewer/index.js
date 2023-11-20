@@ -6,7 +6,7 @@ exports.components = [
 
     'index',
 
-    // 'footer',
+    'footer',
     'tail',
 ]
 

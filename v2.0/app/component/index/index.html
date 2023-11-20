@@ -78,10 +78,10 @@
     <div class="container"><div class="wrap">
         <div class="itw i1"><div class="box">
             <div class="left ctx">
-                <h1 class="val">创新POW项目</h1>
-                <p class="desc">PoW资产范式的极致体现</p>
+                <h1 class="val">[:=lang.index.value[0][0]:]</h1>
+                <p class="desc">[:=lang.index.value[0][1]:]</p>
                 <div class="btns">
-                    <a target="_blank" href="/nav/miner">了解更多</a>
+                    <a target="_blank" href="/nav/miner">[:=lang.index.value[0][2]:]</a>
                 </div>
             </div>
             <div class="right ico">
@@ -93,19 +93,19 @@
                 <div class="ftic">&#xe645;</div>
             </div>
             <div class="rigth ctx">
-                <h1 class="val">购买力稳定货币</h1>
-                <p class="desc">成为未来世界日常广泛流通的货币</p>
+                <h1 class="val">[:=lang.index.value[1][0]:]</h1>
+                <p class="desc">[:=lang.index.value[1][1]:]</p>
                 <div class="btns">
-                    <a target="_blank" href="/nav/miner">了解更多</a>
+                    <a target="_blank" href="/nav/miner">[:=lang.index.value[1][2]:]</a>
                 </div>
             </div>
         </div></div>
         <div class="itw i3"><div class="box">
             <div class="left ctx">
-                <h1 class="val">比特币的未来</h1>
-                <p class="desc">兼容和继承比特币的价值和愿景</p>
+                <h1 class="val">[:=lang.index.value[2][0]:]</h1>
+                <p class="desc">[:=lang.index.value[2][1]:]</p>
                 <div class="btns">
-                    <a target="_blank" href="/nav/miner">了解更多</a>
+                    <a target="_blank" href="/nav/miner">[:=lang.index.value[2][2]:]</a>
                 </div>
             </div>
             <div class="right ico">
@@ -117,19 +117,19 @@
                 <div class="ftic">&#xe606;</div>
             </div>
             <div class="rigth ctx">
-                <h1 class="val">开放金融基础设施</h1>
-                <p class="desc">承载和构建一个全新的货币金融世界</p>
+                <h1 class="val">[:=lang.index.value[3][0]:]</h1>
+                <p class="desc">[:=lang.index.value[3][1]:]</p>
                 <div class="btns">
-                    <a target="_blank" href="/nav/miner">了解更多</a>
+                    <a target="_blank" href="/nav/miner">[:=lang.index.value[3][2]:]</a>
                 </div>
             </div>
         </div></div>
         <div class="itw i5"><div class="box">
             <div class="left ctx">
-                <h1 class="val">密码货币正统性</h1>
-                <p class="desc">符合加密朋克的历史沿革</p>
+                <h1 class="val">[:=lang.index.value[4][0]:]</h1>
+                <p class="desc">[:=lang.index.value[4][1]:]</p>
                 <div class="btns">
-                    <a target="_blank" href="/nav/miner">了解更多</a>
+                    <a target="_blank" href="/nav/miner">[:=lang.index.value[4][2]:]</a>
                 </div>
             </div>
             <div class="right ico">
@@ -255,16 +255,22 @@
 </div>
 
 
-<a name="intro"></a>
+<a name=""></a>
 <div id="intro">
     <div class="pnext"><u>⇣</u></div>
     <div class="container">
         <div class="box">
             <div><div class="infra"><div class="bsp"></div><img class="c3l3" src="/cssimg/index/3layer.png" /><img class="dlb" src="/cssimg/index/dlb.png" /></div></div>
-            <div><div class="logo"><img id="itrlg" src="/svg/hac-s.svg?fill=" /></div></div>
+            <!-- <div><div class="logo"><img id="itrlg" src="/svg/hac-s.svg?fill=" /></div></div> -->
             <div><div class="text">
-                <p></p>
-                <p></p>
+                [: var ps=lang.index.intro.ps; for(var i in ps){ var one=ps[i]; :]
+                <p>[:=one:]</p>
+                [: } :]
+                <ul>
+                    [: var lis=lang.index.intro.lis; for(var i in lis){ var one=lis[i]; :]
+                    <li>[:=one:]</li>
+                    [: } :]
+                </ul>
             </div></div>
         </div>
     </div>
