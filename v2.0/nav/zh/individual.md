@@ -4,11 +4,11 @@
 
 
 <pre class="nav">
-/buy#hac
+/get#hac
 够买HAC
 HAC是Hacash里的购买力稳定币，主要用于支付结算。获取HAC最方便的方式就是直接购买，主要通过交易所的方式。
 
-/buy#hacd
+/get#hacd
 够买HACD
 HACD是Hacash的NFT，主要用于价值存储，同时每个HACD都有独特的6个字母和不同的艺术展示形式。获取HACD可以直接在交易所购买，但购买特定HACD还没有特别高效的方式。
 
@@ -22,7 +22,7 @@ HAC和HACD使用的是Hacash相同的地址，你只需要选择适合自己需�
 
 https://hacashdao.org/
 加入Hacash社区
-Hacash的创始人在2018年发布白皮书后消失，Hacash的发展一直由社区自发驱动，为了凝聚社区的力量，Hacash的早期成员组织了HacashDAO来实现Hacash白皮书愿景，欢迎您的加入。
+Hacash的创始人在2018年发布白皮书后消失，Hacash的发展一直由社区自发驱动，为了凝聚社区的力量，Hacash的早期成员组织了 HacashDAO来实现Hacash白皮书愿景，欢迎您的加入。
 
 /layer-2
 使用HAC秒速支付
