@@ -2,7 +2,7 @@
 交易所购买、社区交易或者挖矿方式获得 HAC 和 HACD
 
 
-<a name="hac"></a>
+<a name="HAC"></a>
 
 ## 在交易所购买 HAC
 
@@ -27,7 +27,7 @@ hacsea
 </pre>
 
 
-<a name="hacd"></a>
+<a name="HACD"></a>
 
 ## 通过交易服务商获取 HACD 
 
