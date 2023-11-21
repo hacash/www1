@@ -584,7 +584,7 @@ html, body {
         display: block;
         margin: 10px auto;
         width: 800px;
-        // background-color: #00000033;
+        // background-color: #ffffff33;
     }
 
     .note {
@@ -736,7 +736,7 @@ html, body {
             transition: all 0.5s;
             position: absolute;
             top: 44px;
-            left: 440px;
+            left: 450px;
             width: 260px;
             text-align: left;
             p {
@@ -851,8 +851,9 @@ html, body {
                 }              
                 &.h {
                     left: 45px;
-                    top: -1px;
-                    width: 84px;
+                    top: -1px;  
+                    width: 64px;
+                    padding: 0 20px;
                 }
 
             }
@@ -862,17 +863,22 @@ html, body {
         // .bd.b3 { z-index: 3; h1 { color: #fff; } } 
 
         .w3 {
-            height: 160px;
+            height: 138px;
             img { width: 340px; left: -45px; }
-            .bd p { top: 110px; font-size: 20px; line-height: 20px; }
-            .bd h1 { top: 100px; left: 20px; font-size: 30px; line-height: 30px; }
+            .bd {
+                transform: scaleY(0.75) scaleX(1.2);
+                p { top: 110px; font-size: 20px; line-height: 20px; }
+                h1 { top: 100px; left: 20px; font-size: 30px; line-height: 30px; }
+            }
         }
         .w2 {
             height: 130px;
             img { width: 280px; left: -15px; }
-            .bd p { top: 80px; font-size: 18px; line-height: 20px; }
-            .bd h1 { top: 74px; left: 30px; font-size: 26px; line-height: 30px; }
-
+            .bd{
+                transform: scaleY(0.825) scaleX(1.1);
+                p { top: 80px; font-size: 18px; line-height: 20px; }
+                h1 { top: 74px; left: 30px; font-size: 26px; line-height: 30px; }
+            }
         }
 
         .wp:hover {
@@ -881,7 +887,7 @@ html, body {
                 box-shadow: none;
             }
             .txt {
-                left: 430px;
+                left: 440px;
                 p {
                     color: @themegoldcolor;
                 }
@@ -895,7 +901,7 @@ html, body {
                 }
             }
             .bd {
-                transform: scale(1.1);
+                // transform: scale(1.1);
                 left: 40px;
                 h1, p {
                     color: #000;
@@ -905,6 +911,8 @@ html, body {
                 img.rc { opacity: 1; }
             }
         }
+
+
 
     }
 }
@@ -1135,8 +1143,8 @@ html, body {
                     display: none;
                 }
             }
-            .w3 .bd { height: 210px; }
-            .w2 .bd { height: 180px; }
+            .w3 .bd { height: 180px; transform: scale(0.72); }
+            .w2 .bd { height: 160px; transform: scale(0.86); }
         } 
     }
     
