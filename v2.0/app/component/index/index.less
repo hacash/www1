@@ -672,7 +672,6 @@ html, body {
                 }
             }
             img.ico {
-                filter: drop-shadow(0px -1px 0px #fff);
                 width: 44px;
                 left: 190px;
                 top: 60px;
@@ -705,17 +704,20 @@ html, body {
             }
             img.bs { opacity: 0; }
             img.rc { opacity: 1; }
+            img.ico { 
+                filter: grayscale(1) drop-shadow(0px -1px 0px #fff);
+            }
         }
         .bd.b1 {
-            p { color: #00b8beaa; }
+            // p { color: #024c4e; }
         }
         .bd.b2 {
             top: -20px;
-            p { color: #88da04aa; }
+            // p { color: #055802; }
         }
         .bd.b3 {
             top: 10px;
-            p { color: #b15e00aa; }
+            // p { color: #663803; }
         }
     }
 
@@ -814,7 +816,7 @@ html, body {
             .co {
                 z-index: 1;
                 position: absolute;
-                background-color: #88da0488;
+                background-color: #04da0f88;
                 width: 50px;
                 height: 38px;
                 line-height: 40px;
