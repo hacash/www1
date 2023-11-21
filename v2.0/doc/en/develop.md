@@ -22,7 +22,7 @@ https://github.com/hacash/miner/blob/master/doc/software_release_log.md
 
 ## Mining or MinerPool
 
-To run the open source mining pool provided by the Hacash community, please check [set up a mining pool](/doc/mining-pool). If you need to develop mining pools or custom mining tools, or understand the details of mining output, please refer to the following three documents:
+To run the open source mining pool provided by the Hacash community, please check [set up a mining pool](/mining-pool). If you need to develop mining pools or custom mining tools, or understand the details of mining output, please refer to the following three documents:
 
 <pre class="links">
 Mining Service Doc

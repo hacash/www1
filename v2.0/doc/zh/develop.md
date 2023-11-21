@@ -21,7 +21,7 @@ https://github.com/hacash/miner/blob/master/doc/software_release_log.md
 <a name="mining"></a>
 ## 挖矿及矿池
 
-要运行 Hacash 社区提供的开源矿池，请查看 [搭建矿池](/doc/mining-pool)。如果你需要开发矿池或者自定义的挖矿工具，或者了解挖矿产出的细节，请查看下面三个文档：
+要运行 Hacash 社区提供的开源矿池，请查看 [搭建矿池](/mining-pool)。如果你需要开发矿池或者自定义的挖矿工具，或者了解挖矿产出的细节，请查看下面三个文档：
 
 <pre class="links">
 挖矿或矿池服务文档

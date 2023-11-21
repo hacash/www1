@@ -4,11 +4,11 @@
 
 
 <pre class="nav">
-/mining-hac
+/mining-HAC
 HAC 挖矿
 你可以搭建全节点挖 HAC 也可以加入矿池，目前 CPU 和 GPU 都可挖，但开源全节点只有 CPU，有开发者和公司研发出 GPU，但总体并不高效。
 
-/mining-hacd
+/mining-HACD
 HACD 挖矿
 目前 HACD 没有矿池也没有 GPU，只能搭建全节点进行 CPU 挖矿。HACD 被挖出后需要和其余挖HACD的矿工使用 HAC 进行竞价。
 

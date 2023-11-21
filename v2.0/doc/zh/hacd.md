@@ -16,7 +16,7 @@ HACD 是一种利用了比特币 PoW 机制的 NFT。
   
 <pre class="links">
 购买HACD
-/buy#hacd
+/get#hacd
 </pre>
 
 ## 分发机制

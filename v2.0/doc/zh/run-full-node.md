@@ -19,8 +19,8 @@
 下载的全节点软件压缩文件中包含一个可执行文件和一个 `.ini` 格式配置文件，类似：
 
 <pre class="log">
-1 │ hacash_miner_node_2023_11_02_01 │ 10.6MB
-2 │ hacash.config.ini               │  1.1KB
+1 │ hacash_miner_node_2023_11_02_01.exe │ 10.6MB
+2 │ hacash.config.ini                   │  1.1KB
 </pre>
 
 <p class="note">注意：`hacash.config.ini` 配置文件中包含boot节点IP地址等全节点运行必须信息，请勿删除或任意修改。如需修改请用文本编辑器打开编辑。</p>
