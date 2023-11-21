@@ -23,7 +23,7 @@
 2 │ hacash.config.ini               │  1.1KB
 </pre>
 
-注意：`hacash.config.ini` 配置文件中包含boot节点IP地址等全节点运行必须信息，请勿删除或任意修改。如需修改请用文本编辑器打开编辑。
+<p class="note">注意：`hacash.config.ini` 配置文件中包含boot节点IP地址等全节点运行必须信息，请勿删除或任意修改。如需修改请用文本编辑器打开编辑。</p>
 
 ## 运行
 
@@ -54,9 +54,9 @@ memtxpool add diamond create tx: 8ff2157241fa18caaddbcfdb952246d479a309b801e7b6d
 [Peer] Heisenberg (135.181.97.41:3337) connect.
 </pre>
 
-注意一：需要等待区块数据全部同步完成之后（ 显示 `all block sync successfully.` 表示同步完成），才能修改配置后进行重启，以搭建矿池或挖掘 HACD 等操作，否则将导致相关操作无效。程序会自动搜索同目录下的 `hacash.config.ini` 文件作为配置文件。
+<p class="note">注意一：需要等待区块数据全部同步完成之后（ 显示 `all block sync successfully.` 表示同步完成），才能修改配置后进行重启，以搭建矿池或挖掘 HACD 等操作，否则将导致相关操作无效。程序会自动搜索同目录下的 `hacash.config.ini` 文件作为配置文件。</p>
 
-注意二：在Windows系统下双击运行 `.exe` 文件，可能由于窗口闪退而无法显示错误日志，请使用 `PowerShell` 方式运行。
+<p class="note">注意二：在Windows系统下双击运行 `.exe` 文件，可能由于窗口闪退而无法显示错误日志，请使用 `PowerShell` 方式运行。</p>
 
 ## 编译
 

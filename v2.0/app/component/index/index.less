@@ -709,15 +709,15 @@ html, body {
             }
         }
         .bd.b1 {
-            // p { color: #024c4e; }
+            // p { color: #01383a; }
         }
         .bd.b2 {
             top: -20px;
-            // p { color: #055802; }
+            // p { color: #044401; }
         }
         .bd.b3 {
             top: 10px;
-            // p { color: #663803; }
+            // p { color: #472701; }
         }
     }
 
@@ -743,7 +743,7 @@ html, body {
                 transition: all 0.5s;
                 position: relative;
                 top: 6px;
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: 300;
                 color: #ffffffdd;
                 span {
@@ -863,7 +863,7 @@ html, body {
         // .bd.b3 { z-index: 3; h1 { color: #fff; } } 
 
         .w3 {
-            height: 138px;
+            height: 125px;
             img { width: 340px; left: -45px; }
             .bd {
                 transform: scaleY(0.75) scaleX(1.2);
@@ -872,7 +872,7 @@ html, body {
             }
         }
         .w2 {
-            height: 130px;
+            height: 125px;
             img { width: 280px; left: -15px; }
             .bd{
                 transform: scaleY(0.825) scaleX(1.1);
@@ -884,7 +884,9 @@ html, body {
         .wp:hover {
             .co {
                 z-index: 3;
-                box-shadow: none;
+                box-shadow: -1px -1px 0 #fff;
+                background-color: #000;
+                color: @themegoldcolor;
             }
             .txt {
                 left: 440px;
@@ -902,6 +904,7 @@ html, body {
             }
             .bd {
                 // transform: scale(1.1);
+                z-index: 4;
                 left: 40px;
                 h1, p {
                     color: #000;

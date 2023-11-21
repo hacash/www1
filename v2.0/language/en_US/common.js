@@ -17,7 +17,7 @@ module.exports = {
         ttls: cf('Get Started/Learn/Features/Resources'),
         start: cf('Wallet/Buy Hacash/Explorer/Individual/Miner/Business/Developer/Artist/Run a full node'),
         learn: cf('HAC/HACD/BTC/Layer 1/Layer 2/Layer 3/Whitepaper'),
-        feature: cf('Proof of work/Flatcoin/Bitcoin/OpFi Infra/Cypherpunk'),
+        feature: cf('Proof of work/Flatcoin/OpFi Infra/Bitcoin/Cypherpunk'),
         resource: cf('Resource/Community/Ecosystem/Github '),
     },
 

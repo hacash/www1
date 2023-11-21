@@ -12,8 +12,8 @@ This page provides preliminary guidance and document links for various developer
 Exchange or Wallet access assets HAC, HACD or BTC on Hacash blockchain, scan transaction or block data to create new transfer transactions. Please read the RPC API interface documentation.
 
 <pre class="links">
-[:=lang.frame.footer.a1:]
-[:=lang.frame.pagelink.rpcdoc:]
+RPC API Doc
+https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_description.en.md
 
 Fullnode Download
 https://github.com/hacash/miner/blob/master/doc/software_release_log.md
@@ -22,17 +22,17 @@ https://github.com/hacash/miner/blob/master/doc/software_release_log.md
 
 ## Mining or MinerPool
 
-To run the open source mining pool provided by the Hacash community, please check [set up a mining pool](/doc/mining-pool). If you need to develop mining pools or custom mining tools, or understand the details of mining output, please refer to the following three documents, [:=lang.frame.footer.i2:], [:=lang.frame.footer.i3:], [:=lang.frame.footer.i4:] :
+To run the open source mining pool provided by the Hacash community, please check [set up a mining pool](/doc/mining-pool). If you need to develop mining pools or custom mining tools, or understand the details of mining output, please refer to the following three documents:
 
 <pre class="links">
-[:=lang.frame.footer.a2:]
-[:=lang.frame.pagelink.miningdoc:]
+Mining Service Doc
+https://github.com/hacash/service/blob/master/doc/miner_service_api.cn.md
 
-[:=lang.frame.footer.a3:]
-[:=lang.frame.pagelink.rpcdoc:]
+X16RS Mining Algorithm Doc
+https://github.com/hacash/x16rs/blob/master/doc/x16rs_algorithm_description.cn.md
 
-[:=lang.frame.footer.a4:]
-[:=lang.frame.pagelink.fairdoc:]
+HAC & HACD Mining Fairness Doc
+https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_description.cn.md
 </pre>
 
 
@@ -41,16 +41,16 @@ To run the open source mining pool provided by the Hacash community, please chec
 If you want to develop some tools that serve Hacash, studying existing tools such as Hacash's open source wallet and block browser will be a good way to start. These existing tools may not have been documented in the development and use of some interfaces. The following are the code links, API code links, and interface documents for existing tools:
 
 <pre class="links">
-[:=lang.frame.footer.a1:]
-[:=lang.frame.pagelink.rpcdoc:]
+RPC API Doc
+https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_description.en.md
 
 Temp API
 https://github.com/hacash/service/blob/master/deprecated/routes.go
 
-[:=lang.frame.topnav.wallet:]
+Wallet Code
 https://github.com/hacash/wallet
 
-[:=lang.frame.topnav.explorer:]
+Explorer Code
 https://github.com/hacash/explorer
 </pre>
 

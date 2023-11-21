@@ -79,7 +79,7 @@ html, body {
 
 
 #mdcon {
-    padding: 20px 0;
+    padding: 40px 0;
 
     &, * {
         color: #555;
@@ -121,6 +121,8 @@ html, body {
     }
     a.btn {
         &::after{ display: none; }
+        transition: all 0.25s;
+        transform: scale(1);
         text-decoration: none;
         color: #fff;
         display: inline-block;
@@ -135,6 +137,7 @@ html, body {
     }
     a.btn:hover {
         box-shadow: 0 5px 10px #ffffff88 inset;
+        transform: scale(1.05);
     }
     a.btn:active {
         box-shadow: 0 -5px 10px #00000066 inset;
@@ -161,6 +164,14 @@ html, body {
         li {
             list-style: disc;
         }
+    }
+
+    p.note {
+        font-size: 16px;
+        padding-left: 16px;
+        margin-left: 4px;
+        border-left: 2px solid #b69b57;
+        color: darkgoldenrod;
     }
 
 
@@ -217,7 +228,34 @@ html, body {
         word-break: break-all;
         white-space: pre-wrap;
         font: 16px 'monospace' !important;  
-        line-height: 19px;
+        line-height: 20px;
+    }
+    &>.log.cnf {
+        background-color: #0d5f54;
+        line-height: 24px;
+        border: none;
+        border-radius: 12px;
+        *, &{
+            color: #fff;
+            font-size: inherit;
+            font-weight: inherit;
+            font-family: inherit;
+            font-style: normal;
+        }
+        * {
+            display: inline;
+            line-height: 24px;
+        }
+        s {
+            color: #e7b872;
+        }
+        b {
+            color: #e44242;
+            font-weight: bold;
+        }
+        i {
+            color: #7ace25;
+        }
     }
 
     code {
@@ -239,8 +277,8 @@ html, body {
 
 // links
 #mdcon {
-    pre.links {
-        a {
+    pre.links {  
+        a.link {
             position: relative;
             top: 0;
             display: inline-block;
@@ -253,47 +291,99 @@ html, body {
             border: 1px solid @themegoldcolor;
             border-bottom-width: 4px;
             background-image: linear-gradient(to left bottom, #fff, #fff, #ffe4b0);
-        }
-        b {
-            font-weight: bold;  
-            color: @themegoldcolor;
-        }
-        i {
-            position: absolute;
-            border: 1px solid @themegoldcolor;
-            color: @themegoldcolor;
-            background-color: #fff;
-            border-radius: 100px;
-            text-align: center;
-            line-height: 16px;
-            font-size: 16px;
-            width: 16px;
-            height: 16px;
-            left: -9px;
-            top: -4px;
-        }
-        a:hover {
-            top: -2px;
-            box-shadow: 3px 3px 6px #00000066;
-            background: @themegoldcolor;
-            border-bottom-color: #00000022;
-            border-radius: 6px;
             b {
-                color: #fff;
-                text-shadow: 0 1px 1px #00000033;
+                font-weight: bold;  
+                color: @themegoldcolor;
             }
             i {
-                display: none;
+                position: absolute;
+                border: 1px solid @themegoldcolor;
+                color: @themegoldcolor;
+                background-color: #fff;
+                border-radius: 100px;
+                text-align: center;
+                line-height: 16px;
+                font-size: 16px;
+                width: 16px;
+                height: 16px;
+                left: -9px;
+                top: -4px;
+            }
+            &:hover {
+                top: -2px;
+                box-shadow: 3px 3px 6px #00000066;
+                background: @themegoldcolor;
+                border-bottom-color: #00000022;
+                border-radius: 6px;
+                b {
+                    color: #fff;
+                    text-shadow: 0 1px 1px #00000033;
+                }
+                i {
+                    display: none;
+                }
+            }
+            &:active {
+                top: 0;
+                background-color: @themegoldcolor - #222222;
+                border-bottom-color: transparent;
             }
         }
-        a:active {
-            top: 0;
-            background-color: @themegoldcolor - #222222;
-            border-bottom-color: transparent;
+        a.lglk {
+            transition: all 0.25s;
+            transform: scale(1);
+            margin: 0 24px 20px 0;
+            display: inline-block;
+            min-width: 180px;
+            vertical-align: top;
+            text-decoration: none;
+            padding: 15px 5px 10px;
+            border: 1px solid #ddd;
+            text-align: center;
+            img {
+                display: block;
+                margin: auto;
+                height: 50px;
+                border-radius: 16%;
+                border: 1px solid #ddd;
+                filter: grayscale(0.5);
+            }
+            h5 {
+                display: block;
+                font-weight: bold;
+                font-size: 16px;
+                color: #000;
+            }
+            p {
+                font-size: 13px;
+                line-height: 15px;
+                color: #999;
+            }
+            &:hover {
+                transform: scale(1.075);
+                background-color: #f7f2e8;
+                border-color: @themegoldcolor;
+                box-shadow: 4px 4px 8px #00000044;
+                border-radius: 7px;
+                h5 {
+                    color: @themegoldcolor;
+                }
+                img {
+                    background-color: #fff;
+                    border-color: @themegoldcolor;
+                    filter: grayscale(0);
+                }
+                p {
+                    color: #e7b872;
+                }
+            }
         }
     }
 
 }
+
+
+
 @media screen and (max-width: 640px) {
 
     #mdcon {
@@ -306,7 +396,10 @@ html, body {
     }
 
     #mdcon pre.links {
-        white-space: break-spaces;
+        a.lglk {
+            padding: 5px;
+            margin: 0 10px 10px 0px;
+        }
     }
 
 

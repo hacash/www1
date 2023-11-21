@@ -67,13 +67,24 @@ var links = $mdcon.getElementsByClassName("links");
 $each(links, function(elm){
     // do parse
     elm.innerHTML = parseNavDocItems(elm, function(a){
-        return `<a class="link" href="${a[1]}"><b class="ftic">&#xe62c; ${a[0]}</b></a>`
+        var lglk = a[2]
+        if(!lglk){        
+            return `<a class="link" href="${a[1]}"><b class="ftic">&#xe62c; ${a[0]}</b></a>`
+        }
+        // image logo
+        var lgurl = (lglk.indexOf('http')==0||lglk.indexOf('/')==0) 
+            ? lglk : `/image/exlgs/${lglk}.png`
+            , desc = a[3] ? `<p>${a[3]}</p>` : ''
+        return `<a class="lglk" href="${a[1]}">
+            <div class="lg"><img src="${lgurl}" /></div>
+            <h5>${a[0]}</h5>${desc}
+        </a>`
     })
 })
 
 
 // nowrap style
-insertStyle(`pre.links { white-space: nowrap; } `)
+insertStyle(`pre.links { white-space: initial; } `)
 
 
 // a set target="_blank"

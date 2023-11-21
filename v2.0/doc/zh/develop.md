@@ -11,8 +11,8 @@ Hacash 开发相关说明和各工具、接口文档链接
 交易所或者钱包接入 HAC、 HACD 或 Hacash 链上的 BTC 资产，并且扫描交易或区块数据、创建新的转账交易，请阅读 RPC API 接口文档。
 
 <pre class="links">
-[:=lang.frame.footer.a1:]
-[:=lang.frame.pagelink.rpcdoc:]
+RPC API 接口文档
+https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_description.cn.md
 
 全节点软件下载
 https://github.com/hacash/miner/blob/master/doc/software_release_log.md
@@ -21,17 +21,17 @@ https://github.com/hacash/miner/blob/master/doc/software_release_log.md
 <a name="mining"></a>
 ## 挖矿及矿池
 
-要运行 Hacash 社区提供的开源矿池，请查看 [搭建矿池](/doc/mining-pool)。如果你需要开发矿池或者自定义的挖矿工具，或者了解挖矿产出的细节，请查看下面三个文档，分别解释了[:=lang.frame.footer.i2:], [:=lang.frame.footer.i3:] 和 [:=lang.frame.footer.i4:]：
+要运行 Hacash 社区提供的开源矿池，请查看 [搭建矿池](/doc/mining-pool)。如果你需要开发矿池或者自定义的挖矿工具，或者了解挖矿产出的细节，请查看下面三个文档：
 
 <pre class="links">
-[:=lang.frame.footer.a2:]
-[:=lang.frame.pagelink.miningdoc:]
+挖矿或矿池服务文档
+https://github.com/hacash/service/blob/master/doc/miner_service_api.cn.md
 
-[:=lang.frame.footer.a3:]
-[:=lang.frame.pagelink.rpcdoc:]
+X16RS 挖矿算法说明
+https://github.com/hacash/x16rs/blob/master/doc/x16rs_algorithm_description.cn.md
 
-[:=lang.frame.footer.a4:]
-[:=lang.frame.pagelink.fairdoc:]
+HAC & HACD 挖矿公平性说明
+https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_description.cn.md
 </pre>
 
 <a name="tool"></a>
@@ -41,16 +41,16 @@ https://github.com/hacash/miner/blob/master/doc/software_release_log.md
 
 
 <pre class="links">
-[:=lang.frame.footer.a1:]
-[:=lang.frame.pagelink.rpcdoc:]
+RPC API 接口文档
+https://github.com/hacash/service/blob/master/doc/rpc_api_doc.cn.md
 
 临时 API
 https://github.com/hacash/service/blob/master/deprecated/routes.go
 
-[:=lang.frame.topnav.wallet:]
+钱包代码库
 https://github.com/hacash/wallet
 
-[:=lang.frame.topnav.explorer:]
+浏览器代码库
 https://github.com/hacash/explorer
 </pre>
 
