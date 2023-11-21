@@ -18,6 +18,26 @@ module.exports = {
         cf(`密码朋克愿景的实现/一位无名氏在2018年留下了Hacash的白皮书后消失，白皮书提出了同时实现去中心化和货币供应调节维持购买力稳定的方法，其货币体系中的HAC实现了戴伟的B-Money，HACD实现了哈尔芬尼的加密交易卡和尼克斯萨博的Bit Gold，以及给BTC指明了可持续的未来。/了解更多`),
     ],
 
+    c3l3: {
+        ct: '3 PoW Coins Form A Sound Money System',
+        cp1: 'Store of<br/>Value',
+        cli1: cf('The first ever PoW NFT/NFT version of Bitcoin/Mining is only getting harder/Burn HAC via bidding'),
+        cp2: 'Large-scale<br/>Payment',
+        cli2: cf('Low volatility/Market-based supply adjustment, circulation can increase, decrease and stabilize/Non-algorithmic, non-collateralized'),
+        cp3: 'Move to<br/>Hacash',
+        cli3: cf('Adjusting HAC supply/From one-way transfers, not from cross-chain bridges'),
+        cnt: 'All 3 coins are fairly distributed, no pre-mined and without any centralized management',
+
+        lt: '3 Layers Supports A Large Economic System',
+        lp3: 'DApp',
+        lli3: cf('Multi-Chain system and DApps'), 
+        lp2: 'Payment',
+        lli2: cf('Payments with unlimited scalability'),
+        lp1: 'Money',
+        lli1: cf('Currency creation, distribution and settlement'),
+        lnt: `The layer 3 is built upon the foundation of Hacash's first and second layers.`,
+    },
+
     intro: {
         ps: [
             'Hacash是一个继承了中本聪愿景，和比特币一样去中心化和安全的点对点的货币系统。但Hacash使比特币无法在完全去中心化的情况下，按需调节货币供应实现购买力稳定成为了可能。整个货币体系由HACD，BTC，HAC三种不同特质的工作量证明（PoW）币组成，它们公平分发，没有预先挖矿或被中心化管理。',

@@ -1,11 +1,11 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" width="200" height="120">
 	<title>bdi3rc-svg</title>
 	<style>
 		.s0 { fill: #f7af34 } 
-		.s1 { fill: none;stroke: #000000 } 
+		.s1 { fill: none;stroke: #000000;stroke-width: .9 } 
 	</style>
 	<g id="layer">
-		<path class="s0" d="m98 147l-94-46v-50.5l94-45.5 98 45.5v50.5z"/>
-		<path class="s1" d="m98 147l-94-46v-50.5m192 0v50.5l-98 46m0 0v-50.5m-94-46l94 46m-94-46l94-45.5 98 45.5m-98 46l98-46"/>
+		<path id="Layer" class="s0" d="m98 117.6l-94-36.8v-40.4l94-36.4 98 36.4v40.4z"/>
+		<path id="Layer" class="s1" d="m98 117.6l-94-36.8v-40.4m192 0v40.4l-98 36.8m0 0v-40.4m-94-36.8l94 36.8m-94-36.8l94-36.4 98 36.4m-98 36.8l98-36.8"/>
 	</g>
 </svg>
