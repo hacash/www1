@@ -1,13 +1,98 @@
-Hacash通道链钱包
+通道链钱包
+Hacash 通道链二层钱包用户使用手册
+
+
+
+通道链支付结算网络是 Hacash 的二层扩容网络（详细请阅读白皮书《 [Hacash：一种大规模支付实时结算的加密货币系统](https://github.com/hacash/paper/blob/master/whitepaper.cn.md) 》），通过通道链进行支付可以无需任何等待实时到账、没有交易处理容量瓶颈且手续费异常低廉。简要来说，就是扩容方式无等待确认时间、无TPS上限。除了计算能力和带宽大小等硬件性能，没有任何协议层面的确认时间限制和交易容量制约。通俗来说，通道链支付做到了在区块链一层安全性支持下，支付和收款就像发送电子邮件那么简单、快速、高效和安全。通道链网络同时支持 HAC 和 Hacash-BTC 两种货币的支付。
+
+请选择和联系您的 `通道支付服务商` ，他们会协助您完成通道账户的开启，并将通道钱包的登录地址发送给你。
+
+<p class="note">注意：任何情况下，请不要泄露您的私钥</p>
+
+## 下载钱包
+
+二层支付网络有单独的钱包，需要通过地址私钥登录且保持在线。不过仅仅在本地客户端登录，并不会在网络上传播你的私钥等安全信息。点击以下按钮下载对应系统的钱包客户端：
+
+<a class="btn" href="https://download.hacash.org/hacash_channelpay_client_windows64.zip" target="_blank">⇩ Windows-64bit</a>　
+<a class="btn orange" href="https://download.hacash.org/hacash_channelpay_client_ubuntu64.zip" target="_blank">⇩ Ubuntu-64bit</a>　
+<a class="btn gray" href="https://download.hacash.org/hacash_channelpay_client_macos64.zip" target="_blank">⇩ MacOS-64bit</a></p>
+
+<!-- <a class="dld" href="https://github.com/jcb55/jcb-hacash" target="_blank">⇩ Download Hacash All Softwares ( for MacOS) </a></p> -->
+
+下载二层钱包后打开软件。请注意不要在 zip 压缩包内直接双击打开软件，需要将其解压至电脑桌面或其它文件夹，然后打开软件才可用。因为软件需要在文件夹内创建目录以保存通道票据数据，zip压缩包内打开软件无法创建文件夹而导致出错。
+
+## 登录
+
+软件打开后，可以看到如下登录界面：
+
+<img class="lazy ctw" data-src="/image/channelpay/login.png" />
+
+登录界面有三处输入框，其中前两者是必填，第三处的“对账或支付票据”是选填。第一项 `Hacash Channel Address` 就是上文所说的完整的通道账户地址，例如:
+
+<pre class="log">
+1PytoNB53MX2bi1Nw2S6Fyharzv4zGTDDD_4d295889c6e0e1fc64237e01cd480fd6_PaySer
+</pre>
+
+第二处是账户的私钥，即就是地址 `1PytoNB53MX2bi1Nw2S6Fyharzv4zGTDDD` 的私钥
+
+<p class="note">注意，此私钥不要泄露给包括您的支付服务商之内的任何人<p>
+
+当在新的设备上登录通道钱包时，新设备本地并没有储存您的最新对账票据。如果您已经有过支付或收款行为，则需要在登录时提供最新的“对账或支付票据”。如果是首次登录或者未有过支付或收款行为，则不需要提供。
+
+当您使用新的设备时，可以点击登录界面的 `Export bill` 选项卡，输入您的通道ID，导出旧的票据在新的设备上使用。如下所示：
+
+<img class="ctw lazy" data-src="/image/channelpay/expbill.png" />
+
+请注意您的设备必须联网。在不出错的情况下，登录后可看见通道链钱包的界面：
+
+<img class="ctw lazy" data-src="/image/channelpay/wallet.png" />
+
+钱包显示项中，`Channel Balance` 是您的可用余额；`Collection Capacity` 是收款容量，表示本通道您最多能收取的资金上限；`[Reconciliation meta info]` 则为您的实时对账票据信息，请务必及时备份。如果丢失对账票据，则通道对方将有可能选择对自己有利的对账单据窃取您的资金。
+
+启用 `Collection`  按钮则可以自动收款，关闭时将会直接拒接任何收款。只要登录并保持连接即可自动收款，不需要任何操作。
+
+## 发起支付
+
+在 `Payment` 项下的两个输入框中分别填写收款方的通道钱包地址，和支付金额，即可发起转账。填写转账信息并检查确认无误后，点击 `Start Transfer` 按钮，客户端将请求服务商查询路由并发起支付，如果没有路由解析错误，或者不存在的服务商标识符等错误，则会看到如下路由路径选择、交易费用检查等支付确认对话框：
+
+<img class="ctw lazy" data-src="/image/channelpay/dopay.png" />
+
+点击选择支付路径（一般只有一个可选路径）后，点击 Confirm payment 按钮立即发起支付。
+
+<p class="note">请注意，支付立即生效，且不可撤销。请仔细核对支付地址和金额是否正确。</p>
+
+假如对方收款通道不存在、不可用，或者对方未在线，则日志打印区将会给出相应的错误提示：
+
+<img class="ctw lazy" data-src="/image/channelpay/errlog.png" />
+
+如果收款方此时保持在线，并且支付金额没有超过限额，网络签名没有错误的情况下，支付将立即成功，并且打印相应的提示信息：
+
+<img class="ctw lazy" data-src="/image/channelpay/successlog.png" />
+
+以上绿色提示信息则表示支付已经成功。支付完成后，钱包界面内显示的余额、通道容量和对账票据会实时发生变化，请留意余额的变化，并及时备份对账票据：
+
+<img class="ctw lazy" data-src="/image/channelpay/bill.png" />
+
+上图界面显示信息中，`[Reuse version]` 表示通道重用版本号，在您将来修改通道容量后此版本号会自动增加，`[Bill serial number]` 为支付对账票据的自增流水号，每发起一次支付或完成一次收款，票据号码则会自动 +1。输入框中的字符串，则为最新的对账票据数据。
+
+<p class="note">【注意】请务必及时备份通道对账票据，这是您可用余额的证明。如果丢失通道票据，或没有及时备份最新的通道票据，则您无法证明您的可用余额是有效的，作恶者即可能提供已经过期但却对他有利的票据分配证明，从而在主网上拿走你的钱。</p>
+
+一般情况下，只要您的设备不出现数据丢失故障，或人为删除数据目录，客户端会在软件所在的目录建立一个文件夹保存和更新每次支付和收款后的最新通道对账票据，但不会保存已经过期的票据。如果登录多个通道，每个通道的票据会分开保存，互不影响。
+
+## 其他
+
+如果你想成为通道链支付网络的服务商，请参见：
+
+
+<pre class="links big">
+商家：搭建支付节点
+/layer-2-node
+</pre>
 
 
 
 
-## 下载通道链钱包
 
-  
-
-## 通道链钱包使用步骤
 
 
 

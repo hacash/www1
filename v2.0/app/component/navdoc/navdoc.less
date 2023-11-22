@@ -86,7 +86,7 @@ html, body {
 #mdcon {
     padding: 40px 0;
 
-    &, p, b, a, u, i, s, span, li, th, td {
+    &, p, b, a, u, i, s, span, li, th, td, input {
         font-family: 'Nunito', sans-serif;
         color: #432;
         font-size: 20px;
@@ -94,7 +94,7 @@ html, body {
     }
 
     .ftic {
-        font-family: 'hacash_www', sans-serif;
+        font-family: 'hacash_www', 'Federo', sans-serif !important;
     }
 
     &>p, &>div, &>ul, &>.hr, &>pre, &>code {
@@ -131,6 +131,7 @@ html, body {
     }
     a.btn {
         &::after{ display: none; }
+        font-family: 'Federo', sans-serif;
         transition: all 0.25s;
         transform: scale(1);
         text-decoration: none;
@@ -139,6 +140,7 @@ html, body {
         background-color: dodgerblue;
         line-height: 34px;
         height: 34px;
+        font-size: 17px;
         padding: 0 20px;
         border-radius: 10px;
         border: 1px solid #0000001f;
@@ -188,6 +190,16 @@ html, body {
         }
     }
 
+    // img 
+    img.ctw {  
+        display: block;
+        margin: 50px auto;
+        border: 2px #999 solid;
+        padding: 10px;
+        box-shadow: 4px 4px 30px #999;
+        max-width: 90%;
+    }
+
 
     // table 
     table {
@@ -197,8 +209,8 @@ html, body {
             padding: 10px;
         }
         th {
-            font-size: 12px !important;
-            line-height: 12px !important;
+            font-size: 12px;
+            line-height: 12px;
             background-color: #f0f0f0;
         }
         td {
@@ -246,7 +258,7 @@ html, body {
             }
         }
         &, p {
-            color: #aaa;
+            color: #bbb;
             display: block;
             word-break: break-all;
             white-space: pre-wrap;
@@ -309,6 +321,7 @@ html, body {
         border-radius: 6px;
         border: none;
         background-color: #888;
+        vertical-align: text-top;
     }
 }
 
@@ -332,7 +345,7 @@ html, body {
             b {
                 font-weight: normal;  
                 color: @themegoldcolor;
-                font-family: 'hacash_www', 'Federo', sans-serif;
+                font-family: 'Federo', sans-serif;
                 font-size: 16px;
             }
             i {
@@ -416,6 +429,16 @@ html, body {
                 p {
                     color: #e7b872;
                 }
+            }
+        }
+    }
+    pre.links.big { 
+        a.link {
+            height: auto;
+            padding: 30px 40px;
+            margin: 0 20px 20px 0;
+            b {
+                font-size: 22px;
             }
         }
     }

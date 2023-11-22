@@ -44,6 +44,7 @@ insertStyle(`
     line-height: 42px;
     height: 42px;
     display: inline-block;
+    vertical-align: top;
 }
 .fmtbox button {
     padding: 0px 20px;
