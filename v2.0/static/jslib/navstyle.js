@@ -22,13 +22,14 @@ setTimeout(function(){ p.classList.add('show') }, 500)
 // parse nav items
 var parse_nav = function(elm) {
     return parseNavDocItems(elm, function(a){
+        var ico = a[3] ? ('/'+a[3]) : a[0]
         return `<a class="nit" href="${a[0]}"><div class="box">
-            <img class="bgic" src="/cssimg/navicos/wallet.svg" />
-            <div class="hdw"><img src="/cssimg/navicos/wallet.svg" /></div>
+            <img class="bgic" src="/image/navicos${ico}.png" />
+            <div class="hdw"><img class="navico" src="/image/navicos${ico}.png" /></div>
             <div class="h"><h1>${a[1]}</h1></div>
             <div class="p"><p>${a[2]}<p></div>
         </div></a>`
-    })
+    }, 3)
 }
 var navs = $mdcon.getElementsByClassName("nav");
 $each(navs, function(elm){
@@ -59,5 +60,18 @@ function setHeadImage(elm) {
 
 // style
 insertStyle(` #mdcon pre.nav { white-space: nowrap; } `)
+
+setTimeout(function(){
+    var iw = $clas(pgtt, 'navicos')
+    , icos = $class($mdcon, 'navico')
+    , imgs = []
+    for(var i=0; i<icos.length; i++) {
+        imgs.push(`<img src="${$attr(icos[i], 'src')}" />`)
+    }
+    iw.innerHTML = imgs.join('')
+
+
+}, 100)
+
 
 };

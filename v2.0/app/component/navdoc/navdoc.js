@@ -42,12 +42,19 @@ drawRandomBarBackgrand($id('tpbg'), 'up', 30+navadd, 30-navadd, 0, '#ffffff')
 // console.log(30+navadd, 30-navadd)
 
 // parse items
-function parseNavDocItems(elm, call) {
+function parseNavDocItems(elm, call, pb) {
     var its = elm.innerText.split("\n\n")
     , html = []
     for(var i in its){
         var a = its[i].split("\n")
         html.push(call(a))
+    }
+    if(pb){
+        var pdn = html.length % pb
+        while(pdn) {
+            html.push(`<div class="padiv"></div>`)
+            pdn--
+        }
     }
     return html.join("\n")
 }

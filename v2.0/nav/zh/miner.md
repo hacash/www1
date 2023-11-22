@@ -23,5 +23,5 @@ HAC 矿池
 /develop#mining
 工具开发
 由于公平的分发模型，HAC和HACD挖矿依然处于早期阶段，这意味着挖矿有众多的机会等待你的探索和创造。
-  
+mining-tool
 </pre>

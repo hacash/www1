@@ -8,6 +8,19 @@
         50% { top: -4000px; }
         100% { top: 0px; }
     }
+    .navicos {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        text-align: left;
+        width: 330px;
+        line-height: 20px !important;
+        img {
+            height: 20px;
+            margin-right: 20px;
+            filter: drop-shadow(2px 1px 0 #fff);
+        }
+    }
     .bgt {
         // display: none;
         animation: bgtsld 500s linear;
@@ -44,6 +57,7 @@
         margin: 0 9%;   
     }
     .h, .p {
+        position: relative;
         text-shadow: 1px 1px 1px #000;
         padding: 0;
         margin: 0;
@@ -77,7 +91,11 @@
     margin: 80px 0;
 
     @bdclr: #836033;
-
+    
+    .padiv {
+        margin: 1% 0;
+        width: 32%;
+    }
     .nit {
         transition: all 0.25s linear;
         text-decoration: none;
@@ -107,12 +125,13 @@
         height: 110px;
         transform: scale(1.5) rotate(0deg);
         opacity: 0.2;
-        filter: blur(3px);
+        filter: blur(3px) grayscale(0.8);;
     }
     .hdw {
         padding: 60px 0 20px;
         img {
-            height: 50px;
+            height: 60px;
+            filter: grayscale(0.6);
         }
     }
     .h, .p {
@@ -136,6 +155,11 @@
         border-color: #999;
         box-shadow: 3px 3px 4px #00000022;
         background-image: linear-gradient(to top left, transparent, transparent, transparent, #f7af3433);
+        .hdw {
+            img {
+                filter: grayscale(0);
+            }
+        }
         .bgic {
             transform: scale(4) rotate(-45deg);
             opacity: 0.5;
@@ -180,6 +204,15 @@
                 margin-top: 20px;
                 font-size: 20px;
             }
+            .navicos {
+                display: none;
+                position: static;
+                text-align: center;
+                width: auto;
+                img {
+                    margin: 5px;
+                }
+            }
         }
         .bgt {
             display: none;        
@@ -193,6 +226,9 @@
     #mdcon pre.nav {
         display: block;
         margin: 20px 0;
+        .padiv {
+            display: none;
+        }
         .nit {
             display: block;
             margin: 20px 0;
