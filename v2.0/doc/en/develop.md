@@ -75,7 +75,7 @@ https://github.com/hacash/miner/blob/master/doc/build_compilation_en.md
 The preliminary communication and discussion of development work are usually conducted on [Discord](https://discord.gg/evtt4bDfKu) , and then formal specification documents are formed on [Github](https://github.com/hacash). Click on the link below to join the development discussion, bring up new development work, or ask certain development questions.
 
 <pre class="links">
-Discord Development GrouP
+Discord Development Group
 https://discord.com/channels/757976908653920299/802807729584209920
 
 Github Doc Home

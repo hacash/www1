@@ -41,13 +41,6 @@ var navadd = is_nav ? 15 : 0;
 drawRandomBarBackgrand($id('tpbg'), 'up', 30+navadd, 30-navadd, 0, '#ffffff')
 // console.log(30+navadd, 30-navadd)
 
-// insert style
-function insertStyle(sty) {
-    var navstyobj = document.createElement("style")
-    navstyobj.innerHTML = sty
-    document.body.appendChild(navstyobj)
-}
-
 // parse items
 function parseNavDocItems(elm, call) {
     var its = elm.innerText.split("\n\n")

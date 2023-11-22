@@ -57,6 +57,12 @@ function $each(elms, call){
     }
 }
 
+// insert style
+function insertStyle(sty) {
+    var navstyobj = document.createElement("style")
+    navstyobj.innerHTML = sty
+    document.body.appendChild(navstyobj)
+}
 
 function getUrlQuery(variable){
     var query = window.location.search.substring(1);

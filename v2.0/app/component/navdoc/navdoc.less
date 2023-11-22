@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Nunito';
+    src: url('/font/use/Nunito-Regular.ttf');
+}
+
 html, body {
     background-color: #fff;
 }
@@ -81,10 +86,15 @@ html, body {
 #mdcon {
     padding: 40px 0;
 
-    &, * {
-        color: #555;
-        font-size: 18px;
+    &, p, b, a, u, i, s, span, li, th, td {
+        font-family: 'Nunito', sans-serif;
+        color: #432;
+        font-size: 20px;
         line-height: 26px;
+    }
+
+    .ftic {
+        font-family: 'hacash_www', sans-serif;
     }
 
     &>p, &>div, &>ul, &>.hr, &>pre, &>code {
@@ -153,6 +163,18 @@ html, body {
         background-color: gray;
     }
 
+    p {
+        word-break: break-word;
+    }
+
+    p.note {
+        font-size: 16px;
+        padding-left: 16px;
+        margin-left: 4px;
+        border-left: 2px solid #b69b57;
+        color: darkgoldenrod;
+    }
+
     hr {
         display: block;
         margin: 30px 0;
@@ -166,14 +188,26 @@ html, body {
         }
     }
 
-    p.note {
-        font-size: 16px;
-        padding-left: 16px;
-        margin-left: 4px;
-        border-left: 2px solid #b69b57;
-        color: darkgoldenrod;
-    }
 
+    // table 
+    table {
+        border-collapse: collapse;
+        td, th {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            font-size: 12px !important;
+            line-height: 12px !important;
+            background-color: #f0f0f0;
+        }
+        td {
+            padding: 2px 6px;
+        }
+        td.cr {
+            text-align: right;
+        }
+    }
 
 }
 
@@ -296,8 +330,10 @@ html, body {
             border-bottom-width: 4px;
             background-image: linear-gradient(to left bottom, #fff, #fff, #ffe4b0);
             b {
-                font-weight: bold;  
+                font-weight: normal;  
                 color: @themegoldcolor;
+                font-family: 'hacash_www', 'Federo', sans-serif;
+                font-size: 16px;
             }
             i {
                 position: absolute;
