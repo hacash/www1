@@ -55,11 +55,22 @@ html, body {
     }
 }
 
+#tpbg {
+    svg {
+        filter: drop-shadow(6px 0px 2px #0006);
+    }
+}
+#btbg {
+    svg {
+        filter: drop-shadow(-6px -2px 2px #0004);
+    }
+}
 
 
 #screen {
     padding: 100px 0;
     text-align: center;
+
 
     .box {
         display: flex;
@@ -378,7 +389,7 @@ html, body {
     .itw {
         position: relative;
         padding: 80px 0;
-        background-image: linear-gradient(to left, #f0f0f0, #ffffff00);
+        background-image: linear-gradient(to left, #eee8de, #fff0, #fff0);
         // border-radius: 0 0 10px 10px;
 
     }
@@ -394,9 +405,12 @@ html, body {
     .i1 {
         border: none;
         // background-color: teal;
+        .ftic {
+            font-size: 88px;
+        }
     }
     .i2, .i4 {
-        background-image: linear-gradient(to right, #f0f0f0, #ffffff00);
+        background-image: linear-gradient(to right, #eee8de, #fff0, #fff0);
 
     }
     .i1{ border-radius: 0 0 800px 0; }
@@ -411,27 +425,22 @@ html, body {
     .ctx {
         text-align: left;
         max-width: 600px;
+        .val {
+            font-size: 24px;
+            color: #5c4214;
+        }
         .desc {
-            margin: 10px 0 20px 0;
+            margin: 10px 0 30px 0;
+            color: #bbab8c;
         }
     }
-    /*
-    .box.active, .box:hover{  
-        background: linear-gradient(45deg, #725015, #221909);
-
-        top: -10px;
-        * {
-            color: #fff;
-        }
-        .ftic {
-            color: @themegoldcolor;
-        }
-    }
-    */
     .ftic {
-        font-size: 88px;
+        font-size: 100px;
         color: @themegoldcolor;
-        filter: drop-shadow(2px 3px 0px #ddd);
+        filter: drop-shadow(0 0 1px #0008)
+        drop-shadow(0 0 8px #fff)
+        drop-shadow(14px 14px 8px #f7af3466)
+        ;
     }
     .val {
         margin: 0px 0;
@@ -952,6 +961,14 @@ html, body {
 
 
 @media screen and (max-width: 640px) {
+
+
+
+    .randbar {
+        svg {
+            filter: none !important;
+        }
+    }
 
     #screen {
         padding: 40px 0;
