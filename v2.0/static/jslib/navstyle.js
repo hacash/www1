@@ -22,7 +22,7 @@ setTimeout(function(){ p.classList.add('show') }, 500)
 // parse nav items
 var parse_nav = function(elm) {
     return parseNavDocItems(elm, function(a){
-        var ico = a[3] ? ('/'+a[3]) : a[0]
+        var ico = (a[3] ? ('/'+a[3]) : a[0]).replace('#', '-')
         return `<a class="nit" href="${a[0]}"><div class="box">
             <img class="bgic" src="/image/navicos${ico}.png" />
             <div class="hdw"><img class="navico" src="/image/navicos${ico}.png" /></div>

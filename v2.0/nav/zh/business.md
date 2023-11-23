@@ -4,15 +4,15 @@
 
 
 <pre class="nav">
-/ecosystem#hac
+/ecosystem#HAC
 HAC相关商业
 HAC的主要作用为支付结算，可开展HAC矿池，钱包，交易，跨链桥，借贷等商业业务。
 
-/ecosystem#hacd
+/ecosystem#HACD
 HACD相关商业
 HACD的主要作用为价值存储和生存艺术，可开展HACD矿池，硬件钱包，交易，艺术品拍卖等业务。
 
-/ecosystem#btc
+/ecosystem#BTC
 BTC相关商业
 BTC单向转移到Hacash后需要新的支持，可开展所有BTC之前的热门业务。
 
