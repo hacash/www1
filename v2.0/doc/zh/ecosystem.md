@@ -1,23 +1,77 @@
 Hacash生态
-三币三层的业务、工具、服务和社区等
+三币、三层的业务、工具、服务和社区等
 
 
 
-<a name="hac"></a>
-##HAC生态
 
-###HAC交易市场
 
-###HAC工具
+<a name="exchange"></a>
 
-<a name="hacd"></a>
-##HACD生态
+## 交易所
 
-###HACD交易市场
+如果需要交易 Hacash 链上相关代币，请查看：
 
-###HACD工具
+<pre class="links big">
+Hacash 交易所列表
+/get
+</pre>
 
-<a name="btc"></a>
+
+<a name="miner"></a>
+
+## 挖矿
+
+矿池：
+
+<pre class="links">
+WoW_Pool
+https://hacpool.com
+wowpool
+
+.Diamonds Pool
+https://www.hacash.diamonds/pool
+hxdm
+</pre>
+
+挖矿信息统计：
+
+<pre class="links">
+MiningPoolStats
+https://miningpoolstats.stream/hacash
+mpss
+</pre>
+
+
+<a name="HACD"></a>
+
+## HACD生态
+
+
+<pre class="links">
+HIP-5 Statics
+https://www.hacash.diamonds/types
+hacdtypes
+
+HACD eReport
+https://hacpool.com/report
+wowpool
+</pre>
+
+
+<a name="others"></a>
+
+## 其它工具和服务
+
+自建论坛：
+
+<pre class="links">
+HacashTalk
+https://hacashtalk.com/
+hacashtalk
+</pre>
+
+
+<!-- <a name="btc"></a>
 ##单向转移BTC生态
 
 
@@ -35,4 +89,4 @@ Hacash生态
 
 <a name="others"></a>
 ##其它工具和服务
-
+ -->

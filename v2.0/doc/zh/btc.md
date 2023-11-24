@@ -3,6 +3,7 @@ BTC
 
 
 
+
 ## 转移后的BTC特点 
 BTC 从 Bitcoin Layer 1 单向转移到 Hacash 后可以利用 Hacash Layer 1 所有的功能，还可以用作 HAC 购买力的稳定调节。
 
