@@ -18,9 +18,9 @@ exports.datas = async function(cnf, ctx)
     var q = ctx.query || {}
 
     if(ctx.req.url.indexOf('/zh') == 0 && !q.lang) {
-        ctx.cookies.set('lang', 'zh_CN', {maxAge: 1000*60*60*24*30,path: '/'})
+        ctx.cookies.set('lang', 'zh', {maxAge: 1000*60*60*24*30,path: '/'})
     }
-    if(q.lang == 'en_US'){
+    if(q.lang == 'en'){
         // ok jump
         ctx.status = 302
         ctx.redirect('/')

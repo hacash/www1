@@ -6,7 +6,7 @@ module.exports = async function(cnf, ctx, next){
     if(realurl.indexOf('/zh/')===0) {
         realurl = realurl.replace('/zh/', '/')
         // set lang
-        ctx.cookies.set('lang', 'zh_CN', {maxAge: 1000*60*60*24*30,path: '/'})
+        ctx.cookies.set('lang', 'zh', {maxAge: 1000*60*60*24*30,path: '/'})
     }
 
     // console.log(realurl)

@@ -96,5 +96,5 @@ do mining height:‹497921›, cbmn:1...
 
 <pre class="links">
 搭建矿池
-/min-pool
+/mining-pool
 </pre>

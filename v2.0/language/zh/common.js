@@ -19,7 +19,7 @@ module.exports = {
         start: cf('钱包/购买Hacash/浏览器/个人/矿工/创业者/开发者/艺术家/运行全节点'),
         learn: cf('HAC/HACD/BTC/Layer 1/Layer 2/Layer 3/白皮书'),
         feature: cf('工作量证明/购买力稳定币/开放金融基础设施/继承比特币/密码朋克愿景'),
-        resource: cf('资源/社区/生态/Github'),
+        resource: cf('开发者导引/资料库/社区/生态/Github'),
     },
     
     ftr: {

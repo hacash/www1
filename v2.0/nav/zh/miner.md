@@ -20,7 +20,7 @@ HAC 矿池
 挖矿资源
 在 HAC 和 HACD 的挖矿的过程中可以借助一些资源和工具来提高挖矿的效率。同时你也可以发展一些有利于 Hacash 挖矿的资源。
 
-/develop#mining
+/development#mining
 工具开发
 由于公平的分发模型，HAC和HACD挖矿依然处于早期阶段，这意味着挖矿有众多的机会等待你的探索和创造。
 mining-tool

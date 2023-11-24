@@ -33,8 +33,8 @@ https://github.com/hacash/paper/blob/master/tech/protocol_architecture_design_pr
 Hacash Layer 1 遵循Hacash白皮书中的设计原则：简单、紧凑、可控和解耦。
 tech-principle
 
-/develop
+/development
 技术开发
 Layer 1一直需要大量开发者的加入进行创新和优化。例如用Rust重构Hacash Layer 1等。
-develop-join
+development-join
 </pre>

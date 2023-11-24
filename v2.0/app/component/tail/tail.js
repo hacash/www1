@@ -5,7 +5,7 @@ var lcurl = location.href
 , lgqs = "lang="+tlgst
 ;
 lcurl = lcurl.replace(lgqs+'&', '').replace(lgqs, '').replace(/\?$/ig, '')
-if(tlgst != "en_US"){
+if(tlgst != "en"){
     var stl = tlgst.split('_')[0];
     console.log(lcurl)
     lcurl = lcurl.replace(new RegExp('\/'+stl+'$'), '')

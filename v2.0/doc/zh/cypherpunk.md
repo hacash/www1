@@ -3,6 +3,17 @@
 
 
 
+
+
+Hacash 的两个原生 PoW 代币（HAC、HACD）以及通过单向转移继承、兼容 BTC 的各种技术、设计和机制，是以奥地利学派健全货币理论为指导，并遵循长期以来密码朋克先辈们的货币理念和技术思想。有两篇文章可以比较详细的对此解释：
+
+- [加密货币的前世今生：从非对称加密到比特币继承者 Hacash](https://mp.weixin.qq.com/s/bRf7szNP2ERuF5MfLisqm)
+- [Hacash 的密码货币历史正统性](https://github.com/hacash/doc-chinese/blob/master/crypto_historic_legitimacy.md)
+ 
+总结来说，HAC 的目标是购买力稳定的加密健全货币，是 1998 年戴伟的 B-money 以及 Nick Szabo 的 Bit Gold 的完美继任者；而 HACD 作为世界第一个 PoW NFT ，是 1993 年 Hal Finney 的描述的 Crypto Trading Cards 以及 1998 年 Nick Szabo 的 Bit Gold 完整实现。
+
+我们通过对密码货币历史的简要梳理来初步了解 Hacash 到底继承和发扬了什么：
+
 #### 1982年 (David Chaum) E-Cash
 
 第一个电子货币雏形
@@ -60,5 +71,3 @@
 第一个保持去中心化同时追求购买力稳定的加密货币
 
 PoW加密货币范式的极限，三种PoW币，继承和兼容比特币，将支付结算和价值储存分别用 HAC 和 HACD实现，历史首个 PoW NFT。
-
-从各方面机制来看，Hacash 是历史上的 Crypto Trading Cards、Bit Gold 和 B-money 各自追求目标的集中完整实现。
