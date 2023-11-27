@@ -56,7 +56,7 @@ Hacash 的两个原生 PoW 代币（HAC、HACD）以及通过单向转移继承�
 
 成功原因：利用PoW最长链原则，实现去中心化并避免双花
 
-<p class="note">潜在失败原因：</p>
+<p class="note">潜在失败原因：经济模型可持续性不足，引发账本安全问题</p>
 
 #### 2014年 (Vitalik Buterin) Ethereum 
 
