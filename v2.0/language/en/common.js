@@ -9,7 +9,8 @@ module.exports = {
         donate: "Donate HAC to Support Hacash.org:",
     },
 
-    intro: 'A Peer-to-Peer Network for Money, Payment, Store of Value, DeFi, and DApp Infrastructure',
+    intro: `A Crypto Sound Money with 3 PoW Coins and 3 Scalability Layers for Open Financial and DApp Infrastructure`,
+    // intro: 'A Peer-to-Peer Network for Money, Payment, Store of Value, DeFi, and DApp Infrastructure',
 
     desc: cf(`is Crypto Sound Money/is the Community Driven/follows Bitcoin's Vision/includes 3 PoW Coins/has the first PoW NFT/can absorb Bitcoin/use Human-readable DeFi Contracts/prevents 51% Attacks/supports Scalability Techniques`),
 

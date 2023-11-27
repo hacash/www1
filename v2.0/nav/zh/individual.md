@@ -12,9 +12,9 @@ HAC是Hacash里的购买力稳定币，主要用于支付结算。获取HAC最�
 够买HACD
 HACD是Hacash的NFT，主要用于价值存储，同时每个HACD都有独特的6个字母和不同的艺术展示形式。获取HACD可以直接在交易所购买，但购买特定HACD还没有特别高效的方式。
 
-https://wallet.hacash.org
+https://wallet.hacash.org?lang=[:=lang.useset:]
 选择HAC和HACD的钱包
-HAC和HACD使用的是Hacash相同的地址，你只需要选择适合自己需求的Hacash钱包进行存储和发送即可。追求便捷可用网页钱包，追求安全可用桌面钱包。
+HAC和HACD使用的是Hacash相同的地址，你只需要选择适合自己需求的Hacash钱包进行存储和发送即可。追求便捷可使用网页钱包，追求安全可使用桌面钱包。
 wallet
 
 /run-full-node
