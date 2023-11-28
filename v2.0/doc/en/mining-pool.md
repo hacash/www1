@@ -1,23 +1,23 @@
-搭建 HAC 矿池
-启动 HAC 矿池服务或建立私有矿池
+Run HAC Mining Pool
+Start HAC public mining pool service or create a private mining pool
 
 
 
 
-如果需要加入矿池，请参见 [加入矿池挖掘HAC](/mining-HAC#pool) 。
+If you just want to mining, check [Join the pool to mining HAC](/mining-HAC#pool) 。
 
-## 运行全节点
+## Run Full Node
 
-搭建自己的矿池之前，需要运行一个全节点，并同步完成所有区块数据。
+Before building your own mining pool, you need to run a full node and synchronize all block data.
 
 <pre class="links">
-运行全节点
+Run Full Node
 /run-full-node
 </pre>
 
-## 开始搭建
+## Start Building
 
-全节点内置了基础的矿池挖矿功能，满足多台机器同时挖矿或者联合挖矿的需求。打开全节点配置文件 `hacash.config.ini` ，首先修改 `[miner]` 项下的配置，开启挖矿模式（启用方法为删除enable字段前的分号`;`字符）：
+The full node software has built-in basic mining pool mining function to meet the needs of multiple machines mining at the same time or joint mining. Open the full node configuration file `hacash.config.ini` to change `[miner]` item，open mining mode `enable = true` (delete the semicolon `;` before the enable field to open)
 
 <pre class="log cnf">
 <b>[miner]</b>
@@ -26,9 +26,9 @@
 <i>message</i> = <s>unknown</s>
 </pre>
 
-以上配置中， `rewards` 为矿池收取区块奖励的地址；`message` 为矿池播报方标记，可以自定义，用于识别区块由谁挖出，不超过16个字符。
+In the above configuration, `rewards`` is the address where the mining pool receives block rewards; `message`` is a flag for the block find announcer, which can be customized to identify who mined the block, with no more than 16 characters.
 
-然后再启用 `[minerpool]` 项下的 `enable` 字段，并按需修改其他字段：
+Then open the `enable` field under `[minerpool]` and modify the other fields as needed:
 
 <pre class="log cnf">
 <b>[minerpool]</b>
@@ -41,12 +41,12 @@
 <i>rewards_password</i> = <s>123456</s>
 </pre>
 
-以上配置中，`console_http_port` 参数表示后台算力、地址列表查看网页的端口；`listen_port` 为矿池连接服务端口；`max_connect` 为最大连接数，数量视服务器配置而定；`fee_percentage` 是矿池服务费率，0.05表示收取 5% 服务费，0.01表示收取 1%；`rewards_password` 表示矿池自动打币的账户密码或私钥，并且账户地址必须与 `[miner]` 项下的 `rewards` 参数设置的地址相同。
+In the above configuration, the parameter `console_http_port` indicates the port of the background computing power and address list to view the web page; `listen_port` is the mining pool connection service port. `max_connect` is the maximum number of connections, depending on the server configuration; `fee_percentage` is the mining pool service rate, 0.05 means 5% service charge, 0.01 means 1%; `rewards_password` represents the account password or private key for the mine pool automatic coin, and the account address must be the same as the address set in the `rewards` parameter under `[miner]`.
 
-修改完成后保存，重新启动全节点，都搭建好了一个矿池。使用公网 IP 或局域网地址即可链接矿池。连接方式请查看：
+After the modification is complete, save the modification, restart the whole node, and set up a mining pool. The mining pool can be linked using a public IP  and Port. Please check the connection method:
 
 <pre class="links">
-加入矿池挖矿
+Join Mining Pool
 /mining-HAC#pool
 </pre>
 

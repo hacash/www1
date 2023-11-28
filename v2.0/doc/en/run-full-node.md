@@ -1,33 +1,33 @@
-运行 Hacash 全节点
-只需两步，以最快的方式运行一个全节点
+Run Hacash Full Node
+Run a full node in just two steps in the fastest way possible
 
 
 
 
-## 下载
+## Download
 
-选择对应操作系统下载Hacash全节点软件：
+Select the corresponding operating system to download the Hacash full-node software:
 
-<a class="btn" href="https://download.hacash.org/miner_node_hacash_windows64.zip" target="_blank">⇩ Windows 64位</a>　
-<a class="btn orange" href="https://download.hacash.org/miner_node_hacash_ubuntu64.zip" target="_blank">⇩ Ubuntu 64位</a>　
-<a class="btn gray" href="https://download.hacash.org/miner_node_hacash_macos64.zip" target="_blank">⇩ MacOS 64位</a>
+<a class="btn" href="https://download.hacash.org/miner_node_hacash_windows64.zip" target="_blank">⇩ Windows 64bit</a>　
+<a class="btn orange" href="https://download.hacash.org/miner_node_hacash_ubuntu64.zip" target="_blank">⇩ Ubuntu 64bit</a>　
+<a class="btn gray" href="https://download.hacash.org/miner_node_hacash_macos64.zip" target="_blank">⇩ MacOS 64bit</a>
 
-或者去 Hacash 软件发布中心下载：
+Or go to the Hacash Software Distribution Center to download:
 
-- [Hacash软件发布日志与下载中心](https://github.com/hacash/miner/blob/master/doc/software_release_log.md)
+- [Hacash Release Center](https://github.com/hacash/paper/blob/master/build/software_release_log.md)
 
-下载的全节点软件压缩文件中包含一个可执行文件和一个 `.ini` 格式配置文件，类似：
+The downloaded full-node software zip file contains an executable file and a `.ini` format configuration file, similar to:
 
 <pre class="log">
 1 │ hacash_miner_node_2023_11_02_01.exe │ 10.6MB
 2 │ hacash.config.ini                   │  1.1KB
 </pre>
 
-<p class="note">注意：`hacash.config.ini` 配置文件中包含boot节点IP地址等全节点运行必须信息，请勿删除或任意修改。如需修改请用文本编辑器打开编辑。</p>
+<p class="note">Note: The `hacash.config.ini` configuration file contains essential information for the operation of the node, such as the IP address of the network boot node. Do not delete or modify it. If you need to change it, open it in a text editor.</p>
 
-## 运行
+## Run
 
-下载对应操作系统版本的全节点软件后，无需修改任何配置，以命令行方式运行里面的可执行文件（注意授予运行权限）：
+After downloading the full-node software of the corresponding operating system version, run the executable file in the command line mode without modifying any configuration (note that the operation permission is granted) :
 
 <pre class="cmd">
 <b>./hacash_miner_node_2023_11_02_01 ./hacash.config.ini</b>
@@ -45,7 +45,7 @@ sync blocks from peer hn_dev0(127.0.0.1:3337): 4001... got blocks(1.02%): 4001 ~
 all block sync successfully.
 </pre>
 
-运行后请等待区块数据同步完成，视网络情况而定，需要十几分钟或一两个小时不等。同步完成后继续保持运行全节点，将打印新的交易、区块发现或者新节点加入等信息，类似：
+After running, please wait for the block data synchronization to complete, depending on the network situation, it takes more than ten minutes or one or two hours. After the synchronization is complete, continue to run the full node, and will print new transactions, block discovery or new node joining information, similar to:
 
 <pre class="print">memtxpool add tx: ebfffa99509c4a07570a82c6a3c878310b3722ca7efa1dea9d739d1e864955be
 memtxpool add diamond create tx: 8ff2157241fa18caaddbcfdb952246d479a309b801e7b6dc457ff9c82caad804 , diamond: 80027 HSBBZY
@@ -54,16 +54,18 @@ memtxpool add diamond create tx: 8ff2157241fa18caaddbcfdb952246d479a309b801e7b6d
 [Peer] Heisenberg (135.181.97.41:3337) connect.
 </pre>
 
-<p class="note">注意一：需要等待区块数据全部同步完成之后（ 显示 `all block sync successfully.` 表示同步完成），才能修改配置后进行重启，以搭建矿池或挖掘 HACD 等操作，否则将导致相关操作无效。程序会自动搜索同目录下的 `hacash.config.ini` 文件作为配置文件。</p>
+<p class="note">Note 1: After all block data is synchronized ("all block sync successfully.  " indicates that synchronization is complete), modify the configuration and restart to set up mining pools or mining HACD operations.  Otherwise, related operations will be invalid.  The program will automatically search for the 'hacash.config.ini' file in the same directory as the configuration file.</p>
 
-<p class="note">注意二：在Windows系统下双击运行 `.exe` 文件，可能由于窗口闪退而无法显示错误日志，请使用 `PowerShell` 方式运行。</p>
+<p class="note">Note 2: Double-click to run the '.exe' file in Windows system, may not display error log due to the window blink, please use' PowerShell' mode to run.</p>
 
-## 编译
+---
 
-除了直接 [下载Hacash全节点软件](https://github.com/hacash/miner/blob/master/doc/software_release_log.md)，也可以通过源码编译，以获得对应操作系统版本软件，或进行验证：
+## Compile full node
 
-- [Hacash全节点源码入口](https://github.com/hacash/miner)
-- [Hacash编译部署文档](https://github.com/hacash/miner/blob/master/doc/build_compilation_en.md)
+In addition to[downloading Hacash full node software](https://github.com/hacash/miner/blob/master/doc/software_release_log.md) directly，it can also be compiled through the source code to obtain the corresponding operating system version software, or to verify:
+
+- [Hacash Fullnode Source Code](https://github.com/hacash/miner/blob/master/run/main/main.go)
+- [Hacash Build Doc](https://github.com/hacash/paper/blob/master/build/build_compilation.md)
 
 
 

@@ -14,7 +14,7 @@
 
 或者去 Hacash 软件发布中心下载：
 
-- [Hacash软件发布日志与下载中心](https://github.com/hacash/miner/blob/master/doc/software_release_log.md)
+- [Hacash软件发布日志与下载中心](https://github.com/hacash/paper/blob/master/build/software_release_log.md)
 
 下载的全节点软件压缩文件中包含一个可执行文件和一个 `.ini` 格式配置文件，类似：
 
@@ -58,12 +58,12 @@ memtxpool add diamond create tx: 8ff2157241fa18caaddbcfdb952246d479a309b801e7b6d
 
 <p class="note">注意二：在Windows系统下双击运行 `.exe` 文件，可能由于窗口闪退而无法显示错误日志，请使用 `PowerShell` 方式运行。</p>
 
-## 编译
+## 编译全节点
 
-除了直接 [下载Hacash全节点软件](https://github.com/hacash/miner/blob/master/doc/software_release_log.md)，也可以通过源码编译，以获得对应操作系统版本软件，或进行验证：
+除了直接 [下载Hacash全节点软件](https://github.com/hacash/paper/blob/master/build/software_release_log.md)，也可以通过源码编译，以获得对应操作系统版本软件，或进行验证：
 
-- [Hacash全节点源码入口](https://github.com/hacash/miner)
-- [Hacash编译部署文档](https://github.com/hacash/miner/blob/master/doc/build_compilation_en.md)
+- [Hacash全节点源码入口](https://github.com/hacash/miner/blob/master/run/main/main.go)
+- [Hacash编译部署文档](https://github.com/hacash/paper/blob/master/build/build_compilation.md)
 
 
 

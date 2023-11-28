@@ -17,8 +17,6 @@ Hacash 通道链二层钱包用户使用手册
 <a class="btn orange" href="https://download.hacash.org/hacash_channelpay_client_ubuntu64.zip" target="_blank">⇩ Ubuntu-64bit</a>　
 <a class="btn gray" href="https://download.hacash.org/hacash_channelpay_client_macos64.zip" target="_blank">⇩ MacOS-64bit</a></p>
 
-<!-- <a class="dld" href="https://github.com/jcb55/jcb-hacash" target="_blank">⇩ Download Hacash All Softwares ( for MacOS) </a></p> -->
-
 下载二层钱包后打开软件。请注意不要在 zip 压缩包内直接双击打开软件，需要将其解压至电脑桌面或其它文件夹，然后打开软件才可用。因为软件需要在文件夹内创建目录以保存通道票据数据，zip压缩包内打开软件无法创建文件夹而导致出错。
 
 ## 登录
@@ -91,7 +89,7 @@ Hacash 通道链二层钱包用户使用手册
 
 
 <pre class="links big">
-商家：搭建支付节点
+Company: Setup Payment Service Node
 /layer-2-node
 </pre>
 

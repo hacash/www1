@@ -1,55 +1,55 @@
-通道服务商
-Hacash 通道链支付网络节点服务商
+Channel Service Provider
+Hacash Channel Chain Payment Network Service Provider
 
 
 
-通道链支付结算网络是 Hacash 的二层扩容网络，详细请阅读白皮书《 [Hacash：一种大规模支付实时结算的加密货币系统](https://github.com/hacash/paper/blob/master/whitepaper.cn.md) 》。
+The channel chain payment settlement network is Hacash's Layer 2 expansion network, see the whitepaper for details: 
+ [Hacash Whitepaper](/whitepaper.pdf)
 
-## 什么是通道服务商
+## What is Channel Service Provider
 
-通道链支付结算网络从技术上来说是完全对等节点组成的点对点支付网络，任何节点并不存在与其它节点不对称的资金控制权限。无论资金规模或技术开发上是否存在差距，其网络各方的资金安全完全依赖于自身的诚实和对主网数据更新的细心检查，而不依赖其它诸如身份、地位、财富、技术能力或社会声望。Hacash主网作为一位绝对客观只看证据（也就是对账票据）的仲裁者，平等确保所有类型用户的资金都不被掠夺和窃取。
+The channel chain payment settlement network is a peer-to-peer payment network, and no node has asymmetric capital control rights with other nodes.  Regardless of whether there is a gap in funding scale or technology development, the financial security of its network parties depends entirely on their own honesty and careful checking of mainnet data updates, and does not depend on other things such as identity, status, wealth, technical ability or social prestige.  Hacash Mainnet acts as an absolutely objective arbiter that only looks at the evidence (that is, reconciling bills), equally ensuring that the funds of all types of users are not plundered and stolen.
 
-由于分工及资源优势不同，在健康的商业合作经济运行实际情况下，网络中某一部分专业节点，可以将自身的技术优势提供出来，为大家的支付需求提供更加高效和便捷的各类技术服务。例如在通道路径路由、通道资金流动优化、网络在线质量、对账票据备份以及仲裁实时监控等事务上，可以由专业节点以收取微量交易费用的形式来提供服务。值得特别注意的是，这种服务仅仅只是技术上的可任意撤销的商品，与资金委托存管的传统银行业务有着本质区别，服务商并不会掌控你的钱。简单来说，就是你的钱没有存在别人那里而是永远被私钥控制在自己手里，没有人能未经允许转移你的钱。并且，服务按次付费，可在任意时候立即撤销对方节点的服务资格，几乎零成本地自由选择更好的服务商节点。
+Due to the different division of labor and resource advantages, in the actual operation of a healthy business cooperation economy, a certain part of the professional node in the network can provide its own technical advantages to provide more efficient and convenient various technical services for everyone's payment needs. For example, in the channel route routing, channel fund flow optimization, network online quality, reconciliation bill backup and arbitration real-time monitoring and other transactions, professional nodes can provide services in the form of charging a small transaction fee. It is worth noting that this service is only a technical commodity that can be withdrawn at will, and it is fundamentally different from traditional banking where funds are entrusted, and the service provider does not control your money. Simply put, your money is not stored in someone else's hands but is always controlled by the private key, and no one can transfer your money without permission. In addition, the service is paid per view, and the service qualification of the other node can be revoked immediately at any time, and the better service node can be freely selected at almost zero cost.
 
-通道网络里的支付服务商节点就像互联网的宽带接入服务商或者电子邮件服务商，后者提供信息流动的服务，而前者则提供资金流通的服务。由于服务识别区分和支付路由的需要，与 Email 电子邮件一样，每个支付服务商都有一个独一无二的标识符。例如电子邮件地址中的 @gmail.com 后缀，以假设的支付服务商 `PaySer` 为例，通道链账户地址示例：
+The nodes of the payment service providers in the channel network are like the broadband access service providers of the Internet or the E-mail service providers, which provide the flow of information and the former provide the flow of money. As with Email, each payment service provider has a unique identifier due to the need for service identification differentiation and payment routing. For example, the @gmail.com suffix in the email address, taking the hypothetical payment service provider `PaySer` as an example, the channel chain account address example:
+
 
 <pre class="log">
 1PytoNB53MX2bi1Nw2S6Fyharzv4zGTDDD_4d295889c6e0e1fc64237e01cd480fd6_PaySer
 </pre>
 
-可以看到以上地址分为三段，即普通账户地址部分 `1PytoNB53MX2bi1Nw2S6Fyharzv4zGTDDD` 、通道ID部分 `4d295889c6e0e1fc64237e01cd480fd6` 和支付服务商标识符部分 `PaySer` ，三个部分之间用下划线连接起来组成一个完整的通道链账户地址。在登录通道链钱包时，需要提供这种完整形式的账户地址，也即是登录/支付地址。
+The above address is divided into three sections, that is, the general account address part `1PytoNB53MX2bi1Nw2S6Fyharzv4zGTDDD` , Channel ID part `4d295889c6e0e1fc64237e01cd480fd6` and the payment service provider identifier section `PaySer`, three parts are underlined together to form a complete channel link account address. When logging in to the channel chain wallet, you need to provide this full form of account address, which is the login/payment address.
 
-当用户端进行收款时，如果账户地址仅仅与服务商开启了唯一一个通道，或者同一地址开启了多个通道服务，且需要服务商自动选择合适的收款通道时，可免去地址中间的通道ID部分，即简写为：
-
+When the client receives payment, if the account address only opens a single channel with the service provider, or multiple channel services are opened at the same address, and the service provider needs to automatically select the appropriate payment channel, the channel ID part in the middle of the address can be removed, that is, simply written as:
 <pre class="log">
 1PytoNB53MX2bi1Nw2S6Fyharzv4zGTDDD_PaySer
 </pre>
 
-通过 HIP-6 提案 ( [Hacash Diamond Name Service](https://hacashtalk.com/t/hip-6-hacash-diamond-name-service/138) ) 即 HDNS 运用钻石名称进行账户地址 DNS 解析服务之后，收款地址可进一步简化为例如：
+HIP-6 proposal ( [Hacash Diamond Name Service](https://hacashtalk.com/t/hip-6-hacash-diamond-name-service/138) ) That is, after HDNS uses the HACD name for the account address DNS resolution service, the collection address can be further simplified to, for example:
 
 <pre class="log">
 MYBANK_PaySer
 </pre>
 
-此时，收款地址会自动解析为此钻石的所有者地址，目标服务商将自动选择合适的通道。
+At this point, the receiving address will automatically resolve the address of the owner of this HACD, and the target service provider will automatically select the appropriate channel.
 
-## 搭建服务商节点
+## Setup Service Provider Node
 
-由于目前仍处于Hacash基础设施的早期阶段，还没有特别完善的基础设施可以“一键部署”通道链网络的服务节点。Github仓库内有可以运行的开源代码，已经可以搭建可用的服务节点。虽然上文已经较完整的描述整个支付流程，但仍然缺乏清晰的搭建文档。
+Since it is still early days for the Hacash infrastructure, there is no particularly well-developed infrastructure for "one-click deployment" of service nodes for a channel chain network. The Github repository has a working open source code, and a working service node can already be set up. Although the whole payment process has been described more completely above, there is still a lack of clear construction documents.
+The ecological construction has just begun, and more teams are needed to build it together. For service nodes, there are two key processes:
 
-生态的搭建才刚刚开始，需要更多的团队来共建。对服务节点来说，有两个关键流程:
+- Channel Routing System
 
-- 通道路由系统
+The current solution is to use a "channel alliance" technology, where all merchant service nodes unite to form a decentralized, non-profit routing data delivery and update alliance organization to serve as the routing data management method of the "backbone channel" between merchants.
 
-当前的方案是采用个“通道联盟”技术，所有的商家服务节点联合起来组成一个去中心化、非盈利性质的路由数据下发及更新联盟组织，来作为商家之间的“主干通道”的路由数据管理方法。
+- Customer Acquisition System
 
-- 获客系统
-
-通过采用线上程序自动化或者线下人工服务的方式，为目标客户开通支付通道
+Open payment channels for target customers by using online process automation or offline manual services
 
 ---
 
-以上两点，获客系统依赖于每个商家的独立开发和创建，而路由联盟需要所有商家或有计划成为商家的团队们共建，请加入一下 Discord 频道：
+The above two points, the customer acquisition system depends on the independent development and creation of each merchant, and the routing alliance needs to be built by all merchants or teams who plan to become merchants, please join the Discord:
 
 <pre class="links big">
 Hacash Channel Payment Union (HCPU)

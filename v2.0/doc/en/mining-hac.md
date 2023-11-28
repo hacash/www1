@@ -1,46 +1,47 @@
 HAC Mining
-加入矿池、使用GPU、Solo等多种方式参与挖掘
+Join the mining pool, use GPU, Solo and other ways to participate in mining
 
 
 
 
 
 
-在首次开始挖矿之前，需要 [创建钱包地址](https://wallet.hacash.org?lang=[:=lang.useset:])，用于收取 HAC 的挖矿奖励。
+Before you start mining for the first time, you need [Create Account](https://wallet.hacash.org?lang=[:=lang.useset:]), used to collect HAC mining rewards.
 
 
 <a name="pool"></a>
 
-## 加入矿池
+## Join Pool to Mining
 
-Hacash 社区有多个矿池可供选择，只需访问矿池网站，下载对应的挖矿工具，就可以轻松开始挖掘：
+Hacash community has several mining pools to choose from, just visit the mining pool website, download the corresponding mining tools, you can easily start mining:
 
 <pre class="links">
 WoW_Pool
 https://hacpool.com
 wowpool
-运营时间长
+Automatic settlement
 
 .Diamonds Pool
 https://www.hacash.diamonds/pool
 hxdm
-支持GPU挖矿
+Support CPU & GPU
 </pre>
 
-不同的矿池有不同的结算规则和费率标准，详细请查看各个矿池服务的页面。以 `.org` 测试矿池为例，给出加入矿池挖矿的教程，首先下载矿池挖矿软件:
+Different mining pools have different settlement rules and rate standards, please see the page of each mining pool service for details. Take the `.org` test mining pool as an example, give the tutorial of joining the mining pool mining, first download the mining pool mining software:
 
-<a class="btn" href="https://download.hacash.org/miner_pool_worker_hacash_windows64.zip" target="_blank">⇩ Windows 64位</a>　
-<a class="btn orange" href="https://download.hacash.org/miner_pool_worker_hacash_ubuntu64.zip" target="_blank">⇩ Ubuntu 64位</a>　
-<a class="btn gray" href="https://download.hacash.org/miner_pool_worker_hacash_macos64.zip" target="_blank">⇩ MacOS 64位</a>
+<a class="btn" href="https://download.hacash.org/miner_pool_worker_hacash_windows64.zip" target="_blank">⇩ Windows 64bit</a>　
+<a class="btn orange" href="https://download.hacash.org/miner_pool_worker_hacash_ubuntu64.zip" target="_blank">⇩ Ubuntu 64bit</a>　
+<a class="btn gray" href="https://download.hacash.org/miner_pool_worker_hacash_macos64.zip" target="_blank">⇩ MacOS 64bit</a>
 
-下载的挖矿软件压缩文件中包含一个可执行文件和一个 `.ini` 格式配置文件，类似：
+The downloaded mining software archive contains an executable file and a `.ini` format configuration file, similar to:
+
 
 <pre class="log">
 1 │ miner_pool_worker_2023_11_02_01.exe │ 3.6MB
 2 │ poolworker.config.ini               │ 347B
 </pre>
 
-压缩包内的 `poolworker.config.ini` 文件是矿工程序必备的配置文件，用编辑器打开，可看到内部内容为：
+The `poolworker.config.ini` file in the compressed package is the necessary configuration file for the miner program, opened with the editor, you can see the internal content is:
 
 
 <pre class="log cnf">
@@ -49,32 +50,33 @@ hxdm
 <i>supervene</i> = <s>8</s>
 </pre>
 
-`pool` 参数是矿池的地址，表示要连接的服务器的IP和端口。配置文件中的默认IP地址 182.92.163.225:3339 是一个长期运行且有效的矿池地址，可以直接使用，由 hacash.org 运营。如果使用其他第三方矿池，请联系你的矿池服务商获取有效的IP连接地址。
+The `pool` parameter is the address of the mine pool and represents the IP and port of the server to be connected. The default IP address 182.92.163.225:3339 in the profile is a long running and valid mining pool address that can be used directly and is operated by Hacash.org. If you use another third party pool, contact your pool provider for a valid IP connection address.
 
-<p class="note">请注意：有些矿池服务商的挖矿软件通过加密方法内置了 IP 地址，无需再单独填写设置</p>
+<p class="note">Note: Some of the mining software of the mining pool provider has an IP address built in through encryption, so there is no need to fill in the config file.</p>
 
-`rewards` 参数的字符串，是 Hacash 的账户地址，这里用来收取挖矿产生的货币奖励。此地址必须通过密码生成，有特定的格式，自己手动修改拼凑的地址无效！你可以使用 在线钱包，通过只有你自己知晓并严格保密和做好备份的密码，或者随机创建的私钥，生成账户地址。此地址仅限一个。
 
-其中 `supervene` 参数表示同时启用多少个线程挖矿，一般来说与你的电脑的 CPU 核心数量一致，能发挥最大的计算能力。比如你的电脑 CPU 核心数量为 2 核， 则将 `supervene = 8` 改为 `supervene = 2`，如果为 4 核心则改为 `supervene = 4`，以此类推。这时电脑 CPU 的利用率为 100%。一般建议留出一个核心用于其它计算：4核心则设置为3，8核心则设置为7。也可以根据你的情况自由设置，数值越小，CPU 利用率越低。此值不支持小数，最小为1。注意：不能设置成比电脑 CPU 核心数量更大的值，否则算力将极度降低。
+The string value of the `rewards` parameter is the account address of Hacash, which is used to receive rewards from mining. This address must be generated through the purse, have a specific format, you can use the [online wallet](https://wallet.hacash.org?lang=[:=lang.useset:]), through strict confidentiality and make backup password, or create a private key to generate the account address. 
 
-修改完成并保存后，通过命令行或者双击运行，将看到以下类似打印信息：
+The parameter `supervene` indicates how many threads mining is enabled at the same time, which is generally consistent with the number of CPU cores on your computer to maximize computing power. For example, the number of CPU cores in your computer is 2 cores, then 'supervene = 8' is changed to `supervene = 2`, if it is 4 cores, it is changed to `supervene = 4`, and so on. The CPU utilization of the computer is 100%. It is generally recommended to set aside a core for other calculations: 4 cores set to 3 and 8 cores set to 7. Can also be set according to your situation, the smaller the value, the lower the CPU utilization. This value does not support decimals, is as small as 1, and is not recommended to be set to a value larger than the number of CPU cores on your computer.
+
+After the modification is complete and saved, run by command line or double-click it. You will see the following information:
 
 <pre class="print">[Start] connect: 182.92.163.225:3339, rewards: 1AVRuFXNFi3rdMrPH4hdqSgFrEBnWisWaS, supervene: 8. 
 connecting miner pool... ok.
 do mining height:‹497921›, cbmn:1... 
 </pre>
 
-这时程序已经自动开始挖矿了，可打开任务管理器查看 CPU 的利用率，查看加入矿池挖矿算力的统计：[http://182.92.163.225:3340](http://182.92.163.225:3340)。如果使用第三方矿池，请联系你的矿池服务商查看实时的算力统计，和你应得的挖矿奖励的数额。
+At this time, the program has automatically started mining, you can open the task manager to view the utilization of the CPU, and see the statistics of the mining power to join the mining pool: [http://182.92.163.225:3340](http://182.92.163.225:3340). If using a third party mining pool, please contact your mining pool provider to view real-time statistics and the amount of mining rewards you are entitled to.
 
 
 
 <a name="fullnode"></a>
 
-## 全节点挖矿
+## Mining on Full Node
 
-开始全节点挖矿之前，需要 [运行全节点](/run-full-node)，并等待所有区块数据同步完成。
+Before mining on full node，need to [Run Full Node](/run-full-node), and wait for all block data synchronization to complete.
 
-全节点内置了挖矿功能，只需要修改少量配置，即可自动开始挖矿。`hacash.config.ini` 文件是Hacash全节点程序必备的配置文件，包含各种配置。只需要修改配置文件中`[miner]` 项下的三个参数：
+The full-node software has a built-in mining function, requiring only a few configuration changes to automatically start mining. The `hacash.config.ini` file is the mandatory configuration file for the Hacash full-node program and contains various configurations. You only need to modify the three parameters under the `[miner]` item in the configuration file:
 
 <pre class="log cnf">
 <b>[miner]</b>
@@ -84,17 +86,17 @@ do mining height:‹497921›, cbmn:1...
 <i>message</i> = <s>unknown</s>
 </pre>
 
-其中，删除 `enable = true` 前面的分号 `;` 表示开启挖矿（分号 `;` 表示注释这一项，使其不生效，其他项配置比如 HACD 挖矿同理），`supervene` 参数表示同时启用多少个线程挖矿，一般来说与你的电脑的 CPU 核心数量一致，能发挥最大的计算能力。比如你的电脑 CPU 核心数量为 2 核， 则将 `supervene = 8` 改为 `supervene = 2`，如果为 4 核心则改为 `supervene = 4`，以此类推。这时计算机 CPU 的利用率为 100%。 一般建议留出一个核心用于其它计算：4核心则设置为3，8核心则设置为7。也可以根据你的情况自由设置，数值越小，CPU 利用率越低。此值不支持小数，最小为1，也不建议设置成比电脑 CPU 核心数量更大的值。
+Drop the semicolon `;` in front of `enable = true` to open mining mode（Semicolon `;`indicates to close this item so that it does not take effect, and other item configurations such as HACD mining do the same). The parameter `supervene` indicates how many threads mining is enabled at the same time, which is generally consistent with the number of CPU cores on your computer to maximize computing power. For example, the number of CPU cores in your computer is 2 cores, then 'supervene = 8' is changed to `supervene = 2`, if it is 4 cores, it is changed to `supervene = 4`, and so on. The CPU utilization of the computer is 100%. It is generally recommended to set aside a core for other calculations: 4 cores set to 3 and 8 cores set to 7. Can also be set according to your situation, the smaller the value, the lower the CPU utilization. This value does not support decimals, is as small as 1, and is not recommended to be set to a value larger than the number of CPU cores on your computer.
 
-`rewards` 参数的字符串值，是 Hacash 的账户地址，这里用来收取挖矿产生的货币奖励。此地址必须通过钱包生成，有特定的格式，可以使用 [在线钱包](https://wallet.hacash.org?lang=[:=lang.useset:])，通过严格保密并做好备份的密码，或者随机创建的私钥来生成账户地址。`message` 为区块播报者标识，一般仅矿池需要设置。
+The string value of the `rewards` parameter is the account address of Hacash, which is used to receive rewards from mining. This address must be generated through the purse, have a specific format, you can use the [online wallet](https://wallet.hacash.org?lang=[:=lang.useset:]), through strict confidentiality and make backup password, or create a private key to generate the account address. `message` is the identifier of the block announcer, and generally only mining pool need to be set.
 
-<p class="note">注意：需要等待区块同步完成之后，再修改配置，然后重启全节点，挖矿配置才能生效</p>
+<p class="note">Note: You need to wait for block synchronization to complete before modifying the configuration, and then restart the full node for the mining configuration to take effect</p>
 
-## 自建矿池
+## Build Personal Mining Pool
 
-如果在内网有多台机器同时挖矿，可以在局域网自建私有矿池，与搭建公共矿池方法相同，请参见：
+If there are multiple machines on the Intranet mining at the same time, you can build a private mining pool on the LAN, the same method as building a public mining pool, see:
 
 <pre class="links">
-搭建矿池
+Run Mining Pool
 /mining-pool
 </pre>
