@@ -122,7 +122,7 @@ submit.onclick = function(){
 
 
 if(amount) {
-    input.value = amount
+    input.value = decodeURI(amount)
     submit.click()
     // show
     var ss = convertUnitOfHAC(amount)
