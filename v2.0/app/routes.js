@@ -9,7 +9,7 @@ module.exports = {
 
     // design andsvg icon
     '/design': 'VIEW:p/logofile',
-    '/svg/:name.svg': 'svgs',
+    '/svg/:name': 'svgs',
 
     // nav doc load
     '/doc/:name': 'VIEW:navdoc',
