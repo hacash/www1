@@ -4,7 +4,7 @@ Contributions, Core, Tools and Application Development
 
 
 <pre class="nav">
-https://github.com/hacash/paper
+https://github.com/hacash
 Contribute to Development
 Hacash is open source and any developer can contribute to the project. The GitHub repository has everything you need.
 development-join

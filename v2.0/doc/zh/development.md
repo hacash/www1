@@ -12,10 +12,10 @@ Hacash 开发相关说明和各工具、接口文档链接
 
 <pre class="links">
 RPC API 接口文档
-https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_description.cn.md
+https://github.com/hacash/doc-chinese/blob/master/doc/HAC_HACD_mining_fairness_description.md
 
 全节点软件下载
-https://github.com/hacash/miner/blob/master/doc/software_release_log.md
+https://github.com/hacash/paper/blob/master/build/software_release_log.md
 </pre>
 
 <a name="mining"></a>
@@ -25,13 +25,13 @@ https://github.com/hacash/miner/blob/master/doc/software_release_log.md
 
 <pre class="links">
 挖矿或矿池服务文档
-https://github.com/hacash/service/blob/master/doc/miner_service_api.cn.md
+https://github.com/hacash/doc-chinese/blob/master/service/miner_service_api.md
 
 X16RS 挖矿算法说明
-https://github.com/hacash/x16rs/blob/master/doc/x16rs_algorithm_description.cn.md
+https://github.com/hacash/doc-chinese/blob/master/tech/x16rs_algorithm_description.md
 
 HAC & HACD 挖矿公平性说明
-https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_description.cn.md
+https://github.com/hacash/doc-chinese/blob/master/tech/HAC_HACD_mining_fairness_description.cn.md
 </pre>
 
 <a name="tool"></a>
@@ -42,7 +42,7 @@ https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_descrip
 
 <pre class="links">
 RPC API 接口文档
-https://github.com/hacash/service/blob/master/doc/rpc_api_doc.cn.md
+https://github.com/hacash/doc-chinese/blob/master/tech/rpc_api_doc.md
 
 临时 API
 https://github.com/hacash/service/blob/master/deprecated/routes.go
@@ -57,17 +57,17 @@ https://github.com/hacash/explorer
 <a name="core"></a>
 ## 区块链核心层
 
-要参与区块链核心层的开发，需要满足一定的条件，这些条件在 [HIP-12](https://github.com/hacash/paper/blob/master/HIP/development/HIP-12_Hacash_development_workflow_and_code_permission.pdf) 中有详细说明。每一项对 Hacash 主网核心层的新增和变动，都需要提起一份 HIP 文档作为评估依据。需要编译和部署 Hacash 全节点，这里也有一份简单的指引。
+要参与区块链核心层的开发，需要满足一定的条件，这些条件在 [HIP-12](https://github.com/hacash/doc-chinese/blob/master/HIP/development/HIP-12_Hacash_development_workflow_and_code_permission.pdf) 中有详细说明。每一项对 Hacash 主网核心层的新增和变动，都需要提起一份 HIP 文档作为评估依据。需要编译和部署 Hacash 全节点，这里也有一份简单的指引。
 
 <pre class="links">
 HIP-12
-https://github.com/hacash/paper/blob/master/HIP/development/HIP-12_Hacash_development_workflow_and_code_permission.pdf
+https://github.com/hacash/doc-chinese/blob/master/HIP/development/HIP-12_Hacash_development_workflow_and_code_permission.pdf
 
 HIP 提案库
 https://github.com/hacash/paper/blob/master/HIP/HIP-table.md
 
 编译和构建文档
-https://github.com/hacash/miner/blob/master/doc/build_compilation_en.md
+https://github.com/hacash/doc-chinese/blob/master/build/build_compilation_en.md
 </pre>
 
 
@@ -80,5 +80,5 @@ Discord 开发组
 https://discord.gg/wKAJHxUgb6
 
 Github 文档中心
-https://github.com/hacash/miner
+https://github.com/hacash/doc-chinese
 </pre>

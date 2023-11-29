@@ -4,7 +4,7 @@
 
 
 <pre class="nav">
-https://github.com/hacash/paper
+https://github.com/hacash
 贡献开发力量
 Hacash是开源的，任何开发者都可以为这个项目做出贡献。GitHub代码仓库中有你需要的一切。
 development-join

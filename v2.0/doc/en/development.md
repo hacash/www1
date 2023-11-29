@@ -13,10 +13,10 @@ Exchange or Wallet access assets HAC, HACD or BTC on Hacash blockchain, scan tra
 
 <pre class="links">
 RPC API Doc
-https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_description.en.md
+https://github.com/hacash/paper/blob/master/service/rpc_api_doc.md
 
 Fullnode Download
-https://github.com/hacash/miner/blob/master/doc/software_release_log.md
+https://github.com/hacash/paper/blob/master/build/software_release_log.md
 </pre>
 
 
@@ -26,13 +26,13 @@ To run the open source mining pool provided by the Hacash community, please chec
 
 <pre class="links">
 Mining Service Doc
-https://github.com/hacash/service/blob/master/doc/miner_service_api.cn.md
+https://github.com/hacash/paper/blob/master/service/miner_service_api.md
 
 X16RS Mining Algorithm Doc
-https://github.com/hacash/x16rs/blob/master/doc/x16rs_algorithm_description.cn.md
+https://github.com/hacash/paper/blob/master/tech/x16rs_algorithm_description.md
 
 HAC & HACD Mining Fairness Doc
-https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_description.cn.md
+https://github.com/hacash/paper/blob/master/tech/HAC_HACD_mining_fairness_description.md
 </pre>
 
 
@@ -42,7 +42,7 @@ If you want to develop some tools that serve Hacash, studying existing tools suc
 
 <pre class="links">
 RPC API Doc
-https://github.com/hacash/x16rs/blob/master/doc/HAC_HACD_mining_fairness_description.en.md
+https://github.com/hacash/paper/blob/master/service/rpc_api_doc.md
 
 Temp API
 https://github.com/hacash/service/blob/master/deprecated/routes.go
@@ -66,7 +66,7 @@ HIP Table
 https://github.com/hacash/paper/blob/master/HIP/HIP-table.md
 
 Build Doc
-https://github.com/hacash/miner/blob/master/doc/build_compilation_en.md
+https://github.com/hacash/paper/blob/master/build/build_compilation.md
 </pre>
 
 
@@ -79,5 +79,5 @@ Discord Development Group
 https://discord.com/channels/757976908653920299/802807729584209920
 
 Github Doc Home
-https://github.com/hacash/miner
+https://github.com/hacash/paper
 </pre>
