@@ -4,9 +4,6 @@ module.exports = {
     '/': 'VIEW:index',
     '/zh': 'VIEW:index',
 
-
-    '/hac_unit': 'VIEW:hacunit',
-
     // design andsvg icon
     '/design': 'VIEW:p/logofile',
     '/svg/:name': 'svgs',
