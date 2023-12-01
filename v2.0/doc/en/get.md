@@ -9,6 +9,10 @@ Exchange purchase, community transaction or mining to get HAC and HACD
 The exchange of HAC listed on:
 
 <pre class="links">
+
+NonKYC
+https://nonkyc.io/market/HAC_USDT
+nonkyc
 Xeggex
 https://xeggex.com/market/HAC_USDT
 xeggex
@@ -17,7 +21,7 @@ Vindax
 https://vindax.com/exchange-base.html?symbol=HAC_USDT
 vindax
 
-Dex-trade
+Dex-Trade
 https://dex-trade.com/spot/trading/HACUSDT
 dextrade
 
@@ -41,12 +45,12 @@ hacsea
 Hacash.Diamonds
 https://www.hacash.diamonds
 hxdm
-
-Opensea
-https://opensea.io/collection/hacashdiamond
-opensea
 </pre>
 
+
+<!-- Opensea
+https://opensea.io/collection/hacashdiamond
+opensea -->
 
 ## Other Way
 

@@ -12,7 +12,7 @@ Hacash 开发相关说明和各工具、接口文档链接
 
 <pre class="links">
 RPC API 接口文档
-https://github.com/hacash/doc-chinese/blob/master/doc/HAC_HACD_mining_fairness_description.md
+https://github.com/hacash/doc-chinese/blob/master/service/rpc_api_doc.md
 
 全节点软件下载
 https://github.com/hacash/paper/blob/master/build/software_release_log.md
@@ -42,7 +42,7 @@ https://github.com/hacash/doc-chinese/blob/master/tech/HAC_HACD_mining_fairness_
 
 <pre class="links">
 RPC API 接口文档
-https://github.com/hacash/doc-chinese/blob/master/tech/rpc_api_doc.md
+https://github.com/hacash/doc-chinese/blob/master/service/rpc_api_doc.md
 
 临时 API
 https://github.com/hacash/service/blob/master/deprecated/routes.go

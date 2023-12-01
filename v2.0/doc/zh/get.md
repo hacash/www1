@@ -9,6 +9,10 @@
 目前已上线 HAC 的交易所列表：
 
 <pre class="links">
+NonKYC
+https://nonkyc.io/market/HAC_USDT
+nonkyc
+
 Xeggex
 https://xeggex.com/market/HAC_USDT
 xeggex
@@ -17,7 +21,7 @@ Vindax
 https://vindax.com/exchange-base.html?symbol=HAC_USDT
 vindax
 
-Dex-trade
+Dex-Trade
 https://dex-trade.com/spot/trading/HACUSDT
 dextrade
 
@@ -41,12 +45,11 @@ hacsea
 Hacash.Diamonds
 https://www.hacash.diamonds
 hxdm
-
-Opensea
-https://opensea.io/collection/hacashdiamond
-opensea
 </pre>
 
+<!-- Opensea
+https://opensea.io/collection/hacashdiamond
+opensea -->
 
 ## 其它方式
 
