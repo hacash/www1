@@ -26,25 +26,25 @@
 
 ## 文档
 
-- [Hacash 白皮书](https://github.com/hacash/doc-chinese/blob/master/whitepaper.md)
-- [Hacash 的密码货币历史正统性](https://github.com/hacash/doc-chinese/blob/master/money/crypto_historic_legitimacy.md)
-- [Hacash 相关货币理论和购买力稳定设计探讨](https://github.com/hacash/doc-chinese/blob/master/money/monetary_theory_and_flatcoin.md)
-- [比特币和 Hacash 的 L1 层技术对比](https://github.com/hacash/doc-chinese/blob/master/tech/bitcoin_and_hacash_L1_comparison.md)
-- [通道链网络、闪电网络技术点对比](https://github.com/hacash/doc-chinese/blob/master/tech/channel_chain_vs_lightning_network.md)
-- [HAC 和 HACD 挖矿的公平性说明](https://github.com/hacash/doc-chinese/blob/master/tech/HAC_HACD_mining_fairness_description.md)
-- [X16RS 算法设计详解及GPU代码说明](https://github.com/hacash/doc-chinese/blob/master/tech/x16rs_algorithm_description.md)
-- [Hacash 多层扩容模型概念解释](https://github.com/hacash/doc-chinese/blob/master/tech/multi_layer_scaling_concept_definition.md)
-- [Hacash隐私技术设计原则](https://github.com/hacash/doc-chinese/blob/master/tech/privacy_technology_explanation.md)
-- [Hacash 协议层技术架构设计哲学及对比以太坊](https://github.com/hacash/doc-chinese/blob/master/tech/protocol_architecture_design_principles.md)
-- [Hacash 可读金融合约简介及技术说明](https://github.com/hacash/doc-chinese/blob/master/tech/readability_contract_introduction.md)
+- [Hacash 白皮书](https://github.com/hacash/doc-chinese/blob/main/whitepaper.md)
+- [Hacash 的密码货币历史正统性](https://github.com/hacash/doc-chinese/blob/main/money/crypto_historic_legitimacy.md)
+- [Hacash 相关货币理论和购买力稳定设计探讨](https://github.com/hacash/doc-chinese/blob/main/money/monetary_theory_and_flatcoin.md)
+- [比特币和 Hacash 的 L1 层技术对比](https://github.com/hacash/doc-chinese/blob/main/tech/bitcoin_and_hacash_L1_comparison.md)
+- [通道链网络、闪电网络技术点对比](https://github.com/hacash/doc-chinese/blob/main/tech/channel_chain_vs_lightning_network.md)
+- [HAC 和 HACD 挖矿的公平性说明](https://github.com/hacash/doc-chinese/blob/main/tech/HAC_HACD_mining_fairness_description.md)
+- [X16RS 算法设计详解及GPU代码说明](https://github.com/hacash/doc-chinese/blob/main/tech/x16rs_algorithm_description.md)
+- [Hacash 多层扩容模型概念解释](https://github.com/hacash/doc-chinese/blob/main/tech/multi_layer_scaling_concept_definition.md)
+- [Hacash隐私技术设计原则](https://github.com/hacash/doc-chinese/blob/main/tech/privacy_technology_explanation.md)
+- [Hacash 协议层技术架构设计哲学及对比以太坊](https://github.com/hacash/doc-chinese/blob/main/tech/protocol_architecture_design_principles.md)
+- [Hacash 可读金融合约简介及技术说明](https://github.com/hacash/doc-chinese/blob/main/tech/readability_contract_introduction.md)
 
 重要 HIP：
 
-- [HIP-15 股权账户模型和可读合约语法树抽象](https://github.com/hacash/doc-chinese/blob/master/HIP/protocol/account_and_syntax_tree_abstraction.md)
-- [HIP-14 单向转移跟踪的比特币分叉选择条件](https://github.com/hacash/doc-chinese/blob/master/HIP/currency/bitcoin_fork_selection_rules.md)
-- [HIP-12 Hacash 开发工作流程及代码库权限](https://github.com/hacash/doc-chinese/blob/master/HIP/development/HIP-12_Hacash_development_workflow_and_code_permission.pdf)
-- [HIP-11 HAC 货币发行规则共识提案](https://github.com/hacash/doc-chinese/blob/master/HIP/currency/HAC_currency_issuance_rules_consensus_proposal.pdf)
-- [HIP-7: 防51%算力攻击的 PoW 共识机制（烽火台协议）](https://github.com/hacash/doc-chinese/blob/master/HIP/protocol/tech/PoW_of_avoid_51_percent_attack.md)
+- [HIP-15 股权账户模型和可读合约语法树抽象](https://github.com/hacash/doc-chinese/blob/main/HIP/protocol/account_and_syntax_tree_abstraction.md)
+- [HIP-14 单向转移跟踪的比特币分叉选择条件](https://github.com/hacash/doc-chinese/blob/main/HIP/currency/bitcoin_fork_selection_rules.md)
+- [HIP-12 Hacash 开发工作流程及代码库权限](https://github.com/hacash/doc-chinese/blob/main/HIP/development/HIP-12_Hacash_development_workflow_and_code_permission.pdf)
+- [HIP-11 HAC 货币发行规则共识提案](https://github.com/hacash/doc-chinese/blob/main/HIP/currency/HAC_currency_issuance_rules_consensus_proposal.pdf)
+- [HIP-7: 防51%算力攻击的 PoW 共识机制（烽火台协议）](https://github.com/hacash/doc-chinese/blob/main/HIP/protocol/tech/PoW_of_avoid_51_percent_attack.md)
 
 
 

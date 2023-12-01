@@ -6,11 +6,6 @@ History of cryptocurrency development and the crypto legitimacy of Hacash
 
 
 Hacash's two native PoW tokens (HAC, HACD), as well as various technologies, designs, and mechanisms that are compatible with BTC, inherited through one-way transfers, are guided by the Austrian School of sound money theory and follow the monetary ideas and technical thinking of the Cipherpunk forebears.
-
-<!-- 有两篇文章可以比较详细的对此解释：
-
-- [加密货币的前世今生：从非对称加密到比特币继承者 Hacash](https://mp.weixin.qq.com/s/bRf7szNP2ERuF5MfLisqm)
-- [Hacash 的密码货币历史正统性](https://github.com/hacash/doc-chinese/blob/master/crypto_historic_legitimacy.md) -->
  
 In summary, HAC, which aims at crypto sound money with stable purchasing power, is the perfect successor to Dai Wei's B-money in 1998 and Nick Szabo's Bit Gold; HACD, the world's first PoW NFT, was the full implementation of Crypto Trading Cards described by Hal Finney in 1993 and Bit Gold by Nick Szabo in 1998.
 

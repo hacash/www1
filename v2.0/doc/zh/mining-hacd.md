@@ -3,7 +3,7 @@ HACD 挖掘
 
 
 
-HACD（区块钻石）是 Hacash 网络上另一种异质 、不可分割的货币。其详细介绍可参看：[什么是区块钻石](https://github.com/hacash/doc-chinese/blob/master/whitepaper.md#5-%E5%8C%BA%E5%9D%97%E9%92%BB%E7%9F%B3) 和 [钻石采掘算法](https://github.com/hacash/doc-chinese/blob/master/whitepaper.md#3-%E9%92%BB%E7%9F%B3%E9%87%87%E6%8E%98) 。
+HACD（区块钻石）是 Hacash 网络上另一种异质 、不可分割的货币。其详细介绍可参看：[什么是区块钻石](https://github.com/hacash/doc-chinese/blob/main/whitepaper.md#5-%E5%8C%BA%E5%9D%97%E9%92%BB%E7%9F%B3) 和 [钻石采掘算法](https://github.com/hacash/doc-chinese/blob/main/whitepaper.md#3-%E9%92%BB%E7%9F%B3%E9%87%87%E6%8E%98) 。
 
 ## 获得 HAC
 
