@@ -12,7 +12,7 @@
 NonKYC
 https://nonkyc.io/market/HAC_USDT
 nonkyc
-HAC / USDT<br/>HAC / NKYC<br/>HACD / USDT<br/>HACD / NKYC<br/>HACD / HAC
+HAC / USDT<br/>HAC / NKYC
 
 Xeggex
 https://xeggex.com/market/HAC_USDT
@@ -32,7 +32,7 @@ HAC / USDT
 Hacash Sea
 https://sea.hacash.diamonds
 hacsea
-HAC / USDT<br/>HACD / USDT
+HAC / USDT
 </pre>
 
 
@@ -43,15 +43,20 @@ HAC / USDT<br/>HACD / USDT
 可以通过以下平台或服务商购买 HACD ：
 
 <pre class="links">
+NonKYC
+https://nonkyc.io/market/HAC_USDT
+nonkyc
+HACD / USDT<br/>HACD / NKYC<br/>HACD / HAC
+
 Hacash Sea
 https://sea.hacash.diamonds
 hacsea
-HACD / USDT<br/>HAC / USDT
-
-Hacash.Diamonds
-https://www.hacash.diamonds
-hxdm
 HACD / USDT
+
+HACD DEX
+https://dex.hacash.diamonds/dex
+hxdm
+HACD / HAC
 </pre>
 
 <!-- Opensea
@@ -69,3 +74,5 @@ opensea -->
 挖掘 HACD
 /mining-HACD
 </pre>
+
+<p class="note">免责声明：请注意，所列第三方服务仅供参考。在使用任何第三方服务时，请自行研究并谨慎行事</p>

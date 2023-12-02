@@ -12,7 +12,7 @@ The exchange of HAC listed on:
 NonKYC
 https://nonkyc.io/market/HAC_USDT
 nonkyc
-HAC / USDT<br/>HAC / NKYC<br/>HACD / USDT<br/>HACD / NKYC<br/>HACD / HAC
+HAC / USDT<br/>HAC / NKYC
 
 Xeggex
 https://xeggex.com/market/HAC_USDT
@@ -32,7 +32,7 @@ HAC / USDT
 Hacash Sea
 https://sea.hacash.diamonds
 hacsea
-HAC / USDT<br/>HACD / USDT
+HAC / USDT
 </pre>
 
 
@@ -43,15 +43,20 @@ HAC / USDT<br/>HACD / USDT
 HACD can be purchased through the following platforms or service providers:
 
 <pre class="links">
+NonKYC
+https://nonkyc.io/market/HAC_USDT
+nonkyc
+HACD / USDT<br/>HACD / NKYC<br/>HACD / HAC
+
 Hacash Sea
 https://sea.hacash.diamonds
 hacsea
-HACD / USDT<br/>HAC / USDT
-
-Hacash.Diamonds
-https://www.hacash.diamonds
-hxdm
 HACD / USDT
+
+HACD DEX
+https://dex.hacash.diamonds/dex
+hxdm
+HACD / HAC
 </pre>
 
 
@@ -70,3 +75,5 @@ Mining HAC
 Mining HACD
 /mining-HACD
 </pre>
+
+<p class="note">Disclaimer: Please note that the third party services listed are for informational purposes only. Please do your own research and exercise caution when using any third party services!</p>
