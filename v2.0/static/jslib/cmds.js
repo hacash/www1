@@ -2,6 +2,31 @@
 
 
 /////////////////////////////////////////////////////////////
+// google translator split iframe
+
+document.body.innerHTML = `
+
+<iframe id="w1" src="https://translate.google.com.hk/?hl=zh-CN" width="100%" height="50%"></iframe>
+<iframe id="w2" src="https://translate.google.com.hk/?hl=zh-CN" width="100%" height="50%"></iframe>
+
+`;
+
+function setnone(ifrs, clss) {
+    for(var i in ifrs){
+        var ifr = document.getElementById(ifrs[i])
+        // console.log(ifr)
+        for(var k in clss){
+            ifr.contentDocument.getElementsByClassName(clss[k])[0].style.display = 'none'
+        }
+    }
+}
+
+setTimeout(function(){
+    setnone(['w1','w2'], ['gb_Na','hgbeOc', 'VjFXz', 'VlPnLc'])
+}, 5000)
+
+
+/////////////////////////////////////////////////////////////
 // bing translator split iframe
 
 document.body.innerHTML = `
@@ -14,7 +39,7 @@ document.body.innerHTML = `
 function setnone(ifrs, clss) {
     for(var i in ifrs){
         var ifr = document.getElementById(ifrs[i])
-        console.log(ifr.contentDocument)
+        // console.log(ifr.contentDocument)
         for(var k in clss){
             ifr.contentDocument.getElementsByClassName(clss[k])[0].style.display = 'none'
         }

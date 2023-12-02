@@ -43,7 +43,7 @@ drawRandomBarBackgrand($id('tpbg'), 'up', 30+navadd, 30-navadd, 0, '#ffffff')
 
 // parse items
 function parseNavDocItems(elm, call, pb) {
-    var its = elm.innerText.split("\n\n")
+    var its = elm.innerHTML.split("\n\n")
     , html = []
     for(var i in its){
         var a = its[i].split("\n")
@@ -75,6 +75,7 @@ $each(links, function(elm){
         var lgurl = (lglk.indexOf('http')==0||lglk.indexOf('/')==0) 
             ? lglk : `/image/exlgs/${lglk}.png`
             , desc = a[3] ? `<p>${a[3]}</p>` : ''
+            console.log(a)
         return `<a class="lglk" href="${a[1]}">
             <div class="lg"><img src="${lgurl}" /></div>
             <h5>${a[0]}</h5>${desc}

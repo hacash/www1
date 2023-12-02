@@ -12,22 +12,27 @@
 NonKYC
 https://nonkyc.io/market/HAC_USDT
 nonkyc
+HAC / USDT<br/>HAC / NKYC<br/>HACD / USDT<br/>HACD / NKYC<br/>HACD / HAC
 
 Xeggex
 https://xeggex.com/market/HAC_USDT
 xeggex
+HAC / USDT<br/>HAC / BTC
 
 Vindax
 https://vindax.com/exchange-base.html?symbol=HAC_USDT
 vindax
+HAC / USDT
 
 Dex-Trade
 https://dex-trade.com/spot/trading/HACUSDT
 dextrade
+HAC / USDT
 
 Hacash Sea
 https://sea.hacash.diamonds
 hacsea
+HAC / USDT<br/>HACD / USDT
 </pre>
 
 
@@ -41,10 +46,12 @@ hacsea
 Hacash Sea
 https://sea.hacash.diamonds
 hacsea
+HACD / USDT<br/>HAC / USDT
 
 Hacash.Diamonds
 https://www.hacash.diamonds
 hxdm
+HACD / USDT
 </pre>
 
 <!-- Opensea
