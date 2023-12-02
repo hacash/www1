@@ -32,6 +32,10 @@ Articles, blogs, videos, documentation and more about Hacash
 - [Channel Chain Network vs. Lightning Network: A Comparative Analysis of Technical Points](https://github.com/hacash/paper/blob/master/tech/channel_chain_vs_lightning_network.md)
 - [HAC and HACD mining description of fairness](https://github.com/hacash/paper/blob/master/tech/HAC_HACD_mining_fairness_description.md)
 - [X16RS algorithm design and GPU code explanation](https://github.com/hacash/paper/blob/master/tech/x16rs_algorithm_description.md)
+- [Comparison of Bitcoin and Hacash's L1 layer technology](https://github.com/hacash/doc-chinese/blob/main/tech/bitcoin_and_hacash_L1_comparison.md)
+- [Conceptual explanation of Hacash's multi-layer scaling model](https://github.com/hacash/doc-chinese/blob/main/tech/multi_layer_scaling_concept_definition.md)
+- [Hacash Privacy Technology Design Principles](https://github.com/hacash/doc-chinese/blob/main/tech/privacy_technology_explanation.md)
+- [Hacash protocol layer technical architecture design philosophy and comparison with Ethereum](https://github.com/hacash/doc-chinese/blob/main/tech/protocol_architecture_design_principles.md)
 - [Introduction and Technical Explanation of Hacash Readable DeFi Contracts](https://github.com/hacash/paper/blob/master/tech/readability_contract_introduction.md)
 
 Important HIP：
