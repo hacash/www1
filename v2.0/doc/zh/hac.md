@@ -71,7 +71,7 @@ HAC是如何保持购买货品和服务的能力？
 
 - 和BTC一样，通过PoW产生内生价值
 - HACD的生成需要通过HAC竞价，竞价成功后90%的HAC会被销毁
-- HAC用于Hacash Layer 1 的交易费
+- HAC用于Hacash layer 1 的交易费
 - HAC和任何加密货币一样，可以用作投资
 
 <!-- ## 黄金，法币，BTC和HAC的比较

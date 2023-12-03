@@ -15,6 +15,9 @@ Exchange or Wallet access assets HAC, HACD or BTC on Hacash blockchain, scan tra
 RPC API Doc
 https://github.com/hacash/paper/blob/master/service/rpc_api_doc.md
 
+TxPool Note
+https://github.com/hacash/paper/blob/master/service/memtxpool_operation_important_note.md
+
 Fullnode Download
 https://github.com/hacash/paper/blob/master/build/software_release_log.md
 </pre>

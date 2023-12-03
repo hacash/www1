@@ -3,7 +3,7 @@ Hacash 通道链支付网络节点服务商
 
 
 
-通道链支付结算网络是 Hacash 的二层扩容网络，详细请阅读白皮书《 [Hacash：一种大规模支付实时结算的加密货币系统](https://github.com/hacash/doc-chinese/blob/main/whitepaper.md) 》。
+通道链支付结算网络是 Hacash 的二层扩容网络，详细请阅读白皮书《 [Hacash：一种大规模支付实时结算的加密货币系统]([:=lang.links.wp:]) 》。
 
 ## 什么是通道服务商
 

@@ -6,7 +6,7 @@ One-Way Transfer of BTC to Hacash
 
 ## Characteristics of BTC after transfer
 
-The one-way transfer of BTC from Bitcoin Layer 1 to Hacash can take advantage of all the functions of Hacash Layer 1, and can also be used as a stable adjustment of HAC purchasing power.
+The one-way transfer of BTC from Bitcoin layer 1 to Hacash can take advantage of all the functions of Hacash layer 1, and can also be used as a stable adjustment of HAC purchasing power.
 
 - Unchanging ownership
 - Continuous incentives

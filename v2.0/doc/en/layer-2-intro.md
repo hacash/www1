@@ -5,7 +5,7 @@ Hacash Layer 2 Payment and Settlement Network
 ## What is Channel Chain Payment Network
 
 The channel chain payment settlement network is Hacash's Layer 2 expansion network (see the whitepaper for details: 
- [Hacash Whitepaper](/whitepaper.pdf) ),Payments through the channel chain can be made in real time without any wait, without transaction processing capacity bottlenecks and with extremely low fees. In short, the expansion mode has no waiting time for confirmation and no TPS upper limit. In addition to hardware performance such as computing power and bandwidth size, there are no protocol level confirmation time limits and transaction capacity constraints. In layman's terms, channel chain payments make payment and receipt as simple, fast, efficient and secure as sending an email with the support of a layer of blockchain security. The channel chain network supports payments in both HAC and Hacash-BTC currencies.
+ [Hacash Whitepaper]([:=lang.links.wp:]) ),Payments through the channel chain can be made in real time without any wait, without transaction processing capacity bottlenecks and with extremely low fees. In short, the expansion mode has no waiting time for confirmation and no TPS upper limit. In addition to hardware performance such as computing power and bandwidth size, there are no protocol level confirmation time limits and transaction capacity constraints. In layman's terms, channel chain payments make payment and receipt as simple, fast, efficient and secure as sending an email with the support of a layer of blockchain security. The channel chain network supports payments in both HAC and Hacash-BTC currencies.
 
 ## Compare with Lightning Network
 

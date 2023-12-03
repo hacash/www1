@@ -26,7 +26,7 @@
 
 ## 文档
 
-- [Hacash 白皮书](https://github.com/hacash/doc-chinese/blob/main/whitepaper.md)
+- [Hacash 白皮书]([:=lang.links.wp:])
 - [Hacash 的密码货币历史正统性](https://github.com/hacash/doc-chinese/blob/main/money/crypto_historic_legitimacy.md)
 - [Hacash 相关货币理论和购买力稳定设计探讨](https://github.com/hacash/doc-chinese/blob/main/money/monetary_theory_and_flatcoin.md)
 - [通道链网络、闪电网络技术点对比](https://github.com/hacash/doc-chinese/blob/main/tech/channel_chain_vs_lightning_network.md)

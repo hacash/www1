@@ -60,7 +60,7 @@ Learn PoW Flatcoin
 
 - Like BTC, endogenous value is generated through PoW
 - The generation of HACD requires bidding through HAC, and 90% of HAC will be destroyed after successful bidding
-- HAC is used for the transaction fee of Hacash Layer 1
+- HAC is used for the transaction fee of Hacash layer 1
 - HAC, like any cryptocurrency, can be used as an investment
 
 

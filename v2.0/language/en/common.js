@@ -17,9 +17,11 @@ module.exports = {
     tnv: {
         ttls: cf('Get Started/Learn/Features/Resources'),
         start: cf('Wallet/Buy Hacash/Explorer/Individual/Miner/Business/Developer/Artist/Run a full node'),
-        learn: cf('HAC/HACD/BTC/Layer 1/Layer 2/Layer 3/Whitepaper'),
+        learn: cf('HAC/HACD/BTC/layer 1/Layer 2/Layer 3/Whitepaper'),
         feature: cf('Proof of work/Flatcoin/OpFi Infra/Bitcoin/Cypherpunk'),
-        resource: cf('Development/Resource/Community/Ecosystem/Github '),
+        resource: cf('Development/Resource/Community/Ecosystem/Github '),     
+        resource: cf('Development/Community/Ecosystem/Resource/Download/Github '),        
+
     },
 
     ftr: {

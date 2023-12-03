@@ -28,7 +28,7 @@ Articles, blogs, videos, documentation and more about Hacash
 
 ## Documents
 
-- [Hacash Whitepaper](/whitepaper.pdf)
+- [Hacash Whitepaper]([:=lang.links.wp:])
 - [Channel Chain Network vs. Lightning Network: A Comparative Analysis of Technical Points](https://github.com/hacash/paper/blob/master/tech/channel_chain_vs_lightning_network.md)
 - [HAC and HACD mining description of fairness](https://github.com/hacash/paper/blob/master/tech/HAC_HACD_mining_fairness_description.md)
 - [X16RS algorithm design and GPU code explanation](https://github.com/hacash/paper/blob/master/tech/x16rs_algorithm_description.md)

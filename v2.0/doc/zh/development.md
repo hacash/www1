@@ -14,6 +14,9 @@ Hacash 开发相关说明和各工具、接口文档链接
 RPC API 接口文档
 https://github.com/hacash/doc-chinese/blob/main/service/rpc_api_doc.md
 
+交易提交说明
+https://github.com/hacash/doc-chinese/blob/main/service/memtxpool_operation_important_note.md
+
 全节点软件下载
 https://github.com/hacash/paper/blob/master/build/software_release_log.md
 </pre>

@@ -2,6 +2,11 @@ Get HAC & HACD
 Exchange purchase, community transaction or mining to get HAC and HACD
 
 
+
+
+<p class="note">Disclaimer: Please note that the third party services listed are for informational purposes only. Please do your own research and exercise caution when using any third party services!</p>
+
+
 <a name="HAC"></a>
 
 ## Buy HAC on Exchange
@@ -75,5 +80,3 @@ Mining HAC
 Mining HACD
 /mining-HACD
 </pre>
-
-<p class="note">Disclaimer: Please note that the third party services listed are for informational purposes only. Please do your own research and exercise caution when using any third party services!</p>

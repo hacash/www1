@@ -9,6 +9,14 @@ Hacash is a fully designed, completely fair, open and shared standard system for
 
 Hacash believes that although Bitcoin is revolutionary, it is not perfect, especially its "Monetary Nature" aspect has a very large shortcomings. Hacash's mission is not to subvert and replace Bitcoin technically, but to learn from Bitcoin's "blockchain" and "computing power issuance currency" technology, using the "Austrian Monetary Economics Theory" as the guiding ideology, focusing on expansion , Improve and complete the system's "Monetary Nature" indicators, including BTC to form a complete currency system, and combined with the channel chain settlement network, to promote the large-scale circulation and real-time settlement of encrypted currencies in real personal and commercial payments.
 
+Hacash uses a tiered scaling mechanism to solve the scalability problem of blockchain, which is the technical direction indicated in the [Hacash White Paper]([:=lang.links.wp:]) published in 2018. Until recently, 2023, public chains such as Ethereum have gradually seen hierarchical scaling as the future of blockchain system scaling:
+
+
+<pre class="links">
+Explanation of the Hacash multilayer scaling model
+https://github.com/hacash/doc-chinese/blob/main/tech/multi_layer_scaling_concept_definition.md
+</pre>
+
 ## Features
 
 - A truly open and shared operating mode
