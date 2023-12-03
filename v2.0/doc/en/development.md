@@ -9,17 +9,20 @@ This page provides preliminary guidance and document links for various developer
 
 ## Exchange or Wallet
 
-Exchange or Wallet access assets HAC, HACD or BTC on Hacash blockchain, scan transaction or block data to create new transfer transactions. Please read the RPC API interface documentation.
+Exchange or Wallet access assets HAC, HACD or BTC on Hacash blockchain, scan transaction or block data to create new transfer transactions. Please read the RPC API interface documentation. 
 
 <pre class="links">
+Commit Tx Must Read
+https://github.com/hacash/paper/blob/master/service/memtxpool_operation_important_note.md
+
 RPC API Doc
 https://github.com/hacash/paper/blob/master/service/rpc_api_doc.md
 
-TxPool Note
-https://github.com/hacash/paper/blob/master/service/memtxpool_operation_important_note.md
-
 Fullnode Download
 https://github.com/hacash/paper/blob/master/build/software_release_log.md
+
+Run Full Node
+/run-full-node
 </pre>
 
 

@@ -11,14 +11,17 @@ Hacash 开发相关说明和各工具、接口文档链接
 交易所或者钱包接入 HAC、 HACD 或 Hacash 链上的 BTC 资产，并且扫描交易或区块数据、创建新的转账交易，请阅读 RPC API 接口文档。
 
 <pre class="links">
+广播交易必读
+https://github.com/hacash/doc-chinese/blob/main/service/memtxpool_operation_important_note.md
+
 RPC API 接口文档
 https://github.com/hacash/doc-chinese/blob/main/service/rpc_api_doc.md
 
-交易提交说明
-https://github.com/hacash/doc-chinese/blob/main/service/memtxpool_operation_important_note.md
-
 全节点软件下载
 https://github.com/hacash/paper/blob/master/build/software_release_log.md
+
+运行全节点
+/run-full-node
 </pre>
 
 <a name="mining"></a>
