@@ -1,5 +1,5 @@
 
 module.exports = {
-    wp: "/file/whitepaper.pdf",
+    wp: "/whitepaper.pdf",
 }
 
