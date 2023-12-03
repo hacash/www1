@@ -161,17 +161,25 @@
             cursor: pointer;
             display: inline-block;
             margin-top: 20px;
-            padding: 10px 20px 10px 10px;
-            border: solid 1px #333;
+            padding: 10px 20px;
+            border: dashed 1px #fff3;
             line-height: 40px;
+            font-size: 15px;
+            text-decoration: none;
+            &:hover {
+                background-color: #0006;
+                border: solid 1px #666;
+                box-shadow: 2px 2px 8px #000a;
+            }
+        }
+        a.source.ico {
+            font-size: 13px;
+            text-decoration: underline;
+            padding-left: 10px;
             img {
                 height: 40px;
                 vertical-align: top;
                 margin-right: 10px;
-            }
-            &:hover {
-                background-color: #000;
-                border: solid 1px #666;
             }
         }
 
@@ -188,6 +196,8 @@
             a {
                 // text-decoration: underline;
                 color: whitesmoke;
+                font-size: 16px;
+                line-height: 20px;
             }  
             i {
                 font-style: normal;

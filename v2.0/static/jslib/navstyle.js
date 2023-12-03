@@ -2,9 +2,20 @@
 var nav_style = `/*--NAV-STYLE--*/`;
 
 
-/* onload */
+// window.onload
+var w = window
+if(!w.wdon){
+    w.wdons = []
+    w.wdon = function(f) {
+        wdons.push(f)
+    }
+    w.onload = function(e){
+        for(var i in w.wdons) w.wdons[i](e)
+    }
+}
 
-window.onload = function(){
+/* onload */
+wdon(function(){
 
 insertStyle(nav_style)
 
@@ -74,4 +85,4 @@ setTimeout(function(){
 }, 100)
 
 
-};
+});

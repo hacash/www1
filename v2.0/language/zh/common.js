@@ -17,7 +17,7 @@ module.exports = {
     tnv: {
         ttls: cf('开始/学习/特色/资源'),
         start: cf('钱包/购买Hacash/浏览器/个人/矿工/创业者/开发者/艺术家/运行全节点'),
-        learn: cf('HAC/HACD/BTC/layer 1/Layer 2/Layer 3/白皮书'),
+        learn: cf(`HAC/HACD/BTC/layer 1/Layer 2/Layer 3/白皮书/HAC单位/入门手册`),
         feature: cf('工作量证明/购买力稳定币/开放金融基础设施/继承比特币/密码朋克愿景'),
         resource: cf('开发指引/社区/生态/资料库/下载中心/Github'),
     },

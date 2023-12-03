@@ -57,6 +57,18 @@ function $each(elms, call){
     }
 }
 
+// window.onload
+var w = window
+if(!w.wdon){
+    w.wdons = []
+    w.wdon = function(f) {
+        wdons.push(f)
+    }
+    w.onload = function(e){
+        for(var i in w.wdons) w.wdons[i](e)
+    }
+}
+
 // insert style
 function insertStyle(sty) {
     var navstyobj = document.createElement("style")

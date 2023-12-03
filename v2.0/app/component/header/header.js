@@ -18,3 +18,18 @@ if(topbar.offsetWidth < 640) {
 }
 
 
+// window.onload
+wdon(function(){
+    var tarks = function(w) {
+        var ary = w.getElementsByTagName('a')
+        for(var i=0; i<ary.length; i++){
+            var a = ary[i]
+            if($attr(a, 'href')[0] != '/') {
+                a.setAttribute('target', '_blank')
+            }
+        }
+    }
+    tarks(topbar)
+    tarks($id('footer'))
+});
+

@@ -11,7 +11,7 @@ Hacash layer 1 主要用于货币的创造，分发和结算。HAC是整个货�
 
 /HACD
 价值储存
-
+如果比特币是 NFT，最接近的是 HACD。HACD继承了比特币的所有优势。它升级了三个核心机制，成为更好的价值储存手段。
 store-value
 
 /BTC
