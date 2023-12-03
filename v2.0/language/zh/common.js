@@ -23,6 +23,7 @@ module.exports = {
     },
     
     ftr: {
+        dvdct: "交易所、钱包等接入文档",
         lgdsi: "图标设计资源",
         tlik: '链接',
         tcmn: '社区',

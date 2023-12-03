@@ -25,6 +25,7 @@ module.exports = {
     },
 
     ftr: {
+        dvdct: "Dev Doc for Exchanges, Wallet",
         lgdsi: "Logo Design Source",
         tlik: 'Links',
         tcmn: 'Community',
