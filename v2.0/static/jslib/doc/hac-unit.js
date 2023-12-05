@@ -1,5 +1,5 @@
-// window.onload
-wdon(function(){ 
+
+setTimeout(function(){ 
 
 insertStyle(`
 
@@ -161,4 +161,4 @@ function convertUnitOfHAC(stuff){
 
 
 
-});
+},15);
