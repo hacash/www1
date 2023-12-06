@@ -1,4 +1,4 @@
-Hacash Layer 2 
+Hacash layer 2 
 Channel Chain Payment Network
 
 
@@ -6,7 +6,7 @@ Channel Chain Payment Network
 <pre class="nav">
 /layer-2-intro
 Channel Network
-The channel chain payment network is Hacash's native Layer 2 and an integral part of the Hacash monetary system, as detailed in the 2018 Hacash whitepaper. It is mainly used for instant payment of Hacash Layer1 tokens and is more secure, efficient and decentralized than the Lightning network.
+The channel chain payment network is Hacash's native layer 2 and an integral part of the Hacash monetary system, as detailed in the 2018 Hacash whitepaper. It is mainly used for instant payment of Hacash Layer1 tokens and is more secure, efficient and decentralized than the Lightning network.
 payment
 
 /layer-2-wallet

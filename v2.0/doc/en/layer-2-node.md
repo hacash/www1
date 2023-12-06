@@ -3,7 +3,7 @@ Hacash Channel Chain Payment Network Service Provider
 
 
 
-The channel chain payment settlement network is Hacash's Layer 2 expansion network, see the whitepaper for details: 
+The channel chain payment settlement network is Hacash's layer 2 expansion network, see the whitepaper for details: 
  [Hacash Whitepaper]([:=lang.links.wp:])
 
 ## What is Channel Service Provider

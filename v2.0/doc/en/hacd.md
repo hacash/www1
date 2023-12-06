@@ -48,7 +48,7 @@ https://explorer.hacash.org?lang=[:=lang.useset:]
 - HACD are digital assets that are stores of value, and the total amount of HACD is limited, and the generation of new HACD slows down over time
 - The generation of HACD requires HAC bidding with additional intrinsic value
 - HACD, like NFT, can be used for investment and collection
-- The six letters of HACD can be used to identify the account address of Hacash Layer 2
+- The six letters of HACD can be used to identify the account address of Hacash layer 2
 
 ## HACD Arts
 

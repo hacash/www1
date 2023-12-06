@@ -1,4 +1,4 @@
-Hacash Layer 2 
+Hacash layer 2 
 通道链支付网络
 
 
@@ -6,7 +6,7 @@ Hacash Layer 2
 <pre class="nav">
 /layer-2-intro
 通道链支付网络
-通道链支付网络是Hacash原生的Layer 2，也是Hacash货币体系不可分割的一环，在2018年的Hacash白皮书中有详细介绍。它主要用于Hacash Layer1上代币的即时支付，比闪电网络更加安全、高效和去中心化。
+通道链支付网络是Hacash原生的layer 2，也是Hacash货币体系不可分割的一环，在2018年的Hacash白皮书中有详细介绍。它主要用于Hacash Layer1上代币的即时支付，比闪电网络更加安全、高效和去中心化。
 payment
 
 /layer-2-wallet

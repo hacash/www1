@@ -50,7 +50,7 @@ https://explorer.hacash.org?lang=[:=lang.useset:]
 - HACD 是价值存储的数字资产，总量有限，新 HACD 的生成随着时间的推移而减缓
 - HACD 的生成需要通过另外内生价值的HAC竞价
 - HACD 和 NFT，艺术品一样，可以用作投资和收藏
-- HACD 的六个字母可以用作 Hacash Layer 2 支付地址的标识
+- HACD 的六个字母可以用作 Hacash layer 2 支付地址的标识
 
 <!-- ## 挖矿难度曲线
 

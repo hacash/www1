@@ -39,7 +39,7 @@ https://github.com/hacash/doc-chinese/blob/main/tech/privacy_technology_explanat
 Hacash layer 1支持多种可选的隐私技术。
 privacy
 
-/equity-account
+[:=lang.links.wp:]#3-层级股权控制账户
 股权账户模型
 当链上资产需要完全去中心化的管理，可采用layer 1的股权账户模型，可实现同股不同权等功能。
 

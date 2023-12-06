@@ -26,7 +26,7 @@ Hacash layer 2 is a channel chain settlement payment network, which is used for 
 
 /ecosystem#layer-3
 Layer3 Ecosystem
-Hacash Layer 3 is mainly used for application extension to develop application infrastructure and related services.
+Hacash layer 3 is mainly used for application extension to develop application infrastructure and related services.
 
 /ecosystem-others
 Other Business

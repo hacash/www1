@@ -1,9 +1,9 @@
 Channel Wallet
-Hacash Channel Chain Layer 2 Wallet User Manual
+Hacash Channel Chain layer 2 Wallet User Manual
 
 
 
-The channel chain payment settlement network is Hacash's Layer 2 expansion network (see the whitepaper for details: 
+The channel chain payment settlement network is Hacash's layer 2 expansion network (see the whitepaper for details: 
  [Hacash Whitepaper]([:=lang.links.wp:]) ),Payments through the channel chain can be made in real time without any wait, without transaction processing capacity bottlenecks and with extremely low fees. In short, the expansion mode has no waiting time for confirmation and no TPS upper limit. In addition to hardware performance such as computing power and bandwidth size, there are no protocol level confirmation time limits and transaction capacity constraints. In layman's terms, channel chain payments make payment and receipt as simple, fast, efficient and secure as sending an email with the support of a layer of blockchain security. The channel chain network supports payments in both HAC and Hacash-BTC currencies.
 
 Please select and contact your `Channel Service Provider` who will assist you in opening your channel account and send you the channel wallet login address.
@@ -12,13 +12,13 @@ Please select and contact your `Channel Service Provider` who will assist you in
 
 ## Download Wallet
 
-The Layer 2 payment network has a separate wallet that needs to be logged in via the address private key and kept online. Just logging in locally on the client side, however, does not propagate security information such as your private key across the network. Click the button below to download the wallet client for your system:
+The layer 2 payment network has a separate wallet that needs to be logged in via the address private key and kept online. Just logging in locally on the client side, however, does not propagate security information such as your private key across the network. Click the button below to download the wallet client for your system:
 
 <a class="btn" href="https://download.hacash.org/hacash_channelpay_client_windows64.zip" target="_blank">⇩ Windows-64bit</a>　
 <a class="btn orange" href="https://download.hacash.org/hacash_channelpay_client_ubuntu64.zip" target="_blank">⇩ Ubuntu-64bit</a>　
 <a class="btn gray" href="https://download.hacash.org/hacash_channelpay_client_macos64.zip" target="_blank">⇩ MacOS-64bit</a></p>
 
-Download the Layer 2 wallet and open the software. Please be careful not to open the software directly by double-clicking in the zip archive. You need to unzip it to your desktop or another folder, and then open the software. Because the software needs to create a directory in the folder to save channel ticket data, opening the software in the zip compression package can not create a folder, resulting in an error.
+Download the layer 2 wallet and open the software. Please be careful not to open the software directly by double-clicking in the zip archive. You need to unzip it to your desktop or another folder, and then open the software. Because the software needs to create a directory in the folder to save channel ticket data, opening the software in the zip compression package can not create a folder, resulting in an error.
 
 ## Login
 

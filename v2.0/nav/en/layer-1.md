@@ -19,7 +19,7 @@ BTC Inheritor
 BTC can be one-way transferred from layer 1 of Bitcoin to layer 1 of Hacash, becoming the native currency of Hacash.
 one-way-transfer
 
-https://github.com/hacash/doc-chinese/blob/main/tech/bitcoin_and_hacash_L1_comparison.md
+https://github.com/hacash/paper/blob/master/tech/bitcoin_and_hacash_L1_comparison.md
 VS. Bitcoin
 On the basis of the technology created by Bitcoin, Hacash focuses on the improvement of monetary attributes and asset mechanisms, and completely redevelops all parts from the bottom.
 vs-bitcoin
@@ -39,7 +39,7 @@ Optional Privacy
 Hacash layer 1 supports a variety of optional privacy technologies.
 privacy
 
-/equity-account
+[:=lang.links.wp:]
 Equity Account
 When the on-chain assets need to be completely decentralized, the layer 1 equity account model can be adopted to achieve functions such as the same share with different rights.
 

@@ -26,7 +26,7 @@ Hacash layer 2是通道链结算支付网络，用于HAC和BTC的秒速支付，
 
 /ecosystem#layer-3
 Layer3 生态
-Hacash Layer 3主要用于应用的扩展，可开发应用基础设施和相关服务。 
+Hacash layer 3主要用于应用的扩展，可开发应用基础设施和相关服务。 
 
 /ecosystem-others
 其它商业形式
