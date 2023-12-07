@@ -42,6 +42,7 @@ privacy
 [:=lang.links.wp:]
 Equity Account
 When the on-chain assets need to be completely decentralized, the layer 1 equity account model can be adopted to achieve functions such as the same share with different rights.
+equity-account
 
 /development
 Development

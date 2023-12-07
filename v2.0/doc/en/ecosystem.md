@@ -58,6 +58,16 @@ wowpool
 </pre>
 
 
+<a name="infos"></a>
+
+## Info & Data statistics
+
+<pre class="links">
+CoinGecko
+https://www.coingecko.com/en/coins/hacash
+cogk
+</pre>
+
 <a name="others"></a>
 
 ## Other Tools and Services

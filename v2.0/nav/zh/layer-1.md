@@ -42,6 +42,7 @@ privacy
 [:=lang.links.wp:]#3-层级股权控制账户
 股权账户模型
 当链上资产需要完全去中心化的管理，可采用layer 1的股权账户模型，可实现同股不同权等功能。
+equity-account
 
 /development
 技术开发

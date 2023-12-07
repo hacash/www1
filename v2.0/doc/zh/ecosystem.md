@@ -57,6 +57,16 @@ https://hacpool.com/report
 wowpool
 </pre>
 
+<a name="infos"></a>
+
+## 数据信息平台
+
+<pre class="links">
+CoinGecko
+https://www.coingecko.com/zh/数字货币/hacash
+cogk
+</pre>
+
 
 <a name="others"></a>
 
