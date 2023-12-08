@@ -54,3 +54,4 @@ setnone = function(ifrs, clss) {
 setTimeout(function(){
     setnone(['w1','w2'], ['desktop_header','t_navigation', 'tta_phraseb', 'b_footer'])
 }, 2000)
+
