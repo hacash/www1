@@ -2,9 +2,20 @@ HAC Unit
 Format Description and Conversion
 
 
-
+Fill in the quantity of HAC in the input box below and click the "Convert" button to obtain the usual format:
 
 <div class="fmtshow"></div>
+
+<div>
+    <div class="fmtbox" id="cvfmt">
+        <input class="in" placeholder="Such as: 1456:245 or ㄜ11,909,493:244" /> <button class="btn">Convert</button>
+        <p class="res"></p>
+    </div>
+</div>
+
+
+
+
 
 HAC is a monetary asset that supports unlimited division. To achieve this, we have invented a set of unique accounting format specifications (such as 1:248), similar to the Scientific notation (such as 1 x 10 ^ 248). This document will explain the technical principles and conversion methods of this unit format.
 
@@ -47,14 +58,6 @@ If such a large number of zeros are displayed directly in each location, it will
 
 The unit format designed and displayed in this way allows HAC to achieve infinite segmentation while avoiding annoying readability and input issues. The cost is that it requires a certain learning, understanding, and adaptation process to quickly read the actual quantity of currency.
 
-You can also fill in the quantity of HAC in the input box below and click the "Convert" button to obtain the usual format:
-
-<div>
-    <div class="fmtbox" id="cvfmt">
-        <input class="in" placeholder="Such as: 1456:245 or ㄜ11,909,493:244" /> <button class="btn">Convert</button>
-        <p class="res"></p>
-    </div>
-</div>
 
 <script src="/jslib/doc/hac-unit.js"></script>
 

@@ -4,7 +4,18 @@ HAC 单位
 
 
 
+在下方的输入框内填写HAC的数量并点击“转换”按钮，得到通常的形式：
+
 <div class="fmtshow"></div>
+
+<div>
+    <div class="fmtbox" id="cvfmt">
+        <input class="in" placeholder="例如：1456:245 或 ㄜ11,909,493:244" /> <button class="btn">转换单位</button>
+        <p class="res"></p>
+    </div>
+</div>
+
+
 
 HAC是一种支持无限分割的货币资产，为实现这一点而发明了一套独特的记账格式规范（例如 1:248 ），类似科学计数法（例如1 x 10^248）。本文档将解释此单位格式的技术原理和换算方法。
 
@@ -47,14 +58,6 @@ HAC是一种支持无限分割的货币资产，为实现这一点而发明了�
 
 如此设计和显示的单位格式，让HAC既能够实现无限分割，又能避免恼人的可读性、输入性问题，代价就是需要一定的学习理解和适应过程，才能快速读出货币的实际数量。
 
-你也可以在下方的输入框内填写HAC的数量并点击“转换”按钮，得到通常的形式：
-
-<div>
-    <div class="fmtbox" id="cvfmt">
-        <input class="in" placeholder="例如：1456:245 或 ㄜ11,909,493:244" /> <button class="btn">转换单位</button>
-        <p class="res"></p>
-    </div>
-</div>
 
 <script src="/jslib/doc/hac-unit.js"></script>
 
