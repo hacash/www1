@@ -46,7 +46,7 @@ HAC / USDT
 
 <pre class="links">
 NonKYC
-https://nonkyc.io/market/HAC_USDT
+https://nonkyc.io/market/HACD_USDT
 nonkyc
 HACD / USDT<br/>HACD / NKYC<br/>HACD / HAC
 
