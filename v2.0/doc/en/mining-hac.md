@@ -16,15 +16,15 @@ Before you start mining for the first time, you need [Create Account](https://wa
 Hacash community has several mining pools to choose from, just visit the mining pool website, download the corresponding mining tools, you can easily start mining:
 
 <pre class="links">
-WoW_Pool
-https://hacpool.com
-wowpool
-Automatic settlement
-
 .Diamonds Pool
 https://www.hacash.diamonds/pool
 hxdm
 Support CPU & GPU
+
+WoW_Pool
+https://hacpool.com
+wowpool
+Automatic settlement
 </pre>
 
 Different mining pools have different settlement rules and rate standards, please see the page of each mining pool service for details. Take the `.org` test mining pool as an example, give the tutorial of joining the mining pool mining, first download the mining pool mining software:
