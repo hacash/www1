@@ -14,6 +14,11 @@ Exchange purchase, community transaction or mining to get HAC and HACD
 The exchange of HAC listed on:
 
 <pre class="links">
+Xeggex
+https://xeggex.com/market/HACD_USDT
+xeggex
+HACD / USDT<br/>HACD / HAC
+
 NonKYC
 https://nonkyc.io/market/HAC_USDT
 nonkyc

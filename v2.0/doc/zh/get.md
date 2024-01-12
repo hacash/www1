@@ -45,6 +45,11 @@ HAC / USDT
 可以通过以下平台或服务商购买 HACD ：
 
 <pre class="links">
+Xeggex
+https://xeggex.com/market/HACD_USDT
+xeggex
+HACD / USDT<br/>HACD / HAC
+
 NonKYC
 https://nonkyc.io/market/HACD_USDT
 nonkyc
