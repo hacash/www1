@@ -17,14 +17,18 @@ HACD 已经具备 3 种标准艺术形态，分别为 HIP-5 、HIP-8 和 HIP-9�
 
 HIP-15 将从区块高度 518000 开始生效，需要下载最新的离线桌面钱包来铭刻：
 
+- [Hacash 软件发布日志与下载中心](https://github.com/hacash/node/releases)
 
-
-
+下载后运行 `hacash_desktop_offline_wallet_...` 钱包，选择 `Create/Clean HACD inscription` 选项：
 
 <img class="lazy ctw" data-src="/image/tobeminer/hip15-btn.png" />
 
+然后来到创建铭文的界面。铭刻 HACD 与发起转账本质上类似，都是通过创建一笔交易后提交至区块链确认。通过填写下方的内容来创建一笔 HACD 铭刻交易：
 
 <img class="lazy ctw" data-src="/image/tobeminer/hip15-crtx.png" />
 
+等到区块链确认后，将在对应 HACD 的详情界面看到对应铭刻的内容：
 
 <img class="lazy ctw" data-src="/image/tobeminer/hip15-show.png" />
+
+HIP-15 的实施将极大的拓宽 HACD 在收藏、艺术和代币化方面的功能和价值，更多的创新和玩法期待社区的发现。
