@@ -12,6 +12,10 @@ HACD艺术作品
 如何在HACD上创作
 HACD不仅是一种新的加密资产，也是加密艺术的底层协议。你可以在HACD之上任意创作你的艺术作品。
 
+/HACD-inscription
+创建HACD铭文
+
+
 /get#HACD
 如何获取HACD
 在创作前，你可能需要获取一些HACD，最简单的方式就是去交易所进行购买。
