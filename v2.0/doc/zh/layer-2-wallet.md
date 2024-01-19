@@ -13,11 +13,7 @@ Hacash 通道链二层钱包用户使用手册
 
 二层支付网络有单独的钱包，需要通过地址私钥登录且保持在线。不过仅仅在本地客户端登录，并不会在网络上传播你的私钥等安全信息。点击以下按钮下载对应系统的钱包客户端：
 
-<a class="btn" href="https://download.hacash.org/hacash_channelpay_client_windows64.zip" target="_blank">⇩ Windows-64bit</a>　
-<a class="btn orange" href="https://download.hacash.org/hacash_channelpay_client_ubuntu64.zip" target="_blank">⇩ Ubuntu-64bit</a>　
-<a class="btn gray" href="https://download.hacash.org/hacash_channelpay_client_macos64.zip" target="_blank">⇩ MacOS-64bit</a></p>
-
-<!-- <a class="dld" href="https://github.com/jcb55/jcb-hacash" target="_blank">⇩ Download Hacash All Softwares ( for MacOS) </a></p> -->
+- [Hacash软件发布日志与下载中心](https://github.com/hacash/node/releases)
 
 下载二层钱包后打开软件。请注意不要在 zip 压缩包内直接双击打开软件，需要将其解压至电脑桌面或其它文件夹，然后打开软件才可用。因为软件需要在文件夹内创建目录以保存通道票据数据，zip压缩包内打开软件无法创建文件夹而导致出错。
 

@@ -29,9 +29,7 @@ wowpool
 
 不同的矿池有不同的结算规则和费率标准，详细请查看各个矿池服务的页面。以 `.org` 测试矿池为例，给出加入矿池挖矿的教程，首先下载矿池挖矿软件:
 
-<a class="btn" href="https://download.hacash.org/miner_pool_worker_hacash_windows64.zip" target="_blank">⇩ Windows 64位</a>　
-<a class="btn orange" href="https://download.hacash.org/miner_pool_worker_hacash_ubuntu64.zip" target="_blank">⇩ Ubuntu 64位</a>　
-<a class="btn gray" href="https://download.hacash.org/miner_pool_worker_hacash_macos64.zip" target="_blank">⇩ MacOS 64位</a>
+- [Hacash软件发布日志与下载中心](https://github.com/hacash/node/releases)
 
 下载的挖矿软件压缩文件中包含一个可执行文件和一个 `.ini` 格式配置文件，类似：
 

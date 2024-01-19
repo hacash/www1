@@ -42,6 +42,11 @@ https://explorer.hacash.org?lang=[:=lang.useset:]
 <a name="art"></a>
 
 
+## How to create art at HACD
+
+[HIP-10](https://github.com/hacash/paper/blob/master/HIP/diamond/PoW_Art_Standard.mediawiki) gives everyone a clearer standard rules for artistic creation.
+
+
 ## Why is HACD Valuable
 
 - Like BTC, endogenous value is generated through PoW

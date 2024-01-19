@@ -6,13 +6,7 @@
 
 ## 下载
 
-选择对应操作系统下载Hacash全节点软件：
-
-<a class="btn" href="https://download.hacash.org/miner_node_hacash_windows64.zip" target="_blank">⇩ Windows 64位</a>　
-<a class="btn orange" href="https://download.hacash.org/miner_node_hacash_ubuntu64.zip" target="_blank">⇩ Ubuntu 64位</a>　
-<a class="btn gray" href="https://download.hacash.org/miner_node_hacash_macos64.zip" target="_blank">⇩ MacOS 64位</a>
-
-或者去 Hacash 软件发布中心下载：
+在 Hacash 软件发布中心下载，请注意在压缩包内选择对应的操作系统版本：
 
 - [Hacash软件发布日志与下载中心](https://github.com/hacash/node/releases)
 

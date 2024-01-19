@@ -6,13 +6,7 @@ Run a full node in just two steps in the fastest way possible
 
 ## Download
 
-Select the corresponding operating system to download the Hacash full-node software:
-
-<a class="btn" href="https://download.hacash.org/miner_node_hacash_windows64.zip" target="_blank">⇩ Windows 64bit</a>　
-<a class="btn orange" href="https://download.hacash.org/miner_node_hacash_ubuntu64.zip" target="_blank">⇩ Ubuntu 64bit</a>　
-<a class="btn gray" href="https://download.hacash.org/miner_node_hacash_macos64.zip" target="_blank">⇩ MacOS 64bit</a>
-
-Or go to the Hacash Software Distribution Center to download:
+Select the corresponding operating system to download the Hacash full-node software on Hacash Software Distribution Center to download:
 
 - [Hacash Release Center](https://github.com/hacash/node/releases)
 

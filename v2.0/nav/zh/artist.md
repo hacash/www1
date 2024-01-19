@@ -14,7 +14,7 @@ HACD不仅是一种新的加密资产，也是加密艺术的底层协议。你�
 
 /HACD-inscription
 创建HACD铭文
-
+铭刻祝福语、将你的艺术作品与HACD绑定，或探索其他代币化玩法。
 
 /get#HACD
 如何获取HACD
