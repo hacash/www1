@@ -14,7 +14,7 @@ Select the corresponding operating system to download the Hacash full-node softw
 
 Or go to the Hacash Software Distribution Center to download:
 
-- [Hacash Release Center](https://github.com/hacash/paper/blob/master/build/software_release_log.md)
+- [Hacash Release Center](https://github.com/hacash/node/releases)
 
 The downloaded full-node software zip file contains an executable file and a `.ini` format configuration file, similar to:
 
@@ -62,7 +62,7 @@ memtxpool add diamond create tx: 8ff2157241fa18caaddbcfdb952246d479a309b801e7b6d
 
 ## Compile full node
 
-In addition to[downloading Hacash full node software](https://github.com/hacash/paper/blob/master/build/software_release_log.md) directly，it can also be compiled through the source code to obtain the corresponding operating system version software, or to verify:
+In addition to[downloading Hacash full node software](https://github.com/hacash/node/releases) directly，it can also be compiled through the source code to obtain the corresponding operating system version software, or to verify:
 
 - [Hacash Fullnode Source Code](https://github.com/hacash/miner/blob/master/run/main/main.go)
 - [Hacash Build Doc](https://github.com/hacash/paper/blob/master/build/build_compilation.md)

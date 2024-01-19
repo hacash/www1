@@ -19,7 +19,7 @@ RPC API Doc
 https://github.com/hacash/paper/blob/master/service/rpc_api_doc.md
 
 Fullnode Download
-https://github.com/hacash/paper/blob/master/build/software_release_log.md
+https://github.com/hacash/node/releases
 
 Run Full Node
 /run-full-node

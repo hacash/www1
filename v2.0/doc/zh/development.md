@@ -18,7 +18,7 @@ RPC API 接口文档
 https://github.com/hacash/doc-chinese/blob/main/service/rpc_api_doc.md
 
 全节点软件下载
-https://github.com/hacash/paper/blob/master/build/software_release_log.md
+https://github.com/hacash/node/releases
 
 运行全节点
 /run-full-node
