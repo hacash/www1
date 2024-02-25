@@ -19,7 +19,7 @@ Discussions about the HIP-15 proposal took place on [HacashTalk](https://hacasht
 
 HIP-15 will take effect from block height 518000 and will require the download of the latest offline desktop wallet to inscribe:
 
-- [Hacash Release Center](https://github.com/hacash/node/releases)
+- [Hacash Wallet Download Center](https://github.com/hacash/wallet/releases)
 
 After downloading, run the `hacash_desktop_offline_wallet_...` file and select the `Create/Clean HACD inscription` option:
 

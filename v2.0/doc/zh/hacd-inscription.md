@@ -17,7 +17,7 @@ HACD 已经具备 3 种标准艺术形态，分别为 HIP-5 、HIP-8 和 HIP-9�
 
 HIP-15 将从区块高度 518000 开始生效，需要下载最新的离线桌面钱包来铭刻：
 
-- [Hacash 软件发布日志与下载中心](https://github.com/hacash/node/releases)
+- [Hacash 软件发布日志与下载中心](https://github.com/hacash/wallet/releases)
 
 下载后运行 `hacash_desktop_offline_wallet_...` 钱包，选择 `Create/Clean HACD inscription` 选项：
 

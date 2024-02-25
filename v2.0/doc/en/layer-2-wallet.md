@@ -14,7 +14,7 @@ Please select and contact your `Channel Service Provider` who will assist you in
 
 The layer 2 payment network has a separate wallet that needs to be logged in via the address private key and kept online. Just logging in locally on the client side, however, does not propagate security information such as your private key across the network. Click the button below to download the wallet client for your system:
 
-- [Hacash Release Center](https://github.com/hacash/node/releases)
+- [Hacash Wallet Download Center](https://github.com/hacash/wallet/releases)
 
 Download the layer 2 wallet and open the software. Please be careful not to open the software directly by double-clicking in the zip archive. You need to unzip it to your desktop or another folder, and then open the software. Because the software needs to create a directory in the folder to save channel ticket data, opening the software in the zip compression package can not create a folder, resulting in an error.
 

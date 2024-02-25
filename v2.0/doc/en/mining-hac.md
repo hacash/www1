@@ -29,7 +29,8 @@ Automatic settlement
 
 Different mining pools have different settlement rules and rate standards, please see the page of each mining pool service for details. Take the `.org` test mining pool as an example, give the tutorial of joining the mining pool mining, first download the mining pool mining software:
 
-- [Hacash Release Center](https://github.com/hacash/node/releases)
+- [Hacash Fullnode Center](https://github.com/hacash/node/releases)
+- [Hacash Miner Center](https://github.com/hacash/miner/releases)
 
 The downloaded mining software archive contains an executable file and a `.ini` format configuration file, similar to:
 
