@@ -14,15 +14,19 @@ Exchange purchase, community transaction or mining to get HAC and HACD
 The exchange of HAC listed on:
 
 <pre class="links">
-NonKYC
-https://nonkyc.io/market/HAC_USDT
-nonkyc
-HAC / USDT<br/>HAC / NKYC
+TradeOgre
+https://tradeogre.com/exchange/HAC-USDT
+HAC / USDT
 
 Xeggex
 https://xeggex.com/market/HAC_USDT
 xeggex
 HAC / USDT<br/>HAC / BTC
+
+NonKYC
+https://nonkyc.io/market/HAC_USDT
+nonkyc
+HAC / USDT<br/>HAC / NKYC
 
 Vindax
 https://vindax.com/exchange-base.html?symbol=HAC_USDT

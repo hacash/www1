@@ -11,15 +11,19 @@
 目前已上线 HAC 的交易所列表：
 
 <pre class="links">
-NonKYC
-https://nonkyc.io/market/HAC_USDT
-nonkyc
-HAC / USDT<br/>HAC / NKYC
+TradeOgre
+https://tradeogre.com/exchange/HAC-USDT
+HAC / USDT
 
 Xeggex
 https://xeggex.com/market/HAC_USDT
 xeggex
 HAC / USDT<br/>HAC / BTC
+
+NonKYC
+https://nonkyc.io/market/HAC_USDT
+nonkyc
+HAC / USDT<br/>HAC / NKYC
 
 Vindax
 https://vindax.com/exchange-base.html?symbol=HAC_USDT
