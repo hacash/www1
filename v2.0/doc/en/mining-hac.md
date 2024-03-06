@@ -98,4 +98,7 @@ If there are multiple machines on the Intranet mining at the same time, you can 
 <pre class="links">
 Run Mining Pool
 /mining-pool
+
+Hacash Mining Tech Development
+https://github.com/hacash/paper/blob/master/tech/mining_tech_development_description.md
 </pre>

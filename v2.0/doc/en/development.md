@@ -39,6 +39,9 @@ https://github.com/hacash/paper/blob/master/tech/x16rs_algorithm_description.md
 
 HAC & HACD Mining Fairness Doc
 https://github.com/hacash/paper/blob/master/tech/HAC_HACD_mining_fairness_description.md
+
+Hacash Mining Tech Development
+https://github.com/hacash/paper/blob/master/tech/mining_tech_development_description.md
 </pre>
 
 

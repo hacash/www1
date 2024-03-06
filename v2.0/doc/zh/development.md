@@ -37,7 +37,10 @@ X16RS 挖矿算法说明
 https://github.com/hacash/doc-chinese/blob/main/tech/x16rs_algorithm_description.md
 
 HAC & HACD 挖矿公平性说明
-https://github.com/hacash/doc-chinese/blob/main/tech/HAC_HACD_mining_fairness_description.cn.md
+https://github.com/hacash/doc-chinese/blob/main/tech/HAC_HACD_mining_fairness_description.md
+
+Hacash 挖矿技术开发说明
+https://github.com/hacash/doc-chinese/blob/main/tech/mining_tech_development_description.md
 </pre>
 
 <a name="tool"></a>

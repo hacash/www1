@@ -32,6 +32,7 @@
 - [通道链网络、闪电网络技术点对比](https://github.com/hacash/doc-chinese/blob/main/tech/channel_chain_vs_lightning_network.md)
 - [HAC 和 HACD 挖矿的公平性说明](https://github.com/hacash/doc-chinese/blob/main/tech/HAC_HACD_mining_fairness_description.md)
 - [X16RS 算法设计详解及GPU代码说明](https://github.com/hacash/doc-chinese/blob/main/tech/x16rs_algorithm_description.md)
+- [Hacash 挖矿技术开发说明](https://github.com/hacash/doc-chinese/blob/main/tech/mining_tech_development_description.md)
 - [比特币和 Hacash 的 L1 层技术对比](https://github.com/hacash/doc-chinese/blob/main/tech/bitcoin_and_hacash_L1_comparison.md)
 - [Hacash 多层扩容模型概念解释](https://github.com/hacash/doc-chinese/blob/main/tech/multi_layer_scaling_concept_definition.md)
 - [Hacash隐私技术设计原则](https://github.com/hacash/doc-chinese/blob/main/tech/privacy_technology_explanation.md)
