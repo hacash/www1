@@ -16,6 +16,7 @@ The exchange of HAC listed on:
 <pre class="links">
 TradeOgre
 https://tradeogre.com/exchange/HAC-USDT
+tradeogre
 HAC / USDT
 
 Xeggex
