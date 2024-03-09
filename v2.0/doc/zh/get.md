@@ -13,6 +13,7 @@
 <pre class="links">
 TradeOgre
 https://tradeogre.com/exchange/HAC-USDT
+tradeogre
 HAC / USDT
 
 Xeggex
