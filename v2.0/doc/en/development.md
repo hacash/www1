@@ -18,6 +18,9 @@ https://github.com/hacash/paper/blob/master/service/memtxpool_operation_importan
 RPC API Doc
 https://github.com/hacash/paper/blob/master/service/rpc_api_doc.md
 
+HACD additional note for exchanges
+https://github.com/hacash/paper/blob/master/service/hacd_explain_for_exchange.md
+
 Fullnode Download
 https://github.com/hacash/node/releases
 

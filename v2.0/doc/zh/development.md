@@ -17,6 +17,9 @@ https://github.com/hacash/doc-chinese/blob/main/service/memtxpool_operation_impo
 RPC API 接口文档
 https://github.com/hacash/doc-chinese/blob/main/service/rpc_api_doc.md
 
+HACD 接入交易所的补充说明
+https://github.com/hacash/doc-chinese/blob/main/service/hacd_explain_for_exchange.md
+
 全节点软件下载
 https://github.com/hacash/node/releases
 
