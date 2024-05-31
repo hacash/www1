@@ -24,10 +24,6 @@ Hacash Exchanges
 MIning pool：
 
 <pre class="links">
-WoW_Pool
-https://hacpool.com
-wowpool
-
 .Diamonds Pool
 https://www.hacash.diamonds/pool
 hxdm
@@ -51,10 +47,6 @@ mpss
 HIP-5 Statics
 https://www.hacash.diamonds/types
 hacdtypes
-
-HACD eReport
-https://hacpool.com/report
-wowpool
 </pre>
 
 

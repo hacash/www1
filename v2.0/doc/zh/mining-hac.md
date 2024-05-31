@@ -20,11 +20,6 @@ Hacash 社区有多个矿池可供选择，只需访问矿池网站，下载对�
 https://www.hacash.diamonds/pool
 hxdm
 支持GPU挖矿
-
-WoW_Pool
-https://hacpool.com
-wowpool
-运营时间长
 </pre>
 
 不同的矿池有不同的结算规则和费率标准，详细请查看各个矿池服务的页面。以 `.org` 测试矿池为例，给出加入矿池挖矿的教程，首先下载矿池挖矿软件:
