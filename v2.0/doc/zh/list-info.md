@@ -3,12 +3,15 @@ Hacash 列出支持
 
 
 
-本文档提供将 Hacash 列出到第三方工具、服务或平台所需信息。如不完善请在推特 <li><a href="https://twitter.com/hacashorg" target="_blank"><i class="ftic">&#xe665;</i>@HacashOrg</a></li> 下留言，或直接在 <a href="https://github.com/hacash/www/blob/master/v2.0/doc/zh/list-info.md" target="_blank">Github</a> 里提交 commit 来修改本文档。
+本文档提供将 Hacash 列出到第三方工具、服务或平台所需信息。如不完善请在推特 <a href="https://twitter.com/hacashorg" target="_blank">@HacashOrg</a> 下留言，或直接在 <a href="https://github.com/hacash/www/blob/master/v2.0/doc/zh/list-info.md" target="_blank">Github</a> 里提交 commit 来修改本文档。
 
 
 ## 设计元素
 
+- [HAC 图标 200px 链接](https://hacash.org/cssimg/logo/hac_200.png)
+- [HACD 图标 200px 链接](https://hacash.org/cssimg/logo/hacd_200.png)
 - [Hacash 图标素材](/design)
+
 
 ## 流通量、总量等数据
 

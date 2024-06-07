@@ -1,11 +1,13 @@
 Hacash list support
 for exchanges, mining pool services, or third-party data platforms
 
-This document provides the information needed to list Hacash to a third-party tool, service, or platform. If the documentation is incomplete, please leave a comment on Twitter: <li><a href="https://twitter.com/hacashorg" target="_blank"><i class="ftic">&#xe665;</i>@HacashOrg</a></li> or push commit directly to the <a href="https://github.com/hacash/www/blob/master/v2.0/doc/en/list-info.md" target="_blank">Github</a> to modify this document.
+This document provides the information needed to list Hacash to a third-party tool, service, or platform. If the documentation is incomplete, please leave a comment on Twitter: <a href="https://twitter.com/hacashorg" target="_blank">@HacashOrg</a> or push commit directly to the <a href="https://github.com/hacash/www/blob/master/v2.0/doc/en/list-info.md" target="_blank">Github</a> to modify this document.
 
 
 ## Design Elements
 
+- [HAC Icon 200px link](https://hacash.org/cssimg/logo/hac_200.png)
+- [HACD Icon 200px link](https://hacash.org/cssimg/logo/hacd_200.png)
 - [Hacash Logo / Icon](/design)
 
 ## Circulation, Total amount
