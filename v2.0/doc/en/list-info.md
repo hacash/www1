@@ -21,7 +21,7 @@ The total amount of HAC is unlimited, and the total amount of HACD is 16,777,216
 ## Development Doc
 
 - [Exchange or wallet](/development)
-- [Full Node Api](https://github.com/hacash/doc-chinese/blob/main/service/rpc_api_doc.md)
+- [Full Node Api](https://github.com/hacash/paper/blob/master/service/rpc_api_doc.md)
 
 
 In addition, through the footer of this site can also directly jump to some of Hacash's commonly used related websites and social media👇
