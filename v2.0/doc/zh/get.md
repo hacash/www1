@@ -11,6 +11,11 @@
 目前已上线 HAC 的交易所列表：
 
 <pre class="links">
+CoinEx
+https://www.coinex.com/zh-hans/exchange/HAC-USDT
+coinex
+HAC / USDT<br/>HAC / BTC
+
 TradeOgre
 https://tradeogre.com/exchange/HAC-USDT
 tradeogre

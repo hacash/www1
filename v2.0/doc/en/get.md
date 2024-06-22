@@ -14,6 +14,11 @@ Exchange purchase, community transaction or mining to get HAC and HACD
 The exchange of HAC listed on:
 
 <pre class="links">
+CoinEx
+https://www.coinex.com/exchange/HAC-USDT
+coinex
+HAC / USDT<br/>HAC / BTC
+
 TradeOgre
 https://tradeogre.com/exchange/HAC-USDT
 tradeogre
